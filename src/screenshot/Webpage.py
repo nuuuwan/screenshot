@@ -35,6 +35,9 @@ class Webpage:
         self.driver.get(self.url)
         log.debug(f'Opened {self.url}')
 
+    def find_element(self, by, value):
+        return self.driver.find_element(by, value)
+
     def close(self):
         self.driver.close()
         self.driver.quit()

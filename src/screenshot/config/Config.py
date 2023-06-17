@@ -1,33 +1,34 @@
 import os
 import tempfile
-from dataclasses import dataclass
+from functools import cached_property
 
 from utils import Time, TimeFormat
-
-from screenshot import Point2D, Size2D
 
 
 def get_timestamp():
     return TimeFormat('%Y-%m-%d %H:%M').stringify(Time.now())
 
 
-@dataclass
 class Config:
-    id: str
-    description: str
-    url: str
-    point: Point2D
-    size: Size2D
+    def __init__(self, id, description, url, frequency):
+        self.id = id
+        self.description = description
+        self.url = url
+        self.frequency = frequency
+
+    def download_image(self):
+        raise NotImplementedError
 
     @property
     def image_path(self):
         return os.path.join(tempfile.gettempdir(), f'{self.id}.png')
 
-    @property
+    @cached_property
     def tweet_text(self):
         return f'''
 {self.description}
 
 From {self.url}
+#SriLanka 🇱🇰
 ({get_timestamp()})
         '''.strip()
