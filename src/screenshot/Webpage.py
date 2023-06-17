@@ -10,10 +10,18 @@ class Webpage:
         assert url.startswith('http')
         self.url = url
         self.driver = None
+        self.width = 1920
+        self.height = 1920
+
+    def set_dims(self, width: int, height: int):
+        self.width = width
+        self.height = height
 
     def open(self):
         options = Options()
         options.add_argument('-headless')
+        options.add_argument(f'--width={self.width}')
+        options.add_argument(f'--height={self.height}')
         self.driver = webdriver.Firefox(options=options)
         self.driver.get(self.url)
         log.debug(f'Opened {self.url}')
