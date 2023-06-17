@@ -4,7 +4,7 @@ on: workflow_dispatch
 
 
 jobs:
-  test-run-and-copy:
+  pipeline:
     runs-on: ubuntu-latest
 
     steps:
@@ -21,7 +21,7 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
         pip install build
 
-    - name: Run
+    - name: Run pipeline.py
       run: |
         export PYTHONPATH="$PYTHONPATH:./src"
         python workflows/pipeline.py --TWTR_BEARER_TOKEN "${{ secrets.TWTR_BEARER_TOKEN }}" --TWTR_API_KEY "${{ secrets.TWTR_API_KEY }}" --TWTR_API_KEY_SECRET "${{ secrets.TWTR_API_KEY_SECRET }}" --TWTR_ACCESS_TOKEN "${{ secrets.TWTR_ACCESS_TOKEN }}" --TWTR_ACCESS_TOKEN_SECRET "${{ secrets.TWTR_ACCESS_TOKEN_SECRET }}"
