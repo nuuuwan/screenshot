@@ -35,7 +35,8 @@ jobs:
     - name: Run
       run: |
         export PYTHONPATH="$PYTHONPATH:./src"
-        python src/${{ github.event.repository.name }}/upload_data.py
+        python workflows/pipeline.py --TWTR_BEARER_TOKEN "${{ secrets.TWTR_BEARER_TOKEN }}" --TWTR_API_KEY "${{ secrets.TWTR_API_KEY }}" --TWTR_API_KEY_SECRET "${{ secrets.TWTR_API_KEY_SECRET }}" --TWTR_ACCESS_TOKEN "${{ secrets.TWTR_ACCESS_TOKEN }}" --TWTR_ACCESS_TOKEN_SECRET "${{ secrets.TWTR_ACCESS_TOKEN_SECRET }}"
+
 
     - name: Checkout repo branch data
       uses: actions/checkout@v2
