@@ -29,7 +29,8 @@ def process_config(config: Config, twitter: Twitter):
     tweet = Tweet(config.tweet_text).add_image(config.image_path)
     if twitter is not None:
         twitter.send(tweet)
-
+        log.debug(f'😴 Sleeping for {T_SLEEP_SECONDS}s...')
+        time.sleep(T_SLEEP_SECONDS)
 
 def main():
     try:
@@ -40,8 +41,6 @@ def main():
     for config in CONFIG_LIST:
         try:
             process_config(config, twitter)
-            log.debug(f'😴 Sleeping for {T_SLEEP_SECONDS}s...')
-            time.sleep(T_SLEEP_SECONDS)
         except Exception as e:
             log.exception(f'Failed to process config {config.id}: {e}')
 
