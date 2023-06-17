@@ -33,7 +33,6 @@ From {self.url}
         '''.strip()
 
 
-
 CONFIG_LIST = [
     Config(
         'cbsl_cpi.chart',
@@ -57,4 +56,6 @@ CONFIG_LIST = [
         Size2D(460, 340),
     ),
 ]
-assert len(CONFIG_LIST) <= 40, 'CONFIG_LIST must be limited to a maximum of 40 items'
+assert (
+    len(CONFIG_LIST) <= 40
+), 'CONFIG_LIST must be limited to a maximum of 40 items'

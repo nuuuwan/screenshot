@@ -1,3 +1,4 @@
+import time
 from utils import Log
 
 from screenshot import Webpage
@@ -5,6 +6,8 @@ from workflows.Config import Config, CONFIG_LIST
 from twtr import Twitter, Tweet
 
 log = Log(__name__)
+
+T_SLEEP_SECONDS = 30
 
 
 def process_config(config: Config, twitter: Twitter):
@@ -30,6 +33,7 @@ def main():
     for config in CONFIG_LIST:
         try:
             process_config(config, twitter)
+            time.sleep(T_SLEEP_SECONDS)
         except Exception as e:
             log.exception(f'Failed to process config {config.id}: {e}')
 
