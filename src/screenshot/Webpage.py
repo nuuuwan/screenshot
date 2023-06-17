@@ -1,6 +1,12 @@
+import os
+import tempfile
+from functools import cached_property
+
 from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
-from utils import Log
+from utils import Log, hashx
+
+from screenshot.Img import Img
 
 log = Log(__name__)
 
@@ -13,9 +19,12 @@ class Webpage:
         self.width = 1920
         self.height = 1920
 
-    def set_dims(self, width: int, height: int):
-        self.width = width
-        self.height = height
+    @cached_property
+    def screenshot_image_path(self):
+        h = hashx.md5(self.url)
+        return os.path.join(
+            tempfile.gettempdir(), f'webpage.screenshot.{h}.png'
+        )
 
     def open(self):
         options = Options()
@@ -31,8 +40,18 @@ class Webpage:
         self.driver.quit()
         log.debug(f'Closed {self.url}')
 
-    def get_screenshot(self, image_path: str):
+    def __screenshot_nocache__(self):
         self.open()
-        self.driver.save_screenshot(image_path)
-        log.debug(f'Saved screenshot of {self.url} to {image_path}')
+        self.driver.save_screenshot(self.screenshot_image_path)
+        log.debug(
+            f'Saved screenshot of {self.url} to {self.screenshot_image_path}'
+        )
         self.close()
+        return Img(self.screenshot_image_path)
+
+    def screenshot(self):
+        if os.path.exists(self.screenshot_image_path):
+            log.warn(f'{self.screenshot_image_path} exists.')
+            return Img(self.screenshot_image_path)
+
+        return self.__screenshot_nocache__()
