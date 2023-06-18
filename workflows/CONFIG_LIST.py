@@ -4,6 +4,7 @@ from screenshot import ConfigScreenshot, ConfigTE, Point2D, Size2D
 from screenshot.config import config_utils
 
 date_id_non_weekend = config_utils.get_date_id_non_weekend()
+last_month = config_utils.get_last_month()
 
 CONFIG_LIST = [
     ConfigTE(
@@ -86,6 +87,16 @@ CONFIG_LIST = [
         SECONDS_IN.HOUR * 6,
         Point2D(320, 900),
         Size2D(860, 520),
+    ),
+    ConfigScreenshot(
+        'sltda.monthly_tourist_arrivals.primary_markets',
+        'Top Primary Markets @SLTDA_SriLanka #Tourism',
+        'https://www.sltda.gov.lk'
+        + '/storage/common_media'
+        + f'/MonthlyTouristArrivalsReport-{last_month}.pdf#page=6',
+        SECONDS_IN.AVG_MONTH,
+        Point2D(520, 220),
+        Size2D(900, 1000),
     ),
 ]
 assert (
