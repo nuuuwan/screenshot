@@ -48,7 +48,15 @@ CONFIG_LIST = [
         Point2D(330, 70),
         Size2D(1260, 950),
     ),
-]
+    ConfigScreenshot(
+        'owid.covid.chart',
+        'Daily new confirmed COVID-19 deaths per million people by @OurWorldInData',
+        'https://ourworldindata.org/explorers/coronavirus-data-explorer?tab=map',
+        SECONDS_IN.DAY/1000,
+        Point2D(600, 240),
+        Size2D(970, 800),
+    ),
+][-1:]
 
 assert (
     len(CONFIG_LIST) <= 40
