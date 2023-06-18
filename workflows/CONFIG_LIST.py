@@ -1,6 +1,9 @@
 from utils import SECONDS_IN
 
 from screenshot import ConfigScreenshot, ConfigTE, Point2D, Size2D
+from screenshot.config import config_utils
+
+date_id_non_weekend = config_utils.get_date_id_non_weekend()
 
 CONFIG_LIST = [
     ConfigTE(
@@ -65,6 +68,16 @@ CONFIG_LIST = [
         SECONDS_IN.DAY,
         Point2D(800, 260),
         Size2D(1120, 720),
+    ),
+    ConfigScreenshot(
+        'cbsl.food_prices.daily_report',
+        'Daily Price Report by @CBSL #CPI #Food',
+        'https://www.cbsl.gov.lk'
+        + '/sites/default/files/cbslweb_documents'
+        + f'/statistics/pricerpt/price_report_{date_id_non_weekend}_e.pdf',
+        SECONDS_IN.DAY/1000,
+        Point2D(500, 100),
+        Size2D(920, 1020),
     ),
 ]
 
