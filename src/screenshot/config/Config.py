@@ -13,7 +13,7 @@ CRON_OVERLAP = 2
 
 
 def get_timestamp():
-    return TimeFormat('%Y-%m-%d %H:%M').stringify(Time.now())
+    return TimeFormat('%Y-%m-%d (%a) %I:%M%p').stringify(Time.now())
 
 
 class Config:
@@ -36,8 +36,9 @@ class Config:
 {self.description}
 
 From {self.url}
+at {get_timestamp()}
 #SriLanka 🇱🇰
-({get_timestamp()})
+
         '''.strip()
 
     @property
