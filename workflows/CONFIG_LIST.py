@@ -98,6 +98,14 @@ CONFIG_LIST = [
         Point2D(520, 220),
         Size2D(900, 1000),
     ),
+    ConfigScreenshot(
+        'slmetdept.temp_and_rain.last24hours',
+        'Temperature & Rainfall during the last 24 hours by @SLMetDept',
+        'http://www.meteo.gov.lk/index.php?lang=en',
+        SECONDS_IN.HOUR * 6,
+        Point2D(675, 1075),
+        Size2D(300, 260),
+    ),
 ]
 assert (
     len(CONFIG_LIST) <= 40
