@@ -12,7 +12,7 @@ log = Log(__name__)
 
 T_SLEEP_SECONDS = SECONDS_IN.MINUTE * 3
 CRON_FREQUENCY = SECONDS_IN.HOUR
-CRON_OVERLAP = 5
+CRON_OVERLAP = 2
 
 
 def process_config(config: Config, twitter: Twitter):
