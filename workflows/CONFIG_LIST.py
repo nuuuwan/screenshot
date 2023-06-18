@@ -50,13 +50,23 @@ CONFIG_LIST = [
     ),
     ConfigScreenshot(
         'owid.covid.chart',
-        'Daily new confirmed COVID-19 deaths per million people by @OurWorldInData',
-        'https://ourworldindata.org/explorers/coronavirus-data-explorer?tab=map',
-        SECONDS_IN.DAY/1000,
+        'Daily new confirmed COVID-19 deaths'
+        + ' per million people by @OurWorldInData',
+        'https://ourworldindata.org'
+        + '/explorers/coronavirus-data-explorer?tab=map',
+        SECONDS_IN.DAY,
         Point2D(600, 240),
         Size2D(970, 800),
     ),
-][-1:]
+    ConfigScreenshot(
+        'ceb.power_generation.load_curve',
+        'Load Curve by @CEB_lk',
+        'https://cebcare.ceb.lk/gensum/details',
+        SECONDS_IN.DAY /1000,
+        Point2D(800, 260),
+        Size2D(1120, 720),
+    ),
+]
 
 assert (
     len(CONFIG_LIST) <= 40
