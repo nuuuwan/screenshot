@@ -75,12 +75,19 @@ CONFIG_LIST = [
         'https://www.cbsl.gov.lk'
         + '/sites/default/files/cbslweb_documents'
         + f'/statistics/pricerpt/price_report_{date_id_non_weekend}_e.pdf',
-        SECONDS_IN.DAY/1000,
+        SECONDS_IN.DAY,
         Point2D(500, 100),
         Size2D(920, 1020),
     ),
+    ConfigScreenshot(
+        'cse.aspi.chart',
+        '#ASPI by @CSE_Media via @FinancialTimes',
+        'https://markets.ft.com/data/indices/tearsheet/summary?s=X:CSE',
+        SECONDS_IN.HOUR * 6,
+        Point2D(320, 900),
+        Size2D(860, 520),
+    ),
 ]
-
 assert (
     len(CONFIG_LIST) <= 40
 ), 'CONFIG_LIST must be limited to a maximum of 40 items'
