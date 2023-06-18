@@ -1,5 +1,3 @@
-import os
-import random
 import time
 
 from twtr import Tweet, Twitter
@@ -17,16 +15,11 @@ CRON_OVERLAP = 2
 
 def process_config(config: Config, twitter: Twitter):
     log.info(f'Processing config: {config.id}')
-    log.debug(f'config.frequency = {config.frequency}s')
-    crons_per_stat = config.frequency / CRON_FREQUENCY
-    p_process = CRON_OVERLAP * 1.0 / crons_per_stat
-    if random.random() > p_process:
-        log.debug(f'Skipping {config.id}...')
-        return
 
     config.download_image()
+    log.debug(config.tweet_text)
     tweet = Tweet(config.tweet_text).add_image(config.image_path)
-    if twitter is not None:
+    if twitter is not None and config.should_send_tweet:
         twitter.send(tweet)
         log.debug(f'😴 Sleeping for {T_SLEEP_SECONDS}s...')
         time.sleep(T_SLEEP_SECONDS)
