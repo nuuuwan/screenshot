@@ -11,5 +11,11 @@ def get_date_id_non_weekend():
     return TimeFormat('%Y%m%d').stringify(Time(ut))
 
 
+def get_last_month():
+    ut = Time.now().ut
+    ut = ut - SECONDS_IN.AVG_MONTH
+    return TimeFormat('%B').stringify(Time(ut))
+
+
 if __name__ == '__main__':
     print(get_date_id_non_weekend())
