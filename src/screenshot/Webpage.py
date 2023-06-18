@@ -1,5 +1,6 @@
 import os
 import tempfile
+import time
 from functools import cached_property
 
 from selenium import webdriver
@@ -9,6 +10,8 @@ from utils import Log, hashx
 from screenshot.Img import Img
 
 log = Log(__name__)
+
+T_WAIT_FOR_SCREENSHOT = 5
 
 
 class Webpage:
@@ -45,6 +48,7 @@ class Webpage:
 
     def __screenshot_nocache__(self):
         self.open()
+        time.sleep(T_WAIT_FOR_SCREENSHOT)
         self.driver.save_screenshot(self.screenshot_image_path)
         log.debug(
             f'Saved screenshot of {self.url} to {self.screenshot_image_path}'
