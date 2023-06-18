@@ -62,7 +62,7 @@ CONFIG_LIST = [
         'ceb.power_generation.load_curve',
         'Load Curve by @CEB_lk',
         'https://cebcare.ceb.lk/gensum/details',
-        SECONDS_IN.DAY /1000,
+        SECONDS_IN.DAY,
         Point2D(800, 260),
         Size2D(1120, 720),
     ),
