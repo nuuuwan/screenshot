@@ -35,9 +35,10 @@ class Config:
         return f'''
 {self.description}
 
-From {self.url}
-at {get_timestamp()}
 #SriLanka 🇱🇰
+
+Crawled at {get_timestamp()}
+from {self.url}
 
         '''.strip()
 
