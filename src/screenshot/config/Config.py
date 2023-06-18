@@ -1,8 +1,15 @@
 import os
+import random
 import tempfile
 from functools import cached_property
 
-from utils import Time, TimeFormat
+from utils import SECONDS_IN, Log, Time, TimeFormat
+
+log = Log(__name__)
+
+# Should be consistent with pipeline-cron.yml
+CRON_FREQUENCY = SECONDS_IN.HOUR
+CRON_OVERLAP = 2
 
 
 def get_timestamp():
@@ -32,3 +39,18 @@ From {self.url}
 #SriLanka 🇱🇰
 ({get_timestamp()})
         '''.strip()
+
+    @property
+    def should_send_tweet(self) -> bool:
+        crons_per_stat = self.frequency / CRON_FREQUENCY
+        p_process = CRON_OVERLAP * 1.0 / crons_per_stat
+
+        log.debug(
+            f'config.frequency = {self.frequency}s,'
+            + f' {crons_per_stat=}, {p_process=}'
+        )
+
+        if random.random() > p_process:
+            log.debug(f'Skipping {self.id}...')
+            return False
+        return True
