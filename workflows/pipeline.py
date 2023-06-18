@@ -1,3 +1,4 @@
+import os
 import time
 
 from twtr import Tweet, Twitter
@@ -18,6 +19,10 @@ def process_config(config: Config, twitter: Twitter):
 
     config.download_image()
     log.debug(config.tweet_text)
+
+    if twitter is None:
+        os.startfile(config.image_path)
+
     tweet = Tweet(config.tweet_text).add_image(config.image_path)
     if twitter is not None and config.should_send_tweet:
         twitter.send(tweet)
@@ -35,7 +40,10 @@ def init_twitter():
 
 def main():
     twitter = init_twitter()
-    for config in CONFIG_LIST:
+    config_list = CONFIG_LIST
+    if twitter is None:
+        config_list = config_list[-1:]
+    for config in config_list:
         process_config(config, twitter)
 
 
