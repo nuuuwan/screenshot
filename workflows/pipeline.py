@@ -11,8 +11,8 @@ from workflows.CONFIG_LIST import CONFIG_LIST
 log = Log(__name__)
 
 T_SLEEP_SECONDS = SECONDS_IN.MINUTE * 3
-CRON_FREQUENCY = SECONDS_IN.DAY
-CRON_OVERLAP = 2
+CRON_FREQUENCY = SECONDS_IN.HOUR
+CRON_OVERLAP = 5
 
 
 def process_config(config: Config, twitter: Twitter):

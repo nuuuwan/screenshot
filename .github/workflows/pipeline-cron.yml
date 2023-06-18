@@ -1,9 +1,9 @@
-name: Upload Data (Cron at 6.30am)
+name: Upload Data (Every hour at 30 minutes UTC)
 
 # on: workflow_dispatch
 on:
   schedule:
-    - cron:  '30 6 * * *'
+    - cron:  '30 * * * *'
 
 
 jobs:
