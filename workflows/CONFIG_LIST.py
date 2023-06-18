@@ -3,6 +3,18 @@ from utils import SECONDS_IN
 from screenshot import ConfigScreenshot, ConfigTE, Point2D, Size2D
 
 CONFIG_LIST = [
+    ConfigTE(
+        'te.cbsl.gdp_annual_growth',
+        '#GDP Annual Growth Rate by @CBSL (via @tEconomics)',
+        'https://tradingeconomics.com/sri-lanka/gdp-growth-annual',
+        SECONDS_IN.AVG_QTR,
+    ),
+    ConfigTE(
+        'te.cbsl.forex_reserves',
+        'Foreign Exchange Reserves by @CBSL (via @tEconomics)',
+        'https://tradingeconomics.com/sri-lanka/foreign-exchange-reserves',
+        SECONDS_IN.AVG_MONTH,
+    ),
     ConfigScreenshot(
         'cbsl_cpi.chart',
         'Consumer Price Inflation (#CPI) by @CBSL',
@@ -27,29 +39,17 @@ CONFIG_LIST = [
         Point2D(1060, 160),
         Size2D(460, 340),
     ),
-    # ConfigTE(
-    #     'te.cse.stock_price',
-    #     'Stock Price by @CSE_Media (via @tEconomics)',
-    #     'https://tradingeconomics.com/sri-lanka/stock-market',
-    # ),
-    # ConfigTE(
-    #     'te.cbsl.forex.usd_lkr',
-    #     'LKR/USD Exchange Rage by @CBSL (via @tEconomics)',
-    #     'https://tradingeconomics.com/sri-lanka/currency',
-    # ),
-    ConfigTE(
-        'te.cbsl.gdp_annual_growth',
-        '#GDP Annual Growth Rate by @CBSL (via @tEconomics)',
-        'https://tradingeconomics.com/sri-lanka/gdp-growth-annual',
-        SECONDS_IN.AVG_QTR,
-    ),
-    ConfigTE(
-        'te.cbsl.forex_reserves',
-        'Foreign Exchange Reserves by @CBSL (via @tEconomics)',
-        'https://tradingeconomics.com/sri-lanka/foreign-exchange-reserves',
-        SECONDS_IN.AVG_MONTH,
+    ConfigScreenshot(
+        'moh.dengue.chart',
+        '#Dengue Cases by @DengueUnit @MoH_SriLanka',
+        'https://lookerstudio.google.com/reporting'
+        + '/95b978f1-5c1a-44fb-a436-e19819e939c0/page/XRtTB',
+        SECONDS_IN.DAY,
+        Point2D(330, 70),
+        Size2D(1260, 950),
     ),
 ]
+
 assert (
     len(CONFIG_LIST) <= 40
 ), 'CONFIG_LIST must be limited to a maximum of 40 items'
