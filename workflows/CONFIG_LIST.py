@@ -1,3 +1,5 @@
+import random
+
 from utils import SECONDS_IN
 
 from screenshot import ConfigScreenshot, ConfigTE, Point2D, Size2D
@@ -105,6 +107,17 @@ CONFIG_LIST = [
         SECONDS_IN.HOUR * 6,
         Point2D(675, 1075),
         Size2D(300, 260),
+    ),
+    ConfigScreenshot(
+        'cbsl.annual_report.2023.random',
+        'From the 2022 Annual Report of the @CBSL',
+        'https://www.cbsl.gov.lk'
+        + '/sites/default/files/cbslweb_documents/publications'
+        + '/AR_2022_presentation_e.pdf#page='
+        + str(random.randint(6, 49)),
+        SECONDS_IN.HOUR * 6,
+        Point2D(160, 0),
+        Size2D(1600, 933),
     ),
 ]
 assert (
