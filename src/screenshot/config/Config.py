@@ -45,7 +45,8 @@ from {self.url}
 
         '''.strip()
         if len(tweet_text) > MAX_TWEET_LENGTH:
-            raise Exception(f'Tweet text is too long: {len(tweet_text)}')
+            raise Exception(f'Tweet text is too long: {len(tweet_text)}')4
+        return tweet_text
 
     @property
     def should_send_tweet(self) -> bool:
