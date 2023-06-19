@@ -35,7 +35,7 @@ class Config:
 
     @cached_property
     def tweet_text(self):
-        tweet_text = '''
+        tweet_text = f'''
 {self.description}
 
 #SriLanka 🇱🇰
