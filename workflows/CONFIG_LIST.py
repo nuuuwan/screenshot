@@ -147,6 +147,14 @@ CONFIG_LIST = [
         Point2D(15, 120),
         Size2D(950, 700),
     ),
+    ConfigScreenshot(
+        'zoom_earth.weather.temp',
+        'Temperature in Sri Lanka via @Zoom_Earth',
+        'https://zoom.earth' + '/maps/temperature' + '/#view=7.7,80.6,9z',
+        SECONDS_IN.DAY / 6,
+        Point2D(550, 90),
+        Size2D(920, 1500),
+    ),
 ]
 
 # Point2D(0, 0),
