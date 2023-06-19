@@ -12,6 +12,8 @@ CRON_FREQUENCY = SECONDS_IN.HOUR
 CRON_OVERLAP = 2
 MIN_P_PROCESS = CRON_FREQUENCY / SECONDS_IN.WEEK
 
+MAX_TWEET_LENGTH = 280 - 20
+
 
 def get_timestamp():
     return TimeFormat('%Y-%m-%d (%a) %I:%M%p').stringify(Time.now())
@@ -33,7 +35,7 @@ class Config:
 
     @cached_property
     def tweet_text(self):
-        return f'''
+        tweet_text = '''
 {self.description}
 
 #SriLanka 🇱🇰
@@ -42,6 +44,8 @@ Crawled at {get_timestamp()}
 from {self.url}
 
         '''.strip()
+        if len(tweet_text) > MAX_TWEET_LENGTH:
+            raise Exception(f'Tweet text is too long: {len(tweet_text)}')
 
     @property
     def should_send_tweet(self) -> bool:
