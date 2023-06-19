@@ -161,6 +161,18 @@ CONFIG_LIST = [
         'https://tradingeconomics.com/sri-lanka/car-registrations',
         SECONDS_IN.AVG_MONTH,
     ),
+    ConfigTE(
+        'te.cbsl.balance_of_trade',
+        'Balance of Trade by @CBSL (via @tEconomics)',
+        'https://tradingeconomics.com/sri-lanka/balance-of-trade',
+        SECONDS_IN.AVG_MONTH,
+    ),
+    ConfigTE(
+        'te.cbsl.interest_date',
+        'Interest Rate by @CBSL (via @tEconomics)',
+        'https://tradingeconomics.com/sri-lanka/interest-rate',
+        SECONDS_IN.AVG_MONTH,
+    ),
 ]
 
 # Point2D(0, 0),
