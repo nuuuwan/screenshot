@@ -173,6 +173,22 @@ CONFIG_LIST = [
         'https://tradingeconomics.com/sri-lanka/interest-rate',
         SECONDS_IN.AVG_MONTH,
     ),
+    ConfigScreenshot(
+        'statcounter.social_media_stats',
+        'Social Media Stats by @StatCounter',
+        'https://gs.statcounter.com/social-media-stats/all/sri-lanka',
+        SECONDS_IN.AVG_MONTH,
+        Point2D(360, 125),
+        Size2D(1200, 800),
+    ),
+    ConfigScreenshot(
+        'speedtest.internet_speed',
+        'Median Country Internet Speeds by @Speedtest',
+        'https://www.speedtest.net/global-index/sri-lanka',
+        SECONDS_IN.DAY,
+        Point2D(1920 - 1558, 1920 - 1691),
+        Size2D(1200, 700),
+    ),
 ]
 
 # Point2D(0, 0),
