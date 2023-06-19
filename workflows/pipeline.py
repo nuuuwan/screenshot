@@ -25,8 +25,8 @@ def process_config_test(config: Config):
 
 
 def process_config(config: Config, twitter: Twitter):
-    if not ( twitter is not None and config.should_send_tweet):
-        return 
+    if not (twitter is not None and config.should_send_tweet):
+        return
 
     log.info(f'process_config: config={config}, {twitter=}')
 
