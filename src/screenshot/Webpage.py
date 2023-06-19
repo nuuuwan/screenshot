@@ -58,7 +58,7 @@ class Webpage:
 
     def screenshot(self):
         if os.path.exists(self.screenshot_image_path):
-            log.warn(f'{self.screenshot_image_path} exists.')
+            log.warn(f'{self.screenshot_image_path} exists ({self.url}).')
             return Img(self.screenshot_image_path)
 
         return self.__screenshot_nocache__()
