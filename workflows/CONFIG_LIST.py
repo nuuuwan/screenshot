@@ -39,7 +39,7 @@ CONFIG_LIST = [
     ),
     ConfigScreenshot(
         'dcs_snapshot.chart',
-        'Economic Snapshot by @@LankaSTAT #DCS',
+        'Economic Snapshot by @LankaSTAT #DCS',
         'http://www.statistics.gov.lk',
         SECONDS_IN.AVG_MONTH,
         Point2D(1060, 160),
@@ -83,14 +83,6 @@ CONFIG_LIST = [
         Size2D(920, 1020),
     ),
     ConfigScreenshot(
-        'cse.aspi.chart',
-        '#ASPI by @CSE_Media via @FinancialTimes',
-        'https://markets.ft.com/data/indices/tearsheet/summary?s=X:CSE',
-        SECONDS_IN.HOUR * 6,
-        Point2D(320, 900),
-        Size2D(860, 520),
-    ),
-    ConfigScreenshot(
         'sltda.monthly_tourist_arrivals.primary_markets',
         'Top Primary Markets @SLTDA_SriLanka #Tourism',
         'https://www.sltda.gov.lk'
@@ -118,6 +110,24 @@ CONFIG_LIST = [
         SECONDS_IN.HOUR * 6,
         Point2D(160, 0),
         Size2D(1600, 933),
+    ),
+    ConfigScreenshot(
+        'cse.aspi.chart',
+        '#ASPI by @CSE_Media via @InvestingCom',
+        'https://www.investing.com/indices/cse-all-share',
+        SECONDS_IN.HOUR * 12,
+        Point2D(470, 900),
+        Size2D(660, 500),
+    ),
+    ConfigScreenshot(
+        'cse.sp.charts',
+        'S&P Sri Lanka 20 Index by @SPDJIndices and @CSE_Media',
+        'https://www.spglobal.com'
+        + '/spdji/en/exchange-relationships/exchange'
+        + '/colombo-stock-exchange-cse/#overview',
+        SECONDS_IN.DAY,
+        Point2D(300, 710),
+        Size2D(1325, 655),
     ),
 ]
 assert (
