@@ -107,7 +107,7 @@ CONFIG_LIST = [
         + '/sites/default/files/cbslweb_documents/publications'
         + '/AR_2022_presentation_e.pdf#page='
         + str(random.randint(6, 49)),
-        SECONDS_IN.HOUR * 6,
+        SECONDS_IN.DAY / 2,
         Point2D(160, 0),
         Size2D(1600, 933),
     ),
@@ -115,7 +115,7 @@ CONFIG_LIST = [
         'cse.aspi.chart',
         '#ASPI by @CSE_Media via @InvestingCom',
         'https://www.investing.com/indices/cse-all-share',
-        SECONDS_IN.HOUR * 12,
+        SECONDS_IN.DAY / 2,
         Point2D(470, 900),
         Size2D(660, 500),
     ),
@@ -128,6 +128,16 @@ CONFIG_LIST = [
         SECONDS_IN.DAY,
         Point2D(300, 710),
         Size2D(1325, 655),
+    ),
+    ConfigScreenshot(
+        'icc.mensodicwc2023.qualifier',
+        '2023 @ICC Mens ODI @CricketWorldCup Qualifier',
+        'https://www.espncricinfo.com'
+        + '/series/icc-cricket-world-cup-qualifier-2023-1377745'
+        + '/points-table-standings',
+        SECONDS_IN.DAY / 2,
+        Point2D(320, 620),
+        Size2D(1280, 590),
     ),
 ]
 assert (
