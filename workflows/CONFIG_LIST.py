@@ -138,7 +138,7 @@ CONFIG_LIST = [
     ConfigScreenshot(
         'zoom_earth.weather.temp',
         'Temperature in Sri Lanka via @Zoom_Earth',
-        'https://zoom.earth' + '/maps/temperature' + '/#view=7.7,80.6,9z',
+        'https://zoom.earth' + '/maps/temperature' + '/#view=7.7,80.6,9z/model=gfs',
         SECONDS_IN.DAY / 6,
         Point2D(550, 90),
         Size2D(920, 1500),
@@ -192,7 +192,8 @@ CONFIG_LIST = [
     ConfigScreenshot(
         'google.maps.traffic',
         'Traffic around #Colombo by @GoogleMaps',
-        'https://www.google.com/maps/@6.9111702,79.8750744,14z/data=!5m1!1e1?entry=ttu',
+        'https://www.google.com'
+        + '/maps/@6.9111702,79.8750744,14z/data=!5m1!1e1?entry=ttu',
         SECONDS_IN.HOUR * 2,
         Point2D(1920 - 1712, 1920 - 1645),
         Size2D(1650, 1500),
