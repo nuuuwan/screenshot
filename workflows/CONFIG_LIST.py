@@ -143,7 +143,7 @@ CONFIG_LIST = [
         'lpw.property_price.chart',
         'Average property prices of Sri Lanka via @LankaProperty',
         'https://www.lankapropertyweb.com/house_prices.php',
-        SECONDS_IN.DAY,
+        SECONDS_IN.WEEK,
         Point2D(15, 120),
         Size2D(950, 700),
     ),
