@@ -139,7 +139,19 @@ CONFIG_LIST = [
         Point2D(320, 620),
         Size2D(1280, 590),
     ),
+    ConfigScreenshot(
+        'lpw.property_price.chart',
+        'Average property prices of Sri Lanka via @LankaProperty',
+        'https://www.lankapropertyweb.com/house_prices.php',
+        SECONDS_IN.DAY,
+        Point2D(15, 120),
+        Size2D(950, 700),
+    ),
 ]
+
+# Point2D(0, 0),
+# Size2D(1920, 1920),
+
 assert (
     len(CONFIG_LIST) <= 40
 ), 'CONFIG_LIST must be limited to a maximum of 40 items'
