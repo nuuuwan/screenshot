@@ -9,18 +9,6 @@ last_date_id_non_weekend = config_utils.get_last_date_id_non_weekend()
 last_month = config_utils.get_last_month()
 
 CONFIG_LIST = [
-    ConfigTE(
-        'te.cbsl.gdp_annual_growth',
-        '#GDP Annual Growth Rate by @CBSL (via @tEconomics)',
-        'https://tradingeconomics.com/sri-lanka/gdp-growth-annual',
-        SECONDS_IN.AVG_QTR,
-    ),
-    ConfigTE(
-        'te.cbsl.forex_reserves',
-        'Foreign Exchange Reserves by @CBSL (via @tEconomics)',
-        'https://tradingeconomics.com/sri-lanka/foreign-exchange-reserves',
-        SECONDS_IN.AVG_MONTH,
-    ),
     ConfigScreenshot(
         'cbsl_cpi.chart',
         'Consumer Price Inflation (#CPI) by @CBSL',
@@ -154,6 +142,24 @@ CONFIG_LIST = [
         SECONDS_IN.DAY / 6,
         Point2D(550, 90),
         Size2D(920, 1500),
+    ),
+    ConfigTE(
+        'te.cbsl.gdp_annual_growth',
+        '#GDP Annual Growth Rate by @CBSL (via @tEconomics)',
+        'https://tradingeconomics.com/sri-lanka/gdp-growth-annual',
+        SECONDS_IN.AVG_QTR,
+    ),
+    ConfigTE(
+        'te.cbsl.forex_reserves',
+        'Foreign Exchange Reserves by @CBSL (via @tEconomics)',
+        'https://tradingeconomics.com/sri-lanka/foreign-exchange-reserves',
+        SECONDS_IN.AVG_MONTH,
+    ),
+    ConfigTE(
+        'te.cbsl.car_registrations',
+        'Car Registrations by @CBSL (via @tEconomics)',
+        'https://tradingeconomics.com/sri-lanka/car-registrations',
+        SECONDS_IN.AVG_MONTH,
     ),
 ]
 
