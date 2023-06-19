@@ -5,7 +5,7 @@ from utils import SECONDS_IN
 from screenshot import ConfigScreenshot, ConfigTE, Point2D, Size2D
 from screenshot.config import config_utils
 
-date_id_non_weekend = config_utils.get_date_id_non_weekend()
+last_date_id_non_weekend = config_utils.get_last_date_id_non_weekend()
 last_month = config_utils.get_last_month()
 
 CONFIG_LIST = [
@@ -77,7 +77,7 @@ CONFIG_LIST = [
         'Daily Price Report by @CBSL #CPI #Food',
         'https://www.cbsl.gov.lk'
         + '/sites/default/files/cbslweb_documents'
-        + f'/statistics/pricerpt/price_report_{date_id_non_weekend}_e.pdf',
+        + f'/statistics/pricerpt/price_report_{last_date_id_non_weekend}_e.pdf',
         SECONDS_IN.DAY,
         Point2D(500, 100),
         Size2D(920, 1020),
@@ -104,7 +104,7 @@ CONFIG_LIST = [
         'slmetdept.temp_and_rain.last24hours',
         'Temperature & Rainfall during the last 24 hours by @SLMetDept',
         'http://www.meteo.gov.lk/index.php?lang=en',
-        SECONDS_IN.HOUR * 6,
+        SECONDS_IN.DAY,
         Point2D(675, 1075),
         Size2D(300, 260),
     ),
