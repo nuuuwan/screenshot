@@ -5,13 +5,16 @@ import time
 from twtr import Tweet, Twitter
 from utils import SECONDS_IN, Log
 
-from screenshot import Config
+from screenshot import DIR_TEMP, Config
 from workflows.CONFIG_LIST import CONFIG_LIST
 
 log = Log(__name__)
 
 T_SLEEP_SECONDS_MIN = SECONDS_IN.MINUTE * 1
 T_SLEEP_SECONDS_MAX = SECONDS_IN.MINUTE * 3
+
+CRON_FREQUENCY = SECONDS_IN.HOUR
+CRON_OVERLAP = 2
 
 
 def random_sleep():
@@ -20,8 +23,18 @@ def random_sleep():
     time.sleep(t_sleep_seconds)
 
 
-CRON_FREQUENCY = SECONDS_IN.HOUR
-CRON_OVERLAP = 2
+def init_dir():
+    if not os.path.exists(DIR_TEMP):
+        os.mkdir(DIR_TEMP)
+        log.info(f'Created Directory {DIR_TEMP}.')
+
+
+def init_twitter():
+    try:
+        return Twitter()
+    except Exception as e:
+        log.exception(f'Failed to initialize Twitter: {e}')
+        return None
 
 
 def process_config_test(config: Config):
@@ -48,15 +61,8 @@ def process_config(config: Config, twitter: Twitter):
     random_sleep()
 
 
-def init_twitter():
-    try:
-        return Twitter()
-    except Exception as e:
-        log.exception(f'Failed to initialize Twitter: {e}')
-        return None
-
-
 def main():
+    init_dir()
     twitter = init_twitter()
 
     if twitter is None:

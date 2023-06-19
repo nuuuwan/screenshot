@@ -13,6 +13,7 @@ CRON_OVERLAP = 2
 MIN_P_PROCESS = CRON_FREQUENCY / SECONDS_IN.WEEK
 
 MAX_TWEET_LENGTH = 280 - 20
+DIR_TEMP = os.path.join(tempfile.gettempdir(), 'tmp.screenshot')
 
 
 def get_timestamp():
@@ -31,7 +32,8 @@ class Config:
 
     @property
     def image_path(self):
-        return os.path.join(tempfile.gettempdir(), f'{self.id}.png')
+        assert os.path.exists(DIR_TEMP)
+        return os.path.join(DIR_TEMP, f'{self.id}.png')
 
     @cached_property
     def tweet_text(self):

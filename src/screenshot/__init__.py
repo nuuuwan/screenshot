@@ -1,4 +1,4 @@
-from screenshot.config.Config import Config
+from screenshot.config.Config import DIR_TEMP, Config
 from screenshot.config.ConfigImage import ConfigImage
 from screenshot.config.ConfigScreenshot import ConfigScreenshot
 from screenshot.config.ConfigTE import ConfigTE
