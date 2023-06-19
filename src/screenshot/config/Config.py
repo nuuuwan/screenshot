@@ -45,7 +45,7 @@ from {self.url}
 
         '''.strip()
         if len(tweet_text) > MAX_TWEET_LENGTH:
-            raise Exception(f'Tweet text is too long: {len(tweet_text)}')4
+            raise Exception(f'Tweet text is too long: {len(tweet_text)}')
         return tweet_text
 
     @property
