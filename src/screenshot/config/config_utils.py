@@ -1,13 +1,15 @@
 from utils import SECONDS_IN, Time, TimeFormat
 
 
-def get_date_id_non_weekend():
-    ut = Time.now().ut
+def get_last_date_id_non_weekend():
     day_of_week = TimeFormat('%a').stringify(Time(ut))
-    if day_of_week == 'Sat':
-        ut = ut - SECONDS_IN.DAY
+
+    # If Sunday, get the previous Friday. Else the previous day.
     if day_of_week == 'Sun':
         ut = ut - 2 * SECONDS_IN.DAY
+    else:
+        ut = ut - SECONDS_IN.DAY
+
     return TimeFormat('%Y%m%d').stringify(Time(ut))
 
 
