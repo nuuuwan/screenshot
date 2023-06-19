@@ -2,11 +2,14 @@ from utils import SECONDS_IN, Time, TimeFormat
 
 
 def get_last_date_id_non_weekend():
+    ut = Time.now().ut
     day_of_week = TimeFormat('%a').stringify(Time(ut))
 
-    # If Sunday, get the previous Friday. Else the previous day.
+    # If Sunday or Monday, get the previous Friday. Else the previous day.
     if day_of_week == 'Sun':
         ut = ut - 2 * SECONDS_IN.DAY
+    elif day_of_week == 'Mon':
+        ut = ut - 3 * SECONDS_IN.DAY
     else:
         ut = ut - SECONDS_IN.DAY
 
@@ -20,4 +23,5 @@ def get_last_month():
 
 
 if __name__ == '__main__':
-    print(get_date_id_non_weekend())
+    print(get_last_date_id_non_weekend())
+    print(get_last_month())
