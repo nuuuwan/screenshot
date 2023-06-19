@@ -81,14 +81,6 @@ CONFIG_LIST = [
         Size2D(900, 1000),
     ),
     ConfigScreenshot(
-        'slmetdept.temp_and_rain.last24hours',
-        '#Temperature & #Rainfall during the last 24 hours by @SLMetDept',
-        'http://www.meteo.gov.lk/index.php?lang=en',
-        SECONDS_IN.DAY,
-        Point2D(675, 1075),
-        Size2D(300, 260),
-    ),
-    ConfigScreenshot(
         'cbsl.annual_report.2023.random',
         'From the 2022 Annual Report of the @CBSL',
         'https://www.cbsl.gov.lk'
@@ -186,7 +178,7 @@ CONFIG_LIST = [
         '#Traffic around #Colombo by @GoogleMaps',
         'https://www.google.com'
         + '/maps/@6.9111702,79.8750744,14z/data=!5m1!1e1?entry=ttu',
-        SECONDS_IN.HOUR * 2,
+        SECONDS_IN.DAY / 4,
         Point2D(1920 - 1712, 1920 - 1645),
         Size2D(1650, 1500),
     ),
