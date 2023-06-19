@@ -44,7 +44,7 @@ CONFIG_LIST = [
     ),
     ConfigScreenshot(
         'owid.covid.chart',
-        'Daily new confirmed COVID-19 deaths'
+        'Daily new confirmed #COVID19 deaths'
         + ' per million people by @OurWorldInData',
         'https://ourworldindata.org'
         + '/explorers/coronavirus-data-explorer?tab=map',
@@ -72,7 +72,7 @@ CONFIG_LIST = [
     ),
     ConfigScreenshot(
         'sltda.monthly_tourist_arrivals.primary_markets',
-        'Top Primary Markets @SLTDA_SriLanka #Tourism',
+        '#Tourist Arrivals by Country @SLTDA_SriLanka',
         'https://www.sltda.gov.lk'
         + '/storage/common_media'
         + f'/MonthlyTouristArrivalsReport-{last_month}.pdf#page=6',
@@ -82,7 +82,7 @@ CONFIG_LIST = [
     ),
     ConfigScreenshot(
         'slmetdept.temp_and_rain.last24hours',
-        'Temperature & Rainfall during the last 24 hours by @SLMetDept',
+        '#Temperature & #Rainfall during the last 24 hours by @SLMetDept',
         'http://www.meteo.gov.lk/index.php?lang=en',
         SECONDS_IN.DAY,
         Point2D(675, 1075),
@@ -119,7 +119,7 @@ CONFIG_LIST = [
     ),
     ConfigScreenshot(
         'lpw.property_price.chart',
-        'Average property prices of Sri Lanka via @LankaProperty',
+        'Average #Property Prices via @LankaProperty',
         'https://www.lankapropertyweb.com/house_prices.php',
         SECONDS_IN.WEEK,
         Point2D(15, 120),
@@ -127,7 +127,7 @@ CONFIG_LIST = [
     ),
     ConfigScreenshot(
         'zoom_earth.weather.temp',
-        'Temperature in Sri Lanka via @Zoom_Earth',
+        '#Temperature via @Zoom_Earth',
         'https://zoom.earth'
         + '/maps/temperature'
         + '/#view=7.7,80.6,9z/model=gfs',
@@ -155,19 +155,19 @@ CONFIG_LIST = [
     ),
     ConfigTE(
         'te.cbsl.balance_of_trade',
-        'Balance of Trade by @CBSL (via @tEconomics)',
+        'Balance of #Trade by @CBSL (via @tEconomics)',
         'https://tradingeconomics.com/sri-lanka/balance-of-trade',
         SECONDS_IN.AVG_MONTH,
     ),
     ConfigTE(
         'te.cbsl.interest_date',
-        'Interest Rate by @CBSL (via @tEconomics)',
+        '#InterestRates by @CBSL (via @tEconomics)',
         'https://tradingeconomics.com/sri-lanka/interest-rate',
         SECONDS_IN.AVG_MONTH,
     ),
     ConfigScreenshot(
         'statcounter.social_media_stats',
-        'Social Media Stats by @StatCounter',
+        '#SocialMedia Stats by @StatCounter',
         'https://gs.statcounter.com/social-media-stats/all/sri-lanka',
         SECONDS_IN.AVG_MONTH,
         Point2D(360, 125),
@@ -175,7 +175,7 @@ CONFIG_LIST = [
     ),
     ConfigScreenshot(
         'speedtest.internet_speed',
-        'Median Country Internet Speeds by @Speedtest',
+        'Median Country #InternetSpeeds by @Speedtest',
         'https://www.speedtest.net/global-index/sri-lanka',
         SECONDS_IN.AVG_MONTH,
         Point2D(1920 - 1558, 1920 - 1691),
@@ -183,7 +183,7 @@ CONFIG_LIST = [
     ),
     ConfigScreenshot(
         'google.maps.traffic',
-        'Traffic around #Colombo by @GoogleMaps',
+        '#Traffic around #Colombo by @GoogleMaps',
         'https://www.google.com'
         + '/maps/@6.9111702,79.8750744,14z/data=!5m1!1e1?entry=ttu',
         SECONDS_IN.HOUR * 2,
