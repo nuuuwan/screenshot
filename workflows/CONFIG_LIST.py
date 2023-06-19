@@ -118,16 +118,6 @@ CONFIG_LIST = [
         Size2D(1325, 655),
     ),
     ConfigScreenshot(
-        'icc.mensodicwc2023.qualifier',
-        '2023 @ICC Mens ODI @CricketWorldCup Qualifier',
-        'https://www.espncricinfo.com'
-        + '/series/icc-cricket-world-cup-qualifier-2023-1377745'
-        + '/points-table-standings',
-        SECONDS_IN.DAY / 2,
-        Point2D(320, 620),
-        Size2D(1280, 590),
-    ),
-    ConfigScreenshot(
         'lpw.property_price.chart',
         'Average property prices of Sri Lanka via @LankaProperty',
         'https://www.lankapropertyweb.com/house_prices.php',
@@ -138,7 +128,9 @@ CONFIG_LIST = [
     ConfigScreenshot(
         'zoom_earth.weather.temp',
         'Temperature in Sri Lanka via @Zoom_Earth',
-        'https://zoom.earth' + '/maps/temperature' + '/#view=7.7,80.6,9z/model=gfs',
+        'https://zoom.earth'
+        + '/maps/temperature'
+        + '/#view=7.7,80.6,9z/model=gfs',
         SECONDS_IN.DAY / 6,
         Point2D(550, 90),
         Size2D(920, 1500),
@@ -197,6 +189,17 @@ CONFIG_LIST = [
         SECONDS_IN.HOUR * 2,
         Point2D(1920 - 1712, 1920 - 1645),
         Size2D(1650, 1500),
+    ),
+    ConfigScreenshot(
+        'icc.mensodicwc2023.qualifier',
+        '2023 @ICC Mens ODI @CricketWorldCup Qualifier',
+        'https://www.google.com/search'
+        + '?q=cricket+world+cup+qualifiers++table'
+        + '&uact=5&oq=cricket+world+cup+qualifiers++table'
+        + '#sie=lg;/g/11gbzbln96;5;/m/068hvv;st;fp;1;;;',
+        SECONDS_IN.DAY / 2,
+        Point2D(1920 - 1335, 1920 - 1753),
+        Size2D(750, 590),
     ),
 ]
 
