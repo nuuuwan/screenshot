@@ -185,7 +185,7 @@ CONFIG_LIST = [
         'speedtest.internet_speed',
         'Median Country Internet Speeds by @Speedtest',
         'https://www.speedtest.net/global-index/sri-lanka',
-        SECONDS_IN.DAY,
+        SECONDS_IN.AVG_MONTH,
         Point2D(1920 - 1558, 1920 - 1691),
         Size2D(1200, 700),
     ),
