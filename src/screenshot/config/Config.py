@@ -5,6 +5,8 @@ from functools import cached_property
 
 from utils import SECONDS_IN, Log, Time, TimeFormat
 
+from screenshot.config import config_utils
+
 log = Log(__name__)
 
 # Should be consistent with pipeline-cron.yml
@@ -30,10 +32,15 @@ class Config:
     def download_image(self):
         raise NotImplementedError
 
-    @property
+    @cached_property
     def image_path(self):
         assert os.path.exists(DIR_TEMP)
-        return os.path.join(DIR_TEMP, f'{self.id}.png')
+        dir_config = os.path.join(DIR_TEMP, self.id)
+        if not os.path.exists(dir_config):
+            os.mkdir(dir_config)
+            log.debug('Created directory ' + dir_config)
+        time_id = config_utils.get_time_id_hour()
+        return os.path.join(dir_config, f'{self.id}.{time_id}.png')
 
     @cached_property
     def tweet_text(self):
