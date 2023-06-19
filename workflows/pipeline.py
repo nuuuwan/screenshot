@@ -1,4 +1,5 @@
 import os
+import random
 import time
 
 from twtr import Tweet, Twitter
@@ -9,7 +10,16 @@ from workflows.CONFIG_LIST import CONFIG_LIST
 
 log = Log(__name__)
 
-T_SLEEP_SECONDS = SECONDS_IN.MINUTE * 3
+T_SLEEP_SECONDS_MIN = SECONDS_IN.MINUTE * 1
+T_SLEEP_SECONDS_MAX = SECONDS_IN.MINUTE * 3
+
+
+def random_sleep():
+    t_sleep_seconds = random.uniform(T_SLEEP_SECONDS_MIN, T_SLEEP_SECONDS_MAX)
+    log.debug(f'😴 Sleeping for {t_sleep_seconds}s...')
+    time.sleep(t_sleep_seconds)
+
+
 CRON_FREQUENCY = SECONDS_IN.HOUR
 CRON_OVERLAP = 2
 
@@ -35,8 +45,7 @@ def process_config(config: Config, twitter: Twitter):
 
     tweet = Tweet(config.tweet_text).add_image(config.image_path)
     twitter.send(tweet)
-    log.debug(f'😴 Sleeping for {T_SLEEP_SECONDS}s...')
-    time.sleep(T_SLEEP_SECONDS)
+    random_sleep()
 
 
 def init_twitter():
