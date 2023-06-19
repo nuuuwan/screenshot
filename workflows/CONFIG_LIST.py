@@ -189,6 +189,14 @@ CONFIG_LIST = [
         Point2D(1920 - 1558, 1920 - 1691),
         Size2D(1200, 700),
     ),
+    ConfigScreenshot(
+        'google.maps.traffic',
+        'Traffic around #Colombo by @GoogleMaps',
+        'https://www.google.com/maps/@6.9111702,79.8750744,14z/data=!5m1!1e1?entry=ttu',
+        SECONDS_IN.HOUR * 2,
+        Point2D(1920 - 1712, 1920 - 1645),
+        Size2D(1650, 1500),
+    ),
 ]
 
 # Point2D(0, 0),
