@@ -13,9 +13,6 @@ log = Log(__name__)
 T_SLEEP_SECONDS_MIN = SECONDS_IN.MINUTE * 1
 T_SLEEP_SECONDS_MAX = SECONDS_IN.MINUTE * 3
 
-CRON_FREQUENCY = SECONDS_IN.HOUR
-CRON_OVERLAP = 2
-
 
 def random_sleep():
     t_sleep_seconds = random.uniform(T_SLEEP_SECONDS_MIN, T_SLEEP_SECONDS_MAX)
@@ -47,7 +44,8 @@ def process_config(config: Config, twitter: Twitter):
     log.debug(config.tweet_text)
 
     tweet = Tweet(config.tweet_text).add_image(config.image_path)
-    twitter.send(tweet)
+    if twitter.send(tweet) is None:
+        raise Exception('Could not send tweet.')
     random_sleep()
 
 
