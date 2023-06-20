@@ -6,7 +6,7 @@ from utils import Log
 from utils_future.Image import Image
 
 log = Log(__name__)
-DURATION_MS = 500
+DURATION_MS = 2000
 MAX_ANIMATED_GIF_SIZE = 5
 
 
