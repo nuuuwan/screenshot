@@ -11,7 +11,7 @@ from screenshot.Img import Img
 
 log = Log(__name__)
 
-T_WAIT_FOR_SCREENSHOT = 30
+T_WAIT_FOR_SCREENSHOT = 10
 
 
 class Webpage:
