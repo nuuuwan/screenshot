@@ -44,7 +44,7 @@ class ConfigScreenshotAnimation(Config):
                 )
             )
             width, _ = img.size
-            lefttop = Point2D(width - 900, 100)
+            lefttop = Point2D(width - 1000, 100)
 
             img = img.draw_text(lefttop, label)
             image_path_list.append(img.write_temp())
