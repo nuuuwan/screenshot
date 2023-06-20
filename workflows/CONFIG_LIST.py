@@ -295,6 +295,14 @@ CONFIG_LIST = [
         Size2D(640, 360),
         (By.CLASS_NAME, 'bk-focus'),
     ),
+    ConfigScreenshot(
+        'flightconnections.direct_flights',
+        'Direct Flights to #Colombo (#CMB, #BIA) by @FlightConnec',
+        'https://www.flightconnections.com/flights-to-colombo-cmb',
+        SECONDS_IN.WEEK,
+        Point2D(600, 600),
+        Size2D(1050, 750),
+    ),
 ]
 '''
 Point2D(1920 - 1920, 1920- 1920),
