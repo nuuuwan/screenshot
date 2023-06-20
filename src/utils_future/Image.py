@@ -41,7 +41,7 @@ class Image:
     ):
         bbox = lefttop.to_tuple() + (lefttop + widthheight).to_tuple()
         im = self.im.crop(bbox)
-        log.debug(f'Cropped image {lefttop} and {widthheight}')
+        log.debug(f'Cropped image to {lefttop} and {widthheight}')
         return Image(im)
 
     def resize(self, ratio: float):
