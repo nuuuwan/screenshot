@@ -23,7 +23,7 @@ def simulate():
 
 
 def analyze():
-    N_SIMULATIONS = 10_000
+    N_SIMULATIONS = 100_000
     x_list = [simulate() for _ in range(N_SIMULATIONS)]
     mean = statistics.mean(x_list)
     stdev = statistics.stdev(x_list)
