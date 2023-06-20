@@ -18,7 +18,7 @@ MAX_TWEETS_PER_CRON = 2
 
 
 def random_sleep():
-    t_sleep_seconds = random.uniform(T_SLEEP_SECONDS_MIN, T_SLEEP_SECONDS_MAX)
+    t_sleep_seconds = random.randint(T_SLEEP_SECONDS_MIN, T_SLEEP_SECONDS_MAX)
     log.debug(f'😴 Sleeping for {t_sleep_seconds}s...')
     time.sleep(t_sleep_seconds)
 
