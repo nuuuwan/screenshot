@@ -7,7 +7,7 @@ from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
 from utils import Log, hashx
 
-from utils_future.Img import Img
+from utils_future.Image import Image
 
 log = Log(__name__)
 
@@ -62,11 +62,11 @@ class Webpage:
             f'Saved screenshot of {self.url} to {self.screenshot_image_path}'
         )
         self.close()
-        return Img(self.screenshot_image_path)
+        return Image.load(self.screenshot_image_path)
 
     def screenshot(self, elem_info=None):
         if os.path.exists(self.screenshot_image_path):
             log.warn(f'{self.screenshot_image_path} exists ({self.url}).')
-            return Img(self.screenshot_image_path)
+            return Image.load(self.screenshot_image_path)
 
         return self.__screenshot_nocache__(elem_info)

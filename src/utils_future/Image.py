@@ -1,0 +1,85 @@
+import os
+import tempfile
+from dataclasses import dataclass
+
+from PIL import Image as PILImage
+from PIL import ImageDraw, ImageFont
+from utils import Log
+
+log = Log(__name__)
+
+FONT_PATH = os.path.join('src', 'utils_future', 'P22.TTF')
+FONT = ImageFont.truetype(FONT_PATH, 72)
+
+
+@dataclass
+class Point2D:
+    x: int
+    y: int
+
+    def to_tuple(self):
+        return (self.x, self.y)
+
+    def __str__(self):
+        return f'Point2D({self.x}, {self.y})'
+
+    def __add__(self, other):
+        assert isinstance(other, Size2D)
+        return Point2D(self.x + other.width, self.y + other.height)
+
+
+@dataclass
+class Size2D:
+    width: int
+    height: int
+
+    def to_tuple(self):
+        return (self.width, self.height)
+
+    def __str__(self):
+        return f'Size2D({self.width} x {self.height})'
+
+
+class Image:
+    def __init__(self, im: PILImage.Image):
+        self.im = im
+
+    @staticmethod
+    def load(image_path: str):
+        return Image(PILImage.open(image_path))
+
+    def write(self, image_path: str):
+        self.im.save(image_path)
+        log.debug(f'Saved {image_path}')
+        return image_path
+
+    def write_temp(self):
+        return self.write(tempfile.NamedTemporaryFile(suffix='.png').name)
+
+    @property
+    def size(self):
+        return self.im.size
+
+    def crop(
+        self,
+        lefttop: Point2D,
+        widthheight: Size2D,
+    ):
+        bbox = lefttop.to_tuple() + (lefttop + widthheight).to_tuple()
+        im = self.im.crop(bbox)
+        log.debug(f'Cropped image {lefttop} and {widthheight}')
+        return Image(im)
+
+    def resize(self, ratio: float):
+        im = self.im
+        width, height = im.size
+        newsize = (int(width * ratio), int(height * ratio))
+        im = im.resize(newsize)
+        log.debug(f'Resized image by {ratio} to size({newsize})')
+        return Image(im)
+
+    def draw_text(self, lefttop: Point2D, text: str):
+        draw = ImageDraw.Draw(self.im)
+        draw.text(lefttop.to_tuple(), text, (0, 0, 0), font=FONT)
+        log.debug(f'Drew text ({text}) at {lefttop}')
+        return Image(self.im)

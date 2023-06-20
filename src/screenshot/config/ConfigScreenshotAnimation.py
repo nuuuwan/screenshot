@@ -1,4 +1,3 @@
-import tempfile
 from functools import cached_property
 
 from utils import Log
@@ -34,21 +33,20 @@ class ConfigScreenshotAnimation(Config):
     def download_image(self):
         image_path_list = []
         for url, label in zip(self.url_list, self.label_list):
-            image_path = tempfile.NamedTemporaryFile(suffix='.png').name
-            img = Webpage(
-                url,
-            ).screenshot()
-            img.crop(
-                self.point,
-                self.size,
-                image_path,
+            img = (
+                Webpage(
+                    url,
+                )
+                .screenshot()
+                .crop(
+                    self.point,
+                    self.size,
+                )
             )
-            image_path2 = tempfile.NamedTemporaryFile(suffix='.png').name
-
             width, _ = img.size
-            x, y = width - 900, 100
-            img.draw_text(x, y, label, image_path2)
-            log.debug(f'Saved frame to {image_path2} ({label})')
-            image_path_list.append(image_path2)
+            lefttop = Point2D(width - 900, 100)
+
+            img = img.draw_text(lefttop, label)
+            image_path_list.append(img.write_temp())
 
         AnimatedGif(image_path_list).write(self.image_path)

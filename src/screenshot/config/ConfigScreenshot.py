@@ -24,5 +24,4 @@ class ConfigScreenshot(Config):
         img.crop(
             self.point,
             self.size,
-            self.image_path,
-        )
+        ).write(self.image_path)

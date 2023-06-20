@@ -1,10 +1,9 @@
 import os
-import tempfile
 
 import imageio
 from utils import Log
 
-from utils_future.Img import Img
+from utils_future.Image import Image
 
 log = Log(__name__)
 DURATION_MS = 500
@@ -21,10 +20,9 @@ class AnimatedGif:
         for image_path in self.image_path_list:
             assert os.path.exists(image_path)
 
-            resized_image_path = tempfile.NamedTemporaryFile(
-                suffix='.png'
-            ).name
-            Img(image_path).resize(0.5, resized_image_path)
+            resized_image_path = (
+                Image.load(image_path).resize(0.5).write_temp()
+            )
 
             img = imageio.imread(resized_image_path)
             images.append(img)
