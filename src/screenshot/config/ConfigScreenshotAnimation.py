@@ -46,7 +46,7 @@ class ConfigScreenshotAnimation(Config):
             image_path2 = tempfile.NamedTemporaryFile(suffix='.png').name
 
             width, _ = img.size
-            x, y = width - 700, 50
+            x, y = width - 900, 100
             img.draw_text(x, y, label, image_path2)
             log.debug(f'Saved frame to {image_path2} ({label})')
             image_path_list.append(image_path2)
