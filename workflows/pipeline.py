@@ -1,6 +1,5 @@
 import os
 import random
-import time
 
 from twtr import Tweet, Twitter
 from utils import SECONDS_IN, File, Log
@@ -10,17 +9,12 @@ from workflows.CONFIG_LIST import CONFIG_LIST
 
 log = Log(__name__)
 
-T_SLEEP_SECONDS_MIN = SECONDS_IN.MINUTE * 1
-T_SLEEP_SECONDS_MAX = SECONDS_IN.MINUTE * 3
 SHOULD_SEND_TWEET = True
 PROD_LOG_PATH = os.path.join(DIR_TEMP, 'prod.log')
-MAX_TWEETS_PER_CRON = 2
-
-
-def random_sleep():
-    t_sleep_seconds = random.randint(T_SLEEP_SECONDS_MIN, T_SLEEP_SECONDS_MAX)
-    log.debug(f'😴 Sleeping for {t_sleep_seconds}s...')
-    time.sleep(t_sleep_seconds)
+MAX_TWEETS_PER_MONTH = 1_500
+# Should be consistent with pipeline-cron.yml
+CRON_FREQUENCY = SECONDS_IN.HOUR
+P_SAFETY = 0.8
 
 
 def init_dir():
@@ -39,12 +33,31 @@ def init_twitter():
         return None
 
 
+def get_run_config_list() -> list:
+    n_run = int(
+        P_SAFETY
+        * MAX_TWEETS_PER_MONTH
+        * CRON_FREQUENCY
+        / SECONDS_IN.AVG_MONTH
+    )
+    log.debug(f'{n_run=}')
+    n_selected = 0
+    run_config_list = []
+    while True:
+        config_list = CONFIG_LIST.copy()
+        random.shuffle(config_list)
+        for config in config_list:
+            p = CRON_FREQUENCY / config.frequency
+            if random.random() < p:
+                run_config_list.append(config)
+                n_selected += 1
+
+                if n_selected >= n_run:
+                    return run_config_list
+
+
 def process_config(config: Config, twitter: Twitter):
     assert twitter is not None
-
-    if not (config.should_send_tweet):
-        log.debug(f'🟠Skipping {config.id}.')
-        return None
 
     log.debug(f'Processing {config.id}...')
     config.download_image()
@@ -57,10 +70,10 @@ def process_config(config: Config, twitter: Twitter):
         tweet_id = 0
 
     if tweet_id is not None:
-        log.info(f'🟢Tweeted {config.id} ({tweet_id}).')
+        log.info(f'🟢 Tweeted {config.id} ({tweet_id}).')
         return tweet_id
 
-    raise Exception(f'🔴Could NOT Tweet {config.id}!')
+    raise Exception(f'🔴 Could NOT Tweet {config.id}!')
 
 
 def main_test():
@@ -77,25 +90,15 @@ def main_prod(twitter):
     n = len(CONFIG_LIST)
     prod_log_lines = []
 
-    shuffled_config_list = CONFIG_LIST
-    random.shuffle(shuffled_config_list)
+    run_config_list = get_run_config_list()
+    log.debug(f'{run_config_list=}')
 
     n_tweets = 0
-    for i, config in enumerate(shuffled_config_list):
+    for config in run_config_list:
         tweet_id = process_config(config, twitter)
-        if tweet_id is not None:
-            n_tweets += 1
-
         prod_log_lines.append(f'{tweet_id}\t{config.id}')
 
-        if n_tweets >= MAX_TWEETS_PER_CRON:
-            break
-
-        if tweet_id is not None and i != n - 1:
-            random_sleep()
-
     log.info(f'Tweeted {n_tweets}/{n} configs.')
-
     File(PROD_LOG_PATH).write('\n'.join(prod_log_lines))
     log.debug(f'Logged {PROD_LOG_PATH}')
 
