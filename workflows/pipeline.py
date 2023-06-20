@@ -35,18 +35,23 @@ def init_twitter():
 
 
 def process_config(config: Config, twitter: Twitter):
-    if not (twitter is not None and config.should_send_tweet):
-        return
+    assert twitter is not None
 
-    log.info(f'process_config: config={config}, {twitter=}')
+    if not (config.should_send_tweet):
+        log.debug(f'🟠Skipping {config.id}.')
+        return False
 
+    log.debug(f'Processing {config.id}...')
     config.download_image()
     log.debug(config.tweet_text)
 
     tweet = Tweet(config.tweet_text).add_image(config.image_path)
-    if twitter.send(tweet) is None:
-        raise Exception('Could not send tweet.')
-    random_sleep()
+    tweet_id = twitter.send(tweet)
+    if tweet_id is not None:
+        log.info(f'🟢Tweeted {config.id} ({tweet_id}).')
+        return True
+
+    raise Exception(f'🔴Could NOT Tweet {config.id}!')
 
 
 def main_test():
@@ -60,8 +65,11 @@ def main_test():
 
 def main_prod(twitter):
     log.info('Running pipeline in PROD mode.')
-    for config in CONFIG_LIST:
-        process_config(config, twitter)
+    n = len(CONFIG_LIST)
+    for i, config in enumerate(CONFIG_LIST):
+        sent_tweet = process_config(config, twitter)
+        if sent_tweet and i != n - 1:
+            random_sleep()
 
 
 def main():
