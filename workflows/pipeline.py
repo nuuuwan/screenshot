@@ -37,16 +37,6 @@ def init_twitter():
         return None
 
 
-def process_config_test(config: Config):
-    log.info(f'process_config_test: config={config}')
-
-    config.download_image()
-    os.startfile(config.image_path)
-    log.debug(config.tweet_text)
-
-    Tweet(config.tweet_text).add_image(config.image_path)
-
-
 def process_config(config: Config, twitter: Twitter):
     if not (twitter is not None and config.should_send_tweet):
         return
@@ -61,15 +51,28 @@ def process_config(config: Config, twitter: Twitter):
     random_sleep()
 
 
+def main_test():
+    log.info('Running pipeline in TEST mode.')
+    config = CONFIG_LIST[-1]
+    config.download_image()
+    os.startfile(config.image_path)
+    log.debug(config.tweet_text)
+    Tweet(config.tweet_text).add_image(config.image_path)
+
+
+def main_prod(twitter):
+    log.info('Running pipeline in PROD mode.')
+    for config in CONFIG_LIST:
+        process_config(config, twitter)
+
+
 def main():
     init_dir()
     twitter = init_twitter()
-
     if twitter is None:
-        process_config_test(CONFIG_LIST[-1])
-    else:
-        for config in CONFIG_LIST:
-            process_config(config, twitter)
+        return main_test()
+
+    return main_prod(twitter)
 
 
 if __name__ == '__main__':
