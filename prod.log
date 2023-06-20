@@ -1,33 +1,35 @@
-None	cse.aspi.chart
-None	te.cbsl.interest_date
+None	te.car-registrations
+None	ventusky.temperature-2m
+None	ventusky.temp-feel
 None	lpw.property_price.chart
-None	freemeteo.temp.asia
-None	ventusky.#RelativeHumidity (#RH) #Forecast (Next 24 hours) by @Ventuskycom
-None	te.cbsl.car_registrations
-None	nicerodds.mensodicwc2023.winning_odds
-None	timeanddate.colombo.sun
 None	sltda.monthly_tourist_arrivals.primary_markets
-None	ventusky.#Rainfall #Forecast (Next 24 hours) by @Ventuskycom
-None	cse.sp.charts
-None	cbsl.annual_report.2023.random
-None	owid.covid.chart
-None	speedtest.internet_speed
-None	google.maps.traffic
-None	moh.dengue.chart
-None	te.cbsl.gdp_annual_growth
 None	icc.mensodicwc2023.qualifier
-None	heritage.economic_freedom
-None	te.cbsl.forex_reserves
-None	flightconnections.direct_flights
-None	worldometers.population
-None	ventusky.Air Quality (#AQI) Forecast (Next 24 hours) by @Ventuskycom
-None	ventusky.Perceived (#FeelsLike) #Temperature #Forecast (Next 24 hours) by @Ventuskycom
-None	te.cbsl.balance_of_trade
-None	worldometers.environ_food_water
-None	cbsl.food_prices.daily_report
-None	statcounter.social_media_stats
 None	dcs_snapshot.chart
-None	cbsl_cpi.chart
-None	ventusky.#Temperature #Forecast (Next 24 hours) by @Ventuskycom
+1671149032612282370	freemeteo.temp.asia
 None	cbsl_forex.chart
-1671136245169135619	ceb.power_generation.load_curve
+None	ventusky.rain-3h
+None	ventusky.humidity
+None	cse.aspi.chart
+None	cbsl.annual_report.2023.random
+None	heritage.economic_freedom
+None	statcounter.social_media_stats
+None	te.interest-rate
+None	ventusky.rain-3h
+None	flightconnections.direct_flights
+None	nicerodds.mensodicwc2023.winning_odds
+None	ceb.power_generation.load_curve
+None	te.foreign-exchange-reserves
+None	te.gdp-growth-annual
+None	te.foreign-exchange-reserves
+None	speedtest.internet_speed
+None	worldometers.population
+None	te.balance-of-trade
+None	ventusky.aqi
+None	cse.sp.charts
+None	google.maps.traffic
+None	cbsl_cpi.chart
+None	moh.dengue.chart
+None	timeanddate.colombo.sun
+None	owid.covid.chart
+None	cbsl.food_prices.daily_report
+None	worldometers.environ_food_water
