@@ -197,10 +197,21 @@ CONFIG_LIST = [
     ),
     ConfigScreenshotAnimation(
         'ventusky.temperature-2m',
-        'Temperature (Last 6 hours) by @Ventuskycom',
+        'Temperature Forecast (Next 24 hours) by @Ventuskycom',
         [
             Ventusky('temperature-2m').get_url_from_time(SECONDS_IN.HOUR * i)
-            for i in range(0, 6)
+            for i in range(0, 24, 3)
+        ],
+        SECONDS_IN.HOUR * 6,
+        Point2D(1920 - 1920, 1920 - 1920),
+        Size2D(1920, 1920),
+    ),
+    ConfigScreenshotAnimation(
+        'ventusky.rain-3h',
+        'Rainfall Forecast (Next 24 hours) by @Ventuskycom',
+        [
+            Ventusky('rain-3h').get_url_from_time(SECONDS_IN.HOUR * i)
+            for i in range(0, 24, 3)
         ],
         SECONDS_IN.HOUR * 6,
         Point2D(1920 - 1920, 1920 - 1920),
