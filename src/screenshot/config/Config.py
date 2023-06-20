@@ -48,8 +48,8 @@ class Config:
 
 #SriLanka 🇱🇰
 
-Crawled at {get_timestamp()}
-from {self.url}
+{get_timestamp()}
+{self.url}
 
         '''.strip()
         if len(tweet_text) > MAX_TWEET_LENGTH:
