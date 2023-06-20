@@ -1,4 +1,3 @@
-import os
 import tempfile
 from functools import cached_property
 
@@ -48,4 +47,3 @@ class ConfigScreenshotAnimation(Config):
             image_path_list.append(image_path)
 
         AnimatedGif(image_path_list).write(self.image_path)
-        
