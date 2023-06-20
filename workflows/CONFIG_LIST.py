@@ -103,16 +103,6 @@ CONFIG_LIST = [
         Size2D(660, 500),
     ),
     ConfigScreenshot(
-        'cse.sp.charts',
-        'S&P Sri Lanka 20 Index by @SPDJIndices and @CSE_Media',
-        'https://www.spglobal.com'
-        + '/spdji/en/exchange-relationships/exchange'
-        + '/colombo-stock-exchange-cse/#overview',
-        SECONDS_IN.DAY,
-        Point2D(300, 710),
-        Size2D(1325, 655),
-    ),
-    ConfigScreenshot(
         'lpw.property_price.chart',
         'Average #Property Prices via @LankaProperty',
         'https://www.lankapropertyweb.com/house_prices.php',
@@ -302,6 +292,17 @@ CONFIG_LIST = [
         SECONDS_IN.HOUR * 6,
         Point2D(1920 - 1920, 1920 - 1920),
         Size2D(1920, 1920),
+    ),
+    ConfigScreenshot(
+        'cse.sp.charts',
+        'S&P Sri Lanka 20 Index by @SPDJIndices and @CSE_Media',
+        'https://www.spglobal.com'
+        + '/spdji/en/exchange-relationships/exchange'
+        + '/colombo-stock-exchange-cse/#overview',
+        SECONDS_IN.DAY,
+        Point2D(0, 0),
+        Size2D(1325, 655),
+        (By.CLASS_NAME, "indices-accordion-content"),
     ),
 ]
 '''
