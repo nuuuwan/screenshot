@@ -277,6 +277,15 @@ CONFIG_LIST = [
         Size2D(1350, 1150),
         (By.CLASS_NAME, 'standings '),
     ),
+    ConfigScreenshot(
+        'heritage.economic_freedom',
+        '#EconomicFreefom by @Heritage',
+        'https://www.heritage.org/index/country/srilanka',
+        SECONDS_IN.AVG_MONTH,
+        Point2D(1920 - 1920, 1920 - 1920),
+        Size2D(640, 360),
+        (By.ID, 'country'),
+    ),
 ]
 '''
 Point2D(1920 - 1920, 1920- 1920),
