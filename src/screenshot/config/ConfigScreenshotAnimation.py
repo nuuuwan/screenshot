@@ -32,7 +32,7 @@ class ConfigScreenshotAnimation(Config):
     def download_image(self):
         image_path_list = []
         for url in self.url_list:
-            image_path = tempfile.TemporaryFile(suffix='.png').name
+            image_path = tempfile.NamedTemporaryFile(suffix='.png').name
             img = Webpage(
                 url,
             ).screenshot()
