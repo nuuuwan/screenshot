@@ -1,4 +1,4 @@
-from utils import Time, TimeFormat
+from utils import TIMEZONE_OFFSET, Time, TimeFormat
 
 LAT, LNG = 7.87, 80.65
 ZOOM = 8
@@ -11,7 +11,9 @@ class Ventusky:
     def get_url_from_time(self, delta_ut: int):
         ut = Time.now().ut + delta_ut
         # 20230621/0400
-        time_id = TimeFormat('%Y%m%d/%H00').stringify(Time(ut))
+        time_id = TimeFormat(
+            '%Y%m%d/%H00', timezone_offset=TIMEZONE_OFFSET.GMT
+        ).stringify(Time(ut))
         return (
             'https://www.ventusky.com'
             + f'/?p={LAT};{LNG};{ZOOM}'
