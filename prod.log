@@ -1,33 +1,33 @@
+None	cse.aspi.chart
+None	te.cbsl.interest_date
+None	lpw.property_price.chart
+None	freemeteo.temp.asia
+None	ventusky.#RelativeHumidity (#RH) #Forecast (Next 24 hours) by @Ventuskycom
+None	te.cbsl.car_registrations
+None	nicerodds.mensodicwc2023.winning_odds
+None	timeanddate.colombo.sun
+None	sltda.monthly_tourist_arrivals.primary_markets
+None	ventusky.#Rainfall #Forecast (Next 24 hours) by @Ventuskycom
+None	cse.sp.charts
+None	cbsl.annual_report.2023.random
+None	owid.covid.chart
+None	speedtest.internet_speed
+None	google.maps.traffic
 None	moh.dengue.chart
-None	ventusky.rain-3h
 None	te.cbsl.gdp_annual_growth
+None	icc.mensodicwc2023.qualifier
+None	heritage.economic_freedom
+None	te.cbsl.forex_reserves
+None	flightconnections.direct_flights
+None	worldometers.population
+None	ventusky.Air Quality (#AQI) Forecast (Next 24 hours) by @Ventuskycom
+None	ventusky.Perceived (#FeelsLike) #Temperature #Forecast (Next 24 hours) by @Ventuskycom
+None	te.cbsl.balance_of_trade
+None	worldometers.environ_food_water
+None	cbsl.food_prices.daily_report
+None	statcounter.social_media_stats
 None	dcs_snapshot.chart
 None	cbsl_cpi.chart
-None	te.cbsl.interest_date
-None	ventusky.temp-feel
-None	ventusky.aqi
-None	te.cbsl.car_registrations
-None	cse.aspi.chart
-None	te.cbsl.balance_of_trade
+None	ventusky.#Temperature #Forecast (Next 24 hours) by @Ventuskycom
 None	cbsl_forex.chart
-None	timeanddate.colombo.sun
-None	ceb.power_generation.load_curve
-None	speedtest.internet_speed
-None	te.cbsl.forex_reserves
-None	heritage.economic_freedom
-None	icc.mensodicwc2023.qualifier
-None	lpw.property_price.chart
-None	cse.sp.charts
-None	nicerodds.mensodicwc2023.winning_odds
-None	cbsl.annual_report.2023.random
-None	flightconnections.direct_flights
-None	ventusky.temperature-2m
-None	sltda.monthly_tourist_arrivals.primary_markets
-None	freemeteo.temp.asia
-None	worldometers.population
-None	worldometers.environ_food_water
-None	statcounter.social_media_stats
-None	ventusky.humidity
-None	owid.covid.chart
-None	cbsl.food_prices.daily_report
-None	google.maps.traffic
+1671136245169135619	ceb.power_generation.load_curve
