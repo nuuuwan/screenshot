@@ -55,5 +55,5 @@ class Image:
     def draw_text(self, lefttop: Point2D, text: str):
         draw = ImageDraw.Draw(self.im)
         draw.text(lefttop.to_tuple(), text, (0, 0, 0), font=FONT)
-        log.debug(f'Drew text ({text}) at {lefttop}')
+        log.debug(f'Drew text "{text}" at {lefttop}')
         return Image(self.im)
