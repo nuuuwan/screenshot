@@ -271,6 +271,10 @@ CONFIG_LIST = [
         'rain-3h',
         '#Rainfall',
     ),
+    ConfigVentusky(
+        'gust',
+        '#WindGusts',
+    ),
 ]
 '''
 Point2D(0, 1920- 1920),
