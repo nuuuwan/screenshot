@@ -4,7 +4,7 @@ import imageio
 from utils import Log
 
 log = Log(__name__)
-DURATION = 0.5
+FPS = 1
 MAX_ANIMATED_GIF_SIZE = 5_000_000
 
 
@@ -18,8 +18,8 @@ class AnimatedGif:
         for image_path in self.image_path_list:
             assert os.path.exists(image_path)
             images.append(imageio.imread(image_path))
-        duration = DURATION
-        imageio.mimsave(animation_image_path, images, duration=duration)
+
+        imageio.mimsave(animation_image_path, images, fps=FPS)
         file_size_m = os.path.getsize(animation_image_path) / 1_000_000
 
         log.debug(
