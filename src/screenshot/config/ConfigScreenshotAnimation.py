@@ -4,9 +4,7 @@ from functools import cached_property
 from utils import Log
 
 from screenshot.config.Config import Config
-from screenshot.Img import Point2D, Size2D
-from screenshot.Webpage import Webpage
-from utils_future import AnimatedGif
+from utils_future import AnimatedGif, Point2D, Size2D, Webpage
 
 log = Log(__name__)
 

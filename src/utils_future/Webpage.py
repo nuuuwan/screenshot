@@ -7,7 +7,7 @@ from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
 from utils import Log, hashx
 
-from screenshot.Img import Img
+from utils_future.Img import Img
 
 log = Log(__name__)
 

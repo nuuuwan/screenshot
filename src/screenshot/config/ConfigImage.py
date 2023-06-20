@@ -2,7 +2,7 @@ from selenium.webdriver.common.by import By
 from utils import WWW, Log
 
 from screenshot.config.Config import Config
-from screenshot.Webpage import Webpage
+from utils_future import Webpage
 
 log = Log(__name__)
 

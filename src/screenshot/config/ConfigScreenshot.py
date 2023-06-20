@@ -1,7 +1,7 @@
 from utils import Time, TimeFormat
 
 from screenshot.config.Config import Config
-from screenshot.Webpage import Webpage
+from utils_future import Webpage
 
 
 def get_timestamp():
