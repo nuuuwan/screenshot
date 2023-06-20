@@ -10,7 +10,7 @@ from utils_future.Size2D import Size2D
 
 log = Log(__name__)
 
-FONT_PATH = os.path.join('src', 'utils_future', 'P22.TTF')
+FONT_PATH = os.path.join('src', 'utils_future', 'Ubuntu-M.TTF')
 FONT = ImageFont.truetype(FONT_PATH, 72)
 
 
