@@ -171,20 +171,19 @@ CONFIG_LIST = [
     ),
     ConfigVentusky(
         'temperature-2m',
-        '#Temperature #Forecast (Next 24 hours) by @Ventuskycom',
+        '#Temperature',
     ),
     ConfigVentusky(
         'temp-feel',
-        'Perceived (#FeelsLike) #Temperature #Forecast (Next 24 hours)'
-        + ' by @Ventuskycom',
+        'Perceived (#FeelsLike) #Temperature',
     ),
     ConfigVentusky(
         'rain-3h',
-        '#Rainfall #Forecast (Next 24 hours) by @Ventuskycom',
+        '#Rainfall',
     ),
     ConfigVentusky(
         'humidity',
-        '#RelativeHumidity (#RH) #Forecast (Next 24 hours) by @Ventuskycom',
+        '#RelativeHumidity (#RH)',
     ),
     ConfigScreenshot(
         'worldometers.population',
@@ -261,12 +260,16 @@ CONFIG_LIST = [
     ),
     ConfigVentusky(
         'aqi',
-        'Air Quality (#AQI) Forecast (Next 24 hours) by @Ventuskycom',
+        'Air Quality (#AQI)',
     ),
     ConfigTE(
         'foreign-exchange-reserves',
         'Foreign Exchange Reserves by @CBSL (via @tEconomics)',
         SECONDS_IN.WEEK,
+    ),
+    ConfigVentusky(
+        'rain-3h',
+        '#Rainfall',
     ),
 ]
 '''

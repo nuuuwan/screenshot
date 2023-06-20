@@ -9,6 +9,7 @@ from utils_future import Point2D, Size2D
 class ConfigVentusky(ConfigScreenshotAnimation):
     def __init__(self, ventusky_id: str, title: str):
         name = f'ventusky.{ventusky_id}'
+        title_final = f'{title} #Forecast (Next 24 hours) by @Ventuskycom'
         ventusky = Ventusky(ventusky_id)
         urls = [
             ventusky.get_url_from_time(SECONDS_IN.HOUR * i)
@@ -22,5 +23,5 @@ class ConfigVentusky(ConfigScreenshotAnimation):
         lefttop = Point2D(0, 0)
         size = Size2D(1920, 1920)
         super().__init__(
-            name, title, urls, timestamps, duration, lefttop, size
+            name, title_final, urls, timestamps, duration, lefttop, size
         )
