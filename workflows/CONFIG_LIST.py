@@ -110,33 +110,28 @@ CONFIG_LIST = [
         Size2D(950, 700),
     ),
     ConfigTE(
-        'te.cbsl.gdp_annual_growth',
+        'gdp-growth-annual',
         '#GDP Annual Growth Rate by @CBSL (via @tEconomics)',
-        'https://tradingeconomics.com/sri-lanka/gdp-growth-annual',
         SECONDS_IN.AVG_QTR,
     ),
     ConfigTE(
-        'te.cbsl.forex_reserves',
+        'foreign-exchange-reserves',
         'Foreign Exchange Reserves by @CBSL (via @tEconomics)',
-        'https://tradingeconomics.com/sri-lanka/foreign-exchange-reserves',
         SECONDS_IN.WEEK,
     ),
     ConfigTE(
-        'te.cbsl.car_registrations',
+        'car-registrations',
         'Car Registrations by @CBSL (via @tEconomics)',
-        'https://tradingeconomics.com/sri-lanka/car-registrations',
         SECONDS_IN.WEEK,
     ),
     ConfigTE(
-        'te.cbsl.balance_of_trade',
+        'balance-of-trade',
         'Balance of #Trade by @CBSL (via @tEconomics)',
-        'https://tradingeconomics.com/sri-lanka/balance-of-trade',
         SECONDS_IN.WEEK,
     ),
     ConfigTE(
-        'te.cbsl.interest_date',
+        'interest-rate',
         '#InterestRates by @CBSL (via @tEconomics)',
-        'https://tradingeconomics.com/sri-lanka/interest-rate',
         SECONDS_IN.WEEK,
     ),
     ConfigScreenshot(
@@ -267,6 +262,11 @@ CONFIG_LIST = [
     ConfigVentusky(
         'aqi',
         'Air Quality (#AQI) Forecast (Next 24 hours) by @Ventuskycom',
+    ),
+    ConfigTE(
+        'foreign-exchange-reserves',
+        'Foreign Exchange Reserves by @CBSL (via @tEconomics)',
+        SECONDS_IN.WEEK,
     ),
 ]
 '''
