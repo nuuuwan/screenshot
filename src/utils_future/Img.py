@@ -43,3 +43,15 @@ class Img:
             + f' ({left}, {top}) -> ({width} x {height})'
             + f' to {cropped_image_path}'
         )
+
+    def resize(self, ratio: float, resized_image_path: str):
+        im = self.im
+        width, height = im.size
+        newsize = (int(width * ratio), int(height * ratio))
+        im_resized = im.resize(newsize)
+        im_resized.save(resized_image_path)
+        log.debug(
+            f'Saved resized {self.image_path}'
+            + f' ({width} x {height}) -> ({newsize[0]} x {newsize[1]})'
+            + f' to {resized_image_path}'
+        )

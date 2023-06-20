@@ -1,11 +1,14 @@
 import os
+import tempfile
 
 import imageio
 from utils import Log
 
+from utils_future.Img import Img
+
 log = Log(__name__)
 DURATION_MS = 500
-MAX_ANIMATED_GIF_SIZE = 5_000_000
+MAX_ANIMATED_GIF_SIZE = 5
 
 
 class AnimatedGif:
@@ -17,7 +20,14 @@ class AnimatedGif:
         images = []
         for image_path in self.image_path_list:
             assert os.path.exists(image_path)
-            images.append(imageio.imread(image_path))
+
+            resized_image_path = tempfile.NamedTemporaryFile(
+                suffix='.png'
+            ).name
+            Img(image_path).resize(0.5, resized_image_path)
+
+            img = imageio.imread(resized_image_path)
+            images.append(img)
 
         imageio.mimsave(animation_image_path, images, duration=DURATION_MS)
         file_size_m = os.path.getsize(animation_image_path) / 1_000_000
