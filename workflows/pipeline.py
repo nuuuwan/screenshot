@@ -9,7 +9,7 @@ from workflows.CONFIG_LIST import CONFIG_LIST
 
 log = Log(__name__)
 
-SHOULD_SEND_TWEET = False
+SHOULD_SEND_TWEET = True
 PROD_LOG_PATH = os.path.join(DIR_TEMP, 'prod.log')
 MAX_TWEETS_PER_MONTH = 1_500
 # Should be consistent with pipeline-cron.yml
