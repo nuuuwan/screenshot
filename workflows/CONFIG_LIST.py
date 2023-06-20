@@ -183,7 +183,17 @@ CONFIG_LIST = [
         Point2D(1920 - 1335, 1920 - 1753),
         Size2D(750, 590),
     ),
+    ConfigScreenshot(
+        'freemeteo.temp.asia',
+        'Temperature in Asia via #FreeMeteo',
+        'https://freemeteo.com.lk'
+        + '/weather/Sri-Lanka/maps/temperature'
+        + '/?gid=9035391&country=sri-lanka',
+        SECONDS_IN.HOUR * 6,
+        Point2D(1920 - 1400, 1920 - 1500),
+        Size2D(700, 600),
+    ),
 ]
 
-# Point2D(0, 0),
+# Point2D(1920 - 1920, 1920- 1920),
 # Size2D(1920, 1920),
