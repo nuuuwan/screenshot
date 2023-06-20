@@ -3,7 +3,7 @@ import random
 import time
 
 from twtr import Tweet, Twitter
-from utils import SECONDS_IN, Log
+from utils import SECONDS_IN, File, Log
 
 from screenshot import DIR_TEMP, Config
 from workflows.CONFIG_LIST import CONFIG_LIST
@@ -12,6 +12,8 @@ log = Log(__name__)
 
 T_SLEEP_SECONDS_MIN = SECONDS_IN.MINUTE * 1
 T_SLEEP_SECONDS_MAX = SECONDS_IN.MINUTE * 3
+SHOULD_SEND_TWEET = True
+PROD_LOG_PATH = os.path.join(DIR_TEMP, 'prod.log')
 
 
 def random_sleep():
@@ -24,6 +26,8 @@ def init_dir():
     if not os.path.exists(DIR_TEMP):
         os.mkdir(DIR_TEMP)
         log.info(f'Created Directory {DIR_TEMP}.')
+    else:
+        log.debug(f'Directory {DIR_TEMP} already exists.')
 
 
 def init_twitter():
@@ -39,17 +43,21 @@ def process_config(config: Config, twitter: Twitter):
 
     if not (config.should_send_tweet):
         log.debug(f'🟠Skipping {config.id}.')
-        return False
+        return None
 
     log.debug(f'Processing {config.id}...')
     config.download_image()
     log.debug(config.tweet_text)
 
     tweet = Tweet(config.tweet_text).add_image(config.image_path)
-    tweet_id = twitter.send(tweet)
+    if SHOULD_SEND_TWEET:
+        tweet_id = twitter.send(tweet)
+    else:
+        tweet_id = 0
+
     if tweet_id is not None:
         log.info(f'🟢Tweeted {config.id} ({tweet_id}).')
-        return True
+        return tweet_id
 
     raise Exception(f'🔴Could NOT Tweet {config.id}!')
 
@@ -66,10 +74,14 @@ def main_test():
 def main_prod(twitter):
     log.info('Running pipeline in PROD mode.')
     n = len(CONFIG_LIST)
+    prod_log_lines = []
     for i, config in enumerate(CONFIG_LIST):
-        sent_tweet = process_config(config, twitter)
-        if sent_tweet and i != n - 1:
+        tweet_id = process_config(config, twitter)
+        prod_log_lines.append(f'{tweet_id}\t{config.id}')
+        if tweet_id is not None and i != n - 1:
             random_sleep()
+    File(PROD_LOG_PATH).write('\n'.join(prod_log_lines))
+    log.debug(f'Logged {PROD_LOG_PATH}')
 
 
 def main():
