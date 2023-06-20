@@ -11,7 +11,6 @@ log = Log(__name__)
 
 # Should be consistent with pipeline-cron.yml
 CRON_FREQUENCY = SECONDS_IN.HOUR
-CRON_OVERLAP = 2
 MIN_P_PROCESS = CRON_FREQUENCY / SECONDS_IN.WEEK
 
 MAX_TWEET_LENGTH = 280 - 20
@@ -60,14 +59,8 @@ from {self.url}
     @property
     def should_send_tweet(self) -> bool:
         crons_per_stat = self.frequency / CRON_FREQUENCY
-        p_process = max(MIN_P_PROCESS, CRON_OVERLAP * 1.0 / crons_per_stat)
-
-        log.debug(
-            f'config.frequency = {self.frequency}s,'
-            + f' {crons_per_stat=}, {p_process=}'
-        )
+        p_process = max(MIN_P_PROCESS, 1.0 / crons_per_stat)
 
         if random.random() > p_process:
-            log.debug(f'Skipping {self.id}...')
             return False
         return True
