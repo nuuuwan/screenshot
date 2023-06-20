@@ -46,20 +46,27 @@ class Webpage:
         self.driver.quit()
         log.debug(f'Closed {self.url}')
 
-    def __screenshot_nocache__(self):
+    def __screenshot_nocache__(self, elem_info):
         self.open()
         log.debug(f'😴 Sleeping for {T_WAIT_FOR_SCREENSHOT}s...')
         time.sleep(T_WAIT_FOR_SCREENSHOT)
-        self.driver.save_screenshot(self.screenshot_image_path)
+
+        if not elem_info:
+            self.driver.save_screenshot(self.screenshot_image_path)
+        else:
+            by, value = elem_info
+            elem = self.find_element(by, value)
+            assert elem is not None
+            elem.screenshot(self.screenshot_image_path)
         log.debug(
             f'Saved screenshot of {self.url} to {self.screenshot_image_path}'
         )
         self.close()
         return Img(self.screenshot_image_path)
 
-    def screenshot(self):
+    def screenshot(self, elem_info=None):
         if os.path.exists(self.screenshot_image_path):
             log.warn(f'{self.screenshot_image_path} exists ({self.url}).')
             return Img(self.screenshot_image_path)
 
-        return self.__screenshot_nocache__()
+        return self.__screenshot_nocache__(elem_info)
