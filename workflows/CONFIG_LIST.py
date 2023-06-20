@@ -201,7 +201,7 @@ CONFIG_LIST = [
         '#Temperature #Forecast (Next 24 hours) by @Ventuskycom',
         [
             Ventusky('temperature-2m').get_url_from_time(SECONDS_IN.HOUR * i)
-            for i in range(0, 24, 3)
+            for i in range(0, 24, 6)
         ],
         SECONDS_IN.HOUR * 6,
         Point2D(1920 - 1920, 1920 - 1920),
@@ -213,7 +213,7 @@ CONFIG_LIST = [
         + ' by @Ventuskycom',
         [
             Ventusky('feel').get_url_from_time(SECONDS_IN.HOUR * i)
-            for i in range(0, 24, 3)
+            for i in range(0, 24, 6)
         ],
         SECONDS_IN.HOUR * 6,
         Point2D(1920 - 1920, 1920 - 1920),
@@ -224,7 +224,7 @@ CONFIG_LIST = [
         '#Rainfall #Forecast (Next 24 hours) by @Ventuskycom',
         [
             Ventusky('rain-3h').get_url_from_time(SECONDS_IN.HOUR * i)
-            for i in range(0, 24, 3)
+            for i in range(0, 24, 6)
         ],
         SECONDS_IN.HOUR * 6,
         Point2D(1920 - 1920, 1920 - 1920),
@@ -235,7 +235,7 @@ CONFIG_LIST = [
         '#RelativeHumidity (#RH) #Forecast (Next 24 hours) by @Ventuskycom',
         [
             Ventusky('humidity').get_url_from_time(SECONDS_IN.HOUR * i)
-            for i in range(0, 24, 3)
+            for i in range(0, 24, 6)
         ],
         SECONDS_IN.HOUR * 6,
         Point2D(1920 - 1920, 1920 - 1920),
@@ -246,7 +246,7 @@ CONFIG_LIST = [
         'Air Quality (#AQI) Forecast (Next 24 hours) by @Ventuskycom',
         [
             Ventusky('aqi').get_url_from_time(SECONDS_IN.HOUR * i)
-            for i in range(0, 24, 3)
+            for i in range(0, 24, 6)
         ],
         SECONDS_IN.HOUR * 6,
         Point2D(1920 - 1920, 1920 - 1920),
