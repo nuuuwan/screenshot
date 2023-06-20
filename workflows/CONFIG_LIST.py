@@ -286,6 +286,15 @@ CONFIG_LIST = [
         Size2D(640, 360),
         (By.ID, 'country'),
     ),
+    ConfigScreenshot(
+        'timeanddate.colombo.sun',
+        '#Colombo #Sunrise, #Sunset, #DayLength by @TimeAndDate',
+        'https://www.timeanddate.com/sun/sri-lanka/colombo',
+        SECONDS_IN.DAY,
+        Point2D(1920 - 1920, 1920 - 1920),
+        Size2D(640, 360),
+        (By.CLASS_NAME, 'bk-focus'),
+    ),
 ]
 '''
 Point2D(1920 - 1920, 1920- 1920),
