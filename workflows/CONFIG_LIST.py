@@ -2,8 +2,10 @@ import random
 
 from utils import SECONDS_IN
 
-from screenshot import ConfigScreenshot, ConfigTE, Point2D, Size2D
+from screenshot import (ConfigScreenshot, ConfigScreenshotAnimation, ConfigTE,
+                        Point2D, Size2D)
 from screenshot.config import config_utils
+from screenshot.config.Ventusky import Ventusky
 
 last_date_id_non_weekend = config_utils.get_last_date_id_non_weekend()
 last_month = config_utils.get_last_month()
@@ -193,7 +195,19 @@ CONFIG_LIST = [
         Point2D(1920 - 1400, 1920 - 1500),
         Size2D(700, 600),
     ),
+    ConfigScreenshotAnimation(
+        'ventusky.temperature-2m',
+        'Temperature (Last 6 hours) by @Ventuskycom',
+        [
+            Ventusky('temperature-2m').get_url_from_time(SECONDS_IN.HOUR * i)
+            for i in range(0, 6)
+        ],
+        SECONDS_IN.HOUR * 6,
+        Point2D(1920 - 1920, 1920 - 1920),
+        Size2D(1920, 1920),
+    ),
 ]
-
-# Point2D(1920 - 1920, 1920- 1920),
-# Size2D(1920, 1920),
+'''
+Point2D(1920 - 1920, 1920- 1920),
+Size2D(1920, 1920),
+'''
