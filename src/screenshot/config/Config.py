@@ -3,7 +3,7 @@ import random
 import tempfile
 from functools import cached_property
 
-from utils import SECONDS_IN, Log, Time, TimeFormat
+from utils import SECONDS_IN, TIMEZONE_OFFSET, Log, Time, TimeFormat
 
 from screenshot.config import config_utils
 
@@ -15,10 +15,13 @@ MIN_P_PROCESS = CRON_FREQUENCY / SECONDS_IN.WEEK
 
 MAX_TWEET_LENGTH = 280 - 20
 DIR_TEMP = os.path.join(tempfile.gettempdir(), 'tmp.screenshot')
+TIME_FORMAT = TimeFormat(
+    '%Y-%m-%d (%a) %I:%M%p', timezone_offset=TIMEZONE_OFFSET.LK
+)
 
 
 def get_timestamp():
-    return TimeFormat('%Y-%m-%d (%a) %I:%M%p').stringify(Time.now())
+    return TIME_FORMAT.stringify(Time.now())
 
 
 class Config:
