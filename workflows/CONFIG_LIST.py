@@ -197,7 +197,7 @@ CONFIG_LIST = [
     ),
     ConfigScreenshotAnimation(
         'ventusky.temperature-2m',
-        'Temperature Forecast (Next 24 hours) by @Ventuskycom',
+        '#Temperature #Forecast (Next 24 hours) by @Ventuskycom',
         [
             Ventusky('temperature-2m').get_url_from_time(SECONDS_IN.HOUR * i)
             for i in range(0, 24, 3)
@@ -207,10 +207,43 @@ CONFIG_LIST = [
         Size2D(1920, 1920),
     ),
     ConfigScreenshotAnimation(
+        'ventusky.temp-feel',
+        'Perceived (#FeelsLike) #Temperature #Forecast (Next 24 hours) by @Ventuskycom',
+        [
+            Ventusky('feel').get_url_from_time(SECONDS_IN.HOUR * i)
+            for i in range(0, 24, 3)
+        ],
+        SECONDS_IN.HOUR * 6,
+        Point2D(1920 - 1920, 1920 - 1920),
+        Size2D(1920, 1920),
+    ),
+    ConfigScreenshotAnimation(
         'ventusky.rain-3h',
-        'Rainfall Forecast (Next 24 hours) by @Ventuskycom',
+        '#Rainfall #Forecast (Next 24 hours) by @Ventuskycom',
         [
             Ventusky('rain-3h').get_url_from_time(SECONDS_IN.HOUR * i)
+            for i in range(0, 24, 3)
+        ],
+        SECONDS_IN.HOUR * 6,
+        Point2D(1920 - 1920, 1920 - 1920),
+        Size2D(1920, 1920),
+    ),
+    ConfigScreenshotAnimation(
+        'ventusky.humidity',
+        '#RelativeHumidity (#RH) #Forecast (Next 24 hours) by @Ventuskycom',
+        [
+            Ventusky('humidity').get_url_from_time(SECONDS_IN.HOUR * i)
+            for i in range(0, 24, 3)
+        ],
+        SECONDS_IN.HOUR * 6,
+        Point2D(1920 - 1920, 1920 - 1920),
+        Size2D(1920, 1920),
+    ),
+    ConfigScreenshotAnimation(
+        'ventusky.aqi',
+        'Air Quality (#AQI) Forecast (Next 24 hours) by @Ventuskycom',
+        [
+            Ventusky('aqi').get_url_from_time(SECONDS_IN.HOUR * i)
             for i in range(0, 24, 3)
         ],
         SECONDS_IN.HOUR * 6,
