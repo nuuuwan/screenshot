@@ -183,7 +183,7 @@ CONFIG_LIST = [
             for i in range(0, 24, 3)
         ],
         SECONDS_IN.HOUR * 6,
-        Point2D(1920 - 1920, 1920 - 1920),
+        Point2D(0, 0),
         Size2D(1920, 1920),
     ),
     ConfigScreenshotAnimation(
@@ -195,7 +195,7 @@ CONFIG_LIST = [
             for i in range(0, 24, 3)
         ],
         SECONDS_IN.HOUR * 6,
-        Point2D(1920 - 1920, 1920 - 1920),
+        Point2D(0, 0),
         Size2D(1920, 1920),
     ),
     ConfigScreenshotAnimation(
@@ -206,7 +206,7 @@ CONFIG_LIST = [
             for i in range(0, 24, 3)
         ],
         SECONDS_IN.HOUR * 6,
-        Point2D(1920 - 1920, 1920 - 1920),
+        Point2D(0, 0),
         Size2D(1920, 1920),
     ),
     ConfigScreenshotAnimation(
@@ -217,7 +217,7 @@ CONFIG_LIST = [
             for i in range(0, 24, 3)
         ],
         SECONDS_IN.HOUR * 6,
-        Point2D(1920 - 1920, 1920 - 1920),
+        Point2D(0, 0),
         Size2D(1920, 1920),
     ),
     ConfigScreenshot(
@@ -252,7 +252,7 @@ CONFIG_LIST = [
         '2023 @ICC Mens ODI @CricketWorldCup Qualifier',
         'https://www.cricketworldcup.com/standings/qualifiers',
         SECONDS_IN.DAY,
-        Point2D(1920 - 1920, 1920 - 1920),
+        Point2D(0, 0),
         Size2D(1350, 1150),
         (By.CLASS_NAME, 'standings '),
     ),
@@ -261,7 +261,7 @@ CONFIG_LIST = [
         '#EconomicFreefom by @Heritage',
         'https://www.heritage.org/index/country/srilanka',
         SECONDS_IN.WEEK,
-        Point2D(1920 - 1920, 1920 - 1920),
+        Point2D(0, 0),
         Size2D(640, 360),
         (By.ID, 'country'),
     ),
@@ -270,7 +270,7 @@ CONFIG_LIST = [
         '#Colombo #Sunrise, #Sunset, #DayLength by @TimeAndDate',
         'https://www.timeanddate.com/sun/sri-lanka/colombo',
         SECONDS_IN.DAY,
-        Point2D(1920 - 1920, 1920 - 1920),
+        Point2D(0, 0),
         Size2D(640, 360),
         (By.CLASS_NAME, 'bk-focus'),
     ),
@@ -290,7 +290,7 @@ CONFIG_LIST = [
             for i in range(0, 24, 3)
         ],
         SECONDS_IN.HOUR * 6,
-        Point2D(1920 - 1920, 1920 - 1920),
+        Point2D(0, 0),
         Size2D(1920, 1920),
     ),
     ConfigScreenshot(
@@ -306,6 +306,6 @@ CONFIG_LIST = [
     ),
 ]
 '''
-Point2D(1920 - 1920, 1920- 1920),
+Point2D(0, 1920- 1920),
 Size2D(1920, 1920),
 '''
