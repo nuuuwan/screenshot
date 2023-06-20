@@ -94,6 +94,8 @@ def main_prod(twitter):
         if tweet_id is not None and i != n - 1:
             random_sleep()
 
+    log.info(f'Tweeted {n_tweets}/{n} configs.')
+
     File(PROD_LOG_PATH).write('\n'.join(prod_log_lines))
     log.debug(f'Logged {PROD_LOG_PATH}')
 
