@@ -176,17 +176,6 @@ CONFIG_LIST = [
         Size2D(1650, 1500),
     ),
     ConfigScreenshot(
-        'icc.mensodicwc2023.qualifier',
-        '2023 @ICC Mens ODI @CricketWorldCup Qualifier',
-        'https://www.google.com/search'
-        + '?q=cricket+world+cup+qualifiers++table'
-        + '&uact=5&oq=cricket+world+cup+qualifiers++table'
-        + '#sie=lg;/g/11gbzbln96;5;/m/068hvv;st;fp;1;;;',
-        SECONDS_IN.DAY,
-        Point2D(1920 - 1335, 1920 - 1753),
-        Size2D(750, 590),
-    ),
-    ConfigScreenshot(
         'freemeteo.temp.asia',
         'Temperature in Asia via #FreeMeteo',
         'https://freemeteo.com.lk'
@@ -278,6 +267,15 @@ CONFIG_LIST = [
         Point2D(0, 0),
         Size2D(380, 600),
         (By.ID, 'mainplh_boAutoOddsTable1_MainOddsTable'),
+    ),
+    ConfigScreenshot(
+        'icc.mensodicwc2023.qualifier',
+        '2023 @ICC Mens ODI @CricketWorldCup Qualifier',
+        'https://www.cricketworldcup.com/standings/qualifiers',
+        SECONDS_IN.DAY,
+        Point2D(1920 - 1920, 1920 - 1920),
+        Size2D(1350, 1150),
+        (By.CLASS_NAME, 'standings '),
     ),
 ]
 '''
