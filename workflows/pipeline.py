@@ -14,6 +14,7 @@ T_SLEEP_SECONDS_MIN = SECONDS_IN.MINUTE * 1
 T_SLEEP_SECONDS_MAX = SECONDS_IN.MINUTE * 3
 SHOULD_SEND_TWEET = True
 PROD_LOG_PATH = os.path.join(DIR_TEMP, 'prod.log')
+MAX_TWEETS_PER_CRON = 2
 
 
 def random_sleep():
@@ -75,11 +76,24 @@ def main_prod(twitter):
     log.info('Running pipeline in PROD mode.')
     n = len(CONFIG_LIST)
     prod_log_lines = []
-    for i, config in enumerate(CONFIG_LIST):
+
+    shuffled_config_list = CONFIG_LIST
+    random.shuffle(shuffled_config_list)
+
+    n_tweets = 0
+    for i, config in enumerate(shuffled_config_list):
         tweet_id = process_config(config, twitter)
+        if tweet_id is not None:
+            n_tweets += 1
+
         prod_log_lines.append(f'{tweet_id}\t{config.id}')
+
+        if n_tweets >= MAX_TWEETS_PER_CRON:
+            break
+
         if tweet_id is not None and i != n - 1:
             random_sleep()
+
     File(PROD_LOG_PATH).write('\n'.join(prod_log_lines))
     log.debug(f'Logged {PROD_LOG_PATH}')
 

@@ -208,7 +208,8 @@ CONFIG_LIST = [
     ),
     ConfigScreenshotAnimation(
         'ventusky.temp-feel',
-        'Perceived (#FeelsLike) #Temperature #Forecast (Next 24 hours) by @Ventuskycom',
+        'Perceived (#FeelsLike) #Temperature #Forecast (Next 24 hours)'
+        + ' by @Ventuskycom',
         [
             Ventusky('feel').get_url_from_time(SECONDS_IN.HOUR * i)
             for i in range(0, 24, 3)
