@@ -1,5 +1,6 @@
 import random
 
+from selenium.webdriver.common.by import By
 from utils import SECONDS_IN
 
 from screenshot import ConfigScreenshot, ConfigScreenshotAnimation, ConfigTE
@@ -250,6 +251,24 @@ CONFIG_LIST = [
         SECONDS_IN.HOUR * 6,
         Point2D(1920 - 1920, 1920 - 1920),
         Size2D(1920, 1920),
+    ),
+    ConfigScreenshot(
+        'worldometers.population',
+        'World #Population from @WorldoMeters',
+        'https://www.worldometers.info/',
+        SECONDS_IN.DAY,
+        Point2D(0, 0),
+        Size2D(440, 330),
+        (By.CLASS_NAME, 'content-home'),
+    ),
+    ConfigScreenshot(
+        'worldometers.environ_food_water',
+        '#Environment, #Food and #Water from @WorldoMeters',
+        'https://www.worldometers.info/',
+        SECONDS_IN.DAY,
+        Point2D(0, 1120),
+        Size2D(440, 800),
+        (By.CLASS_NAME, 'content-home'),
     ),
 ]
 '''
