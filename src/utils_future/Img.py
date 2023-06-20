@@ -1,9 +1,11 @@
 from dataclasses import dataclass
 
-from PIL import Image
+from PIL import Image, ImageDraw, ImageFont
 from utils import Log
 
 log = Log(__name__)
+
+FONT = ImageFont.truetype("arial.ttf", 72)
 
 
 @dataclass
@@ -25,6 +27,10 @@ class Img:
     @property
     def im(self):
         return Image.open(self.image_path)
+
+    @property
+    def size(self):
+        return self.im.size
 
     def crop(
         self,
@@ -54,4 +60,16 @@ class Img:
             f'Saved resized {self.image_path}'
             + f' ({width} x {height}) -> ({newsize[0]} x {newsize[1]})'
             + f' to {resized_image_path}'
+        )
+
+    def draw_text(self, x: int, y: int, text: str, drawed_image_path: str):
+        im = self.im
+
+        draw = ImageDraw.Draw(im)
+        draw.text((x, y), text, (0, 0, 0), font=FONT)
+        im.save(drawed_image_path)
+        log.debug(
+            f'Saved drawed {self.image_path}'
+            + f' ({x}, {y}) -> ({text})'
+            + f' to {drawed_image_path}'
         )

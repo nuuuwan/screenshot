@@ -20,3 +20,9 @@ class Ventusky:
             + f'&l={self.data_type}'
             + f'&t={time_id}'
         )
+
+    def get_timestamp(self, delta_ut: int):
+        ut = Time.now().ut + delta_ut
+        return TimeFormat(
+            '%Y-%m-%d %H:00', timezone_offset=TIMEZONE_OFFSET.LK
+        ).stringify(Time(ut))

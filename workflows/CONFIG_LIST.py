@@ -182,6 +182,10 @@ CONFIG_LIST = [
             Ventusky('temperature-2m').get_url_from_time(SECONDS_IN.HOUR * i)
             for i in range(0, 24, 3)
         ],
+        [
+            Ventusky('humidity').get_timestamp(SECONDS_IN.HOUR * i)
+            for i in range(0, 24, 3)
+        ],
         SECONDS_IN.HOUR * 6,
         Point2D(0, 0),
         Size2D(1920, 1920),
@@ -192,6 +196,10 @@ CONFIG_LIST = [
         + ' by @Ventuskycom',
         [
             Ventusky('feel').get_url_from_time(SECONDS_IN.HOUR * i)
+            for i in range(0, 24, 3)
+        ],
+        [
+            Ventusky('humidity').get_timestamp(SECONDS_IN.HOUR * i)
             for i in range(0, 24, 3)
         ],
         SECONDS_IN.HOUR * 6,
@@ -205,6 +213,10 @@ CONFIG_LIST = [
             Ventusky('rain-3h').get_url_from_time(SECONDS_IN.HOUR * i)
             for i in range(0, 24, 3)
         ],
+        [
+            Ventusky('humidity').get_timestamp(SECONDS_IN.HOUR * i)
+            for i in range(0, 24, 3)
+        ],
         SECONDS_IN.HOUR * 6,
         Point2D(0, 0),
         Size2D(1920, 1920),
@@ -214,6 +226,10 @@ CONFIG_LIST = [
         '#RelativeHumidity (#RH) #Forecast (Next 24 hours) by @Ventuskycom',
         [
             Ventusky('humidity').get_url_from_time(SECONDS_IN.HOUR * i)
+            for i in range(0, 24, 3)
+        ],
+        [
+            Ventusky('humidity').get_timestamp(SECONDS_IN.HOUR * i)
             for i in range(0, 24, 3)
         ],
         SECONDS_IN.HOUR * 6,
@@ -282,17 +298,6 @@ CONFIG_LIST = [
         Point2D(600, 600),
         Size2D(1050, 750),
     ),
-    ConfigScreenshotAnimation(
-        'ventusky.aqi',
-        'Air Quality (#AQI) Forecast (Next 24 hours) by @Ventuskycom',
-        [
-            Ventusky('aqi').get_url_from_time(SECONDS_IN.HOUR * i)
-            for i in range(0, 24, 3)
-        ],
-        SECONDS_IN.HOUR * 6,
-        Point2D(0, 0),
-        Size2D(1920, 1920),
-    ),
     ConfigScreenshot(
         'cse.sp.charts',
         'S&P Sri Lanka 20 Index by @SPDJIndices and @CSE_Media',
@@ -303,6 +308,21 @@ CONFIG_LIST = [
         Point2D(0, 0),
         Size2D(1325, 655),
         (By.CLASS_NAME, "indices-accordion-content"),
+    ),
+    ConfigScreenshotAnimation(
+        'ventusky.aqi',
+        'Air Quality (#AQI) Forecast (Next 24 hours) by @Ventuskycom',
+        [
+            Ventusky('aqi').get_url_from_time(SECONDS_IN.HOUR * i)
+            for i in range(0, 24, 3)
+        ],
+        [
+            Ventusky('humidity').get_timestamp(SECONDS_IN.HOUR * i)
+            for i in range(0, 24, 3)
+        ],
+        SECONDS_IN.HOUR * 6,
+        Point2D(0, 0),
+        Size2D(1920, 1920),
     ),
 ]
 '''
