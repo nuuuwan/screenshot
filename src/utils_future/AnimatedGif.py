@@ -5,6 +5,7 @@ from utils import Log
 
 log = Log(__name__)
 DURATION = 0.5
+MAX_ANIMATED_GIF_SIZE = 5_000_000
 
 
 class AnimatedGif:
@@ -25,4 +26,10 @@ class AnimatedGif:
             f'Saved AnimatedGif ({self.image_path_list})'
             + f' to {animation_image_path} ({file_size_m:.1f}MB)'
         )
+        if file_size_m > MAX_ANIMATED_GIF_SIZE:
+            raise Exception(
+                f'AnimatedGif ({self.image_path_list})'
+                + f' is too large ({file_size_m:.1f}MB)'
+                + f' for {animation_image_path}'
+            )
         return animation_image_path
