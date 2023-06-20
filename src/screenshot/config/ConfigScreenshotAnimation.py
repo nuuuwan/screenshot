@@ -15,12 +15,14 @@ class ConfigScreenshotAnimation(Config):
         id: str,
         description: str,
         url_list: list[str],
+        label_list: list[str],
         frequency: int,
         point: Point2D,
         size: Size2D,
     ):
         super().__init__(id, description, url_list[0], frequency)
         self.url_list = url_list
+        self.label_list = label_list
         self.point = point
         self.size = size
 
@@ -31,7 +33,7 @@ class ConfigScreenshotAnimation(Config):
 
     def download_image(self):
         image_path_list = []
-        for url in self.url_list:
+        for url, label in zip(self.url_list, self.label_list):
             image_path = tempfile.NamedTemporaryFile(suffix='.png').name
             img = Webpage(
                 url,
@@ -41,7 +43,12 @@ class ConfigScreenshotAnimation(Config):
                 self.size,
                 image_path,
             )
-            log.debug(f'Saved frame to {image_path} ')
-            image_path_list.append(image_path)
+            image_path2 = tempfile.NamedTemporaryFile(suffix='.png').name
+
+            width, _ = img.size
+            x, y = width - 700, 50
+            img.draw_text(x, y, label, image_path2)
+            log.debug(f'Saved frame to {image_path2} ({label})')
+            image_path_list.append(image_path2)
 
         AnimatedGif(image_path_list).write(self.image_path)
