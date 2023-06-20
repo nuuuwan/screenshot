@@ -1,17 +1,13 @@
 import os
-import random
 import tempfile
 from functools import cached_property
 
-from utils import SECONDS_IN, TIMEZONE_OFFSET, Log, Time, TimeFormat
+from utils import TIMEZONE_OFFSET, Log, Time, TimeFormat
 
 from screenshot.config import config_utils
 
 log = Log(__name__)
 
-# Should be consistent with pipeline-cron.yml
-CRON_FREQUENCY = SECONDS_IN.HOUR
-MIN_P_PROCESS = CRON_FREQUENCY / SECONDS_IN.WEEK
 
 MAX_TWEET_LENGTH = 280 - 20
 DIR_TEMP = os.path.join(tempfile.gettempdir(), 'tmp.screenshot')
@@ -30,6 +26,13 @@ class Config:
         self.description = description
         self.url = url
         self.frequency = frequency
+
+    def __str__(self):
+        class_name = self.__class__.__name__
+        return f'{class_name}({self.id})'
+
+    def __repr__(self):
+        return str(self)
 
     def download_image(self):
         raise NotImplementedError
@@ -58,12 +61,3 @@ class Config:
         if len(tweet_text) > MAX_TWEET_LENGTH:
             raise Exception(f'Tweet text is too long: {len(tweet_text)}')
         return tweet_text
-
-    @property
-    def should_send_tweet(self) -> bool:
-        crons_per_stat = self.frequency / CRON_FREQUENCY
-        p_process = max(MIN_P_PROCESS, 1.0 / crons_per_stat)
-
-        if random.random() > p_process:
-            return False
-        return True
