@@ -10,7 +10,7 @@ None	cbsl.annual_report.2023.random
 None	cse.aspi.chart
 None	cse.sp.charts
 None	lpw.property_price.chart
-None	zoom_earth.weather.temp
+1670985131023036418	zoom_earth.weather.temp
 None	te.cbsl.gdp_annual_growth
 None	te.cbsl.forex_reserves
 None	te.cbsl.car_registrations
@@ -22,5 +22,5 @@ None	google.maps.traffic
 None	icc.mensodicwc2023.qualifier
 None	zoom_earth.weather.rainfall
 None	zoom_earth.weather.wind_speed
-None	zoom_earth.weather.temperature-feel
+1670985840351145985	zoom_earth.weather.temperature-feel
 None	zoom_earth.weather.humidity
