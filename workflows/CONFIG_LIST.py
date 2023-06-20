@@ -117,16 +117,6 @@ CONFIG_LIST = [
         Point2D(15, 120),
         Size2D(950, 700),
     ),
-    ConfigScreenshot(
-        'zoom_earth.weather.temp',
-        '#Temperature via @Zoom_Earth',
-        'https://zoom.earth'
-        + '/maps/temperature'
-        + '/#view=7.7,80.6,9z/model=gfs',
-        SECONDS_IN.DAY / 4,
-        Point2D(550, 90),
-        Size2D(920, 1500),
-    ),
     ConfigTE(
         'te.cbsl.gdp_annual_growth',
         '#GDP Annual Growth Rate by @CBSL (via @tEconomics)',
@@ -192,46 +182,6 @@ CONFIG_LIST = [
         SECONDS_IN.DAY,
         Point2D(1920 - 1335, 1920 - 1753),
         Size2D(750, 590),
-    ),
-    ConfigScreenshot(
-        'zoom_earth.weather.rainfall',
-        '#Rainfall (precipitation) via @Zoom_Earth',
-        'https://zoom.earth'
-        + '/maps/precipitation'
-        + '/#view=7.7,80.6,9z/model=gfs',
-        SECONDS_IN.DAY / 4,
-        Point2D(550, 90),
-        Size2D(920, 1500),
-    ),
-    ConfigScreenshot(
-        'zoom_earth.weather.wind_speed',
-        '#Wind Speed via @Zoom_Earth',
-        'https://zoom.earth'
-        + '/maps/wind-speed'
-        + '/#view=7.7,80.6,9z/model=gfs',
-        SECONDS_IN.DAY / 2,
-        Point2D(550, 90),
-        Size2D(920, 1500),
-    ),
-    ConfigScreenshot(
-        'zoom_earth.weather.temperature-feel',
-        '"Feels Like" #Temperature via @Zoom_Earth',
-        'https://zoom.earth'
-        + '/maps/temperature-feel'
-        + '/#view=7.7,80.6,9z/model=gfs',
-        SECONDS_IN.DAY / 2,
-        Point2D(550, 90),
-        Size2D(920, 1500),
-    ),
-    ConfigScreenshot(
-        'zoom_earth.weather.humidity',
-        '#RelativeHumidity via @Zoom_Earth #RH #Humidity',
-        'https://zoom.earth'
-        + '/maps/humidity'
-        + '/#view=7.7,80.6,9z/model=gfs',
-        SECONDS_IN.DAY / 2,
-        Point2D(550, 90),
-        Size2D(920, 1500),
     ),
 ]
 
