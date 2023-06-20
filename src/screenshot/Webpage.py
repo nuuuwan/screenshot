@@ -11,7 +11,7 @@ from screenshot.Img import Img
 
 log = Log(__name__)
 
-T_WAIT_FOR_SCREENSHOT = 20
+T_WAIT_FOR_SCREENSHOT = 30
 
 
 class Webpage:
@@ -48,6 +48,7 @@ class Webpage:
 
     def __screenshot_nocache__(self):
         self.open()
+        log.debug(f'😴 Sleeping for {T_WAIT_FOR_SCREENSHOT}s...')
         time.sleep(T_WAIT_FOR_SCREENSHOT)
         self.driver.save_screenshot(self.screenshot_image_path)
         log.debug(
