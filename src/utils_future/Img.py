@@ -1,3 +1,4 @@
+import os
 from dataclasses import dataclass
 
 from PIL import Image, ImageDraw, ImageFont
@@ -5,7 +6,8 @@ from utils import Log
 
 log = Log(__name__)
 
-FONT = ImageFont.truetype("arial.ttf", 72)
+FONT_PATH = os.path.join('src', 'utils_future', 'P22.TTF')
+FONT = ImageFont.truetype(FONT_PATH, 72)
 
 
 @dataclass
