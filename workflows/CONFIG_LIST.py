@@ -165,7 +165,7 @@ CONFIG_LIST = [
         'https://freemeteo.com.lk'
         + '/weather/Sri-Lanka/maps/temperature'
         + '/?gid=9035391&country=sri-lanka',
-        SECONDS_IN.HOUR * 6,
+        SECONDS_IN.HOUR * 12,
         Point2D(1920 - 1400, 1920 - 1500),
         Size2D(700, 600),
     ),
