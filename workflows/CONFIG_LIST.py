@@ -3,9 +3,8 @@ import random
 from selenium.webdriver.common.by import By
 from utils import SECONDS_IN
 
-from screenshot import ConfigScreenshot, ConfigScreenshotAnimation, ConfigTE
+from screenshot import ConfigScreenshot, ConfigTE, ConfigVentusky
 from screenshot.config import config_utils
-from screenshot.config.Ventusky import Ventusky
 from utils_future import Point2D, Size2D
 
 last_date_id_non_weekend = config_utils.get_last_date_id_non_weekend()
@@ -175,66 +174,22 @@ CONFIG_LIST = [
         Point2D(1920 - 1400, 1920 - 1500),
         Size2D(700, 600),
     ),
-    ConfigScreenshotAnimation(
-        'ventusky.temperature-2m',
+    ConfigVentusky(
+        'temperature-2m',
         '#Temperature #Forecast (Next 24 hours) by @Ventuskycom',
-        [
-            Ventusky('temperature-2m').get_url_from_time(SECONDS_IN.HOUR * i)
-            for i in range(0, 24, 3)
-        ],
-        [
-            Ventusky('humidity').get_timestamp(SECONDS_IN.HOUR * i)
-            for i in range(0, 24, 3)
-        ],
-        SECONDS_IN.HOUR * 6,
-        Point2D(0, 0),
-        Size2D(1920, 1920),
     ),
-    ConfigScreenshotAnimation(
-        'ventusky.temp-feel',
+    ConfigVentusky(
+        'temp-feel',
         'Perceived (#FeelsLike) #Temperature #Forecast (Next 24 hours)'
         + ' by @Ventuskycom',
-        [
-            Ventusky('feel').get_url_from_time(SECONDS_IN.HOUR * i)
-            for i in range(0, 24, 3)
-        ],
-        [
-            Ventusky('humidity').get_timestamp(SECONDS_IN.HOUR * i)
-            for i in range(0, 24, 3)
-        ],
-        SECONDS_IN.HOUR * 6,
-        Point2D(0, 0),
-        Size2D(1920, 1920),
     ),
-    ConfigScreenshotAnimation(
-        'ventusky.rain-3h',
+    ConfigVentusky(
+        'rain-3h',
         '#Rainfall #Forecast (Next 24 hours) by @Ventuskycom',
-        [
-            Ventusky('rain-3h').get_url_from_time(SECONDS_IN.HOUR * i)
-            for i in range(0, 24, 3)
-        ],
-        [
-            Ventusky('humidity').get_timestamp(SECONDS_IN.HOUR * i)
-            for i in range(0, 24, 3)
-        ],
-        SECONDS_IN.HOUR * 6,
-        Point2D(0, 0),
-        Size2D(1920, 1920),
     ),
-    ConfigScreenshotAnimation(
-        'ventusky.humidity',
+    ConfigVentusky(
+        'humidity',
         '#RelativeHumidity (#RH) #Forecast (Next 24 hours) by @Ventuskycom',
-        [
-            Ventusky('humidity').get_url_from_time(SECONDS_IN.HOUR * i)
-            for i in range(0, 24, 3)
-        ],
-        [
-            Ventusky('humidity').get_timestamp(SECONDS_IN.HOUR * i)
-            for i in range(0, 24, 3)
-        ],
-        SECONDS_IN.HOUR * 6,
-        Point2D(0, 0),
-        Size2D(1920, 1920),
     ),
     ConfigScreenshot(
         'worldometers.population',
@@ -309,20 +264,9 @@ CONFIG_LIST = [
         Size2D(1325, 655),
         (By.CLASS_NAME, "indices-accordion-content"),
     ),
-    ConfigScreenshotAnimation(
-        'ventusky.aqi',
+    ConfigVentusky(
+        'aqi',
         'Air Quality (#AQI) Forecast (Next 24 hours) by @Ventuskycom',
-        [
-            Ventusky('aqi').get_url_from_time(SECONDS_IN.HOUR * i)
-            for i in range(0, 24, 3)
-        ],
-        [
-            Ventusky('humidity').get_timestamp(SECONDS_IN.HOUR * i)
-            for i in range(0, 24, 3)
-        ],
-        SECONDS_IN.HOUR * 6,
-        Point2D(0, 0),
-        Size2D(1920, 1920),
     ),
 ]
 '''
