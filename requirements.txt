@@ -2,3 +2,4 @@ selenium
 utils-nuuuwan
 Pillow
 twtr-nuuuwan
+imageio
