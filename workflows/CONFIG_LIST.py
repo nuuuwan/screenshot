@@ -270,6 +270,15 @@ CONFIG_LIST = [
         Size2D(440, 800),
         (By.CLASS_NAME, 'content-home'),
     ),
+    ConfigScreenshot(
+        'nicerodds.mensodicwc2023.winning_odds',
+        '2023 @ICC Mens ODI @CricketWorldCup Winning Odds by @NicerOdds',
+        'https://www.nicerodds.co.uk/cricket-world-cup',
+        SECONDS_IN.WEEK,
+        Point2D(0, 0),
+        Size2D(380, 600),
+        (By.ID, 'mainplh_boAutoOddsTable1_MainOddsTable'),
+    ),
 ]
 '''
 Point2D(1920 - 1920, 1920- 1920),
