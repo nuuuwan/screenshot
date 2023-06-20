@@ -48,7 +48,7 @@ CONFIG_LIST = [
         + ' per million people by @OurWorldInData',
         'https://ourworldindata.org'
         + '/explorers/coronavirus-data-explorer?tab=map',
-        SECONDS_IN.DAY,
+        SECONDS_IN.WEEK,
         Point2D(600, 240),
         Size2D(970, 800),
     ),
@@ -66,7 +66,7 @@ CONFIG_LIST = [
         'https://www.cbsl.gov.lk'
         + '/sites/default/files/cbslweb_documents'
         + f'/statistics/pricerpt/price_report_{last_date_id_non_weekend}_e.pdf',
-        SECONDS_IN.DAY,
+        SECONDS_IN.WEEK,
         Point2D(500, 100),
         Size2D(920, 1020),
     ),
@@ -87,7 +87,7 @@ CONFIG_LIST = [
         + '/sites/default/files/cbslweb_documents/publications'
         + '/AR_2022_presentation_e.pdf#page='
         + str(random.randint(6, 49)),
-        SECONDS_IN.DAY / 2,
+        SECONDS_IN.DAY,
         Point2D(160, 0),
         Size2D(1600, 933),
     ),
@@ -95,7 +95,7 @@ CONFIG_LIST = [
         'cse.aspi.chart',
         '#ASPI by @CSE_Media via @InvestingCom',
         'https://www.investing.com/indices/cse-all-share',
-        SECONDS_IN.DAY / 2,
+        SECONDS_IN.DAY,
         Point2D(470, 900),
         Size2D(660, 500),
     ),
@@ -123,7 +123,7 @@ CONFIG_LIST = [
         'https://zoom.earth'
         + '/maps/temperature'
         + '/#view=7.7,80.6,9z/model=gfs',
-        SECONDS_IN.DAY / 6,
+        SECONDS_IN.DAY / 4,
         Point2D(550, 90),
         Size2D(920, 1500),
     ),
@@ -189,7 +189,7 @@ CONFIG_LIST = [
         + '?q=cricket+world+cup+qualifiers++table'
         + '&uact=5&oq=cricket+world+cup+qualifiers++table'
         + '#sie=lg;/g/11gbzbln96;5;/m/068hvv;st;fp;1;;;',
-        SECONDS_IN.DAY / 2,
+        SECONDS_IN.DAY,
         Point2D(1920 - 1335, 1920 - 1753),
         Size2D(750, 590),
     ),
@@ -199,7 +199,7 @@ CONFIG_LIST = [
         'https://zoom.earth'
         + '/maps/precipitation'
         + '/#view=7.7,80.6,9z/model=gfs',
-        SECONDS_IN.DAY / 6,
+        SECONDS_IN.DAY / 4,
         Point2D(550, 90),
         Size2D(920, 1500),
     ),
@@ -209,7 +209,7 @@ CONFIG_LIST = [
         'https://zoom.earth'
         + '/maps/wind-speed'
         + '/#view=7.7,80.6,9z/model=gfs',
-        SECONDS_IN.DAY / 6,
+        SECONDS_IN.DAY / 2,
         Point2D(550, 90),
         Size2D(920, 1500),
     ),
@@ -219,7 +219,7 @@ CONFIG_LIST = [
         'https://zoom.earth'
         + '/maps/temperature-feel'
         + '/#view=7.7,80.6,9z/model=gfs',
-        SECONDS_IN.DAY / 6,
+        SECONDS_IN.DAY / 2,
         Point2D(550, 90),
         Size2D(920, 1500),
     ),
@@ -229,7 +229,7 @@ CONFIG_LIST = [
         'https://zoom.earth'
         + '/maps/humidity'
         + '/#view=7.7,80.6,9z/model=gfs',
-        SECONDS_IN.DAY / 6,
+        SECONDS_IN.DAY / 2,
         Point2D(550, 90),
         Size2D(920, 1500),
     ),
@@ -237,7 +237,3 @@ CONFIG_LIST = [
 
 # Point2D(0, 0),
 # Size2D(1920, 1920),
-
-assert (
-    len(CONFIG_LIST) <= 40
-), 'CONFIG_LIST must be limited to a maximum of 40 items'
