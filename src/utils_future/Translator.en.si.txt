@@ -1,0 +1,70 @@
+Consumer Price Inflation ( CPI) by CBSL
+සීබීඑස්එල් විසින් පාරිභෝගික මිල උද්ධමනය (සීපීඅයි)
+Foreign Exchange Rates ( Forex) by CBSL
+සීබීඑස්එල් විසින් විදේශ විනිමය අනුපාත (Forex)
+Economic Snapshot by LankaSTAT DCS
+ලංකාස්ටැට් ඩීසීඑස් විසින් ආර්ථික ස්නැප්ෂොට්
+Dengue Cases by DengueUnit MoH_SriLanka
+ඩෙංගු රෝගය MOH_Srilanka විසින් ඩෙංගු රෝගීන්
+Daily new confirmed COVID19 deaths per million people by OurWorldInData
+අපේ වර්ල්ල්ඩින්දාටා විසින් දිනකට දිනපතා නව තහවුරු කරන ලද කොවිඩ් 19 දෙනෙකු මරණ 19 දෙනෙකු මරණ සංඛ්යාව
+Load Curve by CEB_lk
+CEB_LK විසින් වක්රය පූරණය කරන්න
+Daily Price Report by CBSL CPI Food
+Daily Price Report by CBSL CPI Food
+Tourist Arrivals by Country SLTDA_SriLanka
+රටේ සංචාරකයින්ගේ පැමිණීම ශ්රී ලංකා ටෙලිකොම් ශ්රී ලංකාව
+From the 2022 Annual Report of the CBSL
+සීබීඑස්එල් හි වාර්ෂික වාර්තාව 2022 සිට
+ASPI by CSE_Media via InvestingCom
+ASPI ආයතනය හරහා CSE_MEDIA විසින්
+Average Property Prices via LankaProperty
+ලංකාප්රෝට්රිවර් හරහා සාමාන්ය දේපල මිල ගණන්
+GDP Annual Growth Rate by CBSL (via tEconomics)
+සීඩීපී වාර්ෂික වර්ධන වේගය සීබීඑස්එල් විසින් (ඉඟි ආර්ථික විද්යාව හරහා)
+Foreign Exchange Reserves by CBSL (via tEconomics)
+සීබීඑස්එල් විසින් විදේශ විනිමය සංචිත (ඉඟි ආර්ථික විද්යාව හරහා)
+Car Registrations by CBSL (via tEconomics)
+සීබීඑස්එල් විසින් කාර් ලියාපදිංචිය (ඉඟි ආර්ථික විද්යාව හරහා)
+Balance of Trade by CBSL (via tEconomics)
+සීබීඑස්එල් විසින් වෙළඳාමේ ශේෂය (ඉඟි ආර්ථික විද්යාව හරහා)
+InterestRates by CBSL (via tEconomics)
+InterestRates by CBSL (via tEconomics)
+SocialMedia Stats by StatCounter
+Statcorunter විසින් සමාජ මාධ්ය සංඛ්යාලේඛන
+Median Country InternetSpeeds by Speedtest
+ස්පීඩ්ට්රෙස් විසින් මධ්ය රට අන්තර්ජාල වේගය
+Traffic around Colombo by GoogleMaps
+ගූගල් සිතියම් විසින් කොළඹ වටා ගමනාගමනය
+Temperature in Asia via FreeMeteo
+ආසියාවේ උෂ්ණත්වය නිදහමෙන් හරහා
+Temperature Forecast (Next 24 hours) by Ventuskycom
+උෂ්ණත්වය පුරෝකථනය (ඊළඟ පැය 24) ventuskycom විසින්
+Perceived ( FeelsLike) Temperature Forecast (Next 24 hours) by Ventuskycom
+තටාක පුරෝකථනය (ඊළඟ පැය 24) තටාස්කිකොම් විසින් වටහා ගත් (ඉදිරි පැය 24)
+Rainfall Forecast (Next 24 hours) by Ventuskycom
+වර්ෂාපතන පුරෝකථනය (ඊළඟ පැය 24) ventuskycom විසින්
+RelativeHumidity ( RH) Forecast (Next 24 hours) by Ventuskycom
+සාපේක්ෂ ආර්ද්රතාවය (RH) පුරෝකථනය (ඊළඟ පැය 24) VISTUSKY Com විසින්
+World Population from WorldoMeters
+ලොව ජනගහනයෙන් ලෝක ජනගහනය
+Environment, Food and Water from WorldoMeters
+පරිසරය සහිත පරිසරය, ආහාර සහ ජලය
+2023 ICC Mens ODI CricketWorldCup Winning Odds by NicerOdds
+2023 අයිසීසී පිරිමි එක්දින ක්රිකට් ලෝක කුසලානය නයිසර් ගැටලු මගින් පැතිරී ඇත
+2023 ICC Mens ODI CricketWorldCup Qualifier
+අයිසීසී පිරිමි එක්දින ක්රිකට් ලෝක කුසලාන සුදුසුකම්
+EconomicFreefom by Heritage
+උරුමයෙන් racearlyfumfom
+Colombo Sunrise, Sunset, DayLength by TimeAndDate
+කොළඹ හිරු උදාව, හිරු බැස යෑම, කාලානුරූපී දිවා / කාලය
+Direct Flights to Colombo ( CMB, BIA) by FlightConnec
+පලාගිය තහවුරුකිනාව මගින් කොළඹ (සීඑම්බීඒ, බීඅයිඒ) වෙත යොමු කරන්න
+S&P Sri Lanka 20 Index by SPDJIndices and CSE_Media
+එස් ඇන්ඩ් පී ශ්රී ලංකාව 20 SPDJindices සහ CSE_MEDIA විසින් දර්ශකය
+Air Quality ( AQI) Forecast (Next 24 hours) by Ventuskycom
+වායු ගුණාත්මකභාවය (AQI) පුරෝකථනය (ඊළඟ පැය 24) ventuskycom විසින්
+WindGusts Forecast (Next 24 hours) by Ventuskycom
+සුළං බිතුසිතුවන් පුරෝකථනය (ඊළඟ පැය 24) මෙනෙස්කිකි විසින්
+National Park Visitor Service Rates by Dept of Wildlife Conservation ( DWC)
+ජාතික උද්යාන ආගන්තුක සේවා ගාස්තු වනජීවී සංරක්ෂණ දෙපාර්තමේන්තුව (ඩීඩබ්ලිව්සී)
