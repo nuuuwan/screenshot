@@ -284,6 +284,52 @@ CONFIG_LIST = [
         Point2D(350, 0),
         Size2D(1920 - 700, 1920),
     ),
+    ConfigScreenshot(
+        'mantrhilk.imf_tracker',
+        '#IMF Tracker by @ManthriLK',
+        'https://manthri.lk/en/imf_tracker',
+        SECONDS_IN.WEEK,
+        Point2D(1920 - 1500, 1920 - 1370),
+        Size2D(1142, 712),
+    ),
+    ConfigScreenshot(
+        'publicfinancelk.fuel_price_tracker.petrol',
+        '#Fuel Price Tracker (#Petrol) by @PublicFinanceLK',
+        'https://dashboards.publicfinance.lk/fuel-price-tracker/',
+        SECONDS_IN.WEEK,
+        Point2D(1920 - 1500, 120),
+        Size2D(1140, 1320),
+        (By.CLASS_NAME, 'market-price-section'),
+    ),
+    ConfigScreenshot(
+        'publicfinancelk.fuel_price_tracker.auto_diesel',
+        '#Fuel Price Tracker (#AutoDiesel) by @PublicFinanceLK',
+        'https://dashboards.publicfinance.lk/fuel-price-tracker/auto-diesel/',
+        SECONDS_IN.WEEK,
+        Point2D(1920 - 1500, 120),
+        Size2D(1140, 1320),
+        (By.CLASS_NAME, 'market-price-section'),
+    ),
+    ConfigScreenshot(
+        'manthri.mp_rank',
+        '#MP Ranking by @ManthriLK (Click link for full list)',
+        'https://manthri.lk/en/ranks',
+        SECONDS_IN.WEEK,
+        Point2D(0, 0),
+        Size2D(830, 650),
+        (By.CLASS_NAME, 'people-list'),
+    ),
+    ConfigScreenshot(
+        'cbsl.charts.2022Q4',
+        'Macroeconomic Charts (2022 Q4) by @CBSL',
+        'https://www.cbsl.gov.lk'
+        + '/sites/default/files/cbslweb_documents/statistics/mecpac'
+        + '/Chart_Pack_Q4_2022_e1.pdf#page='
+        + str(random.randint(4, 47)),
+        SECONDS_IN.DAY,
+        Point2D(1920 - 1557, 1920 - 1886),
+        Size2D(1200, 900),
+    ),
 ]
 '''
 Point2D(1920- 1920, 1920- 1920),
