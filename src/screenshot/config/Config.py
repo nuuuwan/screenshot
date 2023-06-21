@@ -12,7 +12,7 @@ log = Log(__name__)
 MAX_TWEET_LENGTH = 280 - 20
 DIR_TEMP = os.path.join(tempfile.gettempdir(), 'tmp.screenshot')
 TIME_FORMAT = TimeFormat(
-    '%I:%M%p, %Y-%m-%d (%a)', timezone_offset=TIMEZONE_OFFSET.LK
+    '%Y-%m-%d (%a) %I:%M%p', timezone_offset=TIMEZONE_OFFSET.LK
 )
 
 
