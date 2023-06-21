@@ -1,6 +1,5 @@
 import os
 import random
-import time
 
 from twtr import Tweet, Twitter
 from utils import SECONDS_IN, TIMEZONE_OFFSET, File, Log, Time, TimeFormat
@@ -13,10 +12,9 @@ log = Log(__name__)
 SHOULD_SEND_TWEET = True
 PROD_LOG_PATH = os.path.join(DIR_TEMP, 'prod.log')
 MAX_TWEETS_PER_MONTH = 1_500
+
 # Should be consistent with pipeline-cron.yml
-CRON_FREQUENCY = SECONDS_IN.MINUTE * 30
-P_SAFETY = 1
-T_SLEEP_AFTER_TWEET_SEND = 60
+CRON_FREQUENCY = SECONDS_IN.MINUTE * 20
 
 
 def is_day_in_sri_lanka():
@@ -26,7 +24,7 @@ def is_day_in_sri_lanka():
         )
     )
     log.debug(f'{h=}')
-    return 7 <= h <= 19
+    return 7 < h <= 19
 
 
 def init_dir():
@@ -46,26 +44,9 @@ def init_twitter():
 
 
 def get_run_config_list() -> list:
-    n_run = int(
-        P_SAFETY
-        * MAX_TWEETS_PER_MONTH
-        * CRON_FREQUENCY
-        / SECONDS_IN.AVG_MONTH
-    )
-    log.debug(f'{n_run=}')
-    n_selected = 0
-    run_config_list = []
-    while True:
-        config_list = CONFIG_LIST.copy()
-        random.shuffle(config_list)
-        for config in config_list:
-            p = CRON_FREQUENCY / config.frequency
-            if random.random() < p:
-                run_config_list.append(config)
-                n_selected += 1
-
-                if n_selected >= n_run:
-                    return run_config_list
+    config_list = CONFIG_LIST.copy()
+    random.shuffle(config_list)
+    return config_list[:1]
 
 
 def process_config(config: Config, twitter: Twitter):
@@ -78,8 +59,6 @@ def process_config(config: Config, twitter: Twitter):
     tweet = Tweet(config.tweet_text).add_image(config.image_path)
     if SHOULD_SEND_TWEET:
         tweet_id = twitter.send(tweet)
-        log.debug(f'😴 Sleeping for {T_SLEEP_AFTER_TWEET_SEND}s...')
-        time.sleep(T_SLEEP_AFTER_TWEET_SEND)
     else:
         tweet_id = 0
 

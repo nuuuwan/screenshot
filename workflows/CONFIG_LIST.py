@@ -332,7 +332,8 @@ CONFIG_LIST = [
     ),
     ConfigScreenshot(
         'energy_lk.daily_power',
-        'Daily Power Consumption by Sri Lanka Sustainable Energy Authority (#SLSEA)',
+        'Daily Power Consumption'
+        + ' by Sri Lanka Sustainable Energy Authority (#SLSEA)',
         'https://www.energy.gov.lk/index.php/en/',
         SECONDS_IN.DAY,
         Point2D(0, 0),
