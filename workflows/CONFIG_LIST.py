@@ -258,10 +258,6 @@ CONFIG_LIST = [
         Size2D(1325, 655),
         (By.CLASS_NAME, "indices-accordion-content"),
     ),
-    ConfigVentusky(
-        'aqi',
-        'Air Quality (#AQI)',
-    ),
     ConfigTE(
         'foreign-exchange-reserves',
         'Foreign Exchange Reserves by @CBSL (via @tEconomics)',
@@ -380,6 +376,10 @@ CONFIG_LIST = [
         SECONDS_IN.DAY,
         Point2D(40, 40),
         Size2D(1840, 1160),
+    ),
+    ConfigVentusky(
+        'aqi',
+        'Air Quality (#AQI)',
     ),
 ]
 
