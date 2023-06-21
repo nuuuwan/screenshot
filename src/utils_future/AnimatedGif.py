@@ -6,14 +6,19 @@ from utils import Log
 from utils_future.Image import Image
 
 log = Log(__name__)
-DURATION_MS = 2000
+DEFAULT_DURATION_MS = 1000
 MAX_ANIMATED_GIF_SIZE = 5
 
 
 class AnimatedGif:
-    def __init__(self, image_path_list: list[str]):
+    def __init__(
+        self,
+        image_path_list: list[str],
+        duration_ms: int = DEFAULT_DURATION_MS,
+    ):
         assert len(image_path_list) > 0
         self.image_path_list = image_path_list
+        self.duration_ms = duration_ms
 
     def write(self, animation_image_path: str):
         images = []
@@ -27,7 +32,9 @@ class AnimatedGif:
             img = imageio.imread(resized_image_path)
             images.append(img)
 
-        imageio.mimsave(animation_image_path, images, duration=DURATION_MS)
+        imageio.mimsave(
+            animation_image_path, images, duration=self.duration_ms
+        )
         file_size_m = os.path.getsize(animation_image_path) / 1_000_000
 
         log.debug(
