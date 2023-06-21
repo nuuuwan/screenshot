@@ -52,7 +52,7 @@ class Config:
         tweet_text = f'''
 {self.description}
 
-#SriLanka 🇱🇰
+#SriLanka #LKA #LK 🇱🇰
 {get_timestamp()}
 {self.url}
         '''.strip()
