@@ -275,8 +275,17 @@ CONFIG_LIST = [
         'gust',
         '#WindGusts',
     ),
+    ConfigScreenshot(
+        'dwc.parktraffic',
+        'National Park Visitor Service Rates'
+        + ' by Dept of #Wildlife #Conservation (#DWC)',
+        'http://www.dwc.gov.lk/parktraffic/graphs.php',
+        SECONDS_IN.WEEK,
+        Point2D(350, 0),
+        Size2D(1920 - 700, 1920),
+    ),
 ]
 '''
-Point2D(0, 1920- 1920),
+Point2D(1920- 1920, 1920- 1920),
 Size2D(1920, 1920),
 '''
