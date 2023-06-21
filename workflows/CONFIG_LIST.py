@@ -5,7 +5,7 @@ from utils import SECONDS_IN
 
 from screenshot import ConfigScreenshot, ConfigTE, ConfigVentusky
 from screenshot.config import config_utils
-from utils_future import Point2D, Size2D
+from utils_future import Point2D, Size2D, Size2D16x9
 
 last_date_id_non_weekend = config_utils.get_last_date_id_non_weekend()
 last_month = config_utils.get_last_month()
@@ -363,6 +363,14 @@ CONFIG_LIST = [
         SECONDS_IN.DAY,
         Point2D(1920 - 1129, 0),
         Size2D(700, 650),
+    ),
+    ConfigScreenshot(
+        'prisons_lk.statistics',
+        'Statistics by Dept. of #Prisons',
+        'http://prisons.gov.lk/web/en/statistics-information-en/',
+        SECONDS_IN.DAY,
+        Point2D(360, 360),
+        Size2D16x9(840),
     ),
 ]
 
