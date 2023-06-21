@@ -12,6 +12,7 @@ log = Log(__name__)
 
 FONT_PATH = os.path.join('src', 'utils_future', 'COURBD.TTF')
 FONT = ImageFont.truetype(FONT_PATH, 60)
+TEXT_COLOR = (255, 255, 255)
 
 
 class Image:
@@ -54,6 +55,6 @@ class Image:
 
     def draw_text(self, lefttop: Point2D, text: str):
         draw = ImageDraw.Draw(self.im)
-        draw.text(lefttop.to_tuple(), text, (0, 0, 0), font=FONT)
+        draw.text(lefttop.to_tuple(), text, TEXT_COLOR, font=FONT)
         log.debug(f'Drew text "{text}" at {lefttop}')
         return Image(self.im)
