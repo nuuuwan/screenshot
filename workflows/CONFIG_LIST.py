@@ -381,6 +381,14 @@ CONFIG_LIST = [
         'aqi',
         'Air Quality (#AQI)',
     ),
+    ConfigScreenshot(
+        'flightaware.bia.map',
+        'Flights to and from @BIA_SriLanka by @flightaware',
+        'https://flightaware.com/live/airport_status_bigmap.rvt?airport=VCBI',
+        SECONDS_IN.DAY,
+        Point2D(0, 0),
+        Size2D(1750, 1750),
+    ),
 ]
 
 '''
