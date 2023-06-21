@@ -1,6 +1,6 @@
 import os
 import random
-
+import time
 from twtr import Tweet, Twitter
 from utils import SECONDS_IN, TIMEZONE_OFFSET, File, Log, Time, TimeFormat
 
@@ -13,8 +13,9 @@ SHOULD_SEND_TWEET = True
 PROD_LOG_PATH = os.path.join(DIR_TEMP, 'prod.log')
 MAX_TWEETS_PER_MONTH = 1_500
 # Should be consistent with pipeline-cron.yml
-CRON_FREQUENCY = SECONDS_IN.HOUR
+CRON_FREQUENCY = SECONDS_IN.MINUTE * 30
 P_SAFETY = 1
+T_SLEEP_AFTER_TWEET_SEND = 60
 
 
 def is_day_in_sri_lanka():
@@ -76,6 +77,8 @@ def process_config(config: Config, twitter: Twitter):
     tweet = Tweet(config.tweet_text).add_image(config.image_path)
     if SHOULD_SEND_TWEET:
         tweet_id = twitter.send(tweet)
+        log.debug(f'😴 Sleeping for {T_SLEEP_AFTER_TWEET_SEND}s...')
+        time.sleep(T_SLEEP_AFTER_TWEET_SEND)
     else:
         tweet_id = 0
 
