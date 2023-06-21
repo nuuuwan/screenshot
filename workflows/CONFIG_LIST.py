@@ -330,8 +330,49 @@ CONFIG_LIST = [
         Point2D(1920 - 1557, 1920 - 1886),
         Size2D(1200, 900),
     ),
+    ConfigScreenshot(
+        'energy_lk.daily_power',
+        'Daily Power Consumption by Sri Lanka Sustainable Energy Authority (#SLSEA)',
+        'https://www.energy.gov.lk/index.php/en/',
+        SECONDS_IN.DAY,
+        Point2D(0, 0),
+        Size2D(480, 270),
+        (By.CLASS_NAME, 'changing_value'),
+    ),
+    ConfigScreenshot(
+        'imf.lk.at_a_glance',
+        'Sri Lanka "At a Glance" by @IMFNews',
+        'https://www.imf.org/en/Countries/LKA#ataglance',
+        SECONDS_IN.DAY,
+        Point2D(1920 - 1129, 0),
+        Size2D(710, 380),
+    ),
+    ConfigScreenshot(
+        'cselk.daily',
+        '#ASPI by @CSE_Media',
+        'https://cse.lk/',
+        SECONDS_IN.DAY,
+        Point2D(0, 0),
+        Size2D(550, 380),
+        (By.CLASS_NAME, 'chart-block'),
+    ),
+    ConfigScreenshot(
+        'imf.lk.country_data',
+        'Sri Lanka Country Data by @IMFNews',
+        'https://www.imf.org/en/Countries/LKA#countrydata',
+        SECONDS_IN.DAY,
+        Point2D(1920 - 1129, 0),
+        Size2D(700, 650),
+    ),
 ]
+
 '''
-Point2D(1920- 1920, 1920- 1920),
-Size2D(1920, 1920),
+    ConfigScreenshot(
+        '',
+        '',
+        '',
+        SECONDS_IN.DAY,
+        Point2D(1920- 1920, 1920- 1920),
+        Size2D(1920, 1920),
+    ),
 '''
