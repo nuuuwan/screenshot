@@ -112,7 +112,7 @@ CONFIG_LIST = [
     ConfigTE(
         'gdp-growth-annual',
         '#GDP Annual Growth Rate by @CBSL (via @tEconomics)',
-        SECONDS_IN.AVG_QTR,
+        SECONDS_IN.WEEK,
     ),
     ConfigTE(
         'foreign-exchange-reserves',
@@ -155,7 +155,7 @@ CONFIG_LIST = [
         '#Traffic around #Colombo by @GoogleMaps',
         'https://www.google.com'
         + '/maps/@6.9111702,79.8750744,14z/data=!5m1!1e1?entry=ttu',
-        SECONDS_IN.DAY / 4,
+        SECONDS_IN.DAY,
         Point2D(1920 - 1712, 1920 - 1645),
         Size2D(1650, 1500),
     ),
@@ -165,7 +165,7 @@ CONFIG_LIST = [
         'https://freemeteo.com.lk'
         + '/weather/Sri-Lanka/maps/temperature'
         + '/?gid=9035391&country=sri-lanka',
-        SECONDS_IN.HOUR * 12,
+        SECONDS_IN.DAY,
         Point2D(1920 - 1400, 1920 - 1500),
         Size2D(700, 600),
     ),
