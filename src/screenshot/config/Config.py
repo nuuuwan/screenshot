@@ -53,10 +53,8 @@ class Config:
 {self.description}
 
 #SriLanka 🇱🇰
-
 {get_timestamp()}
 {self.url}
-
         '''.strip()
         if len(tweet_text) > MAX_TWEET_LENGTH:
             raise Exception(f'Tweet text is too long: {len(tweet_text)}')
