@@ -10,7 +10,7 @@ from utils_future.Size2D import Size2D
 
 log = Log(__name__)
 
-FONT_PATH = os.path.join('src', 'utils_future', 'COURBD.TTF')
+FONT_PATH = os.path.join('src', 'utils_future', 'CONSOLAB.TTF')
 FONT = ImageFont.truetype(FONT_PATH, 60)
 TEXT_COLOR = (255, 255, 255)
 
