@@ -387,7 +387,8 @@ CONFIG_LIST = [
         'https://flightaware.com/live/airport_status_bigmap.rvt?airport=VCBI',
         SECONDS_IN.DAY,
         Point2D(0, 0),
-        Size2D(1750, 1750),
+        Size2D(1760, 1760),
+        (By.CLASS_NAME, 'ol-overlaycontainer-stopevent'),
     ),
 ]
 
