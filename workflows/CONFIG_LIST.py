@@ -165,7 +165,7 @@ CONFIG_LIST = [
         'https://freemeteo.com.lk'
         + '/weather/Sri-Lanka/maps/temperature'
         + '/?gid=9035391&country=sri-lanka',
-        SECONDS_IN.DAY,
+        SECONDS_IN.WEEK,
         Point2D(1920 - 1400, 1920 - 1500),
         Size2D(700, 600),
     ),
@@ -389,6 +389,14 @@ CONFIG_LIST = [
         Point2D(0, 0),
         Size2D(1760, 1760),
         (By.CLASS_NAME, 'ol-overlaycontainer-stopevent'),
+    ),
+    ConfigScreenshot(
+        'cbsl.edl.random',
+        '#EconomicDataLibrary by @CBSL (Search Tool by @nuuuwan)',
+        'https://nuuuwan.github.io/cbsl_app/',
+        SECONDS_IN.HOUR * 6,
+        Point2D(20, 280),
+        Size2D16x9(1400),
     ),
 ]
 
