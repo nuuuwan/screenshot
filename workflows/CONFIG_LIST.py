@@ -394,9 +394,9 @@ CONFIG_LIST = [
         'cbsl.edl.random',
         '#EconomicDataLibrary by @CBSL (Search Tool by @nuuuwan)',
         'https://nuuuwan.github.io/cbsl_app/',
-        SECONDS_IN.HOUR * 6,
-        Point2D(0, 280),
-        Size2D(1920, 1120),
+        SECONDS_IN.HOUR * 4,
+        Point2D(20, 300),
+        Size2D(440, 420),
     ),
 ]
 
