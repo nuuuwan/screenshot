@@ -395,8 +395,8 @@ CONFIG_LIST = [
         '#EconomicDataLibrary by @CBSL (Search Tool by @nuuuwan)',
         'https://nuuuwan.github.io/cbsl_app/',
         SECONDS_IN.HOUR * 6,
-        Point2D(20, 280),
-        Size2D16x9(1400),
+        Point2D(0, 280),
+        Size2D(1920, 1120),
     ),
 ]
 
