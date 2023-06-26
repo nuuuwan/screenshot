@@ -19,7 +19,10 @@ class Webpage:
         assert url.startswith('http')
         self.url = url
         self.driver = None
-        self.width = 1920
+        if 'nuuuwan.github.io' in url:
+            self.width = 1280
+        else:
+            self.width = 1920
         self.height = 1920
 
     @cached_property

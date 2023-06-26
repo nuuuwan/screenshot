@@ -391,12 +391,12 @@ CONFIG_LIST = [
         (By.CLASS_NAME, 'ol-overlaycontainer-stopevent'),
     ),
     ConfigScreenshot(
-        'cbsl.edl.random',
-        '#EconomicDataLibrary by @CBSL (Search Tool by @nuuuwan)',
+        'lanka_data_search',
+        '#LankaDataSearch by @nuuuwan)',
         'https://nuuuwan.github.io/cbsl_app/',
         SECONDS_IN.HOUR * 4,
-        Point2D(20, 300),
-        Size2D(440, 420),
+        Point2D(0, 160),
+        Size2D(1280, 720),
     ),
 ]
 
