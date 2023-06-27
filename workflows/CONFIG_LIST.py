@@ -258,15 +258,6 @@ CONFIG_LIST = [
         Size2D(1325, 655),
         (By.CLASS_NAME, "indices-accordion-content"),
     ),
-    ConfigTE(
-        'foreign-exchange-reserves',
-        'Foreign Exchange Reserves by @CBSL (via @tEconomics)',
-        SECONDS_IN.WEEK,
-    ),
-    ConfigVentusky(
-        'rain-3h',
-        '#Rainfall',
-    ),
     ConfigVentusky(
         'gust',
         '#WindGusts',
@@ -385,7 +376,7 @@ CONFIG_LIST = [
         'flightaware.bia.map',
         'Flights to and from @BIA_SriLanka by @flightaware',
         'https://flightaware.com/live/airport_status_bigmap.rvt?airport=VCBI',
-        SECONDS_IN.HOUR * 6,
+        SECONDS_IN.DAY,
         Point2D(0, 0),
         Size2D(1760, 1760),
         (By.CLASS_NAME, 'ol-overlaycontainer-stopevent'),
