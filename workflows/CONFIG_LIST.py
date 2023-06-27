@@ -213,15 +213,6 @@ CONFIG_LIST = [
         (By.ID, 'mainplh_boAutoOddsTable1_MainOddsTable'),
     ),
     ConfigScreenshot(
-        'icc.mensodicwc2023.qualifier',
-        '2023 @ICC Mens ODI @CricketWorldCup Qualifier',
-        'https://www.cricketworldcup.com/standings/qualifiers',
-        SECONDS_IN.DAY,
-        Point2D(0, 0),
-        Size2D(1350, 1150),
-        (By.CLASS_NAME, 'standings '),
-    ),
-    ConfigScreenshot(
         'heritage.economic_freedom',
         '#EconomicFreefom by @Heritage',
         'https://www.heritage.org/index/country/srilanka',
@@ -388,6 +379,15 @@ CONFIG_LIST = [
         SECONDS_IN.HOUR * 4,
         Point2D(0, 0),
         Size2D(640, 640),
+    ),
+    ConfigScreenshot(
+        'icc.mensodicwc2023.qualifier',
+        '2023 @ICC Mens ODI @CricketWorldCup Qualifier',
+        'https://www.cricketworldcup.com/standings/qualifiers',
+        SECONDS_IN.DAY,
+        Point2D(0, 1145 - 400),
+        Size2D(640, 400),
+        (By.CLASS_NAME, 'standings '),
     ),
 ]
 

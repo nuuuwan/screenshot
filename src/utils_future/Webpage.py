@@ -19,7 +19,7 @@ class Webpage:
         assert url.startswith('http')
         self.url = url
         self.driver = None
-        if 'nuuuwan.github.io' in url:
+        if 'nuuuwan.github.io' in url or 'www.cricketworldcup.com' in url:
             self.width = 640
         else:
             self.width = 1920
