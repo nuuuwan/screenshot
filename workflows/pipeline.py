@@ -24,7 +24,7 @@ def is_day_in_sri_lanka():
         )
     )
     log.debug(f'{h=}')
-    return 7 < h <= 19
+    return 10 <= h < 22
 
 
 def init_dir():
