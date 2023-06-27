@@ -20,7 +20,7 @@ class Webpage:
         self.url = url
         self.driver = None
         if 'nuuuwan.github.io' in url:
-            self.width = 1280
+            self.width = 640
         else:
             self.width = 1920
         self.height = 1920

@@ -392,11 +392,11 @@ CONFIG_LIST = [
     ),
     ConfigScreenshot(
         'lanka_data_search',
-        '#LankaDataSearch by @nuuuwan)',
+        '#LankaDataSearch by @nuuuwan',
         'https://nuuuwan.github.io/cbsl_app/',
         SECONDS_IN.HOUR * 4,
-        Point2D(0, 160),
-        Size2D(1280, 720),
+        Point2D(0, 0),
+        Size2D(640, 640),
     ),
 ]
 
