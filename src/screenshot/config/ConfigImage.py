@@ -21,6 +21,7 @@ class ConfigImage(Config):
             'src'
         )
         webpage.close()
+        self.current_url = webpage.current_url
         log.debug(f'{img_src=}')
 
         WWW.download_binary(img_src, self.image_path)

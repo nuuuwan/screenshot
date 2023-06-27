@@ -18,10 +18,12 @@ class ConfigScreenshot(Config):
         self.elem_info = elem_info
 
     def download_image(self):
-        img = Webpage(
+        webpage = Webpage(
             self.url,
-        ).screenshot(self.elem_info)
+        )
+        img = webpage.screenshot(self.elem_info)
         img.crop(
             self.point,
             self.size,
         ).write(self.image_path)
+        self.current_url = webpage.current_url

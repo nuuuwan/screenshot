@@ -26,6 +26,7 @@ class Config:
         self.description = description
         self.url = url
         self.frequency = frequency
+        self.current_url = url
 
     def __str__(self):
         class_name = self.__class__.__name__
@@ -54,8 +55,6 @@ class Config:
 
 #SriLanka #LKA #LK 🇱🇰
 {get_timestamp()}
-{self.url}
+{self.current_url}
         '''.strip()
-        if len(tweet_text) > MAX_TWEET_LENGTH:
-            raise Exception(f'Tweet text is too long: {len(tweet_text)}')
         return tweet_text

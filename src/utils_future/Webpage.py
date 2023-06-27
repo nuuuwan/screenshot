@@ -11,7 +11,7 @@ from utils_future.Image import Image
 
 log = Log(__name__)
 
-T_WAIT_FOR_SCREENSHOT = 120
+T_WAIT_FOR_SCREENSHOT = 10
 
 
 class Webpage:
@@ -24,6 +24,7 @@ class Webpage:
         else:
             self.width = 1920
         self.height = 1920
+        self.current_url = self.url
 
     @cached_property
     def screenshot_image_path(self):
@@ -45,6 +46,7 @@ class Webpage:
         return self.driver.find_element(by, value)
 
     def close(self):
+        self.current_url = self.driver.current_url
         self.driver.close()
         self.driver.quit()
         log.debug(f'Closed {self.url}')
