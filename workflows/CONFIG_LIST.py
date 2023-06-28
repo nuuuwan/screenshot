@@ -373,14 +373,6 @@ CONFIG_LIST = [
         (By.CLASS_NAME, 'ol-overlaycontainer-stopevent'),
     ),
     ConfigScreenshot(
-        'lanka_data_search',
-        '#LankaDataSearch by @nuuuwan',
-        'https://nuuuwan.github.io/cbsl_app/',
-        SECONDS_IN.HOUR * 4,
-        Point2D(0, 0),
-        Size2D(640, 640),
-    ),
-    ConfigScreenshot(
         'icc.mensodicwc2023.qualifier',
         '2023 @ICC Mens ODI @CricketWorldCup Qualifier',
         'https://www.cricketworldcup.com/standings/qualifiers',
@@ -388,6 +380,15 @@ CONFIG_LIST = [
         Point2D(0, 1145 - 400),
         Size2D(640, 400),
         (By.CLASS_NAME, 'standings '),
+    ),
+    ConfigScreenshot(
+        'lanka_data_search',
+        '#LankaDataSearch by @nuuuwan',
+        'https://nuuuwan.github.io/cbsl_app/',
+        SECONDS_IN.HOUR * 4,
+        Point2D(0, 0),
+        Size2D16x9(640),
+        (By.ID, 'multi-line-chart'),
     ),
 ]
 
