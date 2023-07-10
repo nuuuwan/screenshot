@@ -94,14 +94,6 @@ CONFIG_LIST = [
         Size2D(1600, 933),
     ),
     ConfigScreenshot(
-        'cse.aspi.chart',
-        '#ASPI by @CSE_Media via @InvestingCom',
-        'https://www.investing.com/indices/cse-all-share',
-        SECONDS_IN.DAY,
-        Point2D(470, 900),
-        Size2D(660, 500),
-    ),
-    ConfigScreenshot(
         'lpw.property_price.chart',
         'Average #Property Prices via @LankaProperty',
         'https://www.lankapropertyweb.com/house_prices.php',
