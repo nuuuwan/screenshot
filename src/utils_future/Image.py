@@ -40,6 +40,11 @@ class Image:
         lefttop: Point2D,
         widthheight: Size2D,
     ):
+        crop_width, crop_height = widthheight.to_tuple()
+        im_width, im_height = self.im.size
+        if crop_height > im_height or crop_width > im_width:
+            return self
+
         bbox = lefttop.to_tuple() + (lefttop + widthheight).to_tuple()
         im = self.im.crop(bbox)
         log.debug(f'Cropped image to {lefttop} and {widthheight}')
