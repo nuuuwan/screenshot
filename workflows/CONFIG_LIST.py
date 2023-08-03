@@ -3,7 +3,8 @@ import random
 from selenium.webdriver.common.by import By
 from utils import SECONDS_IN
 
-from screenshot import ConfigScreenshot, ConfigTE, ConfigVentusky
+from screenshot import (ConfigScreenshot, ConfigTE, ConfigVentusky,
+                        ConfigZoomEarth)
 from screenshot.config import config_utils
 from utils_future import Point2D, Size2D, Size2D16x9
 
@@ -372,6 +373,18 @@ CONFIG_LIST = [
         Point2D(0, 0),
         Size2D16x9(640),
         (By.ID, 'multi-line-chart'),
+    ),
+    ConfigZoomEarth(
+        'temperature',
+        '#Temperature',
+    ),
+    ConfigZoomEarth(
+        'wind-speed',
+        '#WindSpeed',
+    ),
+    ConfigZoomEarth(
+        'humidity',
+        '#Humidity',
     ),
 ]
 
