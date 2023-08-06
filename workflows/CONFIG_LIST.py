@@ -374,7 +374,7 @@ CONFIG_LIST = [
         Size2D16x9(640),
         (By.ID, 'multi-line-chart'),
     ),
-    # TODO: Debug and Enable again
+    # TODO: ZoomEarth images are invald #1
     # ConfigZoomEarth(
     #     'temperature',
     #     '#Temperature',
