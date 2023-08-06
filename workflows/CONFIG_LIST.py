@@ -374,18 +374,19 @@ CONFIG_LIST = [
         Size2D16x9(640),
         (By.ID, 'multi-line-chart'),
     ),
-    ConfigZoomEarth(
-        'temperature',
-        '#Temperature',
-    ),
-    ConfigZoomEarth(
-        'wind-speed',
-        '#WindSpeed',
-    ),
-    ConfigZoomEarth(
-        'humidity',
-        '#Humidity',
-    ),
+    # TODO: Debug and Enable again
+    # ConfigZoomEarth(
+    #     'temperature',
+    #     '#Temperature',
+    # ),
+    # ConfigZoomEarth(
+    #     'wind-speed',
+    #     '#WindSpeed',
+    # ),
+    # ConfigZoomEarth(
+    #     'humidity',
+    #     '#Humidity',
+    # ),
 ]
 
 '''
