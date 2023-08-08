@@ -3,8 +3,7 @@ import random
 from selenium.webdriver.common.by import By
 from utils import SECONDS_IN
 
-from screenshot import (ConfigScreenshot, ConfigTE, ConfigVentusky,
-                        ConfigZoomEarth)
+from screenshot import ConfigScreenshot, ConfigTE, ConfigVentusky
 from screenshot.config import config_utils
 from utils_future import Point2D, Size2D, Size2D16x9
 
@@ -162,22 +161,6 @@ CONFIG_LIST = [
         Point2D(1920 - 1400, 1920 - 1500),
         Size2D(700, 600),
     ),
-    ConfigVentusky(
-        'temperature-2m',
-        '#Temperature',
-    ),
-    ConfigVentusky(
-        'temp-feel',
-        'Perceived (#FeelsLike) #Temperature',
-    ),
-    ConfigVentusky(
-        'rain-3h',
-        '#Rainfall',
-    ),
-    ConfigVentusky(
-        'humidity',
-        '#RelativeHumidity (#RH)',
-    ),
     ConfigScreenshot(
         'worldometers.population',
         'World #Population from @WorldoMeters',
@@ -241,10 +224,6 @@ CONFIG_LIST = [
         Point2D(0, 0),
         Size2D(1325, 655),
         (By.CLASS_NAME, "indices-accordion-content"),
-    ),
-    ConfigVentusky(
-        'gust',
-        '#WindGusts',
     ),
     ConfigScreenshot(
         'dwc.parktraffic',
@@ -352,10 +331,6 @@ CONFIG_LIST = [
         Point2D(40, 40),
         Size2D(1840, 1160),
     ),
-    ConfigVentusky(
-        'aqi',
-        'Air Quality (#AQI)',
-    ),
     ConfigScreenshot(
         'flightaware.bia.map',
         'Flights to and from @BIA_SriLanka by @flightaware',
@@ -387,6 +362,30 @@ CONFIG_LIST = [
     #     'humidity',
     #     '#Humidity',
     # ),
+    ConfigVentusky(
+        'temperature-2m',
+        '#Temperature',
+    ),
+    ConfigVentusky(
+        'temp-feel',
+        'Perceived (#FeelsLike) #Temperature',
+    ),
+    ConfigVentusky(
+        'rain-3h',
+        '#Rainfall',
+    ),
+    ConfigVentusky(
+        'humidity',
+        '#RelativeHumidity (#RH)',
+    ),
+    ConfigVentusky(
+        'gust',
+        '#WindGusts',
+    ),
+    ConfigVentusky(
+        'aqi',
+        'Air Quality (#AQI)',
+    ),
 ]
 
 '''
