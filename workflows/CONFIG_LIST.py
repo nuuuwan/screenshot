@@ -342,7 +342,7 @@ CONFIG_LIST = [
     ),
     ConfigScreenshot(
         'lanka_data_search',
-        '#LankaDataSearch by @nuuuwan',
+        '#LankaDataSearch',
         'https://nuuuwan.github.io/lanka_data_search/',
         SECONDS_IN.HOUR * 4,
         Point2D(0, 0),
