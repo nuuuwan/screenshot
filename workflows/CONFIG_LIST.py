@@ -234,14 +234,14 @@ CONFIG_LIST = [
         Point2D(350, 0),
         Size2D(1920 - 700, 1920),
     ),
-    ConfigScreenshot(
-        'mantrhilk.imf_tracker',
-        '#IMF Tracker by @ManthriLK',
-        'https://manthri.lk/en/imf_tracker',
-        SECONDS_IN.WEEK,
-        Point2D(1920 - 1500, 1920 - 1370),
-        Size2D(1142, 712),
-    ),
+    # ConfigScreenshot(
+    #     'mantrhilk.imf_tracker',
+    #     '#IMF Tracker by @ManthriLK',
+    #     'https://manthri.lk/en/imf_tracker',
+    #     SECONDS_IN.WEEK,
+    #     Point2D(1920 - 1500, 1920 - 1370),
+    #     Size2D(1142, 712),
+    # ),
     ConfigScreenshot(
         'publicfinancelk.fuel_price_tracker.petrol',
         '#Fuel Price Tracker (#Petrol) by @PublicFinanceLK',
