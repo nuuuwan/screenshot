@@ -127,14 +127,6 @@ CONFIG_LIST = [
         SECONDS_IN.WEEK,
     ),
     ConfigScreenshot(
-        'statcounter.social_media_stats',
-        '#SocialMedia Stats by @StatCounter',
-        'https://gs.statcounter.com/social-media-stats/all/sri-lanka',
-        SECONDS_IN.AVG_MONTH,
-        Point2D(360, 125),
-        Size2D(1200, 800),
-    ),
-    ConfigScreenshot(
         'speedtest.internet_speed',
         'Median Country #InternetSpeeds by @Speedtest',
         'https://www.speedtest.net/global-index/sri-lanka',
@@ -178,15 +170,6 @@ CONFIG_LIST = [
         Point2D(0, 1120),
         Size2D(440, 800),
         (By.CLASS_NAME, 'content-home'),
-    ),
-    ConfigScreenshot(
-        'nicerodds.mensodicwc2023.winning_odds',
-        '2023 @ICC Mens ODI @CricketWorldCup Winning Odds by @NicerOdds',
-        'https://www.nicerodds.co.uk/cricket-world-cup',
-        SECONDS_IN.WEEK,
-        Point2D(0, 0),
-        Size2D(380, 600),
-        (By.ID, 'mainplh_boAutoOddsTable1_MainOddsTable'),
     ),
     ConfigScreenshot(
         'heritage.economic_freedom',
@@ -234,41 +217,6 @@ CONFIG_LIST = [
         Point2D(350, 0),
         Size2D(1920 - 700, 1920),
     ),
-    # ConfigScreenshot(
-    #     'mantrhilk.imf_tracker',
-    #     '#IMF Tracker by @ManthriLK',
-    #     'https://manthri.lk/en/imf_tracker',
-    #     SECONDS_IN.WEEK,
-    #     Point2D(1920 - 1500, 1920 - 1370),
-    #     Size2D(1142, 712),
-    # ),
-    ConfigScreenshot(
-        'publicfinancelk.fuel_price_tracker.petrol',
-        '#Fuel Price Tracker (#Petrol) by @PublicFinanceLK',
-        'https://dashboards.publicfinance.lk/fuel-price-tracker/',
-        SECONDS_IN.WEEK,
-        Point2D(1920 - 1500, 120),
-        Size2D(1140, 1320),
-        (By.CLASS_NAME, 'market-price-section'),
-    ),
-    ConfigScreenshot(
-        'publicfinancelk.fuel_price_tracker.auto_diesel',
-        '#Fuel Price Tracker (#AutoDiesel) by @PublicFinanceLK',
-        'https://dashboards.publicfinance.lk/fuel-price-tracker/auto-diesel/',
-        SECONDS_IN.WEEK,
-        Point2D(1920 - 1500, 120),
-        Size2D(1140, 1320),
-        (By.CLASS_NAME, 'market-price-section'),
-    ),
-    # ConfigScreenshot(
-    #     'manthri.mp_rank',
-    #     '#MP Ranking by @ManthriLK (Click link for full list)',
-    #     'https://manthri.lk/en/ranks',
-    #     SECONDS_IN.WEEK,
-    #     Point2D(0, 0),
-    #     Size2D(830, 650),
-    #     (By.CLASS_NAME, 'people-list'),
-    # ),
     ConfigScreenshot(
         'cbsl.charts.2022Q4',
         'Macroeconomic Charts (2022 Q4) by @CBSL',
@@ -349,19 +297,6 @@ CONFIG_LIST = [
         Size2D16x9(640),
         (By.ID, 'multi-line-chart'),
     ),
-    # TODO: ZoomEarth images are invald #1
-    # ConfigZoomEarth(
-    #     'temperature',
-    #     '#Temperature',
-    # ),
-    # ConfigZoomEarth(
-    #     'wind-speed',
-    #     '#WindSpeed',
-    # ),
-    # ConfigZoomEarth(
-    #     'humidity',
-    #     '#Humidity',
-    # ),
     ConfigVentusky(
         'temperature-2m',
         '#Temperature',
