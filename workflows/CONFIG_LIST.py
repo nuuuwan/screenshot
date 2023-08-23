@@ -322,6 +322,15 @@ CONFIG_LIST = [
         Size2D16x9(1120),
         (By.ID, 'graph_load_curve'),
     ),
+    ConfigScreenshot(
+        'ceb.power_generation.daily_energy_share',
+        'Daily Energy Share by @CEB_lk',
+        'https://cebcare.ceb.lk/gensum/details',
+        SECONDS_IN.DAY,
+        Point2D(0, 0),
+        Size2D16x9(1120),
+        (By.ID, 'pie_energy_data'),
+    ),
 ]
 
 '''
