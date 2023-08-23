@@ -331,6 +331,15 @@ CONFIG_LIST = [
         Size2D16x9(1120),
         (By.ID, 'pie_energy_data'),
     ),
+    ConfigScreenshot(
+        'ceb.power_generation.major_reservoirs',
+        'Present Level and Rainfall at Major Reservoirs by @CEB_lk',
+        'https://cebcare.ceb.lk/gensum/details',
+        SECONDS_IN.DAY,
+        Point2D(0, 0),
+        Size2D16x9(1120),
+        (By.ID, 'table_reservoir_rainfall_data_wrapper'),
+    ),
 ]
 
 '''
