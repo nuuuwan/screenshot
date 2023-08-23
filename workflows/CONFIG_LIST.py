@@ -55,14 +55,6 @@ CONFIG_LIST = [
         Size2D(970, 800),
     ),
     ConfigScreenshot(
-        'ceb.power_generation.load_curve',
-        'Load Curve by @CEB_lk',
-        'https://cebcare.ceb.lk/gensum/details',
-        SECONDS_IN.DAY,
-        Point2D(800, 260),
-        Size2D(1120, 720),
-    ),
-    ConfigScreenshot(
         'cbsl.food_prices.daily_report',
         'Daily Price Report by @CBSL #CPI #Food',
         'https://www.cbsl.gov.lk'
@@ -320,6 +312,15 @@ CONFIG_LIST = [
     ConfigVentusky(
         'aqi',
         'Air Quality (#AQI)',
+    ),
+    ConfigScreenshot(
+        'ceb.power_generation.load_curve',
+        'Load Curve by @CEB_lk',
+        'https://cebcare.ceb.lk/gensum/details',
+        SECONDS_IN.DAY,
+        Point2D(0, 0),
+        Size2D16x9(1120),
+        (By.ID, 'graph_load_curve'),
     ),
 ]
 
