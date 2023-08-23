@@ -284,7 +284,7 @@ CONFIG_LIST = [
         'lanka_data_search',
         '#LankaDataSearch',
         'https://nuuuwan.github.io/lanka_data_search/',
-        SECONDS_IN.HOUR * 4,
+        SECONDS_IN.HOUR * 3,
         Point2D(0, 0),
         Size2D16x9(640),
         (By.ID, 'multi-line-chart'),
