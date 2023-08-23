@@ -349,6 +349,15 @@ CONFIG_LIST = [
         Size2D16x9(1120),
         (By.ID, 'table_pond_rainfall_data_wrapper'),
     ),
+    ConfigScreenshot(
+        'asia_cup_2023.winner',
+        ' #AsiaCup2023 Winning Odds by @Oddschecker',
+        'https://www.oddschecker.com/cricket/asia-cup',
+        SECONDS_IN.DAY,
+        Point2D(0, 0),
+        Size2D16x9(1120),
+        (By.ID, 'outrights'),
+    ),
 ]
 
 '''
