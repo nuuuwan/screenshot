@@ -222,16 +222,6 @@ CONFIG_LIST = [
         Size2D(1200, 900),
     ),
     ConfigScreenshot(
-        'energy_lk.daily_power',
-        'Daily Power Consumption'
-        + ' by Sri Lanka Sustainable Energy Authority (#SLSEA)',
-        'https://www.energy.gov.lk/index.php/en/',
-        SECONDS_IN.DAY,
-        Point2D(0, 0),
-        Size2D(480, 270),
-        (By.CLASS_NAME, 'changing_value'),
-    ),
-    ConfigScreenshot(
         'imf.lk.at_a_glance',
         'Sri Lanka "At a Glance" by @IMFNews',
         'https://www.imf.org/en/Countries/LKA#ataglance',
