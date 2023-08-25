@@ -11,7 +11,6 @@ log = Log(__name__)
 
 SHOULD_SEND_TWEET = True
 PROD_LOG_PATH = os.path.join(DIR_TEMP, 'prod.log')
-MAX_TWEETS_PER_MONTH = 1_500
 
 # Should be consistent with pipeline-cron.yml
 CRON_FREQUENCY = SECONDS_IN.MINUTE * 20
@@ -103,22 +102,6 @@ def main_prod(twitter):
     log.info(f'Tweeted {n_tweets}/{n} configs.')
     File(PROD_LOG_PATH).write('\n'.join(prod_log_lines))
     log.debug(f'Logged {PROD_LOG_PATH}')
-
-
-def main_test2():
-    id_to_n = {}
-    for g in range(100_000):
-        config_list = get_run_config_list()
-        for config in config_list:
-            id = config.id
-            if id not in id_to_n:
-                id_to_n[id] = 0
-            id_to_n[id] += 1
-    n_sum = sum(id_to_n.values())
-    for id, n in sorted(id_to_n.items(), key=lambda x: x[1]):
-        p = n / n_sum
-        per_day = p * SECONDS_IN.DAY / CRON_FREQUENCY / 2
-        print(f'{per_day:.1f}\t{id}')
 
 
 def main():
