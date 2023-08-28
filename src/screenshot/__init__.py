@@ -5,4 +5,4 @@ from screenshot.config.ConfigScreenshotAnimation import \
     ConfigScreenshotAnimation
 from screenshot.config.ConfigTE import ConfigTE
 from screenshot.config.ConfigVentusky import ConfigVentusky
-from screenshot.config.ConfigZoomEarth import ConfigZoomEarth
+
