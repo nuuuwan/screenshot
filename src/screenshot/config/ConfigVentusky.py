@@ -1,7 +1,8 @@
 from utils import SECONDS_IN
 
-from screenshot.config.ConfigScreenshotAnimation import \
-    ConfigScreenshotAnimation
+from screenshot.config.ConfigScreenshotAnimation import (
+    ConfigScreenshotAnimation,
+)
 from screenshot.config.Ventusky import Ventusky
 from utils_future import Point2D, Size2D
 
@@ -19,7 +20,7 @@ class ConfigVentusky(ConfigScreenshotAnimation):
             ventusky.get_timestamp(SECONDS_IN.HOUR * i)
             for i in range(0, 24, 3)
         ]
-        duration = SECONDS_IN.DAY
+        duration = SECONDS_IN.DAY * 2
         lefttop = Point2D(0, 0)
         size = Size2D(1920, 1920)
         super().__init__(

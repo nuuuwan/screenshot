@@ -3,14 +3,15 @@ import random
 from selenium.webdriver.common.by import By
 from utils import SECONDS_IN
 
-from screenshot import ConfigScreenshot, ConfigTE, ConfigVentusky
+from screenshot import ConfigScreenshot, ConfigTE
 from screenshot.config import config_utils
 from utils_future import Point2D, Size2D, Size2D16x9
+from workflows.CONFIG_LISTS.VENTUSKY import CONFIG_LIST_VENTUSKY
 
 last_date_id_non_weekend = config_utils.get_last_date_id_non_weekend()
 last_month = config_utils.get_last_month()
 
-CONFIG_LIST = [
+CONFIG_LIST = CONFIG_LIST_VENTUSKY + [
     ConfigScreenshot(
         'cbsl_cpi.chart',
         'Consumer Price Inflation (#CPI) by @CBSL',
@@ -279,30 +280,6 @@ CONFIG_LIST = [
         Point2D(0, 0),
         Size2D16x9(640),
         (By.ID, 'multi-line-chart'),
-    ),
-    ConfigVentusky(
-        'temperature-2m',
-        '#Temperature',
-    ),
-    ConfigVentusky(
-        'temp-feel',
-        'Perceived (#FeelsLike) #Temperature',
-    ),
-    ConfigVentusky(
-        'rain-3h',
-        '#Rainfall',
-    ),
-    ConfigVentusky(
-        'humidity',
-        '#RelativeHumidity (#RH)',
-    ),
-    ConfigVentusky(
-        'gust',
-        '#WindGusts',
-    ),
-    ConfigVentusky(
-        'aqi',
-        'Air Quality (#AQI)',
     ),
     ConfigScreenshot(
         'ceb.power_generation.load_curve',
