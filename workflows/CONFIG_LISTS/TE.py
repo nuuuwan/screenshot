@@ -33,14 +33,3 @@ CONFIG_LIST_TE = [
         SECONDS_IN.WEEK,
     ),
 ]
-
-'''
-    ConfigScreenshot(
-        '',
-        '',
-        '',
-        SECONDS_IN.DAY,
-        Point2D(1920- 1920, 1920- 1920),
-        Size2D(1920, 1920),
-    ),
-'''

@@ -1,6 +1,5 @@
 from screenshot import ConfigVentusky
 
-
 CONFIG_LIST_VENTUSKY = [
     ConfigVentusky(
         'temperature-2m',
