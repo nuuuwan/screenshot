@@ -54,23 +54,6 @@ CONFIG_LIST_MISC = [
         Size2D(950, 700),
     ),
     ConfigScreenshot(
-        'speedtest.internet_speed',
-        'Median Country #InternetSpeeds by @Speedtest',
-        'https://www.speedtest.net/global-index/sri-lanka',
-        SECONDS_IN.AVG_MONTH,
-        Point2D(1920 - 1558, 1920 - 1691),
-        Size2D(1200, 700),
-    ),
-    ConfigScreenshot(
-        'google.maps.traffic',
-        '#Traffic around #Colombo by @GoogleMaps',
-        'https://www.google.com'
-        + '/maps/@6.9111702,79.8750744,14z/data=!5m1!1e1?entry=ttu',
-        SECONDS_IN.DAY,
-        Point2D(1920 - 1712, 1920 - 1645),
-        Size2D(1650, 1500),
-    ),
-    ConfigScreenshot(
         'freemeteo.temp.asia',
         'Temperature in Asia via #FreeMeteo',
         'https://freemeteo.com.lk'
@@ -117,14 +100,6 @@ CONFIG_LIST_MISC = [
         (By.CLASS_NAME, 'bk-focus'),
     ),
     ConfigScreenshot(
-        'flightconnections.direct_flights',
-        'Direct Flights to #Colombo (#CMB, #BIA) by @FlightConnec',
-        'https://www.flightconnections.com/flights-to-colombo-cmb',
-        SECONDS_IN.WEEK,
-        Point2D(600, 600),
-        Size2D(1050, 750),
-    ),
-    ConfigScreenshot(
         'cse.sp.charts',
         'S&P Sri Lanka 20 Index by @SPDJIndices and @CSE_Media',
         'https://www.spglobal.com'
@@ -145,14 +120,6 @@ CONFIG_LIST_MISC = [
         Size2D(1920 - 700, 1920),
     ),
     ConfigScreenshot(
-        'imf.lk.at_a_glance',
-        'Sri Lanka "At a Glance" by @IMFNews',
-        'https://www.imf.org/en/Countries/LKA#ataglance',
-        SECONDS_IN.WEEK,
-        Point2D(1920 - 1129, 0),
-        Size2D(710, 380),
-    ),
-    ConfigScreenshot(
         'cselk.daily',
         '#ASPI by @CSE_Media',
         'https://cse.lk/',
@@ -160,14 +127,6 @@ CONFIG_LIST_MISC = [
         Point2D(0, 0),
         Size2D(550, 380),
         (By.CLASS_NAME, 'chart-block'),
-    ),
-    ConfigScreenshot(
-        'imf.lk.country_data',
-        'Sri Lanka Country Data by @IMFNews',
-        'https://www.imf.org/en/Countries/LKA#countrydata',
-        SECONDS_IN.WEEK,
-        Point2D(1920 - 1129, 0),
-        Size2D(700, 650),
     ),
     ConfigScreenshot(
         'prisons_lk.statistics',
@@ -184,16 +143,6 @@ CONFIG_LIST_MISC = [
         SECONDS_IN.DAY,
         Point2D(40, 40),
         Size2D(1840, 1160),
-    ),
-    ConfigScreenshot(
-        'flightaware.bia.map',
-        'Flights to and from @BIA_SriLanka by @flightaware',
-        'https://flightaware.com'
-        + '/live/airport_status_bigmap.rvt?airport=VCBI',
-        SECONDS_IN.DAY,
-        Point2D(0, 0),
-        Size2D(1760, 1760),
-        (By.CLASS_NAME, 'ol-overlaycontainer-stopevent'),
     ),
     ConfigScreenshot(
         'lanka_data_search',
