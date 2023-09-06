@@ -205,15 +205,3 @@ CONFIG_LIST_MISC = [
         (By.ID, 'multi-line-chart'),
     ),
 ]
-
-
-'''
-    ConfigScreenshot(
-        '',
-        '',
-        '',
-        SECONDS_IN.DAY,
-        Point2D(1920- 1920, 1920- 1920),
-        Size2D(1920, 1920),
-    ),
-'''

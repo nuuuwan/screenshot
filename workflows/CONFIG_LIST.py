@@ -1,5 +1,3 @@
-
-from screenshot.config import config_utils
 from workflows.CONFIG_LISTS.CBSL import CONFIG_LIST_CBSL
 from workflows.CONFIG_LISTS.CEB import CONFIG_LIST_CEB
 from workflows.CONFIG_LISTS.MISC import CONFIG_LIST_MISC
