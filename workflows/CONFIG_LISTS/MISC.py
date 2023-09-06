@@ -162,6 +162,15 @@ CONFIG_LIST_MISC = [
         Point2D(320, 580),
         Size2D16x9(1280),
     ),
+    ConfigScreenshot(
+        'cwc_2023_winning_odds',
+        '@ICC #CWC2023 Winning Odds - #Cricket via @OddsChecker',
+        'https://www.oddschecker.com/cricket/world-cup/winner',
+        SECONDS_IN.DAY,
+        Point2D(1920 - 1920, 1920 - 1920),
+        Size2D(1920, 1920),
+        (By.ID, 'oddsTableContainer'),
+    ),
 ]
 '''
     ConfigScreenshot(

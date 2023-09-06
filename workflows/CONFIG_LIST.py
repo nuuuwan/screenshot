@@ -11,4 +11,3 @@ CONFIG_LIST = (
     + CONFIG_LIST_CEB
     + CONFIG_LIST_MISC
 )
-
