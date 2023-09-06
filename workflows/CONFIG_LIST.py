@@ -12,13 +12,3 @@ CONFIG_LIST = (
     + CONFIG_LIST_MISC
 )
 
-'''
-    ConfigScreenshot(
-        '',
-        '',
-        '',
-        SECONDS_IN.DAY,
-        Point2D(1920- 1920, 1920- 1920),
-        Size2D(1920, 1920),
-    ),
-'''
