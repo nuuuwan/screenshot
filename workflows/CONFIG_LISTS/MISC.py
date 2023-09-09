@@ -153,24 +153,6 @@ CONFIG_LIST_MISC = [
         Size2D16x9(640),
         (By.ID, 'multi-line-chart'),
     ),
-    ConfigScreenshot(
-        'asia_cup_2023_points',
-        '#AsiaCup2023 Points Table - #Cricket',
-        'https://www.espncricinfo.com'
-        + '/series/asia-cup-2023-1388374/points-table-standings',
-        SECONDS_IN.DAY,
-        Point2D(320, 580),
-        Size2D16x9(1280),
-    ),
-    ConfigScreenshot(
-        'cwc_2023_winning_odds',
-        '@ICC #CWC2023 Winning Odds - #Cricket via @OddsChecker',
-        'https://www.oddschecker.com/cricket/world-cup/winner',
-        SECONDS_IN.DAY,
-        Point2D(1920 - 1920, 1920 - 1920),
-        Size2D(1920, 1920),
-        (By.ID, 'oddsTableContainer'),
-    ),
 ]
 '''
     ConfigScreenshot(
