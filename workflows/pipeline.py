@@ -75,7 +75,11 @@ def process_config(config: Config, twitter: Twitter):
 
 def main_test():
     log.info('Running pipeline in TEST mode.')
-    config = CONFIG_LIST[-1]
+
+    CONFIG_ID = 'ventusky.rain-3h'
+    log.debug(f'{CONFIG_ID=}')
+    config = [c for c in CONFIG_LIST if c.id == CONFIG_ID][0]
+
     config.download_image()
     os.startfile(config.image_path)
     log.debug(config.tweet_text)
