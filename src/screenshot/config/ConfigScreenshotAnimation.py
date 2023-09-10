@@ -47,7 +47,7 @@ class ConfigScreenshotAnimation(Config):
             lefttop = Point2D(width - 1000, 100)
 
             img = img.draw_text(lefttop, label)
-            img = img.equalize_hue()
+            img = img.equalize_value()
             img = img.resize(0.8)
             image_path_list.append(img.write_temp())
 

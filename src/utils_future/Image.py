@@ -80,10 +80,10 @@ class Image:
         idx = Image.equalize_map(list(c.getdata()))
         return c.point(lambda x: int(idx.get(x, 0) * 255))
 
-    def equalize_hue(self):  # -> Image
+    def equalize_value(self):  # -> Image
         im = self.im.convert('HSV')
         h, s, v = im.split()
-        h, s, v = [Image.equalize(c) for c in (h, s, v)]
+        v = Image.equalize(v)
 
         im = PILImage.merge('HSV', (h, s, v))
         im = im.convert('RGB')
