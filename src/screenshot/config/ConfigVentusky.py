@@ -2,15 +2,18 @@ from utils import SECONDS_IN
 
 from screenshot.config.ConfigScreenshotAnimation import \
     ConfigScreenshotAnimation
+from screenshot.config.LocationConfig import LocationConfig
 from screenshot.config.Ventusky import Ventusky
 from utils_future import Point2D, Size2D
 
 
 class ConfigVentusky(ConfigScreenshotAnimation):
-    def __init__(self, ventusky_id: str, title: str):
-        name = f'ventusky.{ventusky_id}'
+    def __init__(
+        self, ventusky_id: str, title: str, locationConfig: LocationConfig
+    ):
+        name = f'ventusky.{ventusky_id}.{locationConfig.id}'
         title_final = f'{title} #Forecast (Next 24 hours) by @Ventuskycom'
-        ventusky = Ventusky(ventusky_id)
+        ventusky = Ventusky(ventusky_id, locationConfig)
         urls = [
             ventusky.get_url_from_time(SECONDS_IN.HOUR * i)
             for i in range(0, 24, 3)
