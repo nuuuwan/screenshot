@@ -1,4 +1,3 @@
-
 from utils import SECONDS_IN, TIMEZONE_OFFSET, Time, TimeFormat
 
 from screenshot.config.Config import TIME_FORMAT

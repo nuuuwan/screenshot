@@ -11,8 +11,12 @@ class ConfigVentusky(ConfigScreenshotAnimation):
     def __init__(
         self, ventusky_id: str, title: str, locationConfig: LocationConfig
     ):
-        name = f'ventusky.{ventusky_id}.{locationConfig.id}'
-        title_final = f'{title} #Forecast (Next 24 hours) by @Ventuskycom'
+        location_id = locationConfig.id
+        name = f'ventusky.{ventusky_id}.{location_id}'
+        title_final = (
+            f'{title} #Forecast (Next 24 hours)'
+            + f' in #{location_id} by @Ventuskycom'
+        )
         ventusky = Ventusky(ventusky_id, locationConfig)
         urls = [
             ventusky.get_url_from_time(SECONDS_IN.HOUR * i)
