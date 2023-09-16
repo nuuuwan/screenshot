@@ -1,3 +1,5 @@
+import random
+
 from selenium.webdriver.common.by import By
 from utils import SECONDS_IN
 
@@ -171,6 +173,15 @@ CONFIG_LIST_MISC = [
         Point2D(1920 - 1920, 1920 - 1920),
         Size2D(1920, 1920),
         (By.CLASS_NAME, 'GrapherComponent'),
+    ),
+    ConfigScreenshot(
+        'statistics.sri_lanka',
+        'Statistical Pocket Book 2022 by @LankaSTAT',
+        'http://www.statistics.gov.lk/Publication/PocketBook#'
+        + 'page=%d' % (random.randint(16, 103)),
+        SECONDS_IN.HOUR * 12,
+        Point2D(470, 60),
+        Size2D16x9(980),
     ),
 ]
 
