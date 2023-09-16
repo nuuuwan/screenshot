@@ -60,7 +60,8 @@ def get_random_polygon():
     gnd = get_random_gnd()
     log.debug(gnd)
     lat0, lng0 = gnd.centroid
-    dlat, dlng = 0.01, 0.01
+    d = 0.004
+    dlat, dlng = d, d
     lat1, lng1 = lat0 - dlat, lng0 - dlng
     lat2, lng2 = lat0 + dlat, lng0 + dlng
 
