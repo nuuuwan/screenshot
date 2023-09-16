@@ -54,7 +54,7 @@ def get_location(gnd):
             f'#{String(district.name).camel} District,',
             f'#{String(province.name).camel} Province.',
             '',
-            f'{lat0:.4f}° N, {lng0:.4f}° E',
+            f'{lat0:.4f}°N, {lng0:.4f}°E',
         ]
     )
 
