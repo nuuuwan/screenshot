@@ -41,9 +41,11 @@ def get_random_gnd():
 def get_random_polygon():
     gnd = get_random_gnd()
     log.debug(gnd)
-    lat1, lng1 = gnd.centroid
+    lat0, lng0 = gnd.centroid
     dlat, dlng = 0.01, 0.01
-    lat2, lng2 = lat1 + dlat, lng1 + dlng
+    lat1, lng1 = lat0 - dlat, lng0 - dlng
+    lat2, lng2 = lat0 + dlat, lng0 + dlng
+
     p1 = (lng1, lat1)
     p2 = (lng2, lat1)
     p3 = (lng2, lat2)
@@ -53,5 +55,20 @@ def get_random_polygon():
         return f'{p[0]:.4f}+{p[1]:.4f}'
 
     polygon = f'POLYGON(({p(p1)},{p(p2)},{p(p3)},{p(p4)},{p(p1)}))'
-    location = f'{gnd.name} ({gnd.id})'
+
+    dsd = Ent.from_id(gnd.dsd_id)
+    district = Ent.from_id(gnd.district_id)
+    province = Ent.from_id(gnd.province_id)
+
+    location = '\n'.join(
+        [
+            f'{gnd.name} GND ({gnd.id}),',
+            f'{dsd.name} DSD,',
+            f'{district.name} District,',
+            f'{province.name} Province.',
+            '',
+            f'{lat0}° N, {lng0}° E',
+        ]
+    )
+
     return polygon, location
