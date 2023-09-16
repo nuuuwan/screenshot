@@ -159,8 +159,8 @@ CONFIG_LIST_MISC = [
         f'{location} via @SkyFiApp',
         'https://app.skyfi.com/explore/open?aoi=' + polygon,
         SECONDS_IN.HOUR * 12,
-        Point2D(755, 450),
-        Size2D(930, 930),
+        Point2D(850, 550),
+        Size2D(740, 740),
     ),
 ]
 '''
