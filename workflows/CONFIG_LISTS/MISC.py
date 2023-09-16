@@ -173,6 +173,7 @@ CONFIG_LIST_MISC = [
         (By.CLASS_NAME, 'GrapherComponent'),
     ),
 ]
+
 '''
     ConfigScreenshot(
         '',
