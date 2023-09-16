@@ -1,4 +1,9 @@
-from utils import SECONDS_IN, Time, TimeFormat
+import random
+
+from gig import Ent, EntType
+from utils import SECONDS_IN, Log, Time, TimeFormat
+
+log = Log('config_utils')
 
 
 def get_time_id_hour():
@@ -25,3 +30,28 @@ def get_last_month():
     ut = Time.now().ut
     ut = ut - SECONDS_IN.AVG_MONTH
     return TimeFormat('%B').stringify(Time(ut))
+
+
+def get_random_gnd():
+    gnd_list = Ent.list_from_type(EntType.GND)
+    random_i = random.randint(0, len(gnd_list) - 1)
+    return gnd_list[random_i]
+
+
+def get_random_polygon():
+    gnd = get_random_gnd()
+    log.debug(gnd)
+    lat1, lng1 = gnd.centroid
+    dlat, dlng = 0.01, 0.01
+    lat2, lng2 = lat1 + dlat, lng1 + dlng
+    p1 = (lng1, lat1)
+    p2 = (lng2, lat1)
+    p3 = (lng2, lat2)
+    p4 = (lng1, lat2)
+
+    def p(p):
+        return f'{p[0]:.4f}+{p[1]:.4f}'
+
+    polygon = f'POLYGON(({p(p1)},{p(p2)},{p(p3)},{p(p4)},{p(p1)}))'
+    location = f'{gnd.name}, ({gnd.id})'
+    return polygon, location

@@ -6,6 +6,7 @@ from screenshot.config import config_utils
 from utils_future import Point2D, Size2D, Size2D16x9
 
 last_month = config_utils.get_last_month()
+polygon, location = config_utils.get_random_polygon()
 
 CONFIG_LIST_MISC = [
     ConfigScreenshot(
@@ -152,6 +153,14 @@ CONFIG_LIST_MISC = [
         Point2D(0, 0),
         Size2D16x9(640),
         (By.ID, 'multi-line-chart'),
+    ),
+    ConfigScreenshot(
+        'skyfi.sri_lanka',
+        f'{location}, #SriLanka @SkyFiApp',
+        'https://app.skyfi.com/explore/open?aoi=' + polygon,
+        SECONDS_IN.HOUR * 6,
+        Point2D(750, 450),
+        Size2D(935, 935),
     ),
 ]
 '''

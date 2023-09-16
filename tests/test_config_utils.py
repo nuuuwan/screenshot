@@ -14,3 +14,14 @@ class TestCase(unittest.TestCase):
     def test_get_last_month(self):
         last_month = config_utils.get_last_month()
         self.assertIsNotNone(last_month)
+
+    def test_get_random_gnd(self):
+        gnd = config_utils.get_random_gnd()
+        gnd_id = gnd.id
+        self.assertEqual(gnd_id[:3], 'LK-')
+        self.assertEqual(len(gnd_id), 10)
+
+    def test_get_random_polygon(self):
+        polygon, location = config_utils.get_random_polygon()
+        self.assertIsNotNone(polygon)
+        self.assertIsNotNone(location)

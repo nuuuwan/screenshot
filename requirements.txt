@@ -4,3 +4,4 @@ Pillow
 twtr-nuuuwan
 imageio
 googletrans==4.0.0rc1
+gig-nuuuwan
