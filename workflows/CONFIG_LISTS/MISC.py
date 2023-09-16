@@ -7,6 +7,7 @@ from utils_future import Point2D, Size2D, Size2D16x9
 
 last_month = config_utils.get_last_month()
 polygon, location = config_utils.get_random_polygon()
+owid_info = config_utils.get_random_owid_url_info()
 
 CONFIG_LIST_MISC = [
     ConfigScreenshot(
@@ -161,6 +162,15 @@ CONFIG_LIST_MISC = [
         SECONDS_IN.HOUR * 12,
         Point2D(850, 550),
         Size2D(740, 740),
+    ),
+    ConfigScreenshot(
+        'owid.sri_lanka',
+        '%s from @OurWorldInData' % (owid_info['text']),
+        owid_info['url'],
+        SECONDS_IN.HOUR * 4,
+        Point2D(1920 - 1920, 1920 - 1920),
+        Size2D(1920, 1920),
+        (By.CLASS_NAME, 'GrapherComponent'),
     ),
 ]
 '''
