@@ -156,7 +156,7 @@ CONFIG_LIST_MISC = [
     ),
     ConfigScreenshot(
         'skyfi.sri_lanka',
-        f'{location}, #SriLanka @SkyFiApp',
+        f'{location} via @SkyFiApp',
         'https://app.skyfi.com/explore/open?aoi=' + polygon,
         SECONDS_IN.HOUR * 6,
         Point2D(755, 450),
