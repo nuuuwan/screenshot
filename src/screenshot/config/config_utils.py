@@ -46,6 +46,8 @@ def get_location(gnd):
     dsd = Ent.from_id(gnd.dsd_id)
     district = Ent.from_id(gnd.district_id)
     province = Ent.from_id(gnd.province_id)
+    pd = Ent.from_id(gnd.pd_id)
+    lg = Ent.from_id(gnd.lg_id)
 
     return '\n'.join(
         [
@@ -53,6 +55,10 @@ def get_location(gnd):
             f'#{String(dsd.name).camel} DSD,',
             f'#{String(district.name).camel} District,',
             f'#{String(province.name).camel} Province.',
+            '',
+            f'#{String(pd.name).camel} Polling Division.',
+            '',
+            f'#{String(lg.name).camel}.',
             '',
             f'{lat0:.4f}°N, {lng0:.4f}°E',
         ]
