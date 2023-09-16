@@ -1,7 +1,10 @@
 import random
 
 from gig import Ent, EntType
+from selenium.webdriver.common.by import By
 from utils import SECONDS_IN, Log, String, Time, TimeFormat
+
+from utils_future import Webpage
 
 log = Log('config_utils')
 
@@ -76,3 +79,27 @@ def get_random_polygon():
     polygon = f'POLYGON(({p(p1)},{p(p2)},{p(p3)},{p(p4)},{p(p1)}))'
 
     return polygon, get_location(gnd)
+
+
+def get_owid_url_info_list() -> list[str]:
+    ROOT_URL = 'https://ourworldindata.org/country/sri-lanka'
+    webpage = Webpage(ROOT_URL)
+    webpage.open()
+    ul_indicator = webpage.find_element(By.CLASS_NAME, 'indicators')
+    url_info_list = []
+    for a in ul_indicator.find_elements(By.TAG_NAME, 'a'):
+        url = a.get_attribute('href')
+        text = a.text
+        url_info_list.append(
+            dict(
+                url=url,
+                text=text,
+            )
+        )
+    return url_info_list
+
+
+def get_random_owid_url_info() -> str:
+    url_info_list = get_owid_url_info_list()
+    random_i = random.randint(0, len(url_info_list) - 1)
+    return url_info_list[random_i]
