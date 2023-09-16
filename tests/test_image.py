@@ -3,7 +3,7 @@ import unittest
 
 from utils_future import Image
 
-IMAGE_ID_LIST = ['image', 'image2']
+IMAGE_ID_LIST = ['image', 'image2', 'image3']
 TEST_IMAGE_PATH_LIST = [
     os.path.join('tests', f'{id}.original.png') for id in IMAGE_ID_LIST
 ]
