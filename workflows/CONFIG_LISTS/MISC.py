@@ -158,7 +158,7 @@ CONFIG_LIST_MISC = [
         'skyfi.sri_lanka',
         f'{location} via @SkyFiApp',
         'https://app.skyfi.com/explore/open?aoi=' + polygon,
-        SECONDS_IN.HOUR * 6,
+        SECONDS_IN.HOUR * 12,
         Point2D(755, 450),
         Size2D(930, 930),
     ),
