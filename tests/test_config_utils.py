@@ -25,3 +25,8 @@ class TestCase(unittest.TestCase):
         polygon, location = config_utils.get_random_polygon()
         self.assertIsNotNone(polygon)
         self.assertIsNotNone(location)
+
+    def test_get_owid_url_list(self):
+        url_list = config_utils.get_owid_url_list()
+        print(url_list[:10])
+        self.assertGreater(len(url_list), 1000)
