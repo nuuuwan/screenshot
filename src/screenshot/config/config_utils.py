@@ -53,5 +53,5 @@ def get_random_polygon():
         return f'{p[0]:.4f}+{p[1]:.4f}'
 
     polygon = f'POLYGON(({p(p1)},{p(p2)},{p(p3)},{p(p4)},{p(p1)}))'
-    location = f'{gnd.name}, ({gnd.id})'
+    location = f'{gnd.name} ({gnd.id})'
     return polygon, location
