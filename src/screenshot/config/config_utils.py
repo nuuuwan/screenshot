@@ -1,7 +1,7 @@
 import random
 
 from gig import Ent, EntType
-from utils import SECONDS_IN, Log, Time, TimeFormat
+from utils import SECONDS_IN, Log, String, Time, TimeFormat
 
 log = Log('config_utils')
 
@@ -38,6 +38,24 @@ def get_random_gnd():
     return gnd_list[random_i]
 
 
+def get_location(gnd):
+    lat0, lng0 = gnd.centroid
+    dsd = Ent.from_id(gnd.dsd_id)
+    district = Ent.from_id(gnd.district_id)
+    province = Ent.from_id(gnd.province_id)
+
+    return '\n'.join(
+        [
+            f'#{String(gnd.name).camel} GND ({gnd.id}),',
+            f'#{String(dsd.name).camel} DSD,',
+            f'#{String(district.name).camel} District,',
+            f'#{String(province.name).camel} Province.',
+            '',
+            f'{lat0:.4f}° N, {lng0:.4f}° E',
+        ]
+    )
+
+
 def get_random_polygon():
     gnd = get_random_gnd()
     log.debug(gnd)
@@ -56,19 +74,4 @@ def get_random_polygon():
 
     polygon = f'POLYGON(({p(p1)},{p(p2)},{p(p3)},{p(p4)},{p(p1)}))'
 
-    dsd = Ent.from_id(gnd.dsd_id)
-    district = Ent.from_id(gnd.district_id)
-    province = Ent.from_id(gnd.province_id)
-
-    location = '\n'.join(
-        [
-            f'{gnd.name} GND ({gnd.id}),',
-            f'{dsd.name} DSD,',
-            f'{district.name} District,',
-            f'{province.name} Province.',
-            '',
-            f'{lat0}° N, {lng0}° E',
-        ]
-    )
-
-    return polygon, location
+    return polygon, get_location(gnd)
