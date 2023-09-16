@@ -2,7 +2,7 @@ import os
 import tempfile
 
 from PIL import Image as PILImage
-from PIL import ImageDraw, ImageFont
+from PIL import ImageDraw, ImageEnhance, ImageFont
 from utils import Log
 
 from utils_future.Point2D import Point2D
@@ -89,3 +89,8 @@ class Image:
         im = im.convert('RGB')
         log.debug('Equalized hue')
         return Image(im)
+
+    def enhance(self, factor):  # -> Image
+        enhancer = ImageEnhance.Contrast(self.im)
+        im2 = enhancer.enhance(factor)
+        return Image(im2)

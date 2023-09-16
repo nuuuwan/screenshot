@@ -23,3 +23,10 @@ class TestCase(unittest.TestCase):
             im.resize(ratio=0.5).write(
                 test_image_path.replace('original.png', 'resize05.png')
             )
+
+    def test_image_enhance(self):
+        for test_image_path in TEST_IMAGE_PATH_LIST:
+            im = Image.load(test_image_path)
+            im.enhance(factor=2).write(
+                test_image_path.replace('original.png', 'enhance2.png')
+            )
