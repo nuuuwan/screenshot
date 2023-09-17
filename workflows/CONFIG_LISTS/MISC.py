@@ -159,7 +159,7 @@ CONFIG_LIST_MISC = [
     ),
     ConfigScreenshot(
         'skyfi.sri_lanka',
-        f'{location} via @SkyFiApp',
+        f'{location}\nvia @SkyFiApp',
         'https://app.skyfi.com/explore/open?aoi=' + polygon,
         SECONDS_IN.HOUR * 12,
         Point2D(850, 550),
@@ -167,7 +167,7 @@ CONFIG_LIST_MISC = [
     ),
     ConfigScreenshot(
         'owid.sri_lanka',
-        '%s from @OurWorldInData' % (owid_info['text']),
+        '%s\nvia @OurWorldInData' % (owid_info['text']),
         owid_info['url'],
         SECONDS_IN.HOUR * 4,
         Point2D(1920 - 1920, 1920 - 1920),
@@ -176,7 +176,7 @@ CONFIG_LIST_MISC = [
     ),
     ConfigScreenshot(
         'statistics.sri_lanka',
-        'Statistical Pocket Book 2022 by @LankaSTAT',
+        'Statistical Pocket Book 2022\nvia @LankaSTAT',
         'http://www.statistics.gov.lk/Publication/PocketBook#'
         + 'page=%d' % (random.randint(16, 103)),
         SECONDS_IN.HOUR * 12,
