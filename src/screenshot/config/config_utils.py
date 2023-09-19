@@ -49,16 +49,25 @@ def get_location(gnd):
     pd = Ent.from_id(gnd.pd_id)
     lg = Ent.from_id(gnd.lg_id)
 
+    lg_name, lg_type = None, None
+    for short, long in [
+        ('MC', 'Municipal Council'),
+        ('UC', 'Urban Council'),
+        ('PS', 'Pradeshiya Sabha'),
+    ]:
+        if lg.name.endswith(short):
+            lg_name = lg.name.replace(f' {short}', '')
+            lg_type = long
     return '\n'.join(
         [
-            f'#{String(gnd.name).camel} GND ({gnd.id}),',
-            f'#{String(dsd.name).camel} DSD,',
-            f'#{String(district.name).camel} District,',
-            f'#{String(province.name).camel} Province.',
+            f'#{String(gnd.name).camel} GND ({gnd.id}, {gnd.gnd_num})',
+            f'Pop. {gnd.population:,} (2012)',
             '',
-            f'#{String(pd.name).camel} Polling Division.',
-            '',
-            f'#{String(lg.name).camel}.',
+            f'#{String(dsd.name).camel} DSD',
+            f'#{String(district.name).camel} District',
+            f'#{String(province.name).camel} Province',
+            f'#{String(pd.name).camel} Polling Division',
+            f'#{String(lg_name).camel} {lg_type}',
             '',
             f'{lat0:.4f}°N, {lng0:.4f}°E',
         ]

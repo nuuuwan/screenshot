@@ -25,6 +25,7 @@ class TestCase(unittest.TestCase):
         polygon, location = config_utils.get_random_polygon()
         self.assertIsNotNone(polygon)
         self.assertIsNotNone(location)
+        print(location)
 
     def test_get_owid_url_list(self):
         url_list = config_utils.get_owid_url_info_list()
