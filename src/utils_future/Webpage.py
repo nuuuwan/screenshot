@@ -19,11 +19,13 @@ class Webpage:
         assert url.startswith('http')
         self.url = url
         self.driver = None
+
+        self.width, self.height = 1920, 1920
         if 'nuuuwan.github.io' in url or 'www.cricketworldcup.com' in url:
-            self.width = 640
-        else:
-            self.width = 1920
-        self.height = 1920
+            self.width, self.height = 640, 1920
+        elif 'ourworldindata.org' in url:
+            self.width, self.height = 960, 960
+
         self.current_url = self.url
 
     @cached_property
