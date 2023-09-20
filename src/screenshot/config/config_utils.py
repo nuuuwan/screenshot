@@ -46,7 +46,7 @@ def get_location(gnd):
     dsd = Ent.from_id(gnd.dsd_id)
     district = Ent.from_id(gnd.district_id)
     province = Ent.from_id(gnd.province_id)
-    pd = Ent.from_id(gnd.pd_id)
+    pd = Ent.from_id(gnd.pd_id) if gnd.pd_id else None
     lg = Ent.from_id(gnd.lg_id)
 
     lg_name, lg_type = None, None
@@ -66,7 +66,7 @@ def get_location(gnd):
             f'#{String(dsd.name).camel} DSD',
             f'#{String(district.name).camel} District',
             f'#{String(province.name).camel} Province',
-            f'#{String(pd.name).camel} Polling Division',
+            f'#{String(pd.name).camel} Polling Division' if pd else '',
             f'#{String(lg_name).camel} {lg_type}',
             '',
             f'{lat0:.4f}°N, {lng0:.4f}°E',
