@@ -104,7 +104,9 @@ def get_owid_url_info_list() -> list[str]:
     url_info_list = []
     for a in ul_indicator.find_elements(By.TAG_NAME, 'a'):
         url = a.get_attribute('href')
-        url = url.replace('country=LKA', 'country=LKA~OWID_ASI~OWID_WRL')
+        url = url.replace(
+            'country=LKA', 'country=LKA~Southern+Asia~OWID_ASI~OWID_WRL'
+        )
         text = a.text
         url_info_list.append(
             dict(
