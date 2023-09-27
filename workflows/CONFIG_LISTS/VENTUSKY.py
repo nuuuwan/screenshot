@@ -11,11 +11,11 @@ CONFIG_LIST_VENTUSKY = [
         '#Temperature',
         LOCATION_CONFIG_SRI_LANKA,
     ),
-    ConfigVentusky(
-        'temp-feel',
-        'Perceived (#FeelsLike) #Temperature',
-        LOCATION_CONFIG_SRI_LANKA,
-    ),
+    # ConfigVentusky(
+    #     'temp-feel',
+    #     'Perceived (#FeelsLike) #Temperature',
+    #     LOCATION_CONFIG_SRI_LANKA,
+    # ),
     ConfigVentusky(
         'rain-3h',
         '#Rainfall',
@@ -26,11 +26,11 @@ CONFIG_LIST_VENTUSKY = [
         '#RelativeHumidity (#RH)',
         LOCATION_CONFIG_SRI_LANKA,
     ),
-    ConfigVentusky(
-        'gust',
-        '#WindGusts',
-        LOCATION_CONFIG_SRI_LANKA,
-    ),
+    # ConfigVentusky(
+    #     'gust',
+    #     '#WindGusts',
+    #     LOCATION_CONFIG_SRI_LANKA,
+    # ),
     ConfigVentusky(
         'aqi',
         'Air Quality (#AQI)',
