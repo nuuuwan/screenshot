@@ -187,10 +187,32 @@ CONFIG_LIST_MISC = [
         'cwc2023.big_table',
         '#CWC23 Probabilities via #CWC23Simulator',
         'https://nuuuwan.github.io/cwc2023/',
-        SECONDS_IN.HOUR * 4,
+        SECONDS_IN.HOUR * 8,
         Point2D(1920 - 1920, 1920 - 1920),
         Size2D(1920, 1920),
         (By.ID, 'big-table'),
+    ),
+    ConfigScreenshot(
+        'cwc2023.next_matches',
+        '#CWC23 Next-Match via #CWC23Simulator',
+        'https://nuuuwan.github.io/cwc2023/?'
+        + 'context=eyJwYWdlTmFtZSI6IlNpbXVsYXRvclBhZ2UiLCJz'
+        + 'aW11bGF0b3JNb2RlSUQiOiJNQVhJTVVNX0xJS0VMSUhPT0QifQ%3D%3D',
+        SECONDS_IN.HOUR * 8,
+        Point2D(1920 - 1920, 1920 - 1920),
+        Size2D(1920, 1920),
+        (By.ID, 'next-matches'),
+    ),
+    ConfigScreenshot(
+        'cwc2023.knock_out_stage',
+        '#CWC23 Most Likely Scenario in Knock-Out Stage via #CWC23Simulator',
+        'https://nuuuwan.github.io/cwc2023/?'
+        + 'context=eyJwYWdlTmFtZSI6IlNpbXVsYXRvclBhZ2UiLCJz'
+        + 'aW11bGF0b3JNb2RlSUQiOiJNQVhJTVVNX0xJS0VMSUhPT0QifQ%3D%3D/',
+        SECONDS_IN.HOUR * 8,
+        Point2D(1920 - 1920, 1920 - 1920),
+        Size2D(1920, 1920),
+        (By.ID, 'knock-out-stage'),
     ),
 ]
 
