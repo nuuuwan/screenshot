@@ -8,7 +8,7 @@ from screenshot.config import config_utils
 from utils_future import Point2D, Size2D, Size2D16x9
 
 last_month = config_utils.get_last_month()
-polygon, location = config_utils.get_random_polygon()
+# polygon, location = config_utils.get_random_polygon()
 owid_info = config_utils.get_random_owid_url_info()
 
 CONFIG_LIST_MISC = [
@@ -157,14 +157,14 @@ CONFIG_LIST_MISC = [
         Size2D16x9(640),
         (By.ID, 'multi-line-chart'),
     ),
-    ConfigScreenshot(
-        'skyfi.sri_lanka',
-        f'{location}\nvia @SkyFiApp',
-        'https://app.skyfi.com/explore/open?aoi=' + polygon,
-        SECONDS_IN.HOUR * 12,
-        Point2D(850, 550),
-        Size2D(740, 740),
-    ),
+    # ConfigScreenshot(
+    #     'skyfi.sri_lanka',
+    #     f'{location}\nvia @SkyFiApp',
+    #     'https://app.skyfi.com/explore/open?aoi=' + polygon,
+    #     SECONDS_IN.HOUR * 12,
+    #     Point2D(850, 550),
+    #     Size2D(740, 740),
+    # ),
     ConfigScreenshot(
         'owid.sri_lanka',
         '%s\nvia @OurWorldInData' % (owid_info['text']),
