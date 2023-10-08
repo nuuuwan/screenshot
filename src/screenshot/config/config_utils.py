@@ -76,7 +76,7 @@ def get_location(gnd):
 
 def get_random_polygon():
     gnd = get_random_gnd()
-    log.debug(gnd)
+    log.debug(str(gnd))
     lat0, lng0 = gnd.centroid
     d = 0.004
     dlat, dlng = d, d

@@ -183,6 +183,15 @@ CONFIG_LIST_MISC = [
         Point2D(470, 60),
         Size2D16x9(980),
     ),
+    ConfigScreenshot(
+        'cwc2023.big_table',
+        '#CWC23 Probabilities via #CWC23Simulator',
+        'https://nuuuwan.github.io/cwc2023/',
+        SECONDS_IN.HOUR * 4,
+        Point2D(1920 - 1920, 1920 - 1920),
+        Size2D(1920, 1920),
+        (By.ID, 'big-table'),
+    ),
 ]
 
 '''
