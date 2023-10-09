@@ -195,9 +195,7 @@ CONFIG_LIST_MISC = [
     ConfigScreenshot(
         'cwc23.next_matches',
         '#CWC23 Next-Match via #CWC23Simulator',
-        'https://nuuuwan.github.io/cwc23/?'
-        + 'context=eyJwYWdlTmFtZSI6IlNpbXVsYXRvclBhZ2UiLCJz'
-        + 'aW11bGF0b3JNb2RlSUQiOiJNQVhJTVVNX0xJS0VMSUhPT0QifQ%3D%3D',
+        'https://nuuuwan.github.io/cwc23/?'+'context=eyJwYWdlTmFtZSI6Ik5leHRNYXRjaGVz'+'UGFnZSIsInNpbXVsYXRvck1vZGVJRCI6Ik1BWElNVU1fTElLRUxJSE9PRCJ9',
         SECONDS_IN.HOUR * 8,
         Point2D(1920 - 1920, 1920 - 1920),
         Size2D(1920, 1920),
@@ -206,9 +204,7 @@ CONFIG_LIST_MISC = [
     ConfigScreenshot(
         'cwc23.knock_out_stage',
         '#CWC23 Most Likely Scenario in Knock-Out Stage via #CWC23Simulator',
-        'https://nuuuwan.github.io/cwc23/?'
-        + 'context=eyJwYWdlTmFtZSI6IlNpbXVsYXRvclBhZ2UiLCJz'
-        + 'aW11bGF0b3JNb2RlSUQiOiJNQVhJTVVNX0xJS0VMSUhPT0QifQ%3D%3D/',
+        'https://nuuuwan.github.io/cwc23/?'+'context=eyJwYWdlTmFtZSI6IlNpbXVsYXRvclBhZ2UiLC'+'JzaW11bGF0b3JNb2RlSUQiOiJNQVhJTVVNX0xJS0VMSUhPT0QifQ%3D%3D',
         SECONDS_IN.HOUR * 8,
         Point2D(1920 - 1920, 1920 - 1920),
         Size2D(1920, 1920),

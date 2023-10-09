@@ -76,7 +76,7 @@ def process_config(config: Config, twitter: Twitter):
 def main_test():
     log.info('Running pipeline in TEST mode.')
 
-    CONFIG_ID = 'cwc23.next_matches'
+    CONFIG_ID = 'cwc23.knock_out_stage'
     log.debug(f'{CONFIG_ID=}')
     config = [c for c in CONFIG_LIST if c.id == CONFIG_ID][0]
 
