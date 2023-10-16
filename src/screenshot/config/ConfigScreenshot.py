@@ -25,7 +25,5 @@ class ConfigScreenshot(Config):
         img.crop(
             self.point,
             self.size,
-        ).enhance(
-            factor=2
         ).write(self.image_path)
         self.current_url = webpage.current_url
