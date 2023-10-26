@@ -186,7 +186,9 @@ CONFIG_LIST_MISC = [
     ConfigScreenshot(
         'cwc23.big_table',
         '#CWC23 Probabilities via #CWC23Simulator',
-        'https://nuuuwan.github.io/cwc23/',
+        'https://nuuuwan.github.io/cwc23/?'
+        + 'context=eyJwYWdlTmFtZSI6IlByb2JhYmlsaXR5UGFnZ'
+        + 'SIsInNpbXVsYXRvck1vZGVJRCI6Ik1BWElNVU1fTElLRUxJSE9PRCJ9',
         SECONDS_IN.HOUR * 8,
         Point2D(1920 - 1920, 1920 - 1920),
         Size2D(1920, 1920),
