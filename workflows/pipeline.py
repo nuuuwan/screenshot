@@ -2,7 +2,7 @@ import os
 import random
 
 from twtr import Tweet, Twitter
-from utils import SECONDS_IN, TIMEZONE_OFFSET, File, Log, Time, TimeFormat
+from utils import SECONDS_IN, File, Log
 
 from screenshot import DIR_TEMP, Config
 from workflows.CONFIG_LIST import CONFIG_LIST
@@ -14,16 +14,6 @@ PROD_LOG_PATH = os.path.join(DIR_TEMP, 'prod.log')
 
 # Should be consistent with pipeline-cron.yml
 CRON_FREQUENCY = SECONDS_IN.MINUTE * 20
-
-
-def is_day_in_sri_lanka():
-    h = int(
-        TimeFormat('%H', timezone_offset=TIMEZONE_OFFSET.LK).stringify(
-            Time.now()
-        )
-    )
-    log.debug(f'{h=}')
-    return 10 <= h < 22
 
 
 def init_dir():
@@ -87,10 +77,6 @@ def main_test():
 
 
 def main_prod(twitter):
-    if not is_day_in_sri_lanka():
-        log.warning('Not Daytime in Sri Lanka. Skipping.')
-        return
-
     log.info('Running pipeline in PROD mode.')
     n = len(CONFIG_LIST)
     prod_log_lines = []
