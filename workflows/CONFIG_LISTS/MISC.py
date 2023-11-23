@@ -183,7 +183,38 @@ CONFIG_LIST_MISC = [
         Point2D(470, 60),
         Size2D16x9(980),
     ),
-  
+    ConfigScreenshot(
+        'globalpetrolprices.gasoline_prices',
+        'Global #Gasoline (#Petrol) Prices by @GlobalPetrol',
+        'https://www.globalpetrolprices.com/gasoline_prices/',
+        SECONDS_IN.HOUR * 12,
+        Point2D(0, 400),
+        Size2D(800, 3400),
+    ),
+    ConfigScreenshot(
+        'globalpetrolprices.diesel_prices',
+        'Global #Diesel Prices by @GlobalPetrol',
+        'https://www.globalpetrolprices.com/diesel_prices/',
+        SECONDS_IN.HOUR * 12,
+        Point2D(0, 400),
+        Size2D(800, 3400),
+    ),
+    ConfigScreenshot(
+        'globalpetrolprices.lpg_prices',
+        'Global #LPG (#Gas) Prices by @GlobalPetrol',
+        'https://www.globalpetrolprices.com/lpg_prices/',
+        SECONDS_IN.HOUR * 12,
+        Point2D(0, 400),
+        Size2D(800, 3400),
+    ),
+    ConfigScreenshot(
+        'globalpetrolprices.electricity_prices',
+        'Global #Electricity Prices by @GlobalPetrol',
+        'https://www.globalpetrolprices.com/electricity_prices/',
+        SECONDS_IN.HOUR * 12,
+        Point2D(0, 400),
+        Size2D(800, 3400),
+    ),
 ]
 
 '''

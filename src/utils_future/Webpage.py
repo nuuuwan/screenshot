@@ -8,10 +8,12 @@ from selenium.webdriver.firefox.options import Options
 from utils import Log, hashx
 
 from utils_future.Image import Image
+from utils_future.SystemMode import SystemMode
 
 log = Log(__name__)
 
-T_WAIT_FOR_SCREENSHOT = 120
+T_WAIT_FOR_SCREENSHOT = 1 if SystemMode.is_test() else 120
+log.debug(f'{T_WAIT_FOR_SCREENSHOT=}')
 
 
 class Webpage:
@@ -25,6 +27,8 @@ class Webpage:
             self.width, self.height = 640, 1920
         elif 'ourworldindata.org' in url:
             self.width, self.height = 960, 960
+        elif 'globalpetrolprices' in url:
+            self.width, self.height = 800, 4200
 
         self.current_url = self.url
 
