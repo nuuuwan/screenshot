@@ -1,6 +1,6 @@
 import os
 
-TEST_OS_LIST = ['nt', 'posix']
+TEST_OS_LIST = ['nt']
 
 
 class SystemMode:
