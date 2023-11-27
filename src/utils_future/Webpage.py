@@ -12,7 +12,7 @@ from utils_future.SystemMode import SystemMode
 
 log = Log(__name__)
 
-T_WAIT_FOR_SCREENSHOT = 1 if SystemMode.is_test() else 120
+T_WAIT_FOR_SCREENSHOT = 1 if SystemMode.is_test() else 240
 log.debug(f'{T_WAIT_FOR_SCREENSHOT=}')
 
 
