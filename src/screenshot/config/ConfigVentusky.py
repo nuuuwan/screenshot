@@ -1,8 +1,7 @@
 from utils import SECONDS_IN
 
-from screenshot.config.ConfigScreenshotAnimation import (
-    ConfigScreenshotAnimation,
-)
+from screenshot.config.ConfigScreenshotAnimation import \
+    ConfigScreenshotAnimation
 from screenshot.config.LocationConfig import LocationConfig
 from screenshot.config.Ventusky import Ventusky
 from utils_future import Point2D, Size2D
