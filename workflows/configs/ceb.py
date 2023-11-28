@@ -4,7 +4,7 @@ from utils import SECONDS_IN
 from screenshot import ConfigScreenshot
 from utils_future import Point2D, Size2D16x9
 
-CONFIG_LIST_CEB = [
+CONFIG_LIST = [
     ConfigScreenshot(
         'ceb.power_generation.load_curve',
         'Load Curve by @CEB_lk',

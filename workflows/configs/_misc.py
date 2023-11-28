@@ -11,7 +11,7 @@ last_month = config_utils.get_last_month()
 # polygon, location = config_utils.get_random_polygon()
 owid_info = config_utils.get_random_owid_url_info()
 
-CONFIG_LIST_MISC = [
+CONFIG_LIST = [
     ConfigScreenshot(
         'dcs_snapshot.chart',
         'Economic Snapshot by @LankaSTAT #DCS',

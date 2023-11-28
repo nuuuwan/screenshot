@@ -9,7 +9,7 @@ from utils_future import Point2D, Size2D
 last_date_id_non_weekend = config_utils.get_last_date_id_non_weekend()
 
 
-CONFIG_LIST_CBSL = [
+CONFIG_LIST = [
     ConfigScreenshot(
         'cbsl_cpi.chart',
         'Consumer Price Inflation (#CPI) by @CBSL',

@@ -6,7 +6,7 @@ from screenshot.config import config_utils
 last_date_id_non_weekend = config_utils.get_last_date_id_non_weekend()
 last_month = config_utils.get_last_month()
 
-CONFIG_LIST_TE = [
+CONFIG_LIST = [
     ConfigTE(
         'gdp-growth-annual',
         '#GDP Annual Growth Rate by @CBSL (via @tEconomics)',

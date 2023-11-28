@@ -4,7 +4,7 @@ LOCATION_CONFIG_SRI_LANKA = LocationConfig('sri_lanka', 7.87, 80.65, 7)
 
 LOCATION_CONFIG_COLOMBO = LocationConfig('colombo', 6.93, 79.86, 11)
 
-CONFIG_LIST_VENTUSKY = [
+CONFIG_LIST = [
     # SRI_LANKA
     ConfigVentusky(
         'temperature-2m',
