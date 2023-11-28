@@ -34,4 +34,13 @@ def get_config_list():
             Point2D(40, 40),
             Size2D(1840, 1160),
         ),
+        ConfigScreenshot(
+            'nbro.aq',
+            'Dynamic #AirQuality Map by #NBROLk',
+            'https://aq.nbro.gov.lk/',
+            SECONDS_IN.HOUR * 3,
+            Point2D(0, 0),
+            Size2D(1920, 1920),
+            (By.CLASS_NAME, 'card'),
+        ),
     ]

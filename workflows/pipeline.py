@@ -1,6 +1,7 @@
 import os
 import random
 import time
+
 from twtr import Tweet, Twitter
 from utils import SECONDS_IN, File, Log
 
@@ -17,7 +18,7 @@ PROD_LOG_PATH = os.path.join(DIR_TEMP, 'prod.log')
 
 # Should be consistent with pipeline-cron.yml
 CRON_FREQUENCY = SECONDS_IN.MINUTE * 20
-TEST_CONFIG_ID_PART = 'owid.sri_lanka'
+TEST_CONFIG_ID_PART = 'nbro.aq'
 
 
 def init_dir():
