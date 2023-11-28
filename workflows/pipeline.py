@@ -1,6 +1,6 @@
 import os
 import random
-
+import time
 from twtr import Tweet, Twitter
 from utils import SECONDS_IN, File, Log
 
@@ -37,6 +37,7 @@ def init_twitter():
 
 
 def get_run_config_list() -> list:
+    random.seed(time.time())
     config_list = CONFIG_LIST.copy()
     random.shuffle(config_list)
 
