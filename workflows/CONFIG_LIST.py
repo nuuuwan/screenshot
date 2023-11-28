@@ -1,9 +1,20 @@
-from workflows.configs import _misc, cbsl, ceb, te, ventusky
+from workflows.configs import (_misc, cbsl, ceb, globalpetrolprices, owid, te,
+                               ventusky)
 
-CONFIG_LIST = (
-    _misc.CONFIG_LIST
-    + cbsl.CONFIG_LIST
-    + ceb.CONFIG_LIST
-    + te.CONFIG_LIST
-    + ventusky.CONFIG_LIST
-)
+
+def get_config_list():
+    modules = [
+        _misc,
+        cbsl,
+        ceb,
+        globalpetrolprices,
+        owid,
+        te,
+        ventusky,
+    ]
+    config_list = []
+    for module in modules:
+        config_list.extend(module.CONFIG_LIST)
+
+
+CONFIG_LIST = get_config_list()

@@ -8,8 +8,7 @@ from screenshot.config import config_utils
 from utils_future import Point2D, Size2D, Size2D16x9
 
 last_month = config_utils.get_last_month()
-# polygon, location = config_utils.get_random_polygon()
-owid_info = config_utils.get_random_owid_url_info()
+
 
 CONFIG_LIST = [
     ConfigScreenshot(
@@ -28,16 +27,6 @@ CONFIG_LIST = [
         SECONDS_IN.DAY,
         Point2D(330, 70),
         Size2D(1260, 950),
-    ),
-    ConfigScreenshot(
-        'owid.covid.chart',
-        'Daily new confirmed #COVID19 deaths'
-        + ' per million people by @OurWorldInData',
-        'https://ourworldindata.org'
-        + '/explorers/coronavirus-data-explorer?tab=map',
-        SECONDS_IN.WEEK,
-        Point2D(600, 240),
-        Size2D(970, 800),
     ),
     ConfigScreenshot(
         'sltda.monthly_tourist_arrivals.primary_markets',
@@ -129,15 +118,6 @@ CONFIG_LIST = [
         Point2D(0, 0),
         Size2D16x9(640),
         (By.ID, 'multi-line-chart'),
-    ),
-    ConfigScreenshot(
-        'owid.sri_lanka',
-        '%s\nvia @OurWorldInData' % (owid_info['text']),
-        owid_info['url'],
-        SECONDS_IN.HOUR * 4,
-        Point2D(1920 - 1920, 1920 - 1920),
-        Size2D(1920, 1920),
-        (By.CLASS_NAME, 'GrapherComponent'),
     ),
     ConfigScreenshot(
         'statistics.sri_lanka',
