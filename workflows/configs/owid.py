@@ -33,8 +33,10 @@ def get_owid_url_info_list_nocache() -> list[str]:
         )
     return url_info_list
 
+
 def is_expired() -> bool:
     return random.random() < 0.01
+
 
 def get_owid_url_info_list() -> list[str]:
     json_file = JSONFile(OWID_INFO_PATH)

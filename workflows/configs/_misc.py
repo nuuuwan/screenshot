@@ -1,5 +1,3 @@
-import random
-
 from selenium.webdriver.common.by import By
 from utils import SECONDS_IN
 
@@ -12,23 +10,6 @@ last_month = config_utils.get_last_month()
 
 def get_config_list():
     return [
-        ConfigScreenshot(
-            'dcs_snapshot.chart',
-            'Economic Snapshot by @LankaSTAT #DCS',
-            'http://www.statistics.gov.lk',
-            SECONDS_IN.WEEK,
-            Point2D(1060, 160),
-            Size2D(460, 340),
-        ),
-        ConfigScreenshot(
-            'moh.dengue.chart',
-            '#Dengue Cases by @DengueUnit @MoH_SriLanka',
-            'https://lookerstudio.google.com/reporting'
-            + '/95b978f1-5c1a-44fb-a436-e19819e939c0/page/XRtTB',
-            SECONDS_IN.DAY,
-            Point2D(330, 70),
-            Size2D(1260, 950),
-        ),
         ConfigScreenshot(
             'sltda.monthly_tourist_arrivals.primary_markets',
             '#Tourist Arrivals by Country @SLTDA_SriLanka',
@@ -110,15 +91,6 @@ def get_config_list():
             SECONDS_IN.DAY,
             Point2D(40, 40),
             Size2D(1840, 1160),
-        ),
-        ConfigScreenshot(
-            'statistics.sri_lanka',
-            'Statistical Pocket Book 2022\nvia @LankaSTAT',
-            'http://www.statistics.gov.lk/Publication/PocketBook#'
-            + 'page=%d' % (random.randint(16, 103)),
-            SECONDS_IN.HOUR * 12,
-            Point2D(470, 60),
-            Size2D16x9(980),
         ),
     ]
 
