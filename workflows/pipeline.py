@@ -42,9 +42,10 @@ def get_run_config_list() -> list:
 
     while True:
         for config in config_list:
-            p = CRON_FREQUENCY / config.frequency
-            if random.random() < p:
-                return [config]
+            if not config.is_recently_downloaded():
+                p = CRON_FREQUENCY / config.frequency
+                if random.random() < p:
+                    return [config]
 
 
 def process_config(config: Config, twitter: Twitter):

@@ -2,6 +2,7 @@ import os
 import tempfile
 from functools import cached_property
 
+import requests
 from utils import TIMEZONE_OFFSET, Log, Time, TimeFormat
 
 from screenshot.config import config_utils
@@ -38,14 +39,33 @@ class Config:
         raise NotImplementedError
 
     @cached_property
+    def image_file_name_only(self) -> str:
+        time_id = config_utils.get_time_id_hour()
+        return f'{self.id}.{time_id}.png'
+
+    @cached_property
     def image_path(self):
         assert os.path.exists(DIR_TEMP)
         dir_config = os.path.join(DIR_TEMP, self.id)
         if not os.path.exists(dir_config):
             os.mkdir(dir_config)
             log.debug('Created directory ' + dir_config)
-        time_id = config_utils.get_time_id_hour()
-        return os.path.join(dir_config, f'{self.id}.{time_id}.png')
+        return os.path.join(dir_config, self.image_file_name_only)
+
+    @cached_property
+    def remote_image_url(self):
+        return (
+            'https://raw.githubusercontent.com/nuuuwan/screenshot/data'
+            + f'/{self.id}/{self.image_file_name_only}'
+        )
+
+    def is_recently_downloaded(self) -> bool:
+        try:
+            r = requests.head(self.remote_image_url)
+            return r.status_code == 200
+        except Exception as e:
+            log.exception(f'Failed to check {self.remote_image_url}: {e}')
+            return False
 
     @cached_property
     def tweet_text(self):
