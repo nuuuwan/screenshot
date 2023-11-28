@@ -1,10 +1,6 @@
 from utils import SECONDS_IN
 
-from screenshot.config import config_utils
 from screenshot.config.ConfigImage import ConfigImage
-
-last_date_id_non_weekend = config_utils.get_last_date_id_non_weekend()
-last_month = config_utils.get_last_month()
 
 
 def get_config(te_id: str, description: str) -> ConfigImage:

@@ -1,16 +1,20 @@
 import os
 import random
+import time
 
 from selenium.webdriver.common.by import By
-from utils import SECONDS_IN, JSONFile
+from utils import SECONDS_IN, JSONFile, Log
 
 from screenshot import ConfigScreenshot
-from screenshot.config import config_utils
 from utils_future import Point2D, Size2D, Webpage
 
-last_month = config_utils.get_last_month()
-
 OWID_INFO_PATH = os.path.join('workflows', 'configs', 'owid_info.json')
+
+
+log = Log('owid')
+random_seed = time.time()
+log.debug(f'{random_seed=}')
+random.seed(random_seed)
 
 
 def get_owid_url_info_list_nocache() -> list[str]:

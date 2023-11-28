@@ -2,10 +2,7 @@ from selenium.webdriver.common.by import By
 from utils import SECONDS_IN
 
 from screenshot import ConfigScreenshot
-from screenshot.config import config_utils
 from utils_future import Point2D, Size2D
-
-last_month = config_utils.get_last_month()
 
 
 def get_config_list():
