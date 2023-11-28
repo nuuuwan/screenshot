@@ -21,9 +21,6 @@ def get_owid_url_info_list_nocache() -> list[str]:
     url_info_list = []
     for a in ul_indicator.find_elements(By.TAG_NAME, 'a'):
         url = a.get_attribute('href')
-        url = url.replace(
-            'country=LKA', 'country=LKA~Southern+Asia~OWID_ASI~OWID_WRL'
-        )
         text = a.text
         url_info_list.append(
             dict(
@@ -50,12 +47,23 @@ def get_owid_url_info_list() -> list[str]:
 
 def get_random_owid_url_info() -> str:
     url_info_list = get_owid_url_info_list()
-    random_i = random.randint(0, len(url_info_list) - 1)
+    n = len(url_info_list)
+    random_i = random.randint(0, n - 1)
     return url_info_list[random_i]
 
 
 def get_config_list():
     owid_info = get_random_owid_url_info()
+    text = owid_info['text']
+    id = text.replace(' ', '-').lower()
+    url = owid_info['url']
+    url = url.replace(
+        'country=LKA',
+        'facet=entity&uniformYAxis=0'
+        + '&country=LKA~IND~PAK~BGD~MYS'
+        + '~Southern+Asia~South+Asia+(WB)~OWID_ASI~OWID_WRL',
+    )
+
     return [
         ConfigScreenshot(
             'owid.covid.chart',
@@ -68,9 +76,9 @@ def get_config_list():
             Size2D(970, 800),
         ),
         ConfigScreenshot(
-            'owid.sri_lanka',
-            '%s\nvia @OurWorldInData' % (owid_info['text']),
-            owid_info['url'],
+            f'owid.sri_lanka.{id}',
+            '%s\nvia @OurWorldInData' % (text),
+            url,
             SECONDS_IN.HOUR * 4,
             Point2D(1920 - 1920, 1920 - 1920),
             Size2D(1920, 1920),
