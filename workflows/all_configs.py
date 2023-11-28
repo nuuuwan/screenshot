@@ -1,5 +1,13 @@
-from workflows.configs import (_misc, cbsl, ceb, globalpetrolprices, nuuuwan,
-                               owid, te, ventusky)
+from workflows.configs import (
+    _misc,
+    cbsl,
+    ceb,
+    globalpetrolprices,
+    nuuuwan,
+    owid,
+    te,
+    ventusky,
+)
 
 
 def get_config_list():
