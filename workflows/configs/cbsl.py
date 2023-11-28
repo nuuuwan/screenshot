@@ -61,4 +61,20 @@ def get_config_list():
             Point2D(1920 - 1557, 1920 - 1886),
             Size2D(1200, 900),
         ),
+        ConfigScreenshot(
+            'cbsl.daily_economic_indicators_1',
+            'Daily Economic Indicators (#ExchangeRates & #MoneyMarket) by @CBSL',
+            f'https://www.cbsl.gov.lk/sites/default/files/daily_economic_indicators_{last_date_id_non_weekend}_e.pdf',
+            SECONDS_IN.HOUR * 12,
+            Point2D(460, 40),
+            Size2D(1000, 730),
+        ),
+        ConfigScreenshot(
+            'cbsl.daily_economic_indicators_2',
+            'Daily Economic Indicators (#ShareMarket & #Energy) by @CBSL',
+            f'https://www.cbsl.gov.lk/sites/default/files/daily_economic_indicators_{last_date_id_non_weekend}_e.pdf',
+            SECONDS_IN.HOUR * 12,
+            Point2D(460, 40 + 730),
+            Size2D(1000, 1400 - 730),
+        ),
     ]
