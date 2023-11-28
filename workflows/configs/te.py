@@ -1,37 +1,46 @@
 from utils import SECONDS_IN
 
-from screenshot import ConfigTE
 from screenshot.config import config_utils
+from screenshot.config.ConfigImage import ConfigImage
 
 last_date_id_non_weekend = config_utils.get_last_date_id_non_weekend()
 last_month = config_utils.get_last_month()
 
 
+def get_config(te_id: str, description: str) -> ConfigImage:
+    elem_img_id = 'ImageChart'
+    id = f'te.{te_id}'
+    url = f'https://tradingeconomics.com/sri-lanka/{te_id}'
+
+    return ConfigImage(
+        id,
+        f'{description} by @CBSL (via @tEconomics)',
+        url,
+        SECONDS_IN.WEEK,
+        elem_img_id,
+    )
+
+
 def get_config_list():
     return [
-        ConfigTE(
+        get_config(
             'gdp-growth-annual',
-            '#GDP Annual Growth Rate by @CBSL (via @tEconomics)',
-            SECONDS_IN.WEEK,
+            '#GDP Annual Growth Rate',
         ),
-        ConfigTE(
+        get_config(
             'foreign-exchange-reserves',
-            'Foreign Exchange Reserves by @CBSL (via @tEconomics)',
-            SECONDS_IN.WEEK,
+            'Foreign Exchange Reserves',
         ),
-        ConfigTE(
+        get_config(
             'car-registrations',
-            'Car Registrations by @CBSL (via @tEconomics)',
-            SECONDS_IN.WEEK,
+            'Car Registrations',
         ),
-        ConfigTE(
+        get_config(
             'balance-of-trade',
-            'Balance of #Trade by @CBSL (via @tEconomics)',
-            SECONDS_IN.WEEK,
+            'Balance of #Trade',
         ),
-        ConfigTE(
+        get_config(
             'interest-rate',
-            '#InterestRates by @CBSL (via @tEconomics)',
-            SECONDS_IN.WEEK,
+            '#InterestRates',
         ),
     ]
