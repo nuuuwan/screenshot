@@ -17,6 +17,7 @@ PROD_LOG_PATH = os.path.join(DIR_TEMP, 'prod.log')
 
 # Should be consistent with pipeline-cron.yml
 CRON_FREQUENCY = SECONDS_IN.MINUTE * 20
+TEST_CONFIG_ID = 'ceb.power_generation.table_energy_data'
 
 
 def init_dir():
@@ -69,9 +70,9 @@ def process_config(config: Config, twitter: Twitter):
 def main_test():
     log.info('Running pipeline in TEST mode.')
 
-    CONFIG_ID = 'globalpetrolprices.electricity_prices'
-    log.debug(f'{CONFIG_ID=}')
-    config = [c for c in CONFIG_LIST if c.id == CONFIG_ID][0]
+    TEST_CONFIG_ID = 'ceb.power_generation.table_energy_data'
+    log.debug(f'{TEST_CONFIG_ID=}')
+    config = [c for c in CONFIG_LIST if c.id == TEST_CONFIG_ID][0]
 
     config.download_image()
     os.startfile(config.image_path)

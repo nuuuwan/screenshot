@@ -22,6 +22,10 @@ def get_config_list():
         get_config('graph_load_curve', 'Load Curve'),
         get_config('pie_energy_data', 'Daily Energy Share'),
         get_config(
+            'table_energy_data',
+            'Daily Energy Data',
+        ),
+        get_config(
             'table_reservoir_rainfall_data_wrapper',
             'Present Level and Rainfall at ' + 'Major Reservoirs',
         ),
