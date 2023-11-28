@@ -5,12 +5,15 @@ from twtr import Tweet, Twitter
 from utils import SECONDS_IN, File, Log
 
 from screenshot import DIR_TEMP, Config
-from workflows.CONFIG_LIST import CONFIG_LIST
+from workflows.all_configs import get_config_list
 
 log = Log(__name__)
 
+CONFIG_LIST = get_config_list()
+
 SHOULD_SEND_TWEET = True
 PROD_LOG_PATH = os.path.join(DIR_TEMP, 'prod.log')
+
 
 # Should be consistent with pipeline-cron.yml
 CRON_FREQUENCY = SECONDS_IN.MINUTE * 20

@@ -15,7 +15,4 @@ def get_config_list():
     ]
     config_list = []
     for module in modules:
-        config_list.extend(module.CONFIG_LIST)
-
-
-CONFIG_LIST = get_config_list()
+        config_list.extend(module.get_config_list())

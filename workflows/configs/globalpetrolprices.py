@@ -15,9 +15,10 @@ def get_config(id: str, label: str) -> ConfigScreenshot:
     )
 
 
-CONFIG_LIST = [
-    get_config('gasoline_prices', 'Global #Gasoline (#Petrol) Prices'),
-    get_config('diesel_prices', 'Global #Diesel Prices'),
-    get_config('lpg_prices', 'Global #LPG (#Gas) Prices'),
-    get_config('electricity_prices', 'Global #Electricity Prices'),
-]
+def get_config_list():
+    return [
+        get_config('gasoline_prices', 'Global #Gasoline (#Petrol) Prices'),
+        get_config('diesel_prices', 'Global #Diesel Prices'),
+        get_config('lpg_prices', 'Global #LPG (#Gas) Prices'),
+        get_config('electricity_prices', 'Global #Electricity Prices'),
+    ]
