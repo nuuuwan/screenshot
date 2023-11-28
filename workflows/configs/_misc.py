@@ -111,15 +111,6 @@ CONFIG_LIST = [
         Size2D(1840, 1160),
     ),
     ConfigScreenshot(
-        'lanka_data_search',
-        '#LankaDataSearch',
-        'https://nuuuwan.github.io/lanka_data_search/',
-        SECONDS_IN.HOUR * 3,
-        Point2D(0, 0),
-        Size2D16x9(640),
-        (By.ID, 'multi-line-chart'),
-    ),
-    ConfigScreenshot(
         'statistics.sri_lanka',
         'Statistical Pocket Book 2022\nvia @LankaSTAT',
         'http://www.statistics.gov.lk/Publication/PocketBook#'
