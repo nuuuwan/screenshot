@@ -28,15 +28,6 @@ def get_config_list():
             Size2D(950, 700),
         ),
         ConfigScreenshot(
-            'dwc.parktraffic',
-            'National Park Visitor Service Rates'
-            + ' by Dept of #Wildlife #Conservation (#DWC)',
-            'http://www.dwc.gov.lk/parktraffic/graphs.php',
-            SECONDS_IN.WEEK,
-            Point2D(350, 0),
-            Size2D(1920 - 700, 1920),
-        ),
-        ConfigScreenshot(
             'prisons_lk.statistics',
             'Statistics by Dept. of #Prisons',
             'http://prisons.gov.lk/web/en/statistics-information-en/',
