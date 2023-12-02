@@ -51,6 +51,14 @@ def get_config_list():
             Point2D(1920 - 1920, 1920 - 1920),
             Size2D(1920, 1920),
         ),
+        ConfigScreenshot(
+            'gmaps.traffic.all_provinces',
+            'All Provincial Capitals (#TravellingSalesman) via @GoogleMaps',
+            'https://www.google.com/maps/dir/Galle/Colombo/Ratnapura/Badulla/Kandy/Kurunegala/Anuradhapura/Trincomalee/Jaffna/@7.848092,79.2185451,7z',
+            SECONDS_IN.DAY,
+            Point2D(1920 - 1920, 1920 - 1920),
+            Size2D(1920, 1920),
+        ),
     ]
 
 
