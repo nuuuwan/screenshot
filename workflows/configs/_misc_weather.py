@@ -43,4 +43,13 @@ def get_config_list():
             Size2D(1920, 1920),
             (By.CLASS_NAME, 'card'),
         ),
+        ConfigScreenshot(
+            'aqicn.aq.colombo',
+            '#Colombo #AirQuality by ##AQICN',
+            'https://aqicn.org/city/sri-lanka/colombo/us-embassy/',
+            SECONDS_IN.HOUR * 8,
+            Point2D(0, 0),
+            Size2D(1920, 1920),
+            (By.CLASS_NAME, 'aqiwidget-xxl'),
+        ),
     ]
