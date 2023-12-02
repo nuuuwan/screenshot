@@ -29,6 +29,8 @@ class Webpage:
             self.width, self.height = 960, 960
         elif 'globalpetrolprices' in url:
             self.width, self.height = 800, 4200
+        elif 'www.google.com/maps' in url:
+            self.width, self.height = 1200, 675
 
         self.current_url = self.url
 

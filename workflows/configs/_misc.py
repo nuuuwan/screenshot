@@ -35,6 +35,22 @@ def get_config_list():
             Point2D(360, 360),
             Size2D16x9(840),
         ),
+        ConfigScreenshot(
+            'gmaps.traffic.colombo_kandy',
+            '#Colombo to #Kandy #Traffic via @GoogleMaps',
+            'https://www.google.com/maps/dir/Colombo/Kandy/@7.09,79.54,9z',
+            SECONDS_IN.DAY,
+            Point2D(1920 - 1920, 1920 - 1920),
+            Size2D(1920, 1920),
+        ),
+        ConfigScreenshot(
+            'gmaps.traffic.colombo_galle',
+            '#Colombo to #Galle #Traffic via @GoogleMaps',
+            'https://www.google.com/maps/dir/Colombo/Galle/@6.4870255,79.727342,9z',
+            SECONDS_IN.DAY,
+            Point2D(1920 - 1920, 1920 - 1920),
+            Size2D(1920, 1920),
+        ),
     ]
 
 
