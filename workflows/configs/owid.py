@@ -70,16 +70,6 @@ def get_config_list():
 
     return [
         ConfigScreenshot(
-            'owid.covid.chart',
-            'Daily new confirmed #COVID19 deaths'
-            + ' per million people by @OurWorldInData',
-            'https://ourworldindata.org'
-            + '/explorers/coronavirus-data-explorer?tab=map',
-            SECONDS_IN.WEEK,
-            Point2D(600, 240),
-            Size2D(970, 800),
-        ),
-        ConfigScreenshot(
             f'owid.sri_lanka.{id}',
             '%s\nvia @OurWorldInData' % (text),
             url,
