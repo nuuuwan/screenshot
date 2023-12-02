@@ -38,7 +38,7 @@ def get_config_list():
             'nbro.aq',
             'Dynamic #AirQuality Map by #NBROLk',
             'https://aq.nbro.gov.lk/',
-            SECONDS_IN.HOUR * 12,
+            SECONDS_IN.HOUR * 24,
             Point2D(0, 0),
             Size2D(1920, 1920),
             (By.CLASS_NAME, 'card'),
