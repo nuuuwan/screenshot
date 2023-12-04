@@ -64,6 +64,7 @@ def get_config_list():
     url = url.replace(
         'country=LKA',
         'facet=entity&uniformYAxis=0'
+        + '&time=earliest..latest'
         + '&country=LKA~IND~PAK~BGD~MYS'
         + '~Southern+Asia~South+Asia+(WB)~OWID_ASI~OWID_WRL',
     )
