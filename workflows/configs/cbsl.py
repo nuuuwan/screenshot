@@ -51,11 +51,8 @@ def get_config_list():
         ),
         ConfigScreenshot(
             'cbsl.macroeconomic_charts',
-            'Macroeconomic Charts (2023 Q1) by @CBSL',
-            'https://www.cbsl.gov.lk'
-            + '/sites/default/files'
-            + '/cbslweb_documents/statistics/mecpac'
-            + '/Chart_Pack_Q1_2023_e1.pdf#page='
+            'Macroeconomic Charts (2023 Q3) by @CBSL',
+            'https://www.cbsl.gov.lk/sites/default/files/cbslweb_documents'+'/statistics/mecpac/Chart_Pack_Q3_2023_e.pdf#page='
             + str(random.randint(4, 46)),
             SECONDS_IN.DAY,
             Point2D(1920 - 1557, 1920 - 1886),
