@@ -13,11 +13,6 @@ def get_config_list():
             '#Temperature',
             LOCATION_CONFIG_SRI_LANKA,
         ),
-        # ConfigVentusky(
-        #     'temp-feel',
-        #     'Perceived (#FeelsLike) #Temperature',
-        #     LOCATION_CONFIG_SRI_LANKA,
-        # ),
         ConfigVentusky(
             'rain-3h',
             '#Rainfall',
@@ -28,11 +23,6 @@ def get_config_list():
             '#RelativeHumidity (#RH)',
             LOCATION_CONFIG_SRI_LANKA,
         ),
-        # ConfigVentusky(
-        #     'gust',
-        #     '#WindGusts',
-        #     LOCATION_CONFIG_SRI_LANKA,
-        # ),
         ConfigVentusky(
             'aqi',
             'Air Quality (#AQI)',

@@ -40,6 +40,6 @@ def get_config_list():
             'https://aqicn.org/city/sri-lanka',
             SECONDS_IN.HOUR * 8,
             Point2D(300, 260),
-            Size2D(1920-600, 1920-1150),
+            Size2D(1920 - 600, 1920 - 1150),
         ),
     ]
