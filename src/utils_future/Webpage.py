@@ -4,6 +4,7 @@ import time
 from functools import cached_property
 
 from selenium import webdriver
+from selenium.webdriver.common.by import By
 from selenium.webdriver.firefox.options import Options
 from utils import Log, hashx
 
@@ -70,6 +71,18 @@ class Webpage:
             by, value = elem_info
             elem = self.find_element(by, value)
             assert elem is not None
+
+            # HACK for CEB
+            if 'cebcare.ceb.lk' in self.url:
+                cur_elem = elem
+                while True:
+                    print(cur_elem)
+                    if cur_elem.get_attribute('id') == 'panel-1':
+                        break
+                    cur_elem = cur_elem.find_element(By.XPATH, '..')
+                if cur_elem:
+                    elem = cur_elem
+
             elem.screenshot(self.screenshot_image_path)
         log.debug(
             f'Saved screenshot of {self.url} to {self.screenshot_image_path}'
