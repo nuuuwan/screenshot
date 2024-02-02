@@ -32,6 +32,8 @@ class Webpage:
             self.width, self.height = 800, 4200
         elif 'www.google.com/maps' in url:
             self.width, self.height = 1200, 675
+        elif 'nuuuwan/lk_food' in url:
+            self.width, self.height = 800, 4000
 
         self.current_url = self.url
 
