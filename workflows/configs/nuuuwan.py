@@ -34,24 +34,6 @@ def get_config_list():
             (By.TAG_NAME, 'table'),
         ),
         ConfigScreenshot(
-            'lk_food_bath_packet_index_daily_trend',
-            '\n'.join(
-                [
-                    'What is the food cost of',
-                    ' a vegetarian packet of rice in #SriLanka?',
-                    '',
-                    ' #BathPacketIndex #LKFood',
-                    '',
-                    '(Daily Trend)',
-                ]
-            ),
-            'https://github.com/nuuuwan/lk_food/blob/main/README.md',
-            SECONDS_IN.HOUR * 24,
-            Point2D(0, 0),
-            Size2D16x9(800),
-            (By.XPATH, '//img[@alt="BPI"]'),
-        ),
-        ConfigScreenshot(
             'news_lk_bulletin',
             '\n'.join(
                 [

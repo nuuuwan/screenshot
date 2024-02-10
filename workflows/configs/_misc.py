@@ -10,16 +10,6 @@ last_month = config_utils.get_last_month()
 def get_config_list():
     return [
         ConfigScreenshot(
-            'sltda.monthly_tourist_arrivals.primary_markets',
-            '#Tourist Arrivals by Country @SLTDA_SriLanka',
-            'https://www.sltda.gov.lk'
-            + '/storage/common_media'
-            + f'/MonthlyTouristArrivalsReport-{last_month}.pdf#page=6',
-            SECONDS_IN.WEEK,
-            Point2D(520, 220),
-            Size2D(900, 1000),
-        ),
-        ConfigScreenshot(
             'lpw.property_price.chart',
             'Average #Property Prices via @LankaProperty',
             'https://www.lankapropertyweb.com/house_prices.php',
