@@ -42,7 +42,11 @@ class Image:
     ):  # -> Image
         crop_width, crop_height = widthheight.to_tuple()
         im_width, im_height = self.im.size
-        if crop_height > im_height or crop_width > im_width:
+        if crop_height > im_height:
+            log.warning(f'Cannot crop height {crop_height} from {im_height}')
+            return self
+        if crop_width > im_width:
+            log.warning(f'Cannot crop width {crop_width} from {im_width}')
             return self
 
         bbox = lefttop.to_tuple() + (lefttop + widthheight).to_tuple()

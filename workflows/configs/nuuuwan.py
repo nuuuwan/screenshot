@@ -28,7 +28,7 @@ def get_config_list():
                 ]
             ),
             'https://github.com/nuuuwan/lk_food/blob/main/README.md',
-            SECONDS_IN.HOUR * 12,
+            SECONDS_IN.HOUR * 24,
             Point2D(0, 0),
             Size2D16x9(640),
             (By.TAG_NAME, 'table'),
@@ -46,9 +46,22 @@ def get_config_list():
                 ]
             ),
             'https://github.com/nuuuwan/lk_food/blob/main/README.md',
-            SECONDS_IN.HOUR * 12,
+            SECONDS_IN.HOUR * 24,
             Point2D(0, 0),
             Size2D16x9(800),
             (By.XPATH, '//img[@alt="BPI"]'),
+        ),
+        ConfigScreenshot(
+            'news_lk_bulletin',
+            '\n'.join(
+                [
+                    '#NewsLKBulletin',
+                    '#SriLanka',
+                ]
+            ),
+            'https://github.com/nuuuwan/news_lk_bulletin/blob/main/README.md',
+            SECONDS_IN.HOUR * 12,
+            Point2D(600, 380),
+            Size2D16x9(1100),
         ),
     ]
