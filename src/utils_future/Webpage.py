@@ -31,7 +31,7 @@ class Webpage:
             ['globalpetrolprices', [800, 4200]],
             ['www.google.com/maps', [1200, 675]],
             ['nuuuwan/lk_food', [800, 4000]],
-            ['nuuuwan/news_lk_bulletin', [700, 1000]],
+            ['nuuuwan/news_lk_bulletin', [2000, 3000]],
         ]:
             if url_str in url:
                 self.width, self.height = width, height
