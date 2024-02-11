@@ -74,7 +74,7 @@ def get_config_list():
             f'owid.sri_lanka.{id}',
             '%s\nvia @OurWorldInData' % (text),
             url,
-            SECONDS_IN.HOUR * 3,
+            SECONDS_IN.HOUR * 2,
             Point2D(1920 - 1920, 1920 - 1920),
             Size2D(1920, 1920),
             (By.CLASS_NAME, 'GrapherComponent'),
