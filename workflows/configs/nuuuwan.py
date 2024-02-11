@@ -37,13 +37,14 @@ def get_config_list():
             'news_lk_bulletin',
             '\n'.join(
                 [
-                    '#NewsLKBulletin',
-                    '#SriLanka',
+                    '#SriLankaNewsBulletin',
+                    '#SriLanka #News',
                 ]
             ),
             'https://github.com/nuuuwan/news_lk_bulletin/blob/main/README.md',
-            SECONDS_IN.HOUR * 12,
-            Point2D(600, 380),
-            Size2D16x9(1100),
+            SECONDS_IN.HOUR * 4,
+            Point2D(0, 0),
+            Size2D16x9(1200),
+            (By.ID, 'user-content-news_lk_bulletin'),
         ),
     ]
