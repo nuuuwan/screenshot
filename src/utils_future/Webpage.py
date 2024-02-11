@@ -24,16 +24,17 @@ class Webpage:
         self.driver = None
 
         self.width, self.height = 1920, 1920
-        if 'nuuuwan.github.io' in url or 'www.cricketworldcup.com' in url:
-            self.width, self.height = 640, 1920
-        elif 'ourworldindata.org' in url:
-            self.width, self.height = 960, 960
-        elif 'globalpetrolprices' in url:
-            self.width, self.height = 800, 4200
-        elif 'www.google.com/maps' in url:
-            self.width, self.height = 1200, 675
-        elif 'nuuuwan/lk_food' in url:
-            self.width, self.height = 800, 4000
+
+        for url_str, [width, height] in [
+            ['nuuuwan.github.io', [640, 1920]],
+            ['ourworldindata.org', [960, 960]],
+            ['globalpetrolprices', [800, 4200]],
+            ['www.google.com/maps', [1200, 675]],
+            ['nuuuwan/lk_food', [800, 4000]],
+            ['nuuuwan/news_lk_bulletin', [700, 1000]],
+        ]:
+            if url_str in url:
+                self.width, self.height = width, height
 
         self.current_url = self.url
 
