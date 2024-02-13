@@ -62,7 +62,7 @@ def get_config_list():
             'https://github.com/nuuuwan/news_lk_bulletin/blob/main/README.md',
             SECONDS_IN.HOUR * 3,
             Point2D(0, 0),
-            Size2D16x9(1200),
+            Size2D(1920, 1920),
             (By.ID, 'user-content-news_lk_bulletin'),
         ),
     ]
