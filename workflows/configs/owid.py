@@ -36,7 +36,7 @@ def get_owid_url_info_list_nocache() -> list[str]:
 
 
 def is_expired() -> bool:
-    return random.random() < 0.01
+    return random.random() < 0.1
 
 
 def get_owid_url_info_list() -> list[str]:
