@@ -45,11 +45,11 @@ class Image:
         if crop_height > im_height:
             log.warning(f'crop height {crop_height} > {im_height}')
             crop_height = im_height
-            
+
         if crop_width > im_width:
             log.warning(f'crop width {crop_width} > {im_width}')
             crop_width = im_width
-            
+
         bbox = lefttop.to_tuple() + (lefttop + widthheight).to_tuple()
         im = self.im.crop(bbox)
         log.debug(f'Cropped image to {lefttop} and {widthheight}')

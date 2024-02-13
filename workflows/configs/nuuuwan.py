@@ -2,7 +2,7 @@ from selenium.webdriver.common.by import By
 from utils import SECONDS_IN
 
 from screenshot import ConfigScreenshot
-from utils_future import Point2D, Size2D16x9, Size2D
+from utils_future import Point2D, Size2D, Size2D16x9
 
 
 def get_config_list():
@@ -20,8 +20,8 @@ def get_config_list():
             'lk_food_bpi',
             '\n'.join(
                 [
-                    'What is the food cost of',
-                    ' a vegetarian packet of rice in #SriLanka?',
+                    'What is the food cost of'
+                    + ' a #vegetarian packet of rice in #SriLanka?',
                     '',
                     ' #BathPacketIndex #LKFood',
                     '',
@@ -30,24 +30,25 @@ def get_config_list():
             'https://github.com/nuuuwan/lk_food/blob/main/README.md',
             SECONDS_IN.HOUR * 24,
             Point2D(0, 0),
-            Size2D(450, 800),
+            Size2D(425, 525),
             (By.ID, 'user-content-table_bp'),
         ),
-
-            ConfigScreenshot(
+        ConfigScreenshot(
             'lk_food_protein',
             '\n'.join(
                 [
                     'An adult needs ~50g of #Protein per day.',
                     '',
-                    'What is the cheapest source of protein in #SriLanka?',
+                    'What is the cheapest way to get 50g of'
+                    + ' protein in #SriLanka?',
+                    '',
                     '#LKFood',
                 ]
             ),
             'https://github.com/nuuuwan/lk_food/blob/main/README.md',
             SECONDS_IN.HOUR * 24,
             Point2D(0, 0),
-            Size2D(450, 800),
+            Size2D(550, 400),
             (By.ID, 'user-content-table_protein'),
         ),
         ConfigScreenshot(
