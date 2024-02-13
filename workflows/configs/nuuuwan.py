@@ -65,4 +65,18 @@ def get_config_list():
             Size2D(1920, 1920),
             (By.ID, 'user-content-news_lk_bulletin'),
         ),
+        ConfigScreenshot(
+            'election_lk',
+            '\n'.join(
+                [
+                    '#SriLanka #Election Timeline',
+                    '#PresPollSL #GenElectSL',
+                ]
+            ),
+            'https://nuuuwan.github.io/election',
+            SECONDS_IN.HOUR * 3,
+            Point2D(0, 0),
+            Size2D(1920, 1920),
+            (By.XPATH, '//div[@id="root"]'),
+        ),
     ]
