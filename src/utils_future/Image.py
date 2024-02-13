@@ -38,21 +38,24 @@ class Image:
     def crop(
         self,
         lefttop: Point2D,
-        widthheight: Size2D,
+        width_height: Size2D,
     ):  # -> Image
-        crop_width, crop_height = widthheight.to_tuple()
+        crop_width, crop_height = width_height.to_tuple()
         im_width, im_height = self.im.size
-        if crop_height > im_height:
-            log.warning(f'crop height {crop_height} > {im_height}')
-            crop_height = im_height
 
         if crop_width > im_width:
             log.warning(f'crop width {crop_width} > {im_width}')
             crop_width = im_width
 
-        bbox = lefttop.to_tuple() + (lefttop + widthheight).to_tuple()
+        if crop_height > im_height:
+            log.warning(f'crop height {crop_height} > {im_height}')
+            crop_height = im_height
+
+        width_height = Size2D(crop_width, crop_height)
+
+        bbox = lefttop.to_tuple() + (lefttop + width_height).to_tuple()
         im = self.im.crop(bbox)
-        log.debug(f'Cropped image to {lefttop} and {widthheight}')
+        log.debug(f'Cropped image to {lefttop} and {width_height}')
         return Image(im)
 
     def resize(self, ratio: float):  # -> Image

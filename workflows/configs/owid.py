@@ -59,7 +59,7 @@ def get_random_owid_url_info() -> str:
 def get_config_list():
     owid_info = get_random_owid_url_info()
     text = owid_info['text']
-    id = text.replace(' ', '-').lower()
+    id = text.replace(' ', '-').replace(':', '-').lower()
     url = owid_info['url']
     url = url.replace(
         'country=LKA',

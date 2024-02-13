@@ -11,6 +11,10 @@ log = Log(__name__)
 
 
 DIR_TEMP = os.path.join(tempfile.gettempdir(), 'tmp.screenshot')
+if not os.path.exists(DIR_TEMP):
+    os.mkdir(DIR_TEMP)
+    log.debug(f'Created directory {DIR_TEMP}')
+
 TIME_FORMAT = TimeFormat(
     '%Y-%m-%d (%a) %I:%M%p', timezone_offset=TIMEZONE_OFFSET.LK
 )
