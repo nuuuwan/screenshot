@@ -30,6 +30,7 @@ class Webpage:
             ['ourworldindata.org', [960, 960]],
             ['globalpetrolprices', [800, 4200]],
             ['www.google.com/maps', [1200, 675]],
+            ['https://github.com/nuuuwan/news_lk_bulletin', [700, 2100]],
         ]:
             if url_str in url:
                 self.width, self.height = width, height
