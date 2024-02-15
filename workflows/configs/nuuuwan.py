@@ -28,7 +28,7 @@ def get_config_list():
                 ]
             ),
             'https://github.com/nuuuwan/lk_food/blob/main/README.md',
-            SECONDS_IN.HOUR * 24,
+            SECONDS_IN.HOUR * 48,
             Point2D(0, 0),
             Size2D(425, 525),
             (By.ID, 'user-content-table_bp'),
@@ -46,7 +46,7 @@ def get_config_list():
                 ]
             ),
             'https://github.com/nuuuwan/lk_food/blob/main/README.md',
-            SECONDS_IN.HOUR * 24,
+            SECONDS_IN.HOUR * 48,
             Point2D(0, 0),
             Size2D(550, 400),
             (By.ID, 'user-content-table_protein'),
@@ -60,7 +60,7 @@ def get_config_list():
                 ]
             ),
             'https://github.com/nuuuwan/news_lk_bulletin/blob/main/README.md',
-            SECONDS_IN.HOUR * 3,
+            SECONDS_IN.HOUR * 6,
             Point2D(0, 0),
             Size2D(1920, 1920),
             (By.ID, 'user-content-news_lk_bulletin'),
@@ -74,7 +74,7 @@ def get_config_list():
                 ]
             ),
             'https://nuuuwan.github.io/election',
-            SECONDS_IN.HOUR * 3,
+            SECONDS_IN.HOUR * 24,
             Point2D(0, 0),
             Size2D(1920, 1920),
             (By.XPATH, '//div[@id="root"]'),
