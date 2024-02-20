@@ -73,7 +73,7 @@ def get_config_list():
                     '#PresPollSL #GenElectSL',
                 ]
             ),
-            'https://nuuuwan.github.io/election',
+            'https://nuuuwan.github.io/lanka_elections?pageID=countdown',
             SECONDS_IN.HOUR * 48,
             Point2D(0, 0),
             Size2D(1920, 1920),
