@@ -66,17 +66,29 @@ def get_config_list():
             (By.ID, 'user-content-news_lk_bulletin'),
         ),
         ConfigScreenshot(
-            'election_lk',
+            'lk_elections_PresPollSL2024',
             '\n'.join(
                 [
+                    '#PresPollSL2024',
                     '#SriLanka #Election Timeline',
-                    '#PresPollSL #GenElectSL',
                 ]
             ),
-            'https://nuuuwan.github.io/lanka_elections?pageID=countdown',
+            'https://nuuuwan.github.io/lk_elections?pageID=results&electionTypeID=Presidential&year=2024',
             SECONDS_IN.HOUR * 48,
-            Point2D(0, 0),
-            Size2D(1920, 1920),
-            (By.XPATH, '//div[@id="root"]'),
+            Point2D(0, 160),
+            Size2D(640, 640),
+        ),
+        ConfigScreenshot(
+            'lk_elections_GenElecSL2025',
+            '\n'.join(
+                [
+                    '#GenElecSL2025',
+                    '#SriLanka #Election Timeline',
+                ]
+            ),
+            'https://nuuuwan.github.io/lk_elections?pageID=results&electionTypeID=Parliamentary&year=2025',
+            SECONDS_IN.HOUR * 48,
+            Point2D(0, 160),
+            Size2D(640, 640),
         ),
     ]

@@ -4760,10 +4760,6 @@
     "text": "Share of people in range of 4G mobile network"
   },
   {
-    "url": "https://ourworldindata.org/grapher/share-of-population-urban?tab=chart&country=LKA",
-    "text": "Share of people living in urban areas"
-  },
-  {
     "url": "https://ourworldindata.org/grapher/people-practicing-open-defecation-of-population?tab=chart&country=LKA",
     "text": "Share of people practicing open defecation"
   },
@@ -4976,6 +4972,10 @@
     "text": "Share of the population exposed to air pollution levels above WHO guidelines"
   },
   {
+    "url": "https://ourworldindata.org/grapher/share-of-population-urban?tab=chart&country=LKA",
+    "text": "Share of the population living in urban areas"
+  },
+  {
     "url": "https://ourworldindata.org/grapher/urban-population-share-2050?tab=chart&country=LKA",
     "text": "Share of the population living in urban areas"
   },
@@ -5084,6 +5084,10 @@
     "text": "Share of urban population using at least basic water services"
   },
   {
+    "url": "https://ourworldindata.org/grapher/share-with-convenient-access-to-public-transport?tab=chart&country=LKA",
+    "text": "Share of urban populations with convenient access to public transport"
+  },
+  {
     "url": "https://ourworldindata.org/grapher/women-survival-to-age-65?tab=chart&country=LKA",
     "text": "Share of women expected to survive to the age of 65"
   },
@@ -5160,6 +5164,14 @@
     "text": "Share of young people not in education, employment or training"
   },
   {
+    "url": "https://ourworldindata.org/grapher/share-believe-climate?tab=chart&country=LKA",
+    "text": "Share that believe in climate change and think it is a serious threat to humanity"
+  },
+  {
+    "url": "https://ourworldindata.org/grapher/support-political-climate-action?tab=chart&country=LKA",
+    "text": "Share that say their national government should do more to tackle climate change"
+  },
+  {
     "url": "https://ourworldindata.org/grapher/strongly-agree-vaccines-effective?tab=chart&country=LKA",
     "text": "Share that strongly agree that vaccines are effective"
   },
@@ -5182,6 +5194,14 @@
   {
     "url": "https://ourworldindata.org/grapher/strongly-disagree-vaccines-safe?tab=chart&country=LKA",
     "text": "Share that strongly disagree that vaccines are safe"
+  },
+  {
+    "url": "https://ourworldindata.org/grapher/support-policies-climate?tab=chart&country=LKA",
+    "text": "Share that support policies to tackle climate change"
+  },
+  {
+    "url": "https://ourworldindata.org/grapher/support-public-action-climate?tab=chart&country=LKA",
+    "text": "Share that think people in their country should act to tackle climate change"
   },
   {
     "url": "https://ourworldindata.org/grapher/share-who-report-lifetime-anxiety-or-depression?tab=chart&country=LKA",
