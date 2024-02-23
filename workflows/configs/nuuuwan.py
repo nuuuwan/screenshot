@@ -101,7 +101,7 @@ def get_config_list():
             'https://raw.githubusercontent.com/nuuuwan/weather_lk/data/charts/country_temperature.png',
             SECONDS_IN.HOUR * 12,
             Point2D(0, 700),
-            Size2D(3200,1800),
+            Size2D(3200, 1800),
         ),
         ConfigScreenshot(
             'weather_lk_country_rainfall',
@@ -113,9 +113,9 @@ def get_config_list():
             'https://raw.githubusercontent.com/nuuuwan/weather_lk/data/charts/country_rainfall.png',
             SECONDS_IN.HOUR * 12,
             Point2D(0, 700),
-            Size2D(3200,1800),
+            Size2D(3200, 1800),
         ),
-              ConfigScreenshot(
+        ConfigScreenshot(
             'weather_lk_colombo_temperature_history',
             '\n'.join(
                 [
@@ -125,6 +125,6 @@ def get_config_list():
             'https://raw.githubusercontent.com/nuuuwan/weather_lk/data/charts/temperature/79.86E-6.93N-Colombo.png',
             SECONDS_IN.HOUR * 48,
             Point2D(0, 700),
-            Size2D(3200,1800),
+            Size2D(3200, 1800),
         ),
     ]
