@@ -99,7 +99,7 @@ def get_config_list():
                 ]
             ),
             'https://raw.githubusercontent.com/nuuuwan/weather_lk/data/charts/country_temperature.png',
-            SECONDS_IN.HOUR * 12,
+            SECONDS_IN.HOUR * 6,
             Point2D(0, 700),
             Size2D(3200, 1800),
         ),
@@ -111,7 +111,7 @@ def get_config_list():
                 ]
             ),
             'https://raw.githubusercontent.com/nuuuwan/weather_lk/data/charts/country_rainfall.png',
-            SECONDS_IN.HOUR * 12,
+            SECONDS_IN.HOUR * 6,
             Point2D(0, 700),
             Size2D(3200, 1800),
         ),
@@ -123,7 +123,7 @@ def get_config_list():
                 ]
             ),
             'https://raw.githubusercontent.com/nuuuwan/weather_lk/data/charts/temperature/79.86E-6.93N-Colombo.png',
-            SECONDS_IN.HOUR * 48,
+            SECONDS_IN.HOUR * 12,
             Point2D(0, 700),
             Size2D(3200, 1800),
         ),
