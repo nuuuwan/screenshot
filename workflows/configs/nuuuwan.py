@@ -91,4 +91,40 @@ def get_config_list():
             Point2D(0, 160),
             Size2D(640, 640),
         ),
+        ConfigScreenshot(
+            'weather_lk_country_temperature',
+            '\n'.join(
+                [
+                    '#Temperature by @SLMetDept',
+                ]
+            ),
+            'https://raw.githubusercontent.com/nuuuwan/weather_lk/data/charts/country_temperature.png',
+            SECONDS_IN.HOUR * 12,
+            Point2D(0, 700),
+            Size2D(3200,1800),
+        ),
+        ConfigScreenshot(
+            'weather_lk_country_rainfall',
+            '\n'.join(
+                [
+                    '#Rainfall by @SLMetDept',
+                ]
+            ),
+            'https://raw.githubusercontent.com/nuuuwan/weather_lk/data/charts/country_rainfall.png',
+            SECONDS_IN.HOUR * 12,
+            Point2D(0, 700),
+            Size2D(3200,1800),
+        ),
+              ConfigScreenshot(
+            'weather_lk_colombo_temperature_history',
+            '\n'.join(
+                [
+                    '#Colombo #Temperature #History by @SLMetDept',
+                ]
+            ),
+            'https://raw.githubusercontent.com/nuuuwan/weather_lk/data/charts/temperature/79.86E-6.93N-Colombo.png',
+            SECONDS_IN.HOUR * 48,
+            Point2D(0, 700),
+            Size2D(3200,1800),
+        ),
     ]

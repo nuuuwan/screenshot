@@ -18,7 +18,7 @@ PROD_LOG_PATH = os.path.join(DIR_TEMP, 'prod.log')
 
 # Should be consistent with pipeline-cron.yml
 CRON_FREQUENCY = SECONDS_IN.MINUTE * 20
-TEST_CONFIG_ID_PART = 'lk_elections_GenElecSL2025'
+TEST_CONFIG_ID_PART = 'weather_lk_colombo_temperature_history'
 
 
 def init_dir():
