@@ -87,7 +87,7 @@ def get_config_list():
                 ]
             ),
             'https://nuuuwan.github.io/lk_elections?pageID=results&electionTypeID=Parliamentary&year=2025',
-            SECONDS_IN.HOUR * 48,
+            SECONDS_IN.HOUR * 96,
             Point2D(0, 160),
             Size2D(640, 640),
         ),
@@ -99,7 +99,7 @@ def get_config_list():
                 ]
             ),
             'https://raw.githubusercontent.com/nuuuwan/weather_lk/data/charts/country_temperature.png',
-            SECONDS_IN.HOUR * 12,
+            SECONDS_IN.HOUR * 8,
             Point2D(0, 700),
             Size2D(3200, 1800),
         ),
@@ -111,7 +111,7 @@ def get_config_list():
                 ]
             ),
             'https://raw.githubusercontent.com/nuuuwan/weather_lk/data/charts/country_rainfall.png',
-            SECONDS_IN.HOUR * 12,
+            SECONDS_IN.HOUR * 8,
             Point2D(0, 700),
             Size2D(3200, 1800),
         ),
@@ -124,7 +124,7 @@ def get_config_list():
                 ]
             ),
             'https://raw.githubusercontent.com/nuuuwan/weather_lk/data/charts/temperature/79.86E-6.93N-Colombo-91days.png',
-            SECONDS_IN.HOUR * 12,
+            SECONDS_IN.HOUR * 16,
             Point2D(0, 700),
             Size2D(3200, 1800),
         ),
