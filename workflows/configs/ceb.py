@@ -1,5 +1,5 @@
 from selenium.webdriver.common.by import By
-from utils import SECONDS_IN
+from utils import TimeUnit
 
 from screenshot import ConfigScreenshot
 from utils_future import Point2D, Size2D16x9
@@ -10,7 +10,7 @@ def get_config(id: str, label: str) -> ConfigScreenshot:
         f'ceb.power_generation.{id}',
         f'{label} by @CEB_lk',
         'https://cebcare.ceb.lk/gensum/details',
-        SECONDS_IN.DAY,
+        TimeUnit.SECOND_IN.DAY,
         Point2D(0, 0),
         Size2D16x9(1120),
         (By.ID, id),

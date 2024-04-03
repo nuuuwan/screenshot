@@ -3,7 +3,7 @@ import random
 import time
 
 from twtr import Tweet, Twitter
-from utils import SECONDS_IN, File, Log
+from utils import TimeUnit, File, Log
 
 from screenshot import DIR_TEMP, Config
 from workflows.all_configs import get_config_list
@@ -17,8 +17,8 @@ PROD_LOG_PATH = os.path.join(DIR_TEMP, 'prod.log')
 
 
 # Should be consistent with pipeline-cron.yml
-CRON_FREQUENCY = SECONDS_IN.MINUTE * 20
-TEST_CONFIG_ID_PART = 'weather_lk_colombo_temperature_history'
+CRON_FREQUENCY = TimeUnit.SECOND_IN.MINUTE * 20
+TEST_CONFIG_ID_PART = 'weather_lk'
 
 
 def init_dir():

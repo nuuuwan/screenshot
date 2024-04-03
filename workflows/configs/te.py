@@ -1,4 +1,4 @@
-from utils import SECONDS_IN
+from utils import TimeUnit
 
 from screenshot.config.ConfigImage import ConfigImage
 
@@ -12,7 +12,7 @@ def get_config(te_id: str, description: str) -> ConfigImage:
         id,
         f'{description} by @CBSL (via @tEconomics)',
         url,
-        SECONDS_IN.WEEK,
+        TimeUnit.SECOND_IN.WEEK,
         elem_img_id,
     )
 

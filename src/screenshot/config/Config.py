@@ -3,7 +3,7 @@ import tempfile
 from functools import cached_property
 
 import requests
-from utils import TIMEZONE_OFFSET, Log, Time, TimeFormat
+from utils import TimeZoneOffset, Log, Time, TimeFormat
 
 from screenshot.config import config_utils
 
@@ -16,7 +16,7 @@ if not os.path.exists(DIR_TEMP):
     log.debug(f'Created directory {DIR_TEMP}')
 
 TIME_FORMAT = TimeFormat(
-    '%Y-%m-%d (%a) %I:%M%p', timezone_offset=TIMEZONE_OFFSET.LK
+    '%Y-%m-%d (%a) %I:%M%p', TimeZoneOffset.LK
 )
 
 

@@ -1,4 +1,4 @@
-from utils import SECONDS_IN
+from utils import TimeUnit
 
 from screenshot import ConfigScreenshot
 from utils_future import Point2D, Size2D
@@ -9,7 +9,7 @@ def get_config(id: str, label: str) -> ConfigScreenshot:
         f'globalpetrolprices.{id}',
         f'{label} by @GlobalPetrol',
         f'https://www.globalpetrolprices.com/{id}/',
-        SECONDS_IN.DAY * 4,
+        TimeUnit.SECOND_IN.DAY * 4,
         Point2D(0, 400),
         Size2D(800, 3400),
     )

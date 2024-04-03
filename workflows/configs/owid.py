@@ -3,7 +3,7 @@ import random
 import time
 
 from selenium.webdriver.common.by import By
-from utils import SECONDS_IN, JSONFile, Log
+from utils import TimeUnit, JSONFile, Log
 
 from screenshot import ConfigScreenshot
 from utils_future import Point2D, Size2D, Webpage
@@ -74,7 +74,7 @@ def get_config_list():
             f'owid.sri_lanka.{id}',
             '%s\nvia @OurWorldInData' % (text),
             url,
-            SECONDS_IN.HOUR * 2,
+            TimeUnit.SECOND_IN.HOUR * 2,
             Point2D(1920 - 1920, 1920 - 1920),
             Size2D(1920, 1920),
             (By.CLASS_NAME, 'GrapherComponent'),

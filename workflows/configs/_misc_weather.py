@@ -1,5 +1,5 @@
 from selenium.webdriver.common.by import By
-from utils import SECONDS_IN
+from utils import TimeUnit
 
 from screenshot import ConfigScreenshot
 from utils_future import Point2D, Size2D
@@ -13,7 +13,7 @@ def get_config_list():
             'https://freemeteo.com.lk'
             + '/weather/Sri-Lanka/maps/temperature'
             + '/?gid=9035391&country=sri-lanka',
-            SECONDS_IN.WEEK,
+            TimeUnit.SECOND_IN.WEEK,
             Point2D(1920 - 1400, 1920 - 1500),
             Size2D(700, 600),
         ),
@@ -21,7 +21,7 @@ def get_config_list():
             'timeanddate.colombo.sun',
             '#Colombo #Sunrise, #Sunset, #DayLength by @TimeAndDate',
             'https://www.timeanddate.com/sun/sri-lanka/colombo',
-            SECONDS_IN.DAY,
+            TimeUnit.SECOND_IN.DAY,
             Point2D(0, 0),
             Size2D(640, 360),
             (By.CLASS_NAME, 'bk-focus'),
@@ -30,7 +30,7 @@ def get_config_list():
             'meteo_lk.weather',
             '#Weather #Forecast by @SLMetDept',
             'http://222.165.186.51/public/emfc10d.html',
-            SECONDS_IN.DAY,
+            TimeUnit.SECOND_IN.DAY,
             Point2D(40, 40),
             Size2D(1840, 1160),
         ),
@@ -38,7 +38,7 @@ def get_config_list():
             'aqicn.aq.lk',
             '#AirQuality by ##AQICN',
             'https://aqicn.org/city/sri-lanka',
-            SECONDS_IN.HOUR * 8,
+            TimeUnit.SECOND_IN.HOUR * 8,
             Point2D(300, 260),
             Size2D(1920 - 600, 1920 - 1150),
         ),

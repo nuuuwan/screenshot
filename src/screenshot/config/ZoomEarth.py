@@ -1,4 +1,4 @@
-from utils import SECONDS_IN, TIMEZONE_OFFSET, Time, TimeFormat
+from utils import TimeUnit, TimeZoneOffset, Time, TimeFormat
 
 from screenshot.config.Config import TIME_FORMAT
 
@@ -12,14 +12,14 @@ class ZoomEarth:
 
     @staticmethod
     def get_time(delta_ut: int):
-        Q = SECONDS_IN.HOUR * 3
+        Q = TimeUnit.SECOND_IN.HOUR * 3
         start_ut = int(Time.now().ut / Q) * Q
         ut = start_ut + delta_ut
         return Time(ut)
 
     def get_url_from_time(self, delta_ut: int):
         time_id = TimeFormat(
-            '%Y-%m-%d,%H:00', timezone_offset=TIMEZONE_OFFSET.GMT
+            '%Y-%m-%d,%H:00', TimeZoneOffset.GMT
         ).stringify(ZoomEarth.get_time(delta_ut))
         return (
             'https://zoom.earth/maps'

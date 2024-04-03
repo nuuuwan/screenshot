@@ -6,7 +6,7 @@ from functools import cached_property
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.firefox.options import Options
-from utils import Log, hashx
+from utils import Log, Hash
 
 from utils_future.Image import Image
 from utils_future.SystemMode import SystemMode
@@ -40,7 +40,7 @@ class Webpage:
 
     @cached_property
     def screenshot_image_path(self):
-        h = hashx.md5(self.url)
+        h = Hash.md5(self.url)
         return os.path.join(
             tempfile.gettempdir(), f'webpage.screenshot.{h}.png'
         )
