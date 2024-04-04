@@ -12,7 +12,7 @@ class ZoomEarth:
 
     @staticmethod
     def get_time(delta_ut: int):
-        Q = TimeUnit.SECOND_IN.HOUR * 3
+        Q = TimeUnit.SECONDS_IN.HOUR * 3
         start_ut = int(Time.now().ut / Q) * Q
         ut = start_ut + delta_ut
         return Time(ut)

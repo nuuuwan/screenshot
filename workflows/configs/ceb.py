@@ -10,7 +10,7 @@ def get_config(id: str, label: str) -> ConfigScreenshot:
         f'ceb.power_generation.{id}',
         f'{label} by @CEB_lk',
         'https://cebcare.ceb.lk/gensum/details',
-        TimeUnit.SECOND_IN.DAY,
+        TimeUnit.SECONDS_IN.DAY,
         Point2D(0, 0),
         Size2D16x9(1120),
         (By.ID, id),

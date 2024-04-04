@@ -12,7 +12,7 @@ def get_config(te_id: str, description: str) -> ConfigImage:
         id,
         f'{description} by @CBSL (via @tEconomics)',
         url,
-        TimeUnit.SECOND_IN.WEEK,
+        TimeUnit.SECONDS_IN.WEEK,
         elem_img_id,
     )
 

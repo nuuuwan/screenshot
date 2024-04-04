@@ -19,14 +19,14 @@ class ConfigVentusky(ConfigScreenshotAnimation):
         )
         ventusky = Ventusky(ventusky_id, locationConfig)
         urls = [
-            ventusky.get_url_from_time(TimeUnit.SECOND_IN.HOUR * i)
+            ventusky.get_url_from_time(TimeUnit.SECONDS_IN.HOUR * i)
             for i in range(0, 24, 3)
         ]
         timestamps = [
-            ventusky.get_timestamp(TimeUnit.SECOND_IN.HOUR * i)
+            ventusky.get_timestamp(TimeUnit.SECONDS_IN.HOUR * i)
             for i in range(0, 24, 3)
         ]
-        duration = TimeUnit.SECOND_IN.DAY * 2
+        duration = TimeUnit.SECONDS_IN.DAY * 2
         lefttop = Point2D(0, 0)
         size = Size2D(1920, 1920)
         super().__init__(

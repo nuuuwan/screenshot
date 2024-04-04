@@ -17,18 +17,18 @@ def get_last_date_id_non_weekend():
 
     # If Sunday or Monday, get the previous Friday. Else the previous day.
     if day_of_week == 'Sun':
-        ut = ut - 2 * TimeUnit.SECOND_IN.DAY
+        ut = ut - 2 * TimeUnit.SECONDS_IN.DAY
     elif day_of_week == 'Mon':
-        ut = ut - 3 * TimeUnit.SECOND_IN.DAY
+        ut = ut - 3 * TimeUnit.SECONDS_IN.DAY
     else:
-        ut = ut - TimeUnit.SECOND_IN.DAY
+        ut = ut - TimeUnit.SECONDS_IN.DAY
 
     return TimeFormat('%Y%m%d').stringify(Time(ut))
 
 
 def get_last_month():
     ut = Time.now().ut
-    ut = ut - TimeUnit.SECOND_IN.AVG_MONTH
+    ut = ut - TimeUnit.SECONDS_IN.AVG_MONTH
     return TimeFormat('%B').stringify(Time(ut))
 
 

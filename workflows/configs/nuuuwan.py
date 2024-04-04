@@ -11,7 +11,7 @@ def get_config_list():
             'lanka_data_search',
             '#LankaDataSearch',
             'https://nuuuwan.github.io/lanka_data_search/',
-            TimeUnit.SECOND_IN.HOUR * 2,
+            TimeUnit.SECONDS_IN.HOUR * 2,
             Point2D(0, 0),
             Size2D16x9(640),
             (By.ID, 'multi-line-chart'),
@@ -28,7 +28,7 @@ def get_config_list():
                 ]
             ),
             'https://github.com/nuuuwan/lk_food/blob/main/README.md',
-            TimeUnit.SECOND_IN.HOUR * 48,
+            TimeUnit.SECONDS_IN.HOUR * 48,
             Point2D(0, 0),
             Size2D(425, 525),
             (By.ID, 'user-content-table_bp'),
@@ -46,7 +46,7 @@ def get_config_list():
                 ]
             ),
             'https://github.com/nuuuwan/lk_food/blob/main/README.md',
-            TimeUnit.SECOND_IN.HOUR * 48,
+            TimeUnit.SECONDS_IN.HOUR * 48,
             Point2D(0, 0),
             Size2D(550, 400),
             (By.ID, 'user-content-table_protein'),
@@ -60,7 +60,7 @@ def get_config_list():
                 ]
             ),
             'https://github.com/nuuuwan/news_lk_bulletin/blob/main/README.md',
-            TimeUnit.SECOND_IN.HOUR * 8,
+            TimeUnit.SECONDS_IN.HOUR * 8,
             Point2D(0, 0),
             Size2D(1920, 1920),
             (By.ID, 'user-content-news_lk_bulletin'),
@@ -74,7 +74,7 @@ def get_config_list():
                 ]
             ),
             'https://nuuuwan.github.io/lk_elections?pageID=results&electionTypeID=Presidential&year=2024',
-            TimeUnit.SECOND_IN.HOUR * 48,
+            TimeUnit.SECONDS_IN.HOUR * 48,
             Point2D(0, 160),
             Size2D(640, 640),
         ),
@@ -87,7 +87,7 @@ def get_config_list():
                 ]
             ),
             'https://nuuuwan.github.io/lk_elections?pageID=results&electionTypeID=Parliamentary&year=2025',
-            TimeUnit.SECOND_IN.HOUR * 96,
+            TimeUnit.SECONDS_IN.HOUR * 96,
             Point2D(0, 160),
             Size2D(640, 640),
         ),
@@ -99,7 +99,7 @@ def get_config_list():
                 ]
             ),
             'https://raw.githubusercontent.com/nuuuwan/weather_lk/data/charts/country_temperature.png',
-            TimeUnit.SECOND_IN.HOUR * 8,
+            TimeUnit.SECONDS_IN.HOUR * 8,
             Point2D(0, 700),
             Size2D(3200, 1800),
         ),
@@ -111,7 +111,7 @@ def get_config_list():
                 ]
             ),
             'https://raw.githubusercontent.com/nuuuwan/weather_lk/data/charts/country_rainfall.png',
-            TimeUnit.SECOND_IN.HOUR * 8,
+            TimeUnit.SECONDS_IN.HOUR * 8,
             Point2D(0, 700),
             Size2D(3200, 1800),
         ),
@@ -121,7 +121,7 @@ def get_config_list():
                 ['#Colombo #Temperature by @SLMetDept', 'Last 91 Days']
             ),
             'https://raw.githubusercontent.com/nuuuwan/weather_lk/data/charts/temperature/79.86E-6.93N-Colombo-91days.png',
-            TimeUnit.SECOND_IN.HOUR * 16,
+            TimeUnit.SECONDS_IN.HOUR * 16,
             Point2D(0, 700),
             Size2D(3200, 1800),
         ),

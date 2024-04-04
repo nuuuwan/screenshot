@@ -12,7 +12,7 @@ def get_config_list():
             'dcs_snapshot.chart',
             'Economic Snapshot by @LankaSTAT #DCS',
             'http://www.statistics.gov.lk',
-            TimeUnit.SECOND_IN.WEEK,
+            TimeUnit.SECONDS_IN.WEEK,
             Point2D(1060, 160),
             Size2D(460, 340),
         ),
@@ -21,7 +21,7 @@ def get_config_list():
             'Statistical Pocket Book 2023\nvia @LankaSTAT',
             'http://www.statistics.gov.lk/Publication/PocketBook2023#'
             + 'page=%d' % (random.randint(13, 103)),
-            TimeUnit.SECOND_IN.HOUR * 12,
+            TimeUnit.SECONDS_IN.HOUR * 12,
             Point2D(470, 60),
             Size2D16x9(980),
         ),

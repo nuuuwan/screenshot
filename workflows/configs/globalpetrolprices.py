@@ -9,7 +9,7 @@ def get_config(id: str, label: str) -> ConfigScreenshot:
         f'globalpetrolprices.{id}',
         f'{label} by @GlobalPetrol',
         f'https://www.globalpetrolprices.com/{id}/',
-        TimeUnit.SECOND_IN.DAY * 4,
+        TimeUnit.SECONDS_IN.DAY * 4,
         Point2D(0, 400),
         Size2D(800, 3400),
     )

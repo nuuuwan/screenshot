@@ -13,7 +13,7 @@ def get_config_list():
             'https://www.spglobal.com'
             + '/spdji/en/exchange-relationships/exchange'
             + '/colombo-stock-exchange-cse/#overview',
-            TimeUnit.SECOND_IN.DAY,
+            TimeUnit.SECONDS_IN.DAY,
             Point2D(0, 0),
             Size2D(1325, 655),
             (By.CLASS_NAME, "indices-accordion-content"),
@@ -22,7 +22,7 @@ def get_config_list():
             'cselk.daily',
             '#ASPI by @CSE_Media',
             'https://cse.lk/',
-            TimeUnit.SECOND_IN.DAY,
+            TimeUnit.SECONDS_IN.DAY,
             Point2D(0, 0),
             Size2D(550, 380),
             (By.CLASS_NAME, 'chart-block'),
