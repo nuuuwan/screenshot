@@ -12,8 +12,12 @@
     "text": "Absolute number of deaths from ambient particulate air pollution"
   },
   {
-    "url": "https://ourworldindata.org/grapher/acute-care-beds-per-1000?tab=chart&country=LKA",
-    "text": "Acute care beds per 1,000 people"
+    "url": "https://ourworldindata.org/grapher/access-to-justice-men-row?tab=chart&country=LKA",
+    "text": "Access to justice for men"
+  },
+  {
+    "url": "https://ourworldindata.org/grapher/access-to-justice-women-row?tab=chart&country=LKA",
+    "text": "Access to justice for women"
   },
   {
     "url": "https://ourworldindata.org/grapher/hepatitis-death-rate?tab=chart&country=LKA",
@@ -56,6 +60,10 @@
     "text": "Age dependency ratio"
   },
   {
+    "url": "https://ourworldindata.org/grapher/agri-environmental-policies-intensity?tab=chart&country=LKA",
+    "text": "Agri-environmental policies weighted by their intensity"
+  },
+  {
     "url": "https://ourworldindata.org/grapher/agricultural-export-subsidies?tab=chart&country=LKA",
     "text": "Agricultural export subsidies"
   },
@@ -66,6 +74,10 @@
   {
     "url": "https://ourworldindata.org/grapher/agricultural-land?tab=chart&country=LKA",
     "text": "Agricultural land use"
+  },
+  {
+    "url": "https://ourworldindata.org/grapher/total-agricultural-land-use-per-person?tab=chart&country=LKA",
+    "text": "Agricultural land use per person"
   },
   {
     "url": "https://ourworldindata.org/grapher/agricultural-output-dollars?tab=chart&country=LKA",
@@ -82,10 +94,6 @@
   {
     "url": "https://ourworldindata.org/grapher/air-passengers-carried?tab=chart&country=LKA",
     "text": "Air passengers"
-  },
-  {
-    "url": "https://ourworldindata.org/grapher/air-pollution-deaths-as-percentage-of-global-disease-burden?tab=chart&country=LKA",
-    "text": "Air pollution deaths as percentage of total deaths"
   },
   {
     "url": "https://ourworldindata.org/grapher/pollution-deaths-from-fossil-fuels?tab=chart&country=LKA",
@@ -110,10 +118,6 @@
   {
     "url": "https://ourworldindata.org/grapher/deaths-from-substance-disorders-who?tab=chart&country=LKA",
     "text": "Alcohol and drug use disorders deaths"
-  },
-  {
-    "url": "https://ourworldindata.org/grapher/alzheimers-prevalence?tab=chart&country=LKA",
-    "text": "Alzheimer's prevalence"
   },
   {
     "url": "https://ourworldindata.org/grapher/death-rate-amphetamine?tab=chart&country=LKA",
@@ -162,6 +166,10 @@
   {
     "url": "https://ourworldindata.org/grapher/annual-gdp-growth?tab=chart&country=LKA",
     "text": "Annual GDP growth"
+  },
+  {
+    "url": "https://ourworldindata.org/grapher/annual-area-burnt-by-wildfires-gwis?tab=chart&country=LKA",
+    "text": "Annual area burnt by wildfires by region"
   },
   {
     "url": "https://ourworldindata.org/grapher/scientific-and-technical-journal-articles?tab=chart&country=LKA",
@@ -222,10 +230,6 @@
   {
     "url": "https://ourworldindata.org/grapher/age-standardized-deaths-from-all-causes?tab=chart&country=LKA",
     "text": "Annual death rate from all causes"
-  },
-  {
-    "url": "https://ourworldindata.org/grapher/annual-deaths-of-infants-younger-than-1-year-by-world-region?tab=chart&country=LKA",
-    "text": "Annual deaths of infants younger than 1 year, by world region"
   },
   {
     "url": "https://ourworldindata.org/grapher/annual-freshwater-withdrawals?tab=chart&country=LKA",
@@ -332,6 +336,10 @@
     "text": "Annual scholarly publications on artificial intelligence"
   },
   {
+    "url": "https://ourworldindata.org/grapher/annual-temperature-anomalies?tab=chart&country=LKA",
+    "text": "Annual temperature anomalies"
+  },
+  {
     "url": "https://ourworldindata.org/grapher/annual-working-hours-per-worker?tab=chart&country=LKA",
     "text": "Annual working hours per worker"
   },
@@ -386,10 +394,6 @@
   {
     "url": "https://ourworldindata.org/grapher/good-cholesterol-levels-age-standardized?tab=chart&country=LKA",
     "text": "Average HDL cholesterol levels"
-  },
-  {
-    "url": "https://ourworldindata.org/grapher/average-childbearing-age?tab=chart&country=LKA",
-    "text": "Average childbearing age"
   },
   {
     "url": "https://ourworldindata.org/grapher/average-cost-of-tuberculosis-treatment-multi-drug-resistant?tab=chart&country=LKA",
@@ -456,10 +460,6 @@
     "text": "Bean yields"
   },
   {
-    "url": "https://ourworldindata.org/grapher/beds-for-mental-health-in-general-hospitals?tab=chart&country=LKA",
-    "text": "Beds for mental health patients in general hospitals"
-  },
-  {
     "url": "https://ourworldindata.org/grapher/beef-and-buffalo-meat-production-tonnes?tab=chart&country=LKA",
     "text": "Beef production"
   },
@@ -474,10 +474,6 @@
   {
     "url": "https://ourworldindata.org/grapher/crude-birth-rate?tab=chart&country=LKA",
     "text": "Birth rate"
-  },
-  {
-    "url": "https://ourworldindata.org/grapher/number-of-births?tab=chart&country=LKA",
-    "text": "Births per year"
   },
   {
     "url": "https://ourworldindata.org/grapher/bribery-prevalence-un?tab=chart&country=LKA",
@@ -652,6 +648,10 @@
     "text": "Civil rights score"
   },
   {
+    "url": "https://ourworldindata.org/grapher/civil-society-participation-index?tab=chart&country=LKA",
+    "text": "Civil society participation index"
+  },
+  {
     "url": "https://ourworldindata.org/grapher/coal-consumption-by-country-terawatt-hours-twh?tab=chart&country=LKA",
     "text": "Coal consumption"
   },
@@ -670,6 +670,10 @@
   {
     "url": "https://ourworldindata.org/grapher/death-rates-cocaine-who?tab=chart&country=LKA",
     "text": "Cocaine use disorder death rate"
+  },
+  {
+    "url": "https://ourworldindata.org/grapher/chocolate-consumption-per-person?tab=chart&country=LKA",
+    "text": "Cocoa bean consumption per person"
   },
   {
     "url": "https://ourworldindata.org/grapher/cocoa-bean-production?tab=chart&country=LKA",
@@ -694,6 +698,10 @@
   {
     "url": "https://ourworldindata.org/grapher/number-of-commercial-bank-branches-per-100000-adults?tab=chart&country=LKA",
     "text": "Commercial bank branches"
+  },
+  {
+    "url": "https://ourworldindata.org/grapher/common-good-justifications-score?tab=chart&country=LKA",
+    "text": "Common good justifications score"
   },
   {
     "url": "https://ourworldindata.org/grapher/competitive-elections-lexical?tab=chart&country=LKA",
@@ -788,10 +796,6 @@
     "text": "Countries where armed conflicts took place"
   },
   {
-    "url": "https://ourworldindata.org/grapher/children-per-woman-un-compared-with-usa?tab=chart&country=LKA",
-    "text": "Countries where women have fewer children than in the US"
-  },
-  {
     "url": "https://ourworldindata.org/grapher/countries-that-adopt-guarantees-for-public-access-to-information?tab=chart&country=LKA",
     "text": "Countries with policy guarantees for public access to information"
   },
@@ -820,6 +824,10 @@
     "text": "Cropland area"
   },
   {
+    "url": "https://ourworldindata.org/grapher/cropland-per-person-over-the-long-term?tab=chart&country=LKA",
+    "text": "Cropland per person over the long-term"
+  },
+  {
     "url": "https://ourworldindata.org/grapher/crude-death-rate?tab=chart&country=LKA",
     "text": "Crude death rate"
   },
@@ -830,10 +838,6 @@
   {
     "url": "https://ourworldindata.org/grapher/crude-death-rate-the-share-of-the-population-that-dies-each-year-gbd?tab=chart&country=LKA",
     "text": "Crude death rate: the share of the population that dies each year"
-  },
-  {
-    "url": "https://ourworldindata.org/grapher/crude-death-rate-the-share-of-the-population-that-dies-per-year?tab=chart&country=LKA",
-    "text": "Crude death rate: the share of the population that dies per year"
   },
   {
     "url": "https://ourworldindata.org/grapher/expenditure-on-cultural-and-natural-heritage-per-capita?tab=chart&country=LKA",
@@ -1000,20 +1004,12 @@
     "text": "Death rate from air pollution"
   },
   {
-    "url": "https://ourworldindata.org/grapher/death-rates-total-air-pollution?tab=chart&country=LKA",
-    "text": "Death rate from air pollution"
-  },
-  {
     "url": "https://ourworldindata.org/grapher/death-rates-from-alcohol-use-disorders?tab=chart&country=LKA",
     "text": "Death rate from alcohol use disorders"
   },
   {
     "url": "https://ourworldindata.org/grapher/death-rates-from-alcohol-use-disorders-gbd?tab=chart&country=LKA",
     "text": "Death rate from alcohol use disorders"
-  },
-  {
-    "url": "https://ourworldindata.org/grapher/death-rates-from-ambient-particulate-air-pollution?tab=chart&country=LKA",
-    "text": "Death rate from ambient particulate air pollution"
   },
   {
     "url": "https://ourworldindata.org/grapher/death-rate-from-ambient-particulate-air-pollution?tab=chart&country=LKA",
@@ -1312,10 +1308,6 @@
     "text": "Death rate from road accidents for 15- to 49-year olds"
   },
   {
-    "url": "https://ourworldindata.org/grapher/mortality-road-injuries?tab=chart&country=LKA",
-    "text": "Death rate from road incidents"
-  },
-  {
     "url": "https://ourworldindata.org/grapher/death-rates-road-incidents?tab=chart&country=LKA",
     "text": "Death rate from road injuries"
   },
@@ -1356,10 +1348,6 @@
     "text": "Death rate from stroke"
   },
   {
-    "url": "https://ourworldindata.org/grapher/death-rate-from-tuberculosis-among-hiv-negative-people?tab=chart&country=LKA",
-    "text": "Death rate from tuberculosis among HIV-negative people"
-  },
-  {
     "url": "https://ourworldindata.org/grapher/death-rate-from-poisonings?tab=chart&country=LKA",
     "text": "Death rate from unintentional poisoning"
   },
@@ -1389,7 +1377,7 @@
   },
   {
     "url": "https://ourworldindata.org/grapher/death-rate-in-armed-conflicts?tab=chart&country=LKA",
-    "text": "Death rate in armed conflicts"
+    "text": "Death rate in armed conflicts based on where they occurred"
   },
   {
     "url": "https://ourworldindata.org/grapher/death-rates-from-alcohol-use-disorders-ghe?tab=chart&country=LKA",
@@ -1549,7 +1537,7 @@
   },
   {
     "url": "https://ourworldindata.org/grapher/deaths-from-one-sided-violence?tab=chart&country=LKA",
-    "text": "Deaths from one-sided violence"
+    "text": "Deaths from one-sided violence based on where they occurred"
   },
   {
     "url": "https://ourworldindata.org/grapher/absolute-number-of-deaths-from-outdoor-air-pollution?tab=chart&country=LKA",
@@ -1558,10 +1546,6 @@
   {
     "url": "https://ourworldindata.org/grapher/deaths-from-ozone-pollution?tab=chart&country=LKA",
     "text": "Deaths from ozone pollution"
-  },
-  {
-    "url": "https://ourworldindata.org/grapher/deaths-from-particulate-matter-pollution?tab=chart&country=LKA",
-    "text": "Deaths from particulate matter pollution"
   },
   {
     "url": "https://ourworldindata.org/grapher/deaths-from-pneumonia?tab=chart&country=LKA",
@@ -1601,27 +1585,31 @@
   },
   {
     "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country?tab=chart&country=LKA",
-    "text": "Deaths in armed conflicts"
+    "text": "Deaths in armed conflicts based on where they occurred"
   },
   {
     "url": "https://ourworldindata.org/grapher/deaths-in-interstate-conflicts?tab=chart&country=LKA",
-    "text": "Deaths in interstate conflicts"
+    "text": "Deaths in interstate conflicts based on where they occurred"
   },
   {
     "url": "https://ourworldindata.org/grapher/deaths-in-intrastate-conflicts?tab=chart&country=LKA",
-    "text": "Deaths in intrastate conflicts"
+    "text": "Deaths in intrastate conflicts based on where they occurred"
   },
   {
     "url": "https://ourworldindata.org/grapher/deaths-in-non-state-conflicts?tab=chart&country=LKA",
-    "text": "Deaths in non-state conflicts"
-  },
-  {
-    "url": "https://ourworldindata.org/grapher/deaths-of-children-younger-than-15-years?tab=chart&country=LKA",
-    "text": "Deaths of children younger than 15 years"
+    "text": "Deaths in non-state conflicts based on where they occurred"
   },
   {
     "url": "https://ourworldindata.org/grapher/debt-service-of-exports-of-goods-services?tab=chart&country=LKA",
     "text": "Debt service as a share of exports of good and services"
+  },
+  {
+    "url": "https://ourworldindata.org/grapher/deliberative-democracy-index-vdem?tab=chart&country=LKA",
+    "text": "Deliberative democracy index"
+  },
+  {
+    "url": "https://ourworldindata.org/grapher/deliberative-political-institutions-index?tab=chart&country=LKA",
+    "text": "Deliberative political institutions index"
   },
   {
     "url": "https://ourworldindata.org/grapher/democracy-index-polity?tab=chart&country=LKA",
@@ -1728,6 +1716,10 @@
     "text": "Domestic material consumption per unit of GDP"
   },
   {
+    "url": "https://ourworldindata.org/grapher/domestic-policy-free-from-interference-of-other-states-index?tab=chart&country=LKA",
+    "text": "Domestic policy free from interference of other states index"
+  },
+  {
     "url": "https://ourworldindata.org/grapher/drowning-death-rates-under-5?tab=chart&country=LKA",
     "text": "Drowning death rate in children under the age of 5"
   },
@@ -1756,10 +1748,6 @@
     "text": "Duration of pre-primary education"
   },
   {
-    "url": "https://ourworldindata.org/grapher/death-rates-from-eating-disorders?tab=chart&country=LKA",
-    "text": "Eating disorders death rate"
-  },
-  {
     "url": "https://ourworldindata.org/grapher/eating-disorders-prevalence?tab=chart&country=LKA",
     "text": "Eating disorders prevalence"
   },
@@ -1770,6 +1758,14 @@
   {
     "url": "https://ourworldindata.org/grapher/effective-power-to-govern-score-bti?tab=chart&country=LKA",
     "text": "Effective power to govern score"
+  },
+  {
+    "url": "https://ourworldindata.org/grapher/egalitarian-democracy-index-vdem?tab=chart&country=LKA",
+    "text": "Egalitarian democracy index"
+  },
+  {
+    "url": "https://ourworldindata.org/grapher/egalitarian-political-institutions-index?tab=chart&country=LKA",
+    "text": "Egalitarian political institutions index"
   },
   {
     "url": "https://ourworldindata.org/grapher/egg-production-thousand-tonnes?tab=chart&country=LKA",
@@ -1798,6 +1794,10 @@
   {
     "url": "https://ourworldindata.org/grapher/electoral-democracy-row?tab=chart&country=LKA",
     "text": "Electoral democracy"
+  },
+  {
+    "url": "https://ourworldindata.org/grapher/electoral-democracy-index?tab=chart&country=LKA",
+    "text": "Electoral democracy index"
   },
   {
     "url": "https://ourworldindata.org/grapher/electoral-pluralism-index-eiu?tab=chart&country=LKA",
@@ -1840,6 +1840,10 @@
     "text": "Electricity generation from renewables"
   },
   {
+    "url": "https://ourworldindata.org/grapher/elite-consultations-score?tab=chart&country=LKA",
+    "text": "Elite consultations score"
+  },
+  {
     "url": "https://ourworldindata.org/grapher/emissions-weighted-carbon-price?tab=chart&country=LKA",
     "text": "Emissions-weighted carbon price"
   },
@@ -1868,32 +1872,32 @@
     "text": "Energy use per person"
   },
   {
-    "url": "https://ourworldindata.org/grapher/estimated-number-of-deaths-from-malaria?tab=chart&country=LKA",
-    "text": "Estimated number of deaths from malaria"
+    "url": "https://ourworldindata.org/grapher/engaged-society-score?tab=chart&country=LKA",
+    "text": "Engaged society score"
   },
   {
-    "url": "https://ourworldindata.org/grapher/ethnic-intra-state-conflict-about-national-government-ongoing?tab=chart&country=LKA",
-    "text": "Ethnic intra-state conflict about national government ongoing"
+    "url": "https://ourworldindata.org/grapher/equal-access-to-power-index?tab=chart&country=LKA",
+    "text": "Equal access to power index"
   },
   {
-    "url": "https://ourworldindata.org/grapher/ethnic-intra-state-conflict-about-territory-ongoing?tab=chart&country=LKA",
-    "text": "Ethnic intra-state conflict about territory ongoing"
+    "url": "https://ourworldindata.org/grapher/equal-resource-distribution-index?tab=chart&country=LKA",
+    "text": "Equal resource distribution index"
   },
   {
-    "url": "https://ourworldindata.org/grapher/ethnic-intra-state-conflict-ongoing?tab=chart&country=LKA",
-    "text": "Ethnic intra-state conflict ongoing"
+    "url": "https://ourworldindata.org/grapher/equal-rights-protection-index?tab=chart&country=LKA",
+    "text": "Equal rights protection index"
+  },
+  {
+    "url": "https://ourworldindata.org/grapher/equality-of-civil-liberties-across-social-groups-index?tab=chart&country=LKA",
+    "text": "Equality of civil liberties across social groups index"
+  },
+  {
+    "url": "https://ourworldindata.org/grapher/equality-of-political-power-across-social-groups-index?tab=chart&country=LKA",
+    "text": "Equality of political power across social groups index"
   },
   {
     "url": "https://ourworldindata.org/grapher/excess-nitrogen-per-hectare?tab=chart&country=LKA",
     "text": "Excess nitrogen per hectare of cropland"
-  },
-  {
-    "url": "https://ourworldindata.org/grapher/excess-phosphorous?tab=chart&country=LKA",
-    "text": "Excess phosphorous from croplands"
-  },
-  {
-    "url": "https://ourworldindata.org/grapher/excess-phosphorous-per-hectare?tab=chart&country=LKA",
-    "text": "Excess phosphorous per hectare of cropland"
   },
   {
     "url": "https://ourworldindata.org/grapher/exclusive-breastfeeding-rate?tab=chart&country=LKA",
@@ -1917,7 +1921,7 @@
   },
   {
     "url": "https://ourworldindata.org/grapher/pm25-air-pollution?tab=chart&country=LKA",
-    "text": "Exposure to air pollution with fine particulate matter"
+    "text": "Exposure to particulate matter air pollution"
   },
   {
     "url": "https://ourworldindata.org/grapher/external-debt-as-a-share-of-gni?tab=chart&country=LKA",
@@ -1968,10 +1972,6 @@
     "text": "Fertility rate: children per woman"
   },
   {
-    "url": "https://ourworldindata.org/grapher/fertility-rate-complete-gapminder?tab=chart&country=LKA",
-    "text": "Fertility rate: children per woman over the long-term"
-  },
-  {
     "url": "https://ourworldindata.org/grapher/fertilizer-application-rates-over-the-long-run?tab=chart&country=LKA",
     "text": "Fertilizer application rates over the long-run"
   },
@@ -2016,6 +2016,10 @@
     "text": "Foreign direct investment, net outflows as share of GDP"
   },
   {
+    "url": "https://ourworldindata.org/grapher/foreign-policy-free-from-interference-of-other-states-index?tab=chart&country=LKA",
+    "text": "Foreign policy free from interference of other states index"
+  },
+  {
     "url": "https://ourworldindata.org/grapher/forest-area-km?tab=chart&country=LKA",
     "text": "Forest area"
   },
@@ -2036,12 +2040,28 @@
     "text": "Fossil-fuel subsidies per capita"
   },
   {
+    "url": "https://ourworldindata.org/grapher/free-and-fair-elections-row?tab=chart&country=LKA",
+    "text": "Free and fair elections"
+  },
+  {
+    "url": "https://ourworldindata.org/grapher/free-and-fair-elections-index?tab=chart&country=LKA",
+    "text": "Free and fair elections index"
+  },
+  {
     "url": "https://ourworldindata.org/grapher/free-fair-elections-bti?tab=chart&country=LKA",
     "text": "Free and fair elections score"
   },
   {
+    "url": "https://ourworldindata.org/grapher/freedom-of-association-index?tab=chart&country=LKA",
+    "text": "Freedom of association index"
+  },
+  {
     "url": "https://ourworldindata.org/grapher/freedom-of-association-score-bti?tab=chart&country=LKA",
     "text": "Freedom of association score"
+  },
+  {
+    "url": "https://ourworldindata.org/grapher/freedom-of-expression-index?tab=chart&country=LKA",
+    "text": "Freedom of expression index"
   },
   {
     "url": "https://ourworldindata.org/grapher/freedom-of-expression-score-bti?tab=chart&country=LKA",
@@ -2106,6 +2126,18 @@
   {
     "url": "https://ourworldindata.org/grapher/gender-inequality-index-from-the-human-development-report?tab=chart&country=LKA",
     "text": "Gender Inequality Index"
+  },
+  {
+    "url": "https://ourworldindata.org/grapher/gender-of-chief-executive?tab=chart&country=LKA",
+    "text": "Gender of the chief executive"
+  },
+  {
+    "url": "https://ourworldindata.org/grapher/gender-of-the-head-of-government?tab=chart&country=LKA",
+    "text": "Gender of the head of government"
+  },
+  {
+    "url": "https://ourworldindata.org/grapher/gender-of-the-head-of-state?tab=chart&country=LKA",
+    "text": "Gender of the head of state"
   },
   {
     "url": "https://ourworldindata.org/grapher/secondary-net-enrollment-gpi?tab=chart&country=LKA",
@@ -2340,6 +2372,10 @@
     "text": "Human Development Index"
   },
   {
+    "url": "https://ourworldindata.org/grapher/human-rights-index-vdem?tab=chart&country=LKA",
+    "text": "Human rights index"
+  },
+  {
     "url": "https://ourworldindata.org/grapher/hydropower-consumption?tab=chart&country=LKA",
     "text": "Hydropower generation"
   },
@@ -2388,10 +2424,6 @@
     "text": "Incidence of meningitis"
   },
   {
-    "url": "https://ourworldindata.org/grapher/estimated-tuberculosis-incidence-rates?tab=chart&country=LKA",
-    "text": "Incidence of tuberculosis"
-  },
-  {
     "url": "https://ourworldindata.org/grapher/incidence-of-tuberculosis?tab=chart&country=LKA",
     "text": "Incidence of tuberculosis"
   },
@@ -2430,6 +2462,10 @@
   {
     "url": "https://ourworldindata.org/grapher/food-price-anomalies?tab=chart&country=LKA",
     "text": "Indicator of food price anomalies"
+  },
+  {
+    "url": "https://ourworldindata.org/grapher/individual-liberties-and-equality-before-the-law-index?tab=chart&country=LKA",
+    "text": "Individual liberties and equality before the law index"
   },
   {
     "url": "https://ourworldindata.org/grapher/industrial-water-as-a-share-of-total-water-withdrawals?tab=chart&country=LKA",
@@ -2524,6 +2560,14 @@
     "text": "Invasive non-typhoidal salmonella deaths in children under five"
   },
   {
+    "url": "https://ourworldindata.org/grapher/judicial-constraints-on-the-executive-index?tab=chart&country=LKA",
+    "text": "Judicial constraints on the executive index"
+  },
+  {
+    "url": "https://ourworldindata.org/grapher/justified-political-positions-score?tab=chart&country=LKA",
+    "text": "Justified political positions score"
+  },
+  {
     "url": "https://ourworldindata.org/grapher/lgbt-rights-index?tab=chart&country=LKA",
     "text": "LGBT+ rights index"
   },
@@ -2548,12 +2592,28 @@
     "text": "Landline phone subscriptions per 100 people"
   },
   {
+    "url": "https://ourworldindata.org/grapher/legislative-constraints-on-the-executive-index?tab=chart&country=LKA",
+    "text": "Legislative constraints on the executive index"
+  },
+  {
     "url": "https://ourworldindata.org/grapher/level-of-national-compliance-with-labor-rights?tab=chart&country=LKA",
     "text": "Level of national compliance with labor rights"
   },
   {
     "url": "https://ourworldindata.org/grapher/liberal-democracy-row?tab=chart&country=LKA",
     "text": "Liberal democracy"
+  },
+  {
+    "url": "https://ourworldindata.org/grapher/liberal-democracy-index?tab=chart&country=LKA",
+    "text": "Liberal democracy index"
+  },
+  {
+    "url": "https://ourworldindata.org/grapher/liberal-political-institutions-row?tab=chart&country=LKA",
+    "text": "Liberal political institutions"
+  },
+  {
+    "url": "https://ourworldindata.org/grapher/liberal-political-institutions-index?tab=chart&country=LKA",
+    "text": "Liberal political institutions index"
   },
   {
     "url": "https://ourworldindata.org/grapher/life-expectancy?tab=chart&country=LKA",
@@ -2636,10 +2696,6 @@
     "text": "MDG5.A: Maternal mortality ratio"
   },
   {
-    "url": "https://ourworldindata.org/grapher/incidence-of-malaria-sdgs?tab=chart&country=LKA",
-    "text": "Malaria incidence"
-  },
-  {
     "url": "https://ourworldindata.org/grapher/child-deaths-from-malaria?tab=chart&country=LKA",
     "text": "Malaria mortality in children"
   },
@@ -2704,15 +2760,7 @@
     "text": "Manufacturing jobs as a share of total employment"
   },
   {
-    "url": "https://ourworldindata.org/grapher/maternal-mortality-rate-per-100000-live-births-around-the-world?tab=chart&country=LKA",
-    "text": "Maternal mortality ratio"
-  },
-  {
     "url": "https://ourworldindata.org/grapher/maternal-mortality?tab=chart&country=LKA",
-    "text": "Maternal mortality ratio"
-  },
-  {
-    "url": "https://ourworldindata.org/grapher/maternal-mortality-ratio-sdgs?tab=chart&country=LKA",
     "text": "Maternal mortality ratio"
   },
   {
@@ -2740,6 +2788,10 @@
     "text": "Mean income or consumption per day"
   },
   {
+    "url": "https://ourworldindata.org/grapher/democratic-electoral-institutions-row?tab=chart&country=LKA",
+    "text": "Meaningful democratic electoral institutions"
+  },
+  {
     "url": "https://ourworldindata.org/grapher/meat-production-tonnes?tab=chart&country=LKA",
     "text": "Meat production"
   },
@@ -2762,10 +2814,6 @@
   {
     "url": "https://ourworldindata.org/grapher/meningitis-death-rates-children-under-5?tab=chart&country=LKA",
     "text": "Meningitis death rate in children"
-  },
-  {
-    "url": "https://ourworldindata.org/grapher/mental-health-share-of-total-disease-burden?tab=chart&country=LKA",
-    "text": "Mental disorders as a share of total disease burden"
   },
   {
     "url": "https://ourworldindata.org/grapher/mental-and-substance-use-as-share-of-disease?tab=chart&country=LKA",
@@ -2852,6 +2900,22 @@
     "text": "Monitoring of sustainable tourism"
   },
   {
+    "url": "https://ourworldindata.org/grapher/monthly-temperature-anomalies?tab=chart&country=LKA",
+    "text": "Monthly temperature anomalies"
+  },
+  {
+    "url": "https://ourworldindata.org/grapher/multi-party-elections-row?tab=chart&country=LKA",
+    "text": "Multi-party elections"
+  },
+  {
+    "url": "https://ourworldindata.org/grapher/multi-party-elections-hoe-row?tab=chart&country=LKA",
+    "text": "Multi-party elections for government's chief executive"
+  },
+  {
+    "url": "https://ourworldindata.org/grapher/multi-party-elections-legislature-row?tab=chart&country=LKA",
+    "text": "Multi-party elections for legislature"
+  },
+  {
     "url": "https://ourworldindata.org/grapher/municipal-water-as-a-share-of-total-water-withdrawals?tab=chart&country=LKA",
     "text": "Municipal water as a share of total water withdrawals"
   },
@@ -2865,10 +2929,6 @@
   },
   {
     "url": "https://ourworldindata.org/grapher/neonatal-mortality-wdi?tab=chart&country=LKA",
-    "text": "Neonatal mortality rate"
-  },
-  {
-    "url": "https://ourworldindata.org/grapher/neonatal-mortality-rate-sdgs?tab=chart&country=LKA",
     "text": "Neonatal mortality rate"
   },
   {
@@ -2940,12 +3000,8 @@
     "text": "Number of R&D researchers per million people"
   },
   {
-    "url": "https://ourworldindata.org/grapher/number-acute-care-beds?tab=chart&country=LKA",
-    "text": "Number of acute care beds"
-  },
-  {
-    "url": "https://ourworldindata.org/grapher/number-of-adolescents?tab=chart&country=LKA",
-    "text": "Number of adolescents"
+    "url": "https://ourworldindata.org/grapher/number-agri-environmental-policies?tab=chart&country=LKA",
+    "text": "Number of agri-environmental policies in place"
   },
   {
     "url": "https://ourworldindata.org/grapher/air-trips-per-capita?tab=chart&country=LKA",
@@ -2976,6 +3032,10 @@
     "text": "Number of companies publishing sustainability reports that meet the minimum reporting requirements"
   },
   {
+    "url": "https://ourworldindata.org/grapher/new-reported-cases-tetanus?tab=chart&country=LKA",
+    "text": "Number of confirmed cases of tetanus"
+  },
+  {
     "url": "https://ourworldindata.org/grapher/reported-tetanus-cases?tab=chart&country=LKA",
     "text": "Number of confirmed neonatal tetanus cases"
   },
@@ -3000,20 +3060,12 @@
     "text": "Number of deaths from HIV/AIDS"
   },
   {
-    "url": "https://ourworldindata.org/grapher/number-of-deaths-from-hivaids-gho?tab=chart&country=LKA",
-    "text": "Number of deaths from HIV/AIDS"
-  },
-  {
     "url": "https://ourworldindata.org/grapher/number-of-deaths-from-hivaids-who?tab=chart&country=LKA",
     "text": "Number of deaths from HIV/AIDS"
   },
   {
     "url": "https://ourworldindata.org/grapher/deaths-from-cardiovascular-disease-ghe?tab=chart&country=LKA",
     "text": "Number of deaths from cardiovascular diseases"
-  },
-  {
-    "url": "https://ourworldindata.org/grapher/deaths-from-eating-disorders?tab=chart&country=LKA",
-    "text": "Number of deaths from eating disorders"
   },
   {
     "url": "https://ourworldindata.org/grapher/deaths-due-to-high-blood-pressure?tab=chart&country=LKA",
@@ -3054,10 +3106,6 @@
   {
     "url": "https://ourworldindata.org/grapher/tuberculosis-deaths?tab=chart&country=LKA",
     "text": "Number of deaths from tuberculosis"
-  },
-  {
-    "url": "https://ourworldindata.org/grapher/number-of-ethnic-groups-in-power?tab=chart&country=LKA",
-    "text": "Number of ethnic groups in power"
   },
   {
     "url": "https://ourworldindata.org/grapher/data-deprivation-poverty-surveys-per-decade?tab=chart&country=LKA",
@@ -3106,10 +3154,6 @@
   {
     "url": "https://ourworldindata.org/grapher/number-of-new-hivaids-infections-who?tab=chart&country=LKA",
     "text": "Number of new HIV infections"
-  },
-  {
-    "url": "https://ourworldindata.org/grapher/number-of-new-hiv-infections-per-1000-uninfected-population-aged-15-49?tab=chart&country=LKA",
-    "text": "Number of new HIV infections per 1,000 uninfected population"
   },
   {
     "url": "https://ourworldindata.org/grapher/new-cases-of-hiv-infection?tab=chart&country=LKA",
@@ -3208,10 +3252,6 @@
     "text": "Number of people with multidrug-resistant tuberculosis"
   },
   {
-    "url": "https://ourworldindata.org/grapher/number-of-people-with-schizophrenia-country?tab=chart&country=LKA",
-    "text": "Number of people with schizophrenia"
-  },
-  {
     "url": "https://ourworldindata.org/grapher/number-without-clean-cooking-fuel?tab=chart&country=LKA",
     "text": "Number of people without access to clean fuels for cooking"
   },
@@ -3224,14 +3264,6 @@
     "text": "Number of pigs"
   },
   {
-    "url": "https://ourworldindata.org/grapher/number-of-politically-marginalized-ethnic-groups?tab=chart&country=LKA",
-    "text": "Number of politically-marginalized ethnic groups"
-  },
-  {
-    "url": "https://ourworldindata.org/grapher/number-of-politically-relevant-ethnic-groups?tab=chart&country=LKA",
-    "text": "Number of politically-relevant ethnic groups"
-  },
-  {
     "url": "https://ourworldindata.org/grapher/poultry-livestock-count?tab=chart&country=LKA",
     "text": "Number of poultry birds"
   },
@@ -3242,10 +3274,6 @@
   {
     "url": "https://ourworldindata.org/grapher/number-of-refugees-per-100000?tab=chart&country=LKA",
     "text": "Number of refugees per 100,000 population, by country of origin"
-  },
-  {
-    "url": "https://ourworldindata.org/grapher/number-of-sites-providing-rapid-tuberculosis-diagnostics?tab=chart&country=LKA",
-    "text": "Number of sites providing rapid tuberculosis diagnostics"
   },
   {
     "url": "https://ourworldindata.org/grapher/number-suicide-deaths?tab=chart&country=LKA",
@@ -3352,8 +3380,12 @@
     "text": "Palm oil imports"
   },
   {
-    "url": "https://ourworldindata.org/grapher/parkinsons-disease-prevalence?tab=chart&country=LKA",
-    "text": "Parkinson's disease prevalence"
+    "url": "https://ourworldindata.org/grapher/participatory-democracy-index?tab=chart&country=LKA",
+    "text": "Participatory democracy index"
+  },
+  {
+    "url": "https://ourworldindata.org/grapher/participatory-political-institutions-index?tab=chart&country=LKA",
+    "text": "Participatory political institutions index"
   },
   {
     "url": "https://ourworldindata.org/grapher/air-passenger-kilometers?tab=chart&country=LKA",
@@ -3604,6 +3636,10 @@
     "text": "Percentage of teachers in upper-secondary education who are qualified"
   },
   {
+    "url": "https://ourworldindata.org/grapher/percentage-of-territory-controlled-by-government?tab=chart&country=LKA",
+    "text": "Percentage of territory effectively controlled by government"
+  },
+  {
     "url": "https://ourworldindata.org/grapher/pesticide-use-tonnes?tab=chart&country=LKA",
     "text": "Pesticide use"
   },
@@ -3624,6 +3660,10 @@
     "text": "Phosphorous inputs per hectare of cropland"
   },
   {
+    "url": "https://ourworldindata.org/grapher/physical-integrity-rights-index-vdem?tab=chart&country=LKA",
+    "text": "Physical integrity rights index"
+  },
+  {
     "url": "https://ourworldindata.org/grapher/physical-integrity-rights-score-fariss-kenwick-reuning?tab=chart&country=LKA",
     "text": "Physical integrity rights score"
   },
@@ -3638,6 +3678,18 @@
   {
     "url": "https://ourworldindata.org/grapher/political-social-integration-index-bti?tab=chart&country=LKA",
     "text": "Political and social integration index"
+  },
+  {
+    "url": "https://ourworldindata.org/grapher/political-centralization-index?tab=chart&country=LKA",
+    "text": "Political centralization index"
+  },
+  {
+    "url": "https://ourworldindata.org/grapher/political-civil-liberties-index?tab=chart&country=LKA",
+    "text": "Political civil liberties index"
+  },
+  {
+    "url": "https://ourworldindata.org/grapher/political-corruption-index?tab=chart&country=LKA",
+    "text": "Political corruption index"
   },
   {
     "url": "https://ourworldindata.org/grapher/political-liberties-lexical?tab=chart&country=LKA",
@@ -3724,36 +3776,12 @@
     "text": "Population"
   },
   {
-    "url": "https://ourworldindata.org/grapher/population-since-1800?tab=chart&country=LKA",
-    "text": "Population"
-  },
-  {
-    "url": "https://ourworldindata.org/grapher/population-politically-discriminated-ethnic-group?tab=chart&country=LKA",
-    "text": "Population belonging to a politically-discriminated ethnic group"
-  },
-  {
-    "url": "https://ourworldindata.org/grapher/population-belonging-to-a-politically-marginalized-ethnic-group?tab=chart&country=LKA",
-    "text": "Population belonging to a politically-marginalized ethnic group"
-  },
-  {
-    "url": "https://ourworldindata.org/grapher/population-in-politically-relevant-ethnic-group?tab=chart&country=LKA",
-    "text": "Population belonging to a politically-relevant ethnic group"
-  },
-  {
-    "url": "https://ourworldindata.org/grapher/population-belonging-to-an-ethnic-group-in-power?tab=chart&country=LKA",
-    "text": "Population belonging to an ethnic group in power"
-  },
-  {
     "url": "https://ourworldindata.org/grapher/population-density?tab=chart&country=LKA",
     "text": "Population density"
   },
   {
     "url": "https://ourworldindata.org/grapher/population-having-attained-at-least-basic-education?tab=chart&country=LKA",
     "text": "Population having attained at least some formal education"
-  },
-  {
-    "url": "https://ourworldindata.org/grapher/population-under-five-years-old?tab=chart&country=LKA",
-    "text": "Population under 5 years old"
   },
   {
     "url": "https://ourworldindata.org/grapher/potash-fertilizer-application-per-hectare-of-cropland?tab=chart&country=LKA",
@@ -3812,8 +3840,8 @@
     "text": "Press freedom"
   },
   {
-    "url": "https://ourworldindata.org/grapher/prevalence-of-autistic-spectrum?tab=chart&country=LKA",
-    "text": "Prevalence of autistic spectrum disorder"
+    "url": "https://ourworldindata.org/grapher/press-freedom-index-rsf?tab=chart&country=LKA",
+    "text": "Press freedom index"
   },
   {
     "url": "https://ourworldindata.org/grapher/prevalence-cysticercosis?tab=chart&country=LKA",
@@ -3830,10 +3858,6 @@
   {
     "url": "https://ourworldindata.org/grapher/prevalence-rate-of-cardiovascular-disease?tab=chart&country=LKA",
     "text": "Prevalence rate of cardiovascular diseases"
-  },
-  {
-    "url": "https://ourworldindata.org/grapher/diabetes-prevalence-who-gho?tab=chart&country=LKA",
-    "text": "Prevalence rate of diabetes in adults"
   },
   {
     "url": "https://ourworldindata.org/grapher/women-high-blood-pressure?tab=chart&country=LKA",
@@ -3886,6 +3910,10 @@
   {
     "url": "https://ourworldindata.org/grapher/govt-expenditure-share-budget?tab=chart&country=LKA",
     "text": "Primary government expenditures as a share of original budget"
+  },
+  {
+    "url": "https://ourworldindata.org/grapher/private-civil-liberties-index?tab=chart&country=LKA",
+    "text": "Private civil liberties index"
   },
   {
     "url": "https://ourworldindata.org/grapher/private-health-expenditure-per-person?tab=chart&country=LKA",
@@ -3988,10 +4016,6 @@
     "text": "Rate of deaths attributed to unsafe water sources"
   },
   {
-    "url": "https://ourworldindata.org/grapher/dalys-from-autistic-spectrum-disorders?tab=chart&country=LKA",
-    "text": "Rate of disease burden from autism spectrum disorders"
-  },
-  {
     "url": "https://ourworldindata.org/grapher/drug-disorder-dalys-rate?tab=chart&country=LKA",
     "text": "Rate of disease burden from drug use disorders"
   },
@@ -4002,10 +4026,6 @@
   {
     "url": "https://ourworldindata.org/grapher/rate-disease-burden-lead?tab=chart&country=LKA",
     "text": "Rate of disease burden from lead exposure"
-  },
-  {
-    "url": "https://ourworldindata.org/grapher/rate-of-natural-population-increase-un?tab=chart&country=LKA",
-    "text": "Rate of natural population increase"
   },
   {
     "url": "https://ourworldindata.org/grapher/incidence-of-tuberculosis-sdgs?tab=chart&country=LKA",
@@ -4092,10 +4112,6 @@
     "text": "Reported cases of paralytic polio from wild polioviruses"
   },
   {
-    "url": "https://ourworldindata.org/grapher/reported-number-of-deaths-from-malaria?tab=chart&country=LKA",
-    "text": "Reported number of deaths from malaria"
-  },
-  {
     "url": "https://ourworldindata.org/grapher/reported-paralytic-polio-cases-per-1-million-people?tab=chart&country=LKA",
     "text": "Reported paralytic polio cases per million"
   },
@@ -4104,12 +4120,20 @@
     "text": "Reported rabies deaths"
   },
   {
+    "url": "https://ourworldindata.org/grapher/suicide-rate-who-mdb?tab=chart&country=LKA",
+    "text": "Reported suicide rates"
+  },
+  {
     "url": "https://ourworldindata.org/grapher/representation-of-women-in-lower-chamber-of-parliament?tab=chart&country=LKA",
     "text": "Representation of women in the lower chamber of parliament"
   },
   {
     "url": "https://ourworldindata.org/grapher/research-spending-gdp?tab=chart&country=LKA",
     "text": "Research & development spending as a share of GDP"
+  },
+  {
+    "url": "https://ourworldindata.org/grapher/respect-for-counterarguments-score?tab=chart&country=LKA",
+    "text": "Respect for counterarguments score"
   },
   {
     "url": "https://ourworldindata.org/grapher/respiratory-infection-death-rate-who-mdb?tab=chart&country=LKA",
@@ -4128,8 +4152,8 @@
     "text": "Rice yields"
   },
   {
-    "url": "https://ourworldindata.org/grapher/road-traffic-deaths-sdgs?tab=chart&country=LKA",
-    "text": "Road traffic deaths"
+    "url": "https://ourworldindata.org/grapher/rigorous-and-impartial-public-administration-index?tab=chart&country=LKA",
+    "text": "Rigorous and impartial public administration index"
   },
   {
     "url": "https://ourworldindata.org/grapher/deaths-averted-due-to-rotavirus-vaccine?tab=chart&country=LKA",
@@ -4137,6 +4161,10 @@
   },
   {
     "url": "https://ourworldindata.org/grapher/rule-of-law-index-bti?tab=chart&country=LKA",
+    "text": "Rule of law index"
+  },
+  {
+    "url": "https://ourworldindata.org/grapher/rule-of-law-index?tab=chart&country=LKA",
     "text": "Rule of law index"
   },
   {
@@ -4180,16 +4208,16 @@
     "text": "Sex ratio at birth"
   },
   {
-    "url": "https://ourworldindata.org/grapher/sex-ratio-at-birth-males-chao-et-al?tab=chart&country=LKA",
-    "text": "Sex ratio at birth"
-  },
-  {
     "url": "https://ourworldindata.org/grapher/gender-ratio-in-life-expectancy-at-birth?tab=chart&country=LKA",
     "text": "Sex ratio in life expectancy"
   },
   {
     "url": "https://ourworldindata.org/grapher/sex-ratio-at-five-years-old?tab=chart&country=LKA",
     "text": "Sex ratio of five-year-olds"
+  },
+  {
+    "url": "https://ourworldindata.org/grapher/sex-ratio-at-sixty-years-old?tab=chart&country=LKA",
+    "text": "Sex ratio of sixty-year-olds"
   },
   {
     "url": "https://ourworldindata.org/grapher/share-covered-by-one-social-protection-benefit?tab=chart&country=LKA",
@@ -4338,10 +4366,6 @@
   {
     "url": "https://ourworldindata.org/grapher/share-of-children-with-diarrhea-receiving-treatment?tab=chart&country=LKA",
     "text": "Share of children with diarrhea receiving treatment"
-  },
-  {
-    "url": "https://ourworldindata.org/grapher/share-of-children-with-pneumonia-symptoms-receiving-healthcare?tab=chart&country=LKA",
-    "text": "Share of children with pneumonia symptoms receiving healthcare"
   },
   {
     "url": "https://ourworldindata.org/grapher/share-cumulative-co2-oil?tab=chart&country=LKA",
@@ -4564,10 +4588,6 @@
     "text": "Share of global excess nitrogen from croplands"
   },
   {
-    "url": "https://ourworldindata.org/grapher/share-global-excess-phosphorous?tab=chart&country=LKA",
-    "text": "Share of global excess phosphorous from croplands"
-  },
-  {
     "url": "https://ourworldindata.org/grapher/share-global-forest?tab=chart&country=LKA",
     "text": "Share of global forest area"
   },
@@ -4612,8 +4632,8 @@
     "text": "Share of global plastic waste imports"
   },
   {
-    "url": "https://ourworldindata.org/grapher/poverty-decline-without-china?tab=chart&country=LKA",
-    "text": "Share of global population living in extreme poverty"
+    "url": "https://ourworldindata.org/grapher/share-in-extreme-poverty-including-and-excluding-china?tab=chart&country=LKA",
+    "text": "Share of global population living in extreme poverty including and excluding China"
   },
   {
     "url": "https://ourworldindata.org/grapher/share-of-global-services-exports?tab=chart&country=LKA",
@@ -4634,10 +4654,6 @@
   {
     "url": "https://ourworldindata.org/grapher/share-of-households-consuming-iodized-salt?tab=chart&country=LKA",
     "text": "Share of households consuming iodized salt"
-  },
-  {
-    "url": "https://ourworldindata.org/grapher/coverage-of-diphtheria-tetanus-pertussis-vaccine?tab=chart&country=LKA",
-    "text": "Share of infants vaccinated against diphtheria, tetanus and pertussis"
   },
   {
     "url": "https://ourworldindata.org/grapher/share-of-land-area-used-for-agriculture?tab=chart&country=LKA",
@@ -4708,6 +4724,10 @@
     "text": "Share of national greenhouse gas emissions that come from food"
   },
   {
+    "url": "https://ourworldindata.org/grapher/the-percentage-of-neonates-protected-at-birth-against-neonatal-tetanus?tab=chart&country=LKA",
+    "text": "Share of neonates protected at birth against neonatal tetanus"
+  },
+  {
     "url": "https://ourworldindata.org/grapher/hib-vaccine?tab=chart&country=LKA",
     "text": "Share of one-year-olds vaccinated against Haemophilus influenzae type B"
   },
@@ -4716,24 +4736,12 @@
     "text": "Share of one-year-olds vaccinated against diphtheria, pertussis, and tetanus"
   },
   {
-    "url": "https://ourworldindata.org/grapher/share-of-one-year-olds-vaccinated-against-diphtheria-pertussis-and-tetanus-dtp3?tab=chart&country=LKA",
-    "text": "Share of one-year-olds vaccinated against diphtheria, pertussis, and tetanus (DTP3)"
-  },
-  {
     "url": "https://ourworldindata.org/grapher/immunization-hepb3-of-one-year-old-children?tab=chart&country=LKA",
     "text": "Share of one-year-olds vaccinated against hepatitis B"
   },
   {
     "url": "https://ourworldindata.org/grapher/share-of-children-vaccinated-against-measles?tab=chart&country=LKA",
     "text": "Share of one-year-olds vaccinated against measles"
-  },
-  {
-    "url": "https://ourworldindata.org/grapher/share-of-one-year-olds-vaccinated-against-measles-mcv1?tab=chart&country=LKA",
-    "text": "Share of one-year-olds vaccinated against measles (MCV1)"
-  },
-  {
-    "url": "https://ourworldindata.org/grapher/share-of-one-year-olds-vaccinated-against-polio-pol3?tab=chart&country=LKA",
-    "text": "Share of one-year-olds vaccinated against polio (Pol3)"
   },
   {
     "url": "https://ourworldindata.org/grapher/rubella-vaccination-coverage?tab=chart&country=LKA",
@@ -4764,28 +4772,24 @@
     "text": "Share of people practicing open defecation"
   },
   {
+    "url": "https://ourworldindata.org/grapher/share-believe-climate?tab=chart&country=LKA",
+    "text": "Share of people who believe in climate change and think it's a serious threat to humanity"
+  },
+  {
+    "url": "https://ourworldindata.org/grapher/support-political-climate-action?tab=chart&country=LKA",
+    "text": "Share of people who say their government should do more to tackle climate change"
+  },
+  {
+    "url": "https://ourworldindata.org/grapher/support-policies-climate?tab=chart&country=LKA",
+    "text": "Share of people who support policies to tackle climate change"
+  },
+  {
     "url": "https://ourworldindata.org/grapher/antiretroviral-therapy-coverage-among-people-living-with-hiv?tab=chart&country=LKA",
     "text": "Share of people with HIV who receive antiretroviral therapy"
   },
   {
     "url": "https://ourworldindata.org/grapher/share-plastic-waste-exports?tab=chart&country=LKA",
     "text": "Share of plastic waste exports"
-  },
-  {
-    "url": "https://ourworldindata.org/grapher/share-of-population-politically-discriminated-ethnic-group?tab=chart&country=LKA",
-    "text": "Share of population belonging to a politically-discriminated ethnic group"
-  },
-  {
-    "url": "https://ourworldindata.org/grapher/share-of-population-belonging-to-a-politically-marginalized-ethnic-group?tab=chart&country=LKA",
-    "text": "Share of population belonging to a politically-marginalized ethnic group"
-  },
-  {
-    "url": "https://ourworldindata.org/grapher/share-of-population-in-politically-relevant-ethnic-group?tab=chart&country=LKA",
-    "text": "Share of population belonging to a politically-relevant ethnic group"
-  },
-  {
-    "url": "https://ourworldindata.org/grapher/coverage-of-social-insurance-programs?tab=chart&country=LKA",
-    "text": "Share of population covered by social insurance programs"
   },
   {
     "url": "https://ourworldindata.org/grapher/share-of-population-covered-by-social-protection?tab=chart&country=LKA",
@@ -4825,15 +4829,7 @@
   },
   {
     "url": "https://ourworldindata.org/grapher/population-using-at-least-basic-drinking-water?tab=chart&country=LKA",
-    "text": "Share of population using at least basic drinking water source"
-  },
-  {
-    "url": "https://ourworldindata.org/grapher/share-using-at-least-basic-sanitation?tab=chart&country=LKA",
-    "text": "Share of population using at least basic sanitation facilities"
-  },
-  {
-    "url": "https://ourworldindata.org/grapher/share-with-asperger-syndrome?tab=chart&country=LKA",
-    "text": "Share of population with Asperger syndrome and other autistic spectrum disorders"
+    "text": "Share of population using at least a basic drinking water source"
   },
   {
     "url": "https://ourworldindata.org/grapher/proportion-of-population-with-basic-handwashing-facilities-on-premises?tab=chart&country=LKA",
@@ -4848,11 +4844,11 @@
     "text": "Share of population with an alcohol use disorder"
   },
   {
-    "url": "https://ourworldindata.org/grapher/share-of-population-with-adhd?tab=chart&country=LKA",
-    "text": "Share of population with attention deficit/hyperactivity disorder"
+    "url": "https://ourworldindata.org/grapher/share-of-population-with-cancer?tab=chart&country=LKA",
+    "text": "Share of population with cancer"
   },
   {
-    "url": "https://ourworldindata.org/grapher/share-of-population-with-cancer?tab=chart&country=LKA",
+    "url": "https://ourworldindata.org/grapher/share-of-population-with-cancer-crude?tab=chart&country=LKA",
     "text": "Share of population with cancer"
   },
   {
@@ -4892,16 +4888,16 @@
     "text": "Share of pregnant women who have anemia"
   },
   {
-    "url": "https://ourworldindata.org/grapher/pregnant-women-receiving-prenatal-care?tab=chart&country=LKA",
-    "text": "Share of pregnant women who receive prenatal care"
-  },
-  {
     "url": "https://ourworldindata.org/grapher/share-of-primary-school-teachers-who-are-female?tab=chart&country=LKA",
     "text": "Share of primary school teachers who are female"
   },
   {
     "url": "https://ourworldindata.org/grapher/share-primary-school-age-out-of-school?tab=chart&country=LKA",
     "text": "Share of primary-school-age children who are out of school"
+  },
+  {
+    "url": "https://ourworldindata.org/grapher/share-rural-basic-handwashing?tab=chart&country=LKA",
+    "text": "Share of rural population with access to basic handwashing facilities"
   },
   {
     "url": "https://ourworldindata.org/grapher/share-of-secondary-school-teachers-who-are-female?tab=chart&country=LKA",
@@ -4929,7 +4925,7 @@
   },
   {
     "url": "https://ourworldindata.org/grapher/proportion-tariff-lines-applied-to-imports-from-ldcs?tab=chart&country=LKA",
-    "text": "Share of tariffs on imports from least developed countries with a 0% rate"
+    "text": "Share of tariffs on imports from least-developed countries with a 0% rate"
   },
   {
     "url": "https://ourworldindata.org/grapher/share-of-teachers-in-primary-education-who-are-trained?tab=chart&country=LKA",
@@ -4948,20 +4944,12 @@
     "text": "Share of terrestrial Key Biodiversity Areas that are protected"
   },
   {
-    "url": "https://ourworldindata.org/grapher/share-confirmed-tuberculosis-patients-with-rifampicin-resistance?tab=chart&country=LKA",
-    "text": "Share of tested tuberculosis patients with rifampicin resistance"
-  },
-  {
     "url": "https://ourworldindata.org/grapher/share-of-the-daily-caloric-intake-that-comes-from-animal-protein?tab=chart&country=LKA",
     "text": "Share of the daily caloric intake that comes from animal protein"
   },
   {
     "url": "https://ourworldindata.org/grapher/share-of-the-labor-force-employed-in-agriculture?tab=chart&country=LKA",
     "text": "Share of the labor force employed in agriculture"
-  },
-  {
-    "url": "https://ourworldindata.org/grapher/share-of-the-population-belonging-to-an-ethnic-group-in-power?tab=chart&country=LKA",
-    "text": "Share of the population belonging to an ethnic group in power"
   },
   {
     "url": "https://ourworldindata.org/grapher/share-of-the-population-with-latent-tuberculosis-infection?tab=chart&country=LKA",
@@ -4992,10 +4980,6 @@
     "text": "Share of the population not using improved sanitation"
   },
   {
-    "url": "https://ourworldindata.org/grapher/share-of-the-population-that-is-70-years-and-older?tab=chart&country=LKA",
-    "text": "Share of the population that is 70 years and older"
-  },
-  {
     "url": "https://ourworldindata.org/grapher/share-population-female?tab=chart&country=LKA",
     "text": "Share of the population that is female"
   },
@@ -5010,14 +4994,6 @@
   {
     "url": "https://ourworldindata.org/grapher/share-of-population-with-improved-sanitation-faciltities?tab=chart&country=LKA",
     "text": "Share of the population using at least basic sanitation services"
-  },
-  {
-    "url": "https://ourworldindata.org/grapher/share-of-the-population-with-access-to-improved-drinking-water?tab=chart&country=LKA",
-    "text": "Share of the population using at least basic water services"
-  },
-  {
-    "url": "https://ourworldindata.org/grapher/proportion-using-safely-managed-drinking-water?tab=chart&country=LKA",
-    "text": "Share of the population using safely managed drinking water"
   },
   {
     "url": "https://ourworldindata.org/grapher/share-of-individuals-using-the-internet?tab=chart&country=LKA",
@@ -5038,10 +5014,6 @@
   {
     "url": "https://ourworldindata.org/grapher/share-with-alcohol-or-drug-use-disorders?tab=chart&country=LKA",
     "text": "Share of the population with alcohol or drug use disorders"
-  },
-  {
-    "url": "https://ourworldindata.org/grapher/share-with-down-syndrome?tab=chart&country=LKA",
-    "text": "Share of the population with down syndrome"
   },
   {
     "url": "https://ourworldindata.org/grapher/share-of-the-population-with-malaria?tab=chart&country=LKA",
@@ -5164,14 +5136,6 @@
     "text": "Share of young people not in education, employment or training"
   },
   {
-    "url": "https://ourworldindata.org/grapher/share-believe-climate?tab=chart&country=LKA",
-    "text": "Share that believe in climate change and think it is a serious threat to humanity"
-  },
-  {
-    "url": "https://ourworldindata.org/grapher/support-political-climate-action?tab=chart&country=LKA",
-    "text": "Share that say their national government should do more to tackle climate change"
-  },
-  {
     "url": "https://ourworldindata.org/grapher/strongly-agree-vaccines-effective?tab=chart&country=LKA",
     "text": "Share that strongly agree that vaccines are effective"
   },
@@ -5196,12 +5160,12 @@
     "text": "Share that strongly disagree that vaccines are safe"
   },
   {
-    "url": "https://ourworldindata.org/grapher/support-policies-climate?tab=chart&country=LKA",
-    "text": "Share that support policies to tackle climate change"
-  },
-  {
     "url": "https://ourworldindata.org/grapher/support-public-action-climate?tab=chart&country=LKA",
     "text": "Share that think people in their country should act to tackle climate change"
+  },
+  {
+    "url": "https://ourworldindata.org/grapher/proportion-using-safely-managed-drinking-water?tab=chart&country=LKA",
+    "text": "Share using safely managed drinking water"
   },
   {
     "url": "https://ourworldindata.org/grapher/share-who-report-lifetime-anxiety-or-depression?tab=chart&country=LKA",
@@ -5296,6 +5260,14 @@
     "text": "Stillbirth rate"
   },
   {
+    "url": "https://ourworldindata.org/grapher/strong-elected-local-governments-index?tab=chart&country=LKA",
+    "text": "Strong elected local governments index"
+  },
+  {
+    "url": "https://ourworldindata.org/grapher/strong-elected-regional-governments-index?tab=chart&country=LKA",
+    "text": "Strong elected regional governments index"
+  },
+  {
     "url": "https://ourworldindata.org/grapher/sugar-cane-production?tab=chart&country=LKA",
     "text": "Sugar cane production"
   },
@@ -5352,10 +5324,6 @@
     "text": "Tax revenues as a share of GDP"
   },
   {
-    "url": "https://ourworldindata.org/grapher/taxes-as-share-of-cigarette-price?tab=chart&country=LKA",
-    "text": "Taxes as a share of cigarette price"
-  },
-  {
     "url": "https://ourworldindata.org/grapher/taxes-on-goods-and-services-gdp?tab=chart&country=LKA",
     "text": "Taxes on goods and services"
   },
@@ -5386,10 +5354,6 @@
   {
     "url": "https://ourworldindata.org/grapher/alcohol-disorders-dalys-age-standardized-rate?tab=chart&country=LKA",
     "text": "The disease burden from alcohol use disorders"
-  },
-  {
-    "url": "https://ourworldindata.org/grapher/the-percentage-of-neonates-protected-at-birth-against-neonatal-tetanus?tab=chart&country=LKA",
-    "text": "The percentage of neonates protected at birth against neonatal tetanus"
   },
   {
     "url": "https://ourworldindata.org/grapher/thermal-efficiency-factor?tab=chart&country=LKA",
@@ -5477,7 +5441,7 @@
   },
   {
     "url": "https://ourworldindata.org/grapher/total-net-enrollment-rate-in-primary-education?tab=chart&country=LKA",
-    "text": "Total net enrolment rate in primary education"
+    "text": "Total net enrollment rate in primary education"
   },
   {
     "url": "https://ourworldindata.org/grapher/total-nitrogen-inputs-crops?tab=chart&country=LKA",
@@ -5524,8 +5488,8 @@
     "text": "Trade in services (exports plus imports) as share of GDP"
   },
   {
-    "url": "https://ourworldindata.org/grapher/trade-openness?tab=chart&country=LKA",
-    "text": "Trade openness"
+    "url": "https://ourworldindata.org/grapher/transparent-laws-row?tab=chart&country=LKA",
+    "text": "Transparent laws"
   },
   {
     "url": "https://ourworldindata.org/grapher/tuberculosis-case-detection-rate?tab=chart&country=LKA",
@@ -5628,10 +5592,6 @@
     "text": "Value of agricultural production"
   },
   {
-    "url": "https://ourworldindata.org/grapher/merchandise-exports-gdp-cepii?tab=chart&country=LKA",
-    "text": "Value of exported goods as a share of GDP"
-  },
-  {
     "url": "https://ourworldindata.org/grapher/exports-of-goods-and-services-constant-2010-us?tab=chart&country=LKA",
     "text": "Value of exported of goods and services"
   },
@@ -5672,20 +5632,20 @@
     "text": "Wind power generation"
   },
   {
-    "url": "https://ourworldindata.org/grapher/wine-consumption-per-person?tab=chart&country=LKA",
-    "text": "Wine consumption per person"
+    "url": "https://ourworldindata.org/grapher/women-civil-liberties-index?tab=chart&country=LKA",
+    "text": "Women's civil liberties index"
   },
   {
-    "url": "https://ourworldindata.org/grapher/woman-is-chief-executive?tab=chart&country=LKA",
-    "text": "Woman is government's chief executive"
+    "url": "https://ourworldindata.org/grapher/women-civil-society-participation-index?tab=chart&country=LKA",
+    "text": "Women's civil society participation index"
   },
   {
-    "url": "https://ourworldindata.org/grapher/woman-is-head-of-government?tab=chart&country=LKA",
-    "text": "Woman is head of government"
+    "url": "https://ourworldindata.org/grapher/women-political-empowerment-index?tab=chart&country=LKA",
+    "text": "Women's political empowerment index"
   },
   {
-    "url": "https://ourworldindata.org/grapher/woman-is-head-of-state?tab=chart&country=LKA",
-    "text": "Woman is head of state"
+    "url": "https://ourworldindata.org/grapher/women-political-participation-index?tab=chart&country=LKA",
+    "text": "Women's political participation index"
   },
   {
     "url": "https://ourworldindata.org/grapher/universal-suffrage-women-lexical?tab=chart&country=LKA",

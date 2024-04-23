@@ -1,24 +1,25 @@
 import os
 import random
+import tempfile
 import time
 
 from twtr import Tweet, Twitter
 from utils import File, Log, TimeUnit
 
-from screenshot import DIR_TEMP, Config
+from screenshot import Config
 from workflows.all_configs import get_config_list
 
 log = Log(__name__)
 
 CONFIG_LIST = get_config_list()
-
+DIR_TEMP = tempfile.gettempdir()
 SHOULD_SEND_TWEET = True
 PROD_LOG_PATH = os.path.join(DIR_TEMP, 'prod.log')
 
 
 # Should be consistent with pipeline-cron.yml
 CRON_FREQUENCY = TimeUnit.SECONDS_IN.MINUTE * 20
-TEST_CONFIG_ID_PART = 'lk_elections'
+TEST_CONFIG_ID_PART = 'weather_lk_country_rainfall'
 
 
 def init_dir():

@@ -5,7 +5,7 @@ from functools import cached_property
 import requests
 from utils import Log, Time, TimeFormat, TimeZoneOffset
 
-from screenshot.config import config_utils
+from screenshot.config.config_utils import config_utils
 
 log = Log(__name__)
 
