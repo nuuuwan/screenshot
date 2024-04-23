@@ -1,4 +1,4 @@
-from utils import TimeUnit, TimeZoneOffset, Time, TimeFormat
+from utils import Time, TimeFormat, TimeUnit, TimeZoneOffset
 
 from screenshot.config.Config import TIME_FORMAT
 from screenshot.config.LocationConfig import LocationConfig
@@ -20,9 +20,9 @@ class Ventusky:
         return Time(ut)
 
     def get_url_from_time(self, delta_ut: int):
-        time_id = TimeFormat(
-            '%Y%m%d/%H00', TimeZoneOffset.GMT
-        ).stringify(Ventusky.get_time(delta_ut))
+        time_id = TimeFormat('%Y%m%d/%H00', TimeZoneOffset.GMT).stringify(
+            Ventusky.get_time(delta_ut)
+        )
         lat, lng, zoom = (
             self.locationConfig.lat,
             self.locationConfig.lng,

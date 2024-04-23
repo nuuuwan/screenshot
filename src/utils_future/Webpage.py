@@ -6,14 +6,14 @@ from functools import cached_property
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.firefox.options import Options
-from utils import Log, Hash
+from utils import Hash, Log
 
 from utils_future.Image import Image
 from utils_future.SystemMode import SystemMode
 
 log = Log(__name__)
 
-T_WAIT_FOR_SCREENSHOT = 1 if SystemMode.is_test() else 240
+T_WAIT_FOR_SCREENSHOT = 20 if SystemMode.is_test() else 240
 log.debug(f'{T_WAIT_FOR_SCREENSHOT=}')
 
 

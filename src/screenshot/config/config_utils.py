@@ -1,7 +1,7 @@
 import random
 
 from gig import Ent, EntType
-from utils import TimeUnit, Log, String, Time, TimeFormat
+from utils import Log, String, Time, TimeFormat, TimeUnit
 
 log = Log('config_utils')
 

@@ -3,7 +3,7 @@ import tempfile
 from functools import cached_property
 
 import requests
-from utils import TimeZoneOffset, Log, Time, TimeFormat
+from utils import Log, Time, TimeFormat, TimeZoneOffset
 
 from screenshot.config import config_utils
 
@@ -15,9 +15,7 @@ if not os.path.exists(DIR_TEMP):
     os.mkdir(DIR_TEMP)
     log.debug(f'Created directory {DIR_TEMP}')
 
-TIME_FORMAT = TimeFormat(
-    '%Y-%m-%d (%a) %I:%M%p', TimeZoneOffset.LK
-)
+TIME_FORMAT = TimeFormat('%Y-%m-%d (%a) %I:%M%p', TimeZoneOffset.LK)
 
 
 def get_timestamp():

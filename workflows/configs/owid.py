@@ -3,7 +3,7 @@ import random
 import time
 
 from selenium.webdriver.common.by import By
-from utils import TimeUnit, JSONFile, Log
+from utils import JSONFile, Log, TimeUnit
 
 from screenshot import ConfigScreenshot
 from utils_future import Point2D, Size2D, Webpage
