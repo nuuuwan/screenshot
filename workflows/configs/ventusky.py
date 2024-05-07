@@ -1,8 +1,8 @@
 from screenshot import ConfigVentusky, LocationConfig
 
-LOCATION_CONFIG_SRI_LANKA = LocationConfig('sri_lanka', 7.87, 80.65, 7)
+LOCATION_CONFIG_SRI_LANKA = LocationConfig('sri_lanka', 7.87, 80.65, 8)
 
-LOCATION_CONFIG_COLOMBO = LocationConfig('colombo', 6.93, 79.86, 11)
+LOCATION_CONFIG_COLOMBO = LocationConfig('colombo', 6.93, 79.96, 11)
 
 
 def get_config_list():
@@ -38,6 +38,11 @@ def get_config_list():
         ConfigVentusky(
             'temperature-2m',
             '#Temperature',
+            LOCATION_CONFIG_COLOMBO,
+        ),
+        ConfigVentusky(
+            'dew',
+            '#DewPoint',
             LOCATION_CONFIG_COLOMBO,
         ),
         ConfigVentusky(
