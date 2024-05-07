@@ -33,6 +33,7 @@ class Ventusky:
             + f'/?p={lat};{lng};{zoom}'
             + f'&l={self.data_type}'
             + f'&t={time_id}'
+            + '&w=off'
         )
 
     def get_timestamp(self, delta_ut: int):
