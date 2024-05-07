@@ -58,6 +58,7 @@ class Webpage:
             self.driver.get('https://www.ventusky.com/')
             self.driver.execute_script("window.localStorage.setItem('grid', '1');")
             self.driver.execute_script("window.localStorage.setItem('unitssystem', '1');")
+            self.driver.execute_script("window.localStorage.setItem('borders', '2');")
 
         self.driver.get(self.url)
         log.debug(f'Opened {self.url}')
