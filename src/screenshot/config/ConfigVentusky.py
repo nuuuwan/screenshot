@@ -28,7 +28,7 @@ class ConfigVentusky(ConfigScreenshotAnimation):
         ]
         frequency = TimeUnit.SECONDS_IN.HOUR * 12 
         lefttop = Point2D(0, 0)
-        size = Size2D(1200, 1200)
+        size = Size2D(1920, 1920)
         super().__init__(
             name, title_final, urls, timestamps, frequency, lefttop, size
         )
