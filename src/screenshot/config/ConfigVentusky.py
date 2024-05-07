@@ -26,9 +26,9 @@ class ConfigVentusky(ConfigScreenshotAnimation):
             ventusky.get_timestamp(TimeUnit.SECONDS_IN.HOUR * i)
             for i in range(0, 48, 6)
         ]
-        duration = TimeUnit.SECONDS_IN.DAY * 2
+        frequency = TimeUnit.SECONDS_IN.HOUR * 12 
         lefttop = Point2D(0, 0)
         size = Size2D(1200, 1200)
         super().__init__(
-            name, title_final, urls, timestamps, duration, lefttop, size
+            name, title_final, urls, timestamps, frequency, lefttop, size
         )
