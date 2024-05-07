@@ -9,18 +9,19 @@ def get_config_list():
     return [
         # SRI_LANKA
         ConfigVentusky(
-            'temperature-2m',
-            '#Temperature',
-            LOCATION_CONFIG_SRI_LANKA,
-        ),
-        ConfigVentusky(
             'rain-3h',
             '#Rainfall',
             LOCATION_CONFIG_SRI_LANKA,
         ),
         ConfigVentusky(
-            'humidity',
-            '#RelativeHumidity (#RH)',
+            'temperature-2m',
+            '#Temperature',
+            LOCATION_CONFIG_SRI_LANKA,
+        ),
+
+        ConfigVentusky(
+            'dew',
+            '#DewPoint',
             LOCATION_CONFIG_SRI_LANKA,
         ),
         ConfigVentusky(
@@ -35,13 +36,14 @@ def get_config_list():
             LOCATION_CONFIG_COLOMBO,
         ),
         ConfigVentusky(
-            'aqi',
-            'Air Quality (#AQI)',
-            LOCATION_CONFIG_COLOMBO,
-        ),
-        ConfigVentusky(
             'temperature-2m',
             '#Temperature',
             LOCATION_CONFIG_COLOMBO,
         ),
+        ConfigVentusky(
+            'aqi',
+            'Air Quality (#AQI)',
+            LOCATION_CONFIG_COLOMBO,
+        ),
+
     ]
