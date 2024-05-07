@@ -51,6 +51,13 @@ class Webpage:
         options.add_argument(f'--width={self.width}')
         options.add_argument(f'--height={self.height}')
         self.driver = webdriver.Firefox(options=options)
+
+
+        # HACK!! For Ventusky
+        if 'ventusky' in self.url:
+            self.driver.get('https://www.ventusky.com/')
+            self.driver.execute_script("window.localStorage.setItem('grid', '1');")
+
         self.driver.get(self.url)
         log.debug(f'Opened {self.url}')
 
@@ -68,6 +75,7 @@ class Webpage:
         log.debug(f'😴 Sleeping for {T_WAIT_FOR_SCREENSHOT}s...')
         time.sleep(T_WAIT_FOR_SCREENSHOT)
 
+       
         if not elem_info:
             self.driver.save_screenshot(self.screenshot_image_path)
         else:
@@ -90,6 +98,10 @@ class Webpage:
         log.debug(
             f'Saved screenshot of {self.url} to {self.screenshot_image_path}'
         )
+
+        # HACK!!
+        # os.startfile(self.screenshot_image_path)
+        # raise Exception('HACK!!')
         self.close()
         return Image.load(self.screenshot_image_path)
 
