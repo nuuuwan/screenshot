@@ -99,4 +99,13 @@ def get_config_list():
             Point2D(0, 700),
             Size2D(3200, 1800),
         ),
+        ConfigScreenshot(
+            'random_lk_maps',
+            '#RandomLKMaps',
+            'https://github.com/nuuuwan/random_lk_map',
+            TimeUnit.SECONDS_IN.HOUR * 2,
+            Point2D(0, 0),
+            Size2D16x9(1920),
+            (By.ID, 'user-content-image-info'),
+        ),
     ]
