@@ -108,4 +108,12 @@ def get_config_list():
             Size2D16x9(1920),
             (By.ID, 'user-content-image-info'),
         ),
+        ConfigScreenshot(
+            'lk_law',
+            '#LKLaw',
+            'https://github.com/nuuuwan/lk_law/blob/main/README.latest.md',
+            TimeUnit.SECONDS_IN.HOUR * 12,
+            Point2D(550,350),
+            Size2D16x9(1200),
+        ),
     ]
