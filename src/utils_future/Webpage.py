@@ -30,7 +30,6 @@ class Webpage:
             ['ourworldindata.org', [960, 960]],
             ['globalpetrolprices', [800, 4200]],
             ['www.google.com/maps', [1200, 675]],
-            ['https://github.com/nuuuwan/news_lk_bulletin', [700, 2100]],
             ['weather_lk', [3200, 3200]],
         ]:
             if url_str in url:
