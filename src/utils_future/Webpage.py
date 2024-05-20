@@ -27,13 +27,14 @@ class Webpage:
 
         for url_str, [width, height] in [
             ['nuuuwan.github.io', [640, 1920]],
-            ['ourworldindata.org', [960, 960]],
+            ['news_lk_bulletin', [6400, 6400]],
             ['globalpetrolprices', [800, 4200]],
             ['www.google.com/maps', [1200, 675]],
             ['weather_lk', [3200, 3200]],
         ]:
             if url_str in url:
                 self.width, self.height = width, height
+                break
 
         self.current_url = self.url
 
@@ -49,15 +50,21 @@ class Webpage:
         options.add_argument('-headless')
         options.add_argument(f'--width={self.width}')
         options.add_argument(f'--height={self.height}')
+        log.debug(f'{self.width=}, {self.height=}')
         self.driver = webdriver.Firefox(options=options)
-
 
         # HACK!! For Ventusky
         if 'ventusky' in self.url:
             self.driver.get('https://www.ventusky.com/')
-            self.driver.execute_script("window.localStorage.setItem('grid', '1');")
-            self.driver.execute_script("window.localStorage.setItem('unitssystem', '1');")
-            self.driver.execute_script("window.localStorage.setItem('borders', '2');")
+            self.driver.execute_script(
+                "window.localStorage.setItem('grid', '1');"
+            )
+            self.driver.execute_script(
+                "window.localStorage.setItem('unitssystem', '1');"
+            )
+            self.driver.execute_script(
+                "window.localStorage.setItem('borders', '2');"
+            )
 
         self.driver.get(self.url)
         log.debug(f'Opened {self.url}')
@@ -76,7 +83,6 @@ class Webpage:
         log.debug(f'😴 Sleeping for {T_WAIT_FOR_SCREENSHOT}s...')
         time.sleep(T_WAIT_FOR_SCREENSHOT)
 
-       
         if not elem_info:
             self.driver.save_screenshot(self.screenshot_image_path)
         else:

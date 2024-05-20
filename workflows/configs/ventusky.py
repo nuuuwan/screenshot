@@ -18,7 +18,6 @@ def get_config_list():
             '#Temperature',
             LOCATION_CONFIG_SRI_LANKA,
         ),
-
         ConfigVentusky(
             'dew',
             '#DewPoint',
@@ -50,5 +49,4 @@ def get_config_list():
             'Air Quality (#AQI)',
             LOCATION_CONFIG_COLOMBO,
         ),
-
     ]
