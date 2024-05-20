@@ -107,7 +107,12 @@ def main():
     if twitter is None:
         return main_test()
 
-    return main_prod(twitter)
+    while True:
+        try:
+            main_prod(twitter)
+            return
+        except Exception as e:
+            log.error(f'Error: {e}')
 
 
 if __name__ == '__main__':
