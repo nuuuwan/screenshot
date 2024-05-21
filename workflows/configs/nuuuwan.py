@@ -122,6 +122,6 @@ def get_config_list():
             'https://github.com/nuuuwan/dmc_gov_lk/blob/main/ALERTS.md',
             TimeUnit.SECONDS_IN.HOUR * 12,
             Point2D(570, 480),
-            Size2D16x9(1000),
+            Size2D16x9(1100),
         ),
     ]
