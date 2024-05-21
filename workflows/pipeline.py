@@ -19,7 +19,7 @@ PROD_LOG_PATH = os.path.join(DIR_TEMP, 'prod.log')
 
 # Should be consistent with pipeline-cron.yml
 CRON_FREQUENCY = TimeUnit.SECONDS_IN.MINUTE * 20
-TEST_CONFIG_ID_PART = 'news_lk_bulletin'
+TEST_CONFIG_ID_PART = 'dmc_rwl'
 
 
 def init_dir():
