@@ -120,6 +120,10 @@
     "text": "Alcohol and drug use disorders deaths"
   },
   {
+    "url": "https://ourworldindata.org/grapher/total-alcohol-consumption-per-capita-litres-of-pure-alcohol?tab=chart&country=LKA",
+    "text": "Alcohol consumption per person"
+  },
+  {
     "url": "https://ourworldindata.org/grapher/death-rate-amphetamine?tab=chart&country=LKA",
     "text": "Amphetamine use disorder death rate"
   },
@@ -294,10 +298,6 @@
   {
     "url": "https://ourworldindata.org/grapher/annual-percentage-change-coal?tab=chart&country=LKA",
     "text": "Annual percentage change in coal energy consumption"
-  },
-  {
-    "url": "https://ourworldindata.org/grapher/annual-percentage-change-fossil-fuels?tab=chart&country=LKA",
-    "text": "Annual percentage change in fossil fuel consumption"
   },
   {
     "url": "https://ourworldindata.org/grapher/annual-percentage-change-hydro?tab=chart&country=LKA",
@@ -3413,7 +3413,7 @@
   },
   {
     "url": "https://ourworldindata.org/grapher/trachoma-prevalence-age-standardized-ihme?tab=chart&country=LKA",
-    "text": "People living with trachoma"
+    "text": "People living with trachoma per 100,000"
   },
   {
     "url": "https://ourworldindata.org/grapher/number-without-improved-water?tab=chart&country=LKA",
@@ -4106,6 +4106,10 @@
   {
     "url": "https://ourworldindata.org/grapher/the-number-of-reported-paralytic-polio-cases?tab=chart&country=LKA",
     "text": "Reported cases of paralytic polio"
+  },
+  {
+    "url": "https://ourworldindata.org/grapher/cases-of-paralytic-polio-from-vaccine-derived-viruses?tab=chart&country=LKA",
+    "text": "Reported cases of paralytic polio from vaccine-derived viruses"
   },
   {
     "url": "https://ourworldindata.org/grapher/cases-of-paralytic-polio-from-wild-polioviruses?tab=chart&country=LKA",
@@ -4881,7 +4885,7 @@
   },
   {
     "url": "https://ourworldindata.org/grapher/share-of-potential-polio-cases-with-adequate-stool-collection?tab=chart&country=LKA",
-    "text": "Share of potential polio cases with adequate stool collection"
+    "text": "Share of potential polio cases tested and reported to the WHO"
   },
   {
     "url": "https://ourworldindata.org/grapher/prevalence-of-anemia-in-pregnant-women?tab=chart&country=LKA",
@@ -5604,8 +5608,12 @@
     "text": "Vegetable consumption per capita"
   },
   {
-    "url": "https://ourworldindata.org/grapher/voter-turnout?tab=chart&country=LKA",
-    "text": "Voter turnout"
+    "url": "https://ourworldindata.org/grapher/voter-turnout-of-registered-voters?tab=chart&country=LKA",
+    "text": "Voter turnout of registered voters"
+  },
+  {
+    "url": "https://ourworldindata.org/grapher/voter-turnout-of-voting-age-population?tab=chart&country=LKA",
+    "text": "Voter turnout of voting-age population"
   },
   {
     "url": "https://ourworldindata.org/grapher/water-productivity?tab=chart&country=LKA",

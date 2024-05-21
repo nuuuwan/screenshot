@@ -124,4 +124,12 @@ def get_config_list():
             Point2D(570, 480),
             Size2D16x9(1100),
         ),
+        ConfigScreenshot(
+            'dmc_lw',
+            '#Landslide Warnings via @dmc_lk',
+            'https://raw.githubusercontent.com/nuuuwan/dmc_gov_lk/main/landslide-warnings-latest.pdf#page=5',
+            TimeUnit.SECONDS_IN.HOUR * 12,
+            Point2D(440, 440),
+            Size2D(1000, 1920),
+        ),
     ]
