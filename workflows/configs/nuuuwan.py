@@ -121,8 +121,9 @@ def get_config_list():
             '#RiverWaterLevels via @dmc_lk',
             'https://github.com/nuuuwan/dmc_gov_lk/blob/main/ALERTS.md',
             TimeUnit.SECONDS_IN.HOUR * 12,
-            Point2D(570, 480),
-            Size2D(1100,  1100),
+            Point2D(0, 0),
+            Size2D(1920, 1920),
+            (By.ID, 'user-content-river-water-level-map'),
         ),
         ConfigScreenshot(
             'dmc_lw',
