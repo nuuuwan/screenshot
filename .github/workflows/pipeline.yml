@@ -3,7 +3,7 @@ name: Upload Data
 on:
   workflow_dispatch:
   schedule:
-    - cron:  '*/20 4-16 * * *'
+    - cron:  '*/15 4-16 * * *'
 
 
 jobs:
