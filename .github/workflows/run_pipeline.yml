@@ -1,4 +1,4 @@
-name: Upload Data 
+name: Run Pipeline 
 
 on:
   workflow_dispatch:
