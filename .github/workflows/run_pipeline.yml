@@ -3,7 +3,7 @@ name: Run Pipeline
 on:
   workflow_dispatch:
   schedule:
-    - cron:  '*/30 4-16 * * *'
+    - cron:  '*/30 8-16 * * *'
 
 
 jobs: 
