@@ -50,7 +50,7 @@ def get_config_list():
             Size2D(1600, 933),
         ),
         ConfigScreenshot(
-            "cbsl.macroeconomic_charts",
+            "cbsl.macroeconomic_charts.random",
             "Macroeconomic Developments in Charts (2024 Dec) by @CBSL",
             "https://www.cbsl.gov.lk/sites/default/files/cbslweb_documents/statistics/mecpac/Chart_Pack_Q4_2024_e1.pdf#page="
             + str(random.randint(4, 52)),
