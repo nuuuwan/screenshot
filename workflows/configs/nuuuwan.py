@@ -51,20 +51,20 @@ def get_config_list():
             Size2D(550, 400),
             (By.ID, "user-content-table_protein"),
         ),
-        ConfigScreenshot(
-            "news_lk_bulletin",
-            "\n".join(
-                [
-                    "#SriLankaNewsBulletin",
-                    "#SriLanka #News",
-                ]
-            ),
-            "https://github.com/nuuuwan/news_lk_bulletin/blob/main/README.md",
-            TimeUnit.SECONDS_IN.HOUR * 16,
-            Point2D(0, 0),
-            Size2D(1920, 1920),
-            (By.ID, "user-content-news_lk_bulletin"),
-        ),
+        # ConfigScreenshot(
+        #     "news_lk_bulletin",
+        #     "\n".join(
+        #         [
+        #             "#SriLankaNewsBulletin",
+        #             "#SriLanka #News",
+        #         ]
+        #     ),
+        #     "https://github.com/nuuuwan/news_lk_bulletin/blob/main/README.md",
+        #     TimeUnit.SECONDS_IN.HOUR * 16,
+        #     Point2D(0, 0),
+        #     Size2D(1920, 1920),
+        #     (By.ID, "user-content-news_lk_bulletin"),
+        # ),
         ConfigScreenshot(
             "weather_lk_country_temperature",
             "\n".join(
