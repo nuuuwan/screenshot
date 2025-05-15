@@ -65,37 +65,37 @@ def get_config_list():
         #     Size2D(1920, 1920),
         #     (By.ID, "user-content-news_lk_bulletin"),
         # ),
-        ConfigScreenshot(
-            "weather_lk_country_temperature",
-            "\n".join(
-                [
-                    "#Temperature by @SLMetDept",
-                ]
-            ),
-            "https://raw.githubusercontent.com/nuuuwan/weather_lk/data/charts/country_temperature.png",
-            TimeUnit.SECONDS_IN.HOUR * 8,
-            Point2D(0, 700),
-            Size2D(3200, 1800),
-        ),
-        ConfigScreenshot(
-            "weather_lk_country_rainfall",
-            "\n".join(
-                [
-                    "#Rainfall by @SLMetDept",
-                ]
-            ),
-            "https://raw.githubusercontent.com/nuuuwan/weather_lk/data/charts/country_rainfall.png",
-            TimeUnit.SECONDS_IN.HOUR * 8,
-            Point2D(0, 700),
-            Size2D(3200, 1800),
-        ),
-        ConfigScreenshot(
-            "weather_lk_colombo_temperature_91days",
-            "\n".join(["#Colombo #Temperature by @SLMetDept", "Last 91 Days"]),
-            "https://raw.githubusercontent.com/nuuuwan/weather_lk/data/charts/temperature/79.86E-6.93N-Colombo-91days.png",
-            TimeUnit.SECONDS_IN.HOUR * 16,
-            Point2D(0, 700),
-            Size2D(3200, 1800),
+        # ConfigScreenshot(
+        #     "weather_lk_country_temperature",
+        #     "\n".join(
+        #         [
+        #             "#Temperature by @SLMetDept",
+        #         ]
+        #     ),
+        #     "https://raw.githubusercontent.com/nuuuwan/weather_lk/data/charts/country_temperature.png",
+        #     TimeUnit.SECONDS_IN.HOUR * 8,
+        #     Point2D(0, 700),
+        #     Size2D(3200, 1800),
+        # ),
+        # ConfigScreenshot(
+        #     "weather_lk_country_rainfall",
+        #     "\n".join(
+        #         [
+        #             "#Rainfall by @SLMetDept",
+        #         ]
+        #     ),
+        #     "https://raw.githubusercontent.com/nuuuwan/weather_lk/data/charts/country_rainfall.png",
+        #     TimeUnit.SECONDS_IN.HOUR * 8,
+        #     Point2D(0, 700),
+        #     Size2D(3200, 1800),
+        # ),
+        # ConfigScreenshot(
+        #     "weather_lk_colombo_temperature_91days",
+        #     "\n".join(["#Colombo #Temperature by @SLMetDept", "Last 91 Days"]),
+        #     "https://raw.githubusercontent.com/nuuuwan/weather_lk/data/charts/temperature/79.86E-6.93N-Colombo-91days.png",
+        #     TimeUnit.SECONDS_IN.HOUR * 16,
+        #     Point2D(0, 700),
+        #     Size2D(3200, 1800),
         ),
         ConfigScreenshot(
             "lk_law",
