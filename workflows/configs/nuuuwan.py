@@ -96,7 +96,7 @@ def get_config_list():
         #     TimeUnit.SECONDS_IN.HOUR * 16,
         #     Point2D(0, 700),
         #     Size2D(3200, 1800),
-        ),
+        # ),
         ConfigScreenshot(
             "lk_law",
             "#LKLaw",
