@@ -14,27 +14,27 @@ log = Log(__name__)
 CONFIG_LIST = get_config_list()
 DIR_TEMP = tempfile.gettempdir()
 SHOULD_SEND_TWEET = True
-PROD_LOG_PATH = os.path.join(DIR_TEMP, 'prod.log')
+PROD_LOG_PATH = os.path.join(DIR_TEMP, "prod.log")
 
 
 # Should be consistent with pipeline-cron.yml
 CRON_FREQUENCY = TimeUnit.SECONDS_IN.MINUTE * 20
-TEST_CONFIG_ID_PART = 'dmc_rwl'
+TEST_CONFIG_ID_PART = "flightradar24.air_traffic"
 
 
 def init_dir():
     if not os.path.exists(DIR_TEMP):
         os.mkdir(DIR_TEMP)
-        log.info(f'Created Directory {DIR_TEMP}.')
+        log.info(f"Created Directory {DIR_TEMP}.")
     else:
-        log.debug(f'Directory {DIR_TEMP} already exists.')
+        log.debug(f"Directory {DIR_TEMP} already exists.")
 
 
 def init_twitter():
     try:
         return Twitter()
     except Exception as e:
-        log.exception(f'Failed to initialize Twitter: {e}')
+        log.exception(f"Failed to initialize Twitter: {e}")
         return None
 
 
@@ -54,7 +54,7 @@ def get_run_config_list() -> list:
 def process_config(config: Config, twitter: Twitter):
     assert twitter is not None
 
-    log.debug(f'Processing {config.id}...')
+    log.debug(f"Processing {config.id}...")
     config.download_image()
     log.debug(config.tweet_text)
 
@@ -65,40 +65,44 @@ def process_config(config: Config, twitter: Twitter):
         tweet_id = 0
 
     if tweet_id is not None:
-        log.info(f'🟢 Tweeted {config.id} ({tweet_id}).')
+        log.info(f"🟢 Tweeted {config.id} ({tweet_id}).")
         return tweet_id
 
-    raise Exception(f'🔴 Could NOT Tweet {config.id}!')
+    raise Exception(f"🔴 Could NOT Tweet {config.id}!")
 
 
 def main_test():
-    log.info('Running pipeline in TEST mode.')
+    log.info("Running pipeline in TEST mode.")
 
-    log.debug(f'{TEST_CONFIG_ID_PART=}')
+    log.debug(f"{TEST_CONFIG_ID_PART=}")
     config = [c for c in CONFIG_LIST if TEST_CONFIG_ID_PART in c.id][0]
 
     config.download_image()
-    os.startfile(config.image_path)
+    if os.name == "nt":  # Windows
+        os.startfile(config.image_path)
+    elif os.name == "posix":  # macOS/Linux
+        os.system(f"open {config.image_path}")
+
     log.debug(config.tweet_text)
     Tweet(config.tweet_text).add_image(config.image_path)
 
 
 def main_prod(twitter):
-    log.info('Running pipeline in PROD mode.')
+    log.info("Running pipeline in PROD mode.")
     n = len(CONFIG_LIST)
     prod_log_lines = []
 
     run_config_list = get_run_config_list()
-    log.debug(f'{run_config_list=}')
+    log.debug(f"{run_config_list=}")
 
     n_tweets = 0
     for config in run_config_list:
         tweet_id = process_config(config, twitter)
-        prod_log_lines.append(f'{tweet_id}\t{config.id}')
+        prod_log_lines.append(f"{tweet_id}\t{config.id}")
 
-    log.info(f'Tweeted {n_tweets}/{n} configs.')
-    File(PROD_LOG_PATH).write('\n'.join(prod_log_lines))
-    log.debug(f'Logged {PROD_LOG_PATH}')
+    log.info(f"Tweeted {n_tweets}/{n} configs.")
+    File(PROD_LOG_PATH).write("\n".join(prod_log_lines))
+    log.debug(f"Logged {PROD_LOG_PATH}")
 
 
 def main():
@@ -112,8 +116,8 @@ def main():
             main_prod(twitter)
             return
         except Exception as e:
-            log.error(f'Error: {e}')
+            log.error(f"Error: {e}")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
