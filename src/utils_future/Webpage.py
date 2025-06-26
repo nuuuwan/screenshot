@@ -14,23 +14,25 @@ from utils_future.SystemMode import SystemMode
 log = Log(__name__)
 
 T_WAIT_FOR_SCREENSHOT = 5 if SystemMode.is_test() else 240
-log.debug(f'{T_WAIT_FOR_SCREENSHOT=}')
+log.debug(f"{T_WAIT_FOR_SCREENSHOT=}")
 
 
 class Webpage:
     def __init__(self, url: str):
-        assert url.startswith('http')
+        assert url.startswith("http")
         self.url = url
         self.driver = None
 
         self.width, self.height = 1920, 1920
 
         for url_str, [width, height] in [
-            ['nuuuwan.github.io', [640, 1920]],
-            ['news_lk_bulletin', [6400, 6400]],
-            ['globalpetrolprices', [800, 4200]],
-            ['www.google.com/maps', [1200, 675]],
-            ['weather_lk', [3200, 3200]],
+            ["manifesto_monitoring", [2400, 1350]],
+            ["lk_cabinet_decisions", [2400, 1350]],
+            ["nuuuwan.github.io", [640, 1920]],
+            ["news_lk_bulletin", [6400, 6400]],
+            ["globalpetrolprices", [800, 4200]],
+            ["www.google.com/maps", [1200, 675]],
+            ["weather_lk", [3200, 3200]],
         ]:
             if url_str in url:
                 self.width, self.height = width, height
@@ -42,20 +44,20 @@ class Webpage:
     def screenshot_image_path(self):
         h = Hash.md5(self.url)
         return os.path.join(
-            tempfile.gettempdir(), f'webpage.screenshot.{h}.png'
+            tempfile.gettempdir(), f"webpage.screenshot.{h}.png"
         )
 
     def open(self):
         options = Options()
-        options.add_argument('-headless')
-        options.add_argument(f'--width={self.width}')
-        options.add_argument(f'--height={self.height}')
-        log.debug(f'{self.width=}, {self.height=}')
+        options.add_argument("-headless")
+        options.add_argument(f"--width={self.width}")
+        options.add_argument(f"--height={self.height}")
+        log.debug(f"{self.width=}, {self.height=}")
         self.driver = webdriver.Firefox(options=options)
 
         # HACK!! For Ventusky
-        if 'ventusky' in self.url:
-            self.driver.get('https://www.ventusky.com/')
+        if "ventusky" in self.url:
+            self.driver.get("https://www.ventusky.com/")
             self.driver.execute_script(
                 "window.localStorage.setItem('grid', '1');"
             )
@@ -67,7 +69,7 @@ class Webpage:
             )
 
         self.driver.get(self.url)
-        log.debug(f'Opened {self.url}')
+        log.debug(f"Opened {self.url}")
 
     def find_element(self, by, value):
         return self.driver.find_element(by, value)
@@ -76,11 +78,11 @@ class Webpage:
         self.current_url = self.driver.current_url
         self.driver.close()
         self.driver.quit()
-        log.debug(f'Closed {self.url}')
+        log.debug(f"Closed {self.url}")
 
     def __screenshot_nocache__(self, elem_info):
         self.open()
-        log.debug(f'😴 Sleeping for {T_WAIT_FOR_SCREENSHOT}s...')
+        log.debug(f"😴 Sleeping for {T_WAIT_FOR_SCREENSHOT}s...")
         time.sleep(T_WAIT_FOR_SCREENSHOT)
 
         if not elem_info:
@@ -91,19 +93,19 @@ class Webpage:
             assert elem is not None
 
             # HACK for CEB
-            if 'cebcare.ceb.lk' in self.url:
+            if "cebcare.ceb.lk" in self.url:
                 cur_elem = elem
                 while True:
                     print(cur_elem)
-                    if cur_elem.get_attribute('id') == 'panel-1':
+                    if cur_elem.get_attribute("id") == "panel-1":
                         break
-                    cur_elem = cur_elem.find_element(By.XPATH, '..')
+                    cur_elem = cur_elem.find_element(By.XPATH, "..")
                 if cur_elem:
                     elem = cur_elem
 
             elem.screenshot(self.screenshot_image_path)
         log.debug(
-            f'Saved screenshot of {self.url} to {self.screenshot_image_path}'
+            f"Saved screenshot of {self.url} to {self.screenshot_image_path}"
         )
 
         # HACK!!
@@ -114,7 +116,7 @@ class Webpage:
 
     def screenshot(self, elem_info=None):
         if os.path.exists(self.screenshot_image_path):
-            log.warn(f'{self.screenshot_image_path} exists ({self.url}).')
+            log.warn(f"{self.screenshot_image_path} exists ({self.url}).")
             return Image.load(self.screenshot_image_path)
 
         return self.__screenshot_nocache__(elem_info)
