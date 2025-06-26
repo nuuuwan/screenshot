@@ -1,6 +1,18 @@
-from workflows.configs import (_misc, _misc_health, _misc_weather, cbsl, ceb,
-                               cse, dcs, globalpetrolprices, nuuuwan, owid, te,
-                               ventusky)
+from workflows.configs import (
+    _misc,
+    _misc_health,
+    _misc_weather,
+    cbsl,
+    ceb,
+    cse,
+    dcs,
+    globalpetrolprices,
+    lk_politics,
+    nuuuwan,
+    owid,
+    te,
+    ventusky,
+)
 
 
 def get_config_list():
@@ -17,6 +29,7 @@ def get_config_list():
         owid,
         te,
         ventusky,
+        lk_politics,
     ]
     config_list = []
     for module in modules:
