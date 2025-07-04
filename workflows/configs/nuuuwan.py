@@ -97,14 +97,14 @@ def get_config_list():
         #     Point2D(0, 700),
         #     Size2D(3200, 1800),
         # ),
-        ConfigScreenshot(
-            "lk_law",
-            "#LKLaw",
-            "https://github.com/nuuuwan/lk_law/blob/main/README.latest.md",
-            TimeUnit.SECONDS_IN.HOUR * 24,
-            Point2D(550, 350),
-            Size2D16x9(1200),
-        ),
+        # ConfigScreenshot(
+        #     "lk_law",
+        #     "#LKLaw",
+        #     "https://github.com/nuuuwan/lk_law/blob/main/README.latest.md",
+        #     TimeUnit.SECONDS_IN.HOUR * 24,
+        #     Point2D(550, 350),
+        #     Size2D16x9(1200),
+        # ),
         # ConfigScreenshot(
         #     'dmc_rwl',
         #     '#RiverWaterLevels via @dmc_lk',
