@@ -64,6 +64,7 @@ def process_config(config: Config, twitter: Twitter):
     log.debug(config.tweet_text)
 
     image_size = os.path.getsize(config.image_path)
+    log.debug(f"{image_size=}")
     if image_size < MIN_IMAGE_SIZE:
         raise PipelineException(
             f"Image {config.image_path} is too small ({image_size} bytes)."
