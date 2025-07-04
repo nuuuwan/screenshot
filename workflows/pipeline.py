@@ -20,6 +20,11 @@ PROD_LOG_PATH = os.path.join(DIR_TEMP, "prod.log")
 # Should be consistent with pipeline-cron.yml
 CRON_FREQUENCY = TimeUnit.SECONDS_IN.MINUTE * 20
 TEST_CONFIG_ID_PART = "manifesto_monitoring.progress_chart"
+MIN_IMAGE_SIZE = 10_000
+
+
+class PipelineException(Exception):
+    pass
 
 
 def init_dir():
@@ -58,6 +63,12 @@ def process_config(config: Config, twitter: Twitter):
     config.download_image()
     log.debug(config.tweet_text)
 
+    image_size = os.path.getsize(config.image_path)
+    if image_size < MIN_IMAGE_SIZE:
+        raise PipelineException(
+            f"Image {config.image_path} is too small ({image_size} bytes)."
+        )
+
     tweet = Tweet(config.tweet_text).add_image(config.image_path)
     if SHOULD_SEND_TWEET:
         tweet_id = twitter.send(tweet)
@@ -68,7 +79,7 @@ def process_config(config: Config, twitter: Twitter):
         log.info(f"🟢 Tweeted {config.id} ({tweet_id}).")
         return tweet_id
 
-    raise Exception(f"🔴 Could NOT Tweet {config.id}!")
+    raise PipelineException(f"🔴 Could NOT Tweet {config.id}!")
 
 
 def main_test():
