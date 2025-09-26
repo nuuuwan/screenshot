@@ -1,17 +1,6 @@
-from workflows.configs import (
-    _misc,
-    _misc_health,
-    _misc_weather,
-    cbsl,
-    ceb,
-    cse,
-    dcs,
-    lk_politics,
-    nuuuwan,
-    owid,
-    te,
-    ventusky,
-)
+from workflows.configs import (_misc, _misc_health, _misc_weather, cbsl, ceb,
+                               cse, dcs, lk_politics, nuuuwan, owid, te,
+                               ventusky)
 
 
 def get_config_list():

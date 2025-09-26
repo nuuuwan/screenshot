@@ -1,4 +1,5 @@
 # utils_future (auto generate by build_inits.py)
+# flake8: noqa: F408
 
 from utils_future.AnimatedGif import AnimatedGif
 from utils_future.Image import Image

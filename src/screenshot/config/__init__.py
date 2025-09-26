@@ -1,4 +1,5 @@
 # screenshot.config (auto generate by build_inits.py)
+# flake8: noqa: F408
 
 from screenshot.config.Config import Config
 from screenshot.config.config_utils import config_utils
