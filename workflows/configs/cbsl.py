@@ -51,9 +51,11 @@ def get_config_list():
         ),
         ConfigScreenshot(
             "cbsl.macroeconomic_charts.random",
-            "Macroeconomic Developments in Charts (2024 Dec) by @CBSL",
-            "https://www.cbsl.gov.lk/sites/default/files/cbslweb_documents/statistics/mecpac/Chart_Pack_Q4_2024_e1.pdf#page="
-            + str(random.randint(4, 52)),
+            "Macroeconomic Developments in Charts (2025 March) by @CBSL",
+            "https://www.cbsl.gov.lk"
+            + "/sites/default/files/cbslweb_documents"
+            + "/statistics/mecpac/Chart_Pack_Q1_2025_e.pdf#page="
+            + str(random.randint(4, 51)),
             TimeUnit.SECONDS_IN.DAY,
             Point2D(1920 - 1557, 1920 - 1886),
             Size2D(1200, 900),
