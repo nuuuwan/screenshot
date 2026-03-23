@@ -1,5 +1,6 @@
 numpy<2
 selenium
+openai==2.29.0
 utils-nuuuwan
 Pillow
 twtr-nuuuwan
