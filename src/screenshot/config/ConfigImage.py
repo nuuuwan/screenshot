@@ -26,4 +26,3 @@ class ConfigImage(Config):
 
         WWW(img_src).download_binary(self.image_path)
         log.debug(f'Downloaded image from {img_src} to {self.image_path}')
-
