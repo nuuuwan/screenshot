@@ -2,8 +2,8 @@ name: Run Pipeline
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "*/30 9-14 * * *"
+  # schedule:
+  #   - cron: "*/30 9-14 * * *"
 
 jobs:
   pipeline:
@@ -47,4 +47,3 @@ jobs:
           git add .
           git commit -m "Upload Data (Cron) $(date)"
           git push origin data
-
