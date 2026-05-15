@@ -4,7 +4,7 @@ import tempfile
 import time
 
 from twtr import Tweet, Twitter
-from utils import File, Log, TimeUnit
+from utils import Log, TimeUnit
 
 from screenshot import Config
 from workflows.all_configs import get_config_list
