@@ -6,3 +6,4 @@ Pillow
 imageio
 gig-nuuuwan
 tweepy
+twtr-nuuuwan
