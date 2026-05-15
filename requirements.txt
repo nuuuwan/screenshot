@@ -3,6 +3,6 @@ selenium
 openai==2.29.0
 utils-nuuuwan
 Pillow
-twtr-nuuuwan
 imageio
 gig-nuuuwan
+tweepy
