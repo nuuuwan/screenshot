@@ -1,6 +1,5 @@
 from workflows.configs import (
     _misc,
-    _misc_health,
     _misc_weather,
     cbsl,
     ceb,
