@@ -20,22 +20,10 @@ def get_config_list():
             Size2D(780, 470),
         ),
         ConfigScreenshot(
-            "cbsl.food_prices.daily_report",
-            "Daily Price Report by @CBSL #CPI #Food",
-            "https://www.cbsl.gov.lk"
-            + "/sites/default/files/cbslweb_documents"
-            + "/statistics/pricerpt/price_report"
-            + f"_{last_date_id_non_weekend}_e.pdf",
-            TimeUnit.SECONDS_IN.WEEK,
-            Point2D(500, 100),
-            Size2D(920, 1020),
-        ),
-        ConfigScreenshot(
             "cbsl.macroeconomic_charts.random",
-            "Macroeconomic Developments in Charts (2025 March) by @CBSL",
-            "https://www.cbsl.gov.lk"
-            + "/sites/default/files/cbslweb_documents"
-            + "/statistics/mecpac/Chart_Pack_Q1_2025_e.pdf#page="
+            "Macroeconomic Developments in Charts (2026 March) by @CBSL",
+            "https://www.cbsl.gov.lk/sites/default/files/cbslweb_documents"
+            + "/statistics/mecpac/Chart_Pack_Q1_2026_e.pdf#page="
             + str(random.randint(4, 51)),
             TimeUnit.SECONDS_IN.DAY,
             Point2D(1920 - 1557, 1920 - 1886),
