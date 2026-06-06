@@ -18,8 +18,8 @@ def get_config_list():
         ),
         ConfigScreenshot(
             "statistics.sri_lanka",
-            "Statistical Pocket Book 2024\nvia @LankaSTAT",
-            "https://www.statistics.gov.lk/Publication/PocketBook2024#"
+            "Statistical Pocket Book 2025\nvia @LankaSTAT",
+            "https://www.statistics.gov.lk/Publication/PocketBook2025#"
             + "page=%d" % (random.randint(13, 103)),
             TimeUnit.SECONDS_IN.HOUR * 12,
             Point2D(470, 60),
