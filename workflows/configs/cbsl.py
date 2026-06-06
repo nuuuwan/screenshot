@@ -20,14 +20,6 @@ def get_config_list():
             Size2D(780, 470),
         ),
         ConfigScreenshot(
-            "cbsl_forex.chart",
-            "Foreign Exchange Rates (#Forex) by @CBSL",
-            "https://www.cbsl.gov.lk/rates-and-indicators/exchange-rates",
-            TimeUnit.SECONDS_IN.DAY,
-            Point2D(350, 780),
-            Size2D(1190, 1020),
-        ),
-        ConfigScreenshot(
             "cbsl.food_prices.daily_report",
             "Daily Price Report by @CBSL #CPI #Food",
             "https://www.cbsl.gov.lk"
