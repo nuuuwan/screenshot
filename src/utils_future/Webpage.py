@@ -26,8 +26,6 @@ class Webpage:
         self.width, self.height = 1920, 1920
 
         for url_str, [width, height] in [
-            ["manifesto_monitoring", [2400, 1350]],
-            ["lk_cabinet_decisions", [2400, 1350]],
             ["nuuuwan.github.io", [640, 1920]],
             ["news_lk_bulletin", [6400, 6400]],
             ["globalpetrolprices", [800, 4200]],
